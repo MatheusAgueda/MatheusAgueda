@@ -7,15 +7,14 @@
 🌱 I'm actively learning and expanding my knowledge in both front-end and back-end development, constantly striving to improve my skills and stay up-to-date with the latest technologies.                                                                                        
 😄 My pronouns are he/him.
 
-<div> 
-<a href="https://beacons.ai/rafaballerini">
-<img heigth="180em" src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
-<img heigth="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatheusAgueda&layout=compact&langs_count=16&theme=dracula"/>
+<div align="center">  
+  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&count_private=true&hide_border=true&title_color=ff91a4&icon_color=ff91a4&text_color=c9d1d9&bg_color=0d1117" alt="Matheus Henrique github stats" /> 
+  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatheusAgueda&layout=compact&hide_border=true&title_color=ff91a4&text_color=ff91a4&bg_color=0d1117" />
 </div>
 
 ##
 
-<div>
+<div align="center"> 
  <a href="https://www.instagram.com/ma.henrique__/" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
   <a href = "aguedamatheus475@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.linkedin.com/in/matheus-rocha-b38308235/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>  
