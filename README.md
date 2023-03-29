@@ -36,6 +36,8 @@
  <img align="center" alt="Node-js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg">Node-js
  <img align="center" alt="Angular-js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">Angular 
 
+![Snake animation](https://github.com/MatheusAgueda/MatheusAgueda/blob/output/github-contribution-grid-snake.svg)
+
 <div align="center">
 <br><p align="centre"><b>Visitors Count</b></p>  
 <p align="center"><img align="center" src="https://profile-counter.glitch.me/{MatheusAgueda}/count.svg" /></p> 
