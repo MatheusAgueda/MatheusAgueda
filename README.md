@@ -6,7 +6,6 @@
 
 🔭 I'm currently on the lookout for a new job opportunity that will challenge and inspire me.                     
 🌱 I'm actively learning and expanding my knowledge in both front-end and back-end development, constantly striving to improve my skills and stay up-to-date with the latest technologies.                                                                                        
-😄 My pronouns are he/him.
 
 <div align="center">  
   <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&count_private=true&hide_border=true&title_color=ff79c6&icon_color=ff79c6&text_color=c9d1d9&bg_color=0d1117" alt="Matheus Henrique github stats" /> 
