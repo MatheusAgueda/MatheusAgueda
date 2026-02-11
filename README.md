@@ -9,29 +9,29 @@
 <!-- NEON BADGES -->
 <p>
   <img src="https://img.shields.io/badge/CEO-00FF41?style=for-the-badge&logo=target&logoColor=black&labelColor=000000" alt="CEO"/>
-  <img src="https://img.shields.io/badge/Developer-FF0080?style=for-the-badge&logo=codeigniter&logoColor=white&labelColor=000000" alt="Developer"/>
-  <img src="https://img.shields.io/badge/Founder-00D9FF?style=for-the-badge&logo=rocket&logoColor=white&labelColor=000000" alt="Founder"/>
-  <img src="https://img.shields.io/badge/Self--Taught-FFD700?style=for-the-badge&logo=hackthebox&logoColor=black&labelColor=000000" alt="Self-Taught"/>
+  <img src="https://img.shields.io/badge/Developer-00FF41?style=for-the-badge&logo=codeigniter&logoColor=black&labelColor=000000" alt="Developer"/>
+  <img src="https://img.shields.io/badge/Founder-FFFFFF?style=for-the-badge&logo=rocket&logoColor=black&labelColor=000000" alt="Founder"/>
+  <img src="https://img.shields.io/badge/Self--Taught-00FF41?style=for-the-badge&logo=hackthebox&logoColor=black&labelColor=000000" alt="Self-Taught"/>
 </p>
 
 <!-- GLOWING SOCIAL BADGES -->
 <p>
   <a href="https://linkedin.com/in/matheus-agueda">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LinkedIn-FFFFFF?style=for-the-badge&logo=linkedin&logoColor=black&labelColor=000000" alt="LinkedIn"/>
   </a>
   <a href="https://www.greenvillagemobilehomes.com">
     <img src="https://img.shields.io/badge/Website-00FF41?style=for-the-badge&logo=google-chrome&logoColor=black&labelColor=000000" alt="Website"/>
   </a>
   <a href="mailto:info@greenvillagemobilehomes.com">
-    <img src="https://img.shields.io/badge/Email-FF0080?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" alt="Email"/>
+    <img src="https://img.shields.io/badge/Email-00FF41?style=for-the-badge&logo=gmail&logoColor=black&labelColor=000000" alt="Email"/>
   </a>
 </p>
 
 <!-- PROFILE STATS -->
 <p>
   <img src="https://komarev.com/ghpvc/?username=MatheusAgueda&label=PROFILE+VIEWS&color=00FF41&style=for-the-badge" alt="Profile Views"/>
-  <img src="https://img.shields.io/github/followers/MatheusAgueda?label=FOLLOWERS&style=for-the-badge&color=FF0080&labelColor=000000" alt="Followers"/>
-  <img src="https://img.shields.io/github/stars/MatheusAgueda?label=STARS&style=for-the-badge&color=FFD700&labelColor=000000" alt="Stars"/>
+  <img src="https://img.shields.io/github/followers/MatheusAgueda?label=FOLLOWERS&style=for-the-badge&color=FFFFFF&labelColor=000000" alt="Followers"/>
+  <img src="https://img.shields.io/github/stars/MatheusAgueda?label=STARS&style=for-the-badge&color=00FF41&labelColor=000000" alt="Stars"/>
 </p>
 
 </div>
@@ -219,14 +219,14 @@ Status: 🟢 AUTOMATING EVERYTHING
 <div align="center">
 
 <!-- MAIN STATS GRID -->
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=FFFFFF&ring_color=FF0080&fire_color=FFD700&include_all_commits=true&count_private=true" />
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=MatheusAgueda&theme=radical&hide_border=true&background=0D1117&ring=00FF41&fire=FF0080&currStreakLabel=FFD700&sideNums=FFFFFF&dates=FFFFFF" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&hide_border=true&bg_color=000000&title_color=00FF41&icon_color=00FF41&text_color=FFFFFF&ring_color=00FF41&fire_color=FFFFFF&include_all_commits=true&count_private=true&border_color=00FF41" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=MatheusAgueda&theme=radical&hide_border=true&background=000000&ring=00FF41&fire=00FF41&currStreakLabel=FFFFFF&sideNums=00FF41&dates=FFFFFF&border=00FF41" />
 
 <!-- LANGUAGE STATS -->
-<img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatheusAgueda&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=FFFFFF&langs_count=10&hide=html,css" />
+<img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatheusAgueda&layout=compact&theme=radical&hide_border=true&bg_color=000000&title_color=00FF41&text_color=FFFFFF&langs_count=10&hide=html,css&border_color=00FF41" />
 
 <!-- ACTIVITY GRAPH -->
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=MatheusAgueda&bg_color=0D1117&color=00FF41&line=FF0080&point=FFD700&area=true&hide_border=true&custom_title=CONTRIBUTION%20ACTIVITY%20GRAPH" />
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=MatheusAgueda&bg_color=000000&color=FFFFFF&line=00FF41&point=00FF41&area=true&hide_border=false&custom_title=CONTRIBUTION%20ACTIVITY%20GRAPH&area_color=00FF41" />
 
 <!-- TROPHIES -->
 <img width="100%" src="https://github-profile-trophy.vercel.app/?username=MatheusAgueda&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" />
@@ -431,7 +431,7 @@ Status: 🟢 LISBON AREA
 <img src="https://img.shields.io/badge/VISIT_WEBSITE-00FF41?style=for-the-badge&logo=google-chrome&logoColor=black&labelColor=000000" alt="Visit Website"/>
 </a>
 <a href="mailto:info@greenvillagemobilehomes.com">
-<img src="https://img.shields.io/badge/CONTACT_US-FF0080?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" alt="Contact"/>
+<img src="https://img.shields.io/badge/CONTACT_US-FFFFFF?style=for-the-badge&logo=gmail&logoColor=black&labelColor=000000" alt="Contact"/>
 </a>
 </p>
 
@@ -515,13 +515,13 @@ const learningGoals = {
 
 <p>
   <a href="https://linkedin.com/in/matheus-agueda">
-    <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" alt="LinkedIn"/>
+    <img src="https://img.shields.io/badge/LinkedIn-Connect-FFFFFF?style=for-the-badge&logo=linkedin&logoColor=black&labelColor=000000" alt="LinkedIn"/>
   </a>
   <a href="https://www.greenvillagemobilehomes.com">
     <img src="https://img.shields.io/badge/Website-Visit-00FF41?style=for-the-badge&logo=google-chrome&logoColor=black&labelColor=000000" alt="Website"/>
   </a>
   <a href="mailto:info@greenvillagemobilehomes.com">
-    <img src="https://img.shields.io/badge/Email-Contact-FF0080?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" alt="Email"/>
+    <img src="https://img.shields.io/badge/Email-Contact-00FF41?style=for-the-badge&logo=gmail&logoColor=black&labelColor=000000" alt="Email"/>
   </a>
 </p>
 
@@ -533,7 +533,7 @@ const learningGoals = {
 
 ### 💡 "CODE IS THE MOST EFFICIENT WAY TO SCALE A BUSINESS"
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1000&color=FFD700&center=true&vCenter=true&width=800&lines=Built+with+%F0%9F%92%9A+by+a+CEO+who+refuses+to+stop+coding;Turning+Coffee+%E2%98%95+into+Code+since+2023;Making+Mobile+Homes+Accessible+Through+Technology" alt="Footer Typing" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1000&color=00FF41&center=true&vCenter=true&width=800&lines=Built+with+%F0%9F%92%9A+by+a+CEO+who+refuses+to+stop+coding;Turning+Coffee+%E2%98%95+into+Code+since+2023;Making+Mobile+Homes+Accessible+Through+Technology" alt="Footer Typing" />
 
 <!-- NEON FOOTER -->
 ![Footer](https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&customColorList=12,15,18,20,24&section=footer&animation=twinkling)
