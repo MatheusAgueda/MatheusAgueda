@@ -1,7 +1,7 @@
 <!-- ANIMATED HEADER -->
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&height=300&text=MATHEUS%20AGUEDA&fontSize=80&fontAlign=50&fontAlignY=40&color=gradient&customColorList=12,15,18,20,24&desc=CEO%20WHO%20CODES%20%E2%9A%A1%20BUILDING%20THE%20FUTURE%20OF%20MOBILE%20HOMES&descSize=20&descAlign=50&descAlignY=60&animation=twinkling&stroke=00FF41&strokeWidth=2)
+![Header](https://capsule-render.vercel.app/api?type=waving&height=300&text=MATHEUS%20AGUEDA&fontSize=80&fontAlign=50&fontAlignY=40&color=0:000000,100:000000&desc=CEO%20WHO%20CODES%20%E2%9A%A1%20BUILDING%20THE%20FUTURE%20OF%20MOBILE%20HOMES&descSize=20&descAlign=50&descAlignY=60&animation=twinkling&fontColor=00FF41&stroke=00FF41&strokeWidth=3)
 
 <!-- NEON TYPING EFFECT -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=35&duration=2000&pause=1000&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&random=false&width=800&height=100&lines=%F0%9F%8F%97%EF%B8%8F+Web+Scraping+%7C+70%2B+Sites;%F0%9F%8E%AE+3D+Virtual+Showrooms;%F0%9F%A4%96+AI-Powered+Chatbots;%F0%9F%9A%9A+Import+Calculators;%E2%9A%99%EF%B8%8F+Full+Stack+Automation" alt="Typing SVG" />
@@ -232,9 +232,6 @@ Status: 🟢 AUTOMATING EVERYTHING
 <!-- ACTIVITY GRAPH -->
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=MatheusAgueda&bg_color=000000&color=FFFFFF&line=00FF41&point=00FF41&area=true&hide_border=false&custom_title=CONTRIBUTION%20ACTIVITY%20GRAPH&area_color=00FF41" />
 
-<!-- TROPHIES -->
-<img width="100%" src="https://github-profile-trophy.vercel.app/?username=MatheusAgueda&theme=radical&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" />
-
 </div>
 
 ---
@@ -268,23 +265,23 @@ Status: 🟢 AUTOMATING EVERYTHING
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://img.icons8.com/nolan/96/home.png"/>
-<br><strong>Private Residences</strong>
+<h1>🏡</h1>
+<strong>Private Residences</strong>
 <br><sub>Custom homes for families</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.icons8.com/nolan/96/company.png"/>
-<br><strong>Corporate Housing</strong>
+<h1>🏢</h1>
+<strong>Corporate Housing</strong>
 <br><sub>Temporary accommodations</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.icons8.com/nolan/96/camping-tent.png"/>
-<br><strong>Tourism Parks</strong>
+<h1>⛺</h1>
+<strong>Tourism Parks</strong>
 <br><sub>Camping & glamping sites</sub>
 </td>
 <td align="center" width="25%">
-<img src="https://img.icons8.com/nolan/96/city-buildings.png"/>
-<br><strong>Residential Projects</strong>
+<h1>🏙️</h1>
+<strong>Residential Projects</strong>
 <br><sub>Innovative developments</sub>
 </td>
 </tr>
@@ -295,16 +292,16 @@ Status: 🟢 AUTOMATING EVERYTHING
 <table>
 <tr>
 <td align="center" width="50%">
-<img src="https://img.icons8.com/nolan/80/apple-app-store.png"/>
-<br><strong>iOS App</strong>
+<h1>📱</h1>
+<strong>iOS App</strong>
 <br><sub>iPhone & iPad</sub>
-<br><a href="https://apps.apple.com/app/green-village-mobile-homes">📱 Download on App Store</a>
+<br><a href="https://apps.apple.com/app/green-village-mobile-homes">🍎 Download on App Store</a>
 </td>
 <td align="center" width="50%">
-<img src="https://img.icons8.com/nolan/80/google-play.png"/>
-<br><strong>Android App</strong>
+<h1>📱</h1>
+<strong>Android App</strong>
 <br><sub>All Android Devices</sub>
-<br><a href="https://play.google.com/store/apps/details?id=com.greenvillage">📱 Get it on Google Play</a>
+<br><a href="https://play.google.com/store/apps/details?id=com.greenvillage">🤖 Get it on Google Play</a>
 </td>
 </tr>
 </table>
@@ -412,7 +409,7 @@ Status: 🟢 LISBON AREA
 ### 🛒 MASSIVE CATALOG
 
 <a href="https://www.greenvillagemobilehomes.com/category/all-products">
-<img src="https://img.shields.io/badge/BROWSE_+3,000_MODELS-00FF41?style=for-the-badge&logo=shopify&logoColor=black&labelColor=000000" alt="Catalog"/>
+<img src="https://img.shields.io/badge/BROWSE_+3,000_MODELS-000000?style=for-the-badge&logo=shopify&logoColor=00FF41&labelColor=000000&color=000000" alt="Catalog"/>
 </a>
 
 **eBay-Style Marketplace** with the largest mobile home inventory in Europe
@@ -466,18 +463,18 @@ Status: 🟢 LISBON AREA
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/nolan/80/code.png"/>
-<br><strong>Code Quality</strong>
+<h1>💻</h1>
+<strong>Code Quality</strong>
 <br><sub>Clean, maintainable, scalable</sub>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/nolan/80/speed.png"/>
-<br><strong>Performance</strong>
+<h1>⚡</h1>
+<strong>Performance</strong>
 <br><sub>Fast, efficient, optimized</sub>
 </td>
 <td align="center" width="33%">
-<img src="https://img.icons8.com/nolan/80/automation.png"/>
-<br><strong>Automation</strong>
+<h1>🤖</h1>
+<strong>Automation</strong>
 <br><sub>Scale through technology</sub>
 </td>
 </tr>
@@ -540,9 +537,9 @@ const learningGoals = {
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=25&pause=1000&color=00FF41&center=true&vCenter=true&width=800&lines=Built+with+%F0%9F%92%9A+by+a+CEO+who+refuses+to+stop+coding;Turning+Coffee+%E2%98%95+into+Code+since+2023;Making+Mobile+Homes+Accessible+Through+Technology" alt="Footer Typing" />
 
 <!-- NEON FOOTER -->
-![Footer](https://capsule-render.vercel.app/api?type=waving&height=150&color=gradient&customColorList=12,15,18,20,24&section=footer&animation=twinkling)
+![Footer](https://capsule-render.vercel.app/api?type=waving&height=150&color=0:000000,100:000000&section=footer&animation=twinkling&fontColor=00FF41)
 
 <!-- VISITOR COUNTER -->
-<img src="https://profile-counter.glitch.me/MatheusAgueda/count.svg" alt="Visitor Count"/>
+<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FMatheusAgueda&count_bg=%2300FF41&title_bg=%23000000&icon=&icon_color=%23E7E7E7&title=PROFILE+VIEWS&edge_flat=false" alt="Visitor Count"/>
 
 </div>
