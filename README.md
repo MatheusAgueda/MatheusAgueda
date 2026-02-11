@@ -19,10 +19,10 @@
   <a href="https://linkedin.com/in/matheus-agueda">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" alt="LinkedIn"/>
   </a>
-  <a href="https://greenvillagemobilehomes.com">
+  <a href="https://www.greenvillagemobilehomes.com">
     <img src="https://img.shields.io/badge/Website-00FF41?style=for-the-badge&logo=google-chrome&logoColor=black&labelColor=000000" alt="Website"/>
   </a>
-  <a href="mailto:matheus@greenvillagemobilehomes.com">
+  <a href="mailto:info@greenvillagemobilehomes.com">
     <img src="https://img.shields.io/badge/Email-FF0080?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" alt="Email"/>
   </a>
 </p>
@@ -89,7 +89,7 @@ const matheus: Developer = {
 
 ### 💡 The Story
 
-I'm not just a **CEO** — I'm a **CEO who codes**. While running [Green Village Mobile Homes](https://greenvillagemobilehomes.com), I develop every tech solution our company needs. From web scraping platforms to AI-powered 3D showrooms, I build it all in-house.
+I'm not just a **CEO** — I'm a **CEO who codes**. While running [Green Village Mobile Homes](https://www.greenvillagemobilehomes.com), I develop every tech solution our company needs. From web scraping platforms to AI-powered 3D showrooms, and even our iOS/Android mobile apps, I build it all in-house.
 
 **No outsourcing. No agencies. Just clean code and business results.** 🎯
 
@@ -245,16 +245,21 @@ Status: 🟢 AUTOMATING EVERYTHING
 ║   🏡  EUROPE'S LARGEST MOBILE HOMES MARKETPLACE  🏡                      ║
 ║                                                                          ║
 ║   ✨ Founded 2023 | 🏢 HQ: Vermoil-Pombal, Portugal                     ║
-║   🌍 Coverage: Portugal • Spain • Brazil                                ║
-║   🏪 Network: 100+ Partner Stores Across Europe                         ║
-║   📦 Catalog: Largest Mobile Home Inventory in Europe                   ║
+║   🌍 Coverage: Portugal • Spain • Brazil • Açores                       ║
+║   🏪 7 Physical Stores + 100+ Partner Network                           ║
+║   📦 Catalog: +3,000 Models (eBay-Style Platform)                       ║
 ║   💶 Starting Price: €8,400 (Transport Included)                        ║
+║   📱 iOS & Android Apps Available                                       ║
 ║   🚚 Full Logistics: Import/Export Without Bureaucracy                  ║
 ║                                                                          ║
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
 
 ### 🎯 What We Do
+
+**Casas Móveis | Chalets | Lodges**
+**Entregamos em todos os Continentes**
+**Venda | Importação | Exportação | Novos | Usados**
 
 <table>
 <tr>
@@ -281,6 +286,133 @@ Status: 🟢 AUTOMATING EVERYTHING
 </tr>
 </table>
 
+### 📱 MOBILE APPS (Built by Matheus)
+
+<table>
+<tr>
+<td align="center" width="50%">
+<img src="https://img.icons8.com/nolan/80/apple-app-store.png"/>
+<br><strong>iOS App</strong>
+<br><sub>iPhone & iPad</sub>
+<br><a href="https://apps.apple.com/app/green-village-mobile-homes">📱 Download on App Store</a>
+</td>
+<td align="center" width="50%">
+<img src="https://img.icons8.com/nolan/80/google-play.png"/>
+<br><strong>Android App</strong>
+<br><sub>All Android Devices</sub>
+<br><a href="https://play.google.com/store/apps/details?id=com.greenvillage">📱 Get it on Google Play</a>
+</td>
+</tr>
+</table>
+
+### 🏪 OUR 7 PHYSICAL STORES
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🇵🇹 Grande Porto, Portugal
+```yaml
+Address: Praceta Parque Nascente 35
+         4435-182 Grande Porto, Portugal
+Hours: Segunda a Segunda
+       10:00 - 20:00
+Phone: +351 937 369 173
+Status: 🟢 FLAGSHIP STORE
+```
+
+</td>
+<td width="50%">
+
+#### 🇪🇸 Vigo, Pontevedra, Espanha
+```yaml
+Address: Carr. Madrid, 183, Lavadores
+         36214 Vigo, Pontevedra
+Hours: Terça a Sábado
+       10:00 - 18:00
+Phone: +34 651 36 60 34
+Status: 🟢 INTERNATIONAL HUB
+```
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🇧🇷 Chácara Urbana, Brasil
+```yaml
+Address: Rua Sócrates Fernandes de Oliveira N°35
+         Em frente ao Hospital Sta Elisa
+Hours: Segunda a Sexta
+       9:00 - 17:00
+Phone: +55 84 9914 7974
+Status: 🟢 BRAZIL OPERATIONS
+```
+
+</td>
+<td width="50%">
+
+#### 🇵🇹 Ribeira Grande, Açores
+```yaml
+Address: Rua das Covas N°67
+         9600-325 Ribeirinha
+         São Miguel, Açores
+Hours: Sob Agendamento
+Phone: +351 967 091 596
+Status: 🟢 ISLAND OPERATIONS
+```
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+#### 🇵🇹 Vermoil, Pombal
+```yaml
+Address: Vermoil, Pombal
+         Portugal (HQ)
+Hours: Sob Agendamento
+Phone: +351 937 369 173
+Status: 🟢 HEADQUARTERS
+```
+
+</td>
+<td width="50%">
+
+#### 🇵🇹 Algarve
+```yaml
+Address: Nacional 125
+         Algarve, Portugal
+Hours: Sob Agendamento
+Phone: +351 937 369 173
+Status: 🟢 SOUTH REGION
+```
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+#### 🇵🇹 Fernão Ferro, Lisboa
+```yaml
+Address: Fernão Ferro, Lisboa, Portugal
+Hours: Sob Agendamento
+Phone: +351 937 369 173
+Status: 🟢 LISBON AREA
+```
+
+</td>
+</tr>
+</table>
+
+### 🛒 MASSIVE CATALOG
+
+<a href="https://www.greenvillagemobilehomes.com/category/all-products">
+<img src="https://img.shields.io/badge/BROWSE_+3,000_MODELS-00FF41?style=for-the-badge&logo=shopify&logoColor=black&labelColor=000000" alt="Catalog"/>
+</a>
+
+**eBay-Style Marketplace** with the largest mobile home inventory in Europe
+
 ### ⚡ What Sets Us Apart
 
 ```diff
@@ -290,11 +422,18 @@ Status: 🟢 AUTOMATING EVERYTHING
 + 💻 All Tech Built In-House — Maximum Control
 + 🤖 AI-Powered Customer Service — 24/7 Support
 + 📊 Transparent Pricing Calculator — No Hidden Fees
++ 📱 Native Mobile Apps for iOS & Android
++ 🏪 7 Physical Stores Across 4 Countries
 ```
 
-<a href="https://greenvillagemobilehomes.com">
-<img src="https://img.shields.io/badge/VISIT%20WEBSITE-00FF41?style=for-the-badge&logo=google-chrome&logoColor=black&labelColor=000000" alt="Visit Website"/>
+<p>
+<a href="https://www.greenvillagemobilehomes.com">
+<img src="https://img.shields.io/badge/VISIT_WEBSITE-00FF41?style=for-the-badge&logo=google-chrome&logoColor=black&labelColor=000000" alt="Visit Website"/>
 </a>
+<a href="mailto:info@greenvillagemobilehomes.com">
+<img src="https://img.shields.io/badge/CONTACT_US-FF0080?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" alt="Contact"/>
+</a>
+</p>
 
 </div>
 
@@ -378,10 +517,10 @@ const learningGoals = {
   <a href="https://linkedin.com/in/matheus-agueda">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000" alt="LinkedIn"/>
   </a>
-  <a href="https://greenvillagemobilehomes.com">
+  <a href="https://www.greenvillagemobilehomes.com">
     <img src="https://img.shields.io/badge/Website-Visit-00FF41?style=for-the-badge&logo=google-chrome&logoColor=black&labelColor=000000" alt="Website"/>
   </a>
-  <a href="mailto:matheus@greenvillagemobilehomes.com">
+  <a href="mailto:info@greenvillagemobilehomes.com">
     <img src="https://img.shields.io/badge/Email-Contact-FF0080?style=for-the-badge&logo=gmail&logoColor=white&labelColor=000000" alt="Email"/>
   </a>
 </p>
