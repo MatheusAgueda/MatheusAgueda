@@ -539,6 +539,6 @@ const learningGoals = {
 ![Footer](https://capsule-render.vercel.app/api?type=waving&height=150&color=0:000000,100:000000&section=footer&animation=twinkling&fontColor=00FF41)
 
 <!-- VISITOR COUNTER -->
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FMatheusAgueda&count_bg=%2300FF41&title_bg=%23000000&icon=&icon_color=%23E7E7E7&title=PROFILE+VIEWS&edge_flat=false" alt="Visitor Count"/>
+<img src="https://visitcount.itsvg.in/api?id=MatheusAgueda&label=Profile%20Views&color=00FF41&icon=5&pretty=true" alt="Visitor Count"/>
 
 </div>
