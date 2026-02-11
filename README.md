@@ -226,8 +226,7 @@ Status: 🟢 AUTOMATING EVERYTHING
 <img width="49%" src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&hide_border=true&bg_color=000000&title_color=00FF41&icon_color=00FF41&text_color=FFFFFF&ring_color=00FF41&fire_color=FFFFFF&include_all_commits=true&count_private=true&border_color=00FF41" />
 <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=MatheusAgueda&theme=radical&hide_border=true&background=000000&ring=00FF41&fire=00FF41&currStreakLabel=FFFFFF&sideNums=00FF41&dates=FFFFFF&border=00FF41" />
 
-<!-- LANGUAGE STATS -->
-<img width="60%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatheusAgueda&layout=compact&theme=radical&hide_border=true&bg_color=000000&title_color=00FF41&text_color=FFFFFF&langs_count=10&hide=html,css&border_color=00FF41" />
+<br><br>
 
 <!-- ACTIVITY GRAPH -->
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=MatheusAgueda&bg_color=000000&color=FFFFFF&line=00FF41&point=00FF41&area=true&hide_border=false&custom_title=CONTRIBUTION%20ACTIVITY%20GRAPH&area_color=00FF41" />
