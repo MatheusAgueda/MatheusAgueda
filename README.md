@@ -140,16 +140,6 @@ Custom-built digital marketing infrastructure
 
 ---
 
-## 🐍 Contribution Graph
-
-<div align="center">
-
-![Snake animation](https://github.com/MatheusAgueda/MatheusAgueda/blob/output/github-contribution-grid-snake-dark.svg)
-
-</div>
-
----
-
 ## 💼 Green Village Mobile Homes
 
 **🏡 Europe's Largest Mobile Homes Marketplace**
