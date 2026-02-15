@@ -489,17 +489,17 @@ interface CalcEngine {
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/profile-summary-cards/profile-summary-card-output/radical/0-profile-details.svg" width="100%" alt="Profile Details"/>
+<img src="./profile-summary-card-output/radical/0-profile-details.svg" width="100%" alt="Profile Details"/>
 
 <br>
 
-<img src="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/profile-summary-cards/profile-summary-card-output/radical/1-repos-per-language.svg" width="49%" alt="Repos Per Language"/>
-<img src="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/profile-summary-cards/profile-summary-card-output/radical/2-most-commit-language.svg" width="49%" alt="Most Commit Language"/>
+<img src="./profile-summary-card-output/radical/1-repos-per-language.svg" width="49%" alt="Repos Per Language"/>
+<img src="./profile-summary-card-output/radical/2-most-commit-language.svg" width="49%" alt="Most Commit Language"/>
 
 <br>
 
-<img src="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/profile-summary-cards/profile-summary-card-output/radical/3-stats.svg" width="49%" alt="Stats"/>
-<img src="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/profile-summary-cards/profile-summary-card-output/radical/4-productive-time.svg" width="49%" alt="Productive Time"/>
+<img src="./profile-summary-card-output/radical/3-stats.svg" width="49%" alt="Stats"/>
+<img src="./profile-summary-card-output/radical/4-productive-time.svg" width="49%" alt="Productive Time"/>
 
 </div>
 
