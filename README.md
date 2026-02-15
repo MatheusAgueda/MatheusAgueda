@@ -2,16 +2,16 @@
 
 <div align="center">
 
-<!-- ANIMATED CYBERPUNK HEADER -->
-![Header](https://capsule-render.vercel.app/api?type=cyberpunk&height=340&text=MATHEUS%20AGUEDA&fontSize=75&fontAlign=50&fontAlignY=35&color=0:0d0d0d,30:1a0030,60:000d1a,100:0d0d0d&desc=%E3%80%8E%20CEO%20%E2%80%A2%20DEVELOPER%20%E2%80%A2%20AUTOMATOR%20%E3%80%8F&descSize=22&descAlign=50&descAlignY=58&animation=twinkling&fontColor=ff00ff&stroke=00ffff&strokeWidth=2&descAlignY=60)
+<!-- ANIMATED HEADER -->
+<img src="https://capsule-render.vercel.app/api?type=venom&height=300&text=MATHEUS%20AGUEDA&fontSize=70&fontAlign=50&fontAlignY=40&color=0:0d0d0d,30:1a0030,60:000d1a,100:0d0d0d&desc=%E3%80%8E%20CEO%20%E2%80%A2%20DEVELOPER%20%E2%80%A2%20AUTOMATOR%20%E3%80%8F&descSize=20&descAlign=50&descAlignY=65&fontColor=ff00ff&stroke=00ffff&strokeWidth=2" width="100%" alt="Header"/>
 
 <!-- KANJI DECORATION -->
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=18&duration=1500&pause=500&color=FF00FF&center=true&vCenter=true&repeat=true&width=900&height=35&lines=%E2%96%88%E2%96%93%E2%96%92%E2%96%91+%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%E5%B8%9D%E5%9B%BD+%7C+DIGITAL+EMPIRE+%7C+%E6%95%B0%E5%AD%97%E5%B8%9D%E5%9B%BD+%E2%96%91%E2%96%92%E2%96%93%E2%96%88" alt="Kanji Bar" />
 
 <br>
 
-<!-- NEON TYPING MULTI-LINE -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=30&duration=2000&pause=800&color=00FFFF&center=true&vCenter=true&multiline=true&repeat=true&width=850&height=100&lines=%F0%9F%8F%97%EF%B8%8F+Web+Scraping+70%2B+Sites+%7C+Cloud+Phones;%F0%9F%A4%96+20+GeeLark+Phones+%7C+24%2F7+Automation;%F0%9F%8C%8D+7+Stores+%7C+3+Countries+%7C+3000%2B+Models;%E2%9A%A1+CEO+Who+Codes+%7C+Zero+Outsourcing" alt="Typing SVG" />
+<!-- NEON TYPING CYCLING -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=2500&pause=1000&color=00FFFF&center=true&vCenter=true&repeat=true&width=750&height=45&lines=Web+Scraping+70%2B+Sites+%7C+Cloud+Phones;20+GeeLark+Phones+%7C+24%2F7+Automation;7+Stores+%7C+3+Countries+%7C+3000%2B+Models;CEO+Who+Codes+%7C+Zero+Outsourcing" alt="Typing SVG" />
 
 <br>
 
