@@ -12,7 +12,7 @@
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=2500&pause=1000&color=00D4FF&center=true&vCenter=true&repeat=true&width=700&height=40&lines=20+Cloud+Phones+%C3%97+3+Platforms+%C3%97+24%2F7;Web+Scraping+70%2B+Sites+%7C+Thousands+Daily;7+Stores+%7C+3+Countries+%7C+3000%2B+Models;CEO+Who+Codes+%7C+Zero+Outsourcing" alt="Typing" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=26&duration=2500&pause=1000&color=00D4FF&center=true&vCenter=true&repeat=true&width=700&height=40&lines=20+Cloud+Phones+%C3%97+3+Platforms+%C3%97+24%2F7;Audit+P0%3D0+P1%3D0+P2%3D0+%E2%80%94+11+Agents+Clean;GeeLark+Platform+v4+%7C+Next.js+%2B+FastAPI+%2B+Postgres;CEO+Who+Codes+%7C+Zero+Outsourcing" alt="Typing" />
 
 <br>
 
@@ -43,10 +43,6 @@
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                    $ ./system_init.sh                   -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
 ## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> `$ ./system_init.sh`
 
 <img align="right" alt="Coding" width="360" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif">
@@ -63,594 +59,180 @@ MATHEUS_AGUEDA=(
   [company]="Green Village Mobile Homes"
   [hq]="Pombal, Portugal"
   [stores]=7
-  [countries]="PT ES BR"
+  [countries]="PT ES BR + EU expansion"
   [cloud_phones]=20
-  [daily_scrapes]="70+ sites"
+  [platforms]="TikTok + Instagram + Facebook"
+  [audit_status]="P0=0 P1=0 P2=0 ✅"
   [uptime]="24/7/365"
 )
 
-# Running processes:
+# Running processes (Feb 2026):
 #  PID  PRI   SERVICE
-#  001  CRIT  geelark-orchestrator   ← 20 phones
-#  002  CRIT  web-scraper-engine     ← 70+ sites
-#  003  HIGH  tiktok-auto-daemon     ← 24h likes
-#  004  HIGH  instagram-warmup-svc   ← stories
-#  005  HIGH  facebook-dm-outreach   ← auto-msg
-#  006  NORM  3d-showroom-renderer   ← Three.js
-#  007  NORM  import-calculator-api  ← 13 countries
-
-echo "All systems operational. 무중단 운영중."
-#                              ↑ (non-stop)
+#  001  CRIT  geelark-orchestrator   ← 20 phones · 11 audit agents
+#  002  CRIT  engagement-24h         ← warmup cycles · 20min/35min
+#  003  HIGH  tiktok-auto-daemon     ← browse video · all phones
+#  004  HIGH  instagram-warmup-svc   ← random like · 60% rate
+#  005  HIGH  facebook-dm-outreach   ← 5 DM variants · marketplace
+#  006  HIGH  geelark-dashboard-v4   ← Next.js 14 · port 3002
+#  007  HIGH  fastapi-backend        ← 90+ routes · port 8001
+#  008  NORM  postgres-geelark       ← 53 tables · 24 migrations
+#  009  NORM  prometheus-metrics     ← /metrics port 9091
 ```
 
-<br clear="both">
+<br clear="right"/>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                  SYSTEM ARCHITECTURE                    -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-## 🏗️ `// SYSTEM_ARCHITECTURE.exe`
+## ⚡ `GeeLark Automation Platform v4` — Flagship Project
 
 <div align="center">
 
-```
-┌───────────────────────────────────────────────────────────────────────┐
-│                     PRODUCTION INFRASTRUCTURE                         │
-│                     ─────────────────────────                         │
-│                                                                       │
-│   ┌───────────┐     ┌────────────┐     ┌─────────────────────────┐   │
-│   │  CLIENTS  │     │  CDN/EDGE  │     │    CLOUD SERVICES       │   │
-│   │           │     │            │     │                         │   │
-│   │  Web App  ├────►│  Vercel    ├────►│  Hetzner  (Scraper)    │   │
-│   │  iOS App  │     │  CF Pages  │     │  GeeLark  (20 Phones)  │   │
-│   │  Android  │     │            │     │  Oxylabs  (20 Proxies) │   │
-│   └───────────┘     └────────────┘     └────────────┬────────────┘   │
-│                                                      │                │
-│   ┌──────────────────────────────────────────────────┼────────────┐  │
-│   │                   BACKEND LAYER                   │            │  │
-│   │                                                   ▼            │  │
-│   │   ┌───────────┐   ┌────────────┐   ┌─────────────────────┐  │  │
-│   │   │  Fastify  │   │ Puppeteer  │   │  GeeLark Open API   │  │  │
-│   │   │  REST API │   │ Playwright │   │                     │  │  │
-│   │   │  :3001    │   │ Scraping   │   │  POST /phone/*      │  │  │
-│   │   │           │   │ Engine     │   │  POST /proxy/*      │  │  │
-│   │   └─────┬─────┘   └─────┬──────┘   │  POST /task/*       │  │  │
-│   │         │               │          │  POST /app/*        │  │  │
-│   │         ▼               ▼          └─────────────────────┘  │  │
-│   │   ┌────────────────────────────┐                             │  │
-│   │   │    PostgreSQL / Storage    │                             │  │
-│   │   │    Thousands of listings   │                             │  │
-│   │   └────────────────────────────┘                             │  │
-│   └──────────────────────────────────────────────────────────────┘  │
-│                                                                       │
-│   ┌──────────────────────────────────────────────────────────────┐  │
-│   │                  AUTOMATION LAYER                              │  │
-│   │                                                                │  │
-│   │   ┌────────┐   ┌──────────┐   ┌──────────┐   ┌────────────┐ │  │
-│   │   │TikTok  │   │Instagram │   │ Facebook │   │Custom Flow │ │  │
-│   │   │Like 24h│   │ Warmup   │   │ DM       │   │Engine      │ │  │
-│   │   │30% prob│   │ Stories  │   │ Outreach │   │.gal/.json  │ │  │
-│   │   └────────┘   └──────────┘   └──────────┘   └────────────┘ │  │
-│   │                                                                │  │
-│   │   openApp → waitEle → ifElse → forTimes → scroll → log       │  │
-│   └──────────────────────────────────────────────────────────────┘  │
-│                                                                       │
-│   ┌──────────────────────────────────────────────────────────────┐  │
-│   │                  AI / INTELLIGENCE LAYER                       │  │
-│   │                                                                │  │
-│   │   Claude AI ──► Code Gen ────► Custom Flow Builder             │  │
-│   │   Claude AI ──► 3D NPCs ────► Virtual Showroom                 │  │
-│   │   Claude AI ──► Analysis ───► Market Intelligence              │  │
-│   └──────────────────────────────────────────────────────────────┘  │
-└───────────────────────────────────────────────────────────────────────┘
-```
+> **20 Android cloud phones** running TikTok + Instagram + Facebook automations **24/7**  
+> Built from scratch: SDK → Backend → Dashboard → Audit System → CI/CD
 
 </div>
 
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                   PRODUCTION SYSTEMS                    -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-## ⚡ `// PRODUCTION_SYSTEMS.exe`
-
-<div align="center">
-
-<table>
-<tr>
-<td width="50%">
-
-### 🤖 GeeLark Cloud Phones
-```typescript
-// geelark-orchestrator.ts
-
-interface PhoneCluster {
-  phones: 20;
-  os: "Android 15";
-  proxy: "Oxylabs US Residential";
-  proxyMode: "1:1 dedicated";
-  apps: [
-    "TikTok v43.1.4",
-    "Instagram",
-    "Facebook"
-  ];
-  automation: "Custom Flow (.gal/.json)";
-  api: "REST POST + Bearer + UUID";
-  rateLimit: "200 req/min";
-  uptime: "24/7";
-}
-
-type TaskType = "warmup" | "video" | "image";
-
-type FlowNode =
-  | "openApp" | "click" | "clickXY"
-  | "inputContent" | "keyOption"
-  | "waitTime" | "waitEle"
-  | "ifElse" | "forTimes" | "breakLoop"
-  | "scroll" | "screenshotPage"
-  | "pageBack" | "log";
 ```
-
-</td>
-<td width="50%">
-
-### 🕷️ Web Scraping Engine
-```typescript
-// scraper-engine.ts
-
-interface ScraperConfig {
-  targets: "70+ European sites";
-  runtime: "Hetzner Cloud VPS";
-  stack: "Next.js + TypeScript";
-  browsers: ["Puppeteer", "Playwright"];
-  db: "PostgreSQL";
-  output: "Thousands/day";
-  antiDetect: true;
-  proxyRotation: true;
-}
-
-type Pipeline =
-  | "crawl"       // Fetch pages
-  | "parse"       // Extract data
-  | "normalize"   // Standardize
-  | "dedupe"      // Remove dupes
-  | "enrich"      // Computed fields
-  | "store"       // PostgreSQL
-  | "index"       // Search index
-  | "serve";      // REST → frontends
-```
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🏠 3D Virtual Showroom
-```typescript
-// virtual-showroom.ts
-
-interface ShowroomEngine {
-  renderer: "Three.js (WebGL)";
-  framework: "React + TypeScript";
-  features: [
-    "Walk-through 3D homes",
-    "AI NPC sales agents",
-    "Real-time lighting",
-    "Interactive placement",
-    "Multi-camera views"
-  ];
-  ai: {
-    engine: "Claude AI";
-    role: "Sales assistant";
-    catalog: "3000+ models";
-    langs: ["PT","ES","EN","FR"];
-  };
-}
-```
-
-</td>
-<td width="50%">
-
-### 💰 Import Calculator
-```typescript
-// import-calculator.ts
-
-interface CalcEngine {
-  type: "PWA";
-  stack: "Vanilla JS + Tailwind";
-  countries: 13;
-  calculations: [
-    "IVA / VAT per country",
-    "ICMS (Brazil)",
-    "Import duties",
-    "Transport estimation",
-    "Currency conversion",
-    "Total landed cost"
-  ];
-  rates: "Live exchange";
-  offline: true;
-  repo: "MatheusAgueda/calculadora";
-}
-```
-
-</td>
-</tr>
-</table>
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                   GEELARK DEEP DIVE                     -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-## 🔮 `// GEELARK_INFRASTRUCTURE.exe`
-
-<div align="center">
-
-```
-                  ┌───────────────────────────────────────┐
-                  │        GEELARK CONTROL PLANE           │
-                  │                                        │
-                  │  API: POST openapi.geelark.com/open/v1 │
-                  │  Auth: Bearer + traceId (UUID v4)      │
-                  │  Rate: 200/min · 24k/hour              │
-                  └─────────────────┬─────────────────────┘
-                                    │
-                  ┌─────────────────┼─────────────────────┐
-                  │                 │                       │
-            ┌─────▼─────┐   ┌──────▼──────┐   ┌──────────▼─────┐
-            │   PHONE   │   │    PROXY    │   │     TASK       │
-            │  MANAGER  │   │   MANAGER   │   │   SCHEDULER    │
-            │           │   │             │   │                │
-            │ /phone/*  │   │ /proxy/*    │   │ /task/add      │
-            │ 20 active │   │ 20 Oxylabs  │   │ /task/detail   │
-            │ A15 each  │   │ 1:1 mapped  │   │ warmup/video   │
-            └─────┬─────┘   └──────┬──────┘   └───────┬────────┘
-                  │                │                    │
-       ┌──────────┼────────────────┼────────────────────┼─────┐
-       │          ▼                ▼                    ▼     │
-       │  ┌────────────────────────────────────────────────┐  │
-       │  │           20 CLOUD PHONES (Android 15)          │  │
-       │  │                                                 │  │
-       │  │  GV GREECE ── GV SUICA ─── GV CROACIA          │  │
-       │  │  GV HUNGRIA ─ GV ALEMANHA  GV AUSTRALIA         │  │
-       │  │  GV BELGICA ─ GV BRASIL ── GV HOLANDA          │  │
-       │  │  GV FRANCA ── GV MEXICO ── GV USA              │  │
-       │  │  GV ITALIA ── GV POLONIA ─ GV UCRANIA          │  │
-       │  │  GV MADEIRA ─ GV BULGARIA  #46 · #47 · #48     │  │
-       │  │                                                 │  │
-       │  │  Per phone:                                     │  │
-       │  │   ├─ TikTok v43.1.4  → Random Like 24h         │  │
-       │  │   ├─ Instagram       → Warmup + Stories         │  │
-       │  │   ├─ Facebook        → DM Outreach              │  │
-       │  │   └─ Proxy           → Oxylabs -sessid-gvXX    │  │
-       │  └─────────────────────────────────────────────────┘  │
-       │                                                        │
-       │  ┌─────────────────────────────────────────────────┐  │
-       │  │            CUSTOM FLOW ENGINE                    │  │
-       │  │                                                  │  │
-       │  │  openApp ──── Launch by packageName              │  │
-       │  │  click ────── Element (desc/text/id/class)       │  │
-       │  │  clickXY ──── Coordinate + randomDistance        │  │
-       │  │  inputContent  Array of strings → EditText       │  │
-       │  │  keyOption ─── keyType: "enter" | "back"         │  │
-       │  │  waitTime ──── Fixed | randomInterval            │  │
-       │  │  waitEle ───── Wait + capture → variable         │  │
-       │  │  ifElse ────── exist | probability               │  │
-       │  │  forTimes ──── Loop N iterations                 │  │
-       │  │  scroll ────── direction + distance + speed      │  │
-       │  │  screenshot ── Capture screen                    │  │
-       │  │  pageBack ──── Android back                      │  │
-       │  │  log ───────── Output message                    │  │
-       │  │                                                  │  │
-       │  │  errorType: "skip" → fault-tolerant execution    │  │
-       │  └──────────────────────────────────────────────────┘  │
-       └────────────────────────────────────────────────────────┘
-
 ┌─────────────────────────────────────────────────────────────────┐
-│                    OXYLABS PROXY MESH                            │
-│                                                                  │
-│  Server: pr.oxylabs.io:7777     Auth: cc-US-sessid-gvXX        │
-│                                                                  │
-│  ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐ ┌──────┐      ┌──────┐  │
-│  │ gv01 │ │ gv02 │ │ gv03 │ │ gv04 │ │ gv05 │ ···  │ gv20 │  │
-│  └──┬───┘ └──┬───┘ └──┬───┘ └──┬───┘ └──┬───┘      └──┬───┘  │
-│     └────────┴────────┴────────┴────────┴──────────────┘       │
-│                    US RESIDENTIAL IP POOL                        │
-│         Sticky sessions · 1:1 isolation · Anti-fingerprint      │
+│                  GEELARK PLATFORM ARCHITECTURE                  │
+├──────────────┬──────────────────┬──────────────────────────────┤
+│   DASHBOARD  │    BACKEND       │       AUTOMATION             │
+│  Next.js 14  │  FastAPI Python  │     GeeLark API              │
+│  Port 3002   │  Port 8001       │   20 Cloud Phones            │
+│  TypeScript  │  90+ routes      │   Android 15 · US Proxy      │
+│  Tailwind    │  PostgreSQL      │   TikTok · IG · Facebook     │
+├──────────────┴──────────────────┴──────────────────────────────┤
+│                       AUDIT SYSTEM                              │
+│  11 agents · ThreadPoolExecutor · ~9s full scan                 │
+│  security · reliability · integrations · jobs · data · qa      │
+│  performance · infra · docs · phone_health · proxy_validation  │
+│                                                                 │
+│  Last run: P0=0 ✅  P1=0 ✅  P2=0 ✅  (Run 038AFB16)          │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-<table>
-<tr>
-<td align="center" width="16%"><h2>📱</h2><strong>20</strong><br><sub>Phones</sub></td>
-<td align="center" width="16%"><h2>🌍</h2><strong>20</strong><br><sub>Countries</sub></td>
-<td align="center" width="16%"><h2>🔌</h2><strong>20</strong><br><sub>Proxies</sub></td>
-<td align="center" width="16%"><h2>⚡</h2><strong>24/7</strong><br><sub>Non-Stop</sub></td>
-<td align="center" width="16%"><h2>📊</h2><strong>3</strong><br><sub>Platforms</sub></td>
-<td align="center" width="16%"><h2>🔄</h2><strong>60</strong><br><sub>Flows</sub></td>
-</tr>
-</table>
+**Stack completo:**
 
-</div>
+| Layer | Tech |
+|-------|------|
+| Dashboard | Next.js 14 · TypeScript strict · Tailwind CSS |
+| Backend | FastAPI · Python 3.14 · Pydantic v2 |
+| Database | PostgreSQL · 53 tables · 24 migrations |
+| Automation | GeeLark API · Custom Flows JSON · Python scripts |
+| Monitoring | Prometheus · Grafana · Portainer |
+| AI | Claude Code (Anthropic) · 25 custom skills |
+| Proxies | Oxylabs residential · 20 US sticky sessions |
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                     TECH ARSENAL                        -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-## 🛠️ `// TECH_ARSENAL.exe`
+## 🛠️ `$ cat /proc/tech_stack`
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=js,ts,python,react,nextjs,nodejs,threejs,tailwind,postgres,docker,git,vscode,figma,linux,bash&theme=dark&perline=8" />
+**Languages**
 
-<br><br>
+![Python](https://img.shields.io/badge/Python-FF2D95?style=for-the-badge&logo=python&logoColor=white&labelColor=0a0a0a)
+![TypeScript](https://img.shields.io/badge/TypeScript-00D4FF?style=for-the-badge&logo=typescript&logoColor=white&labelColor=0a0a0a)
+![JavaScript](https://img.shields.io/badge/JavaScript-BD00FF?style=for-the-badge&logo=javascript&logoColor=white&labelColor=0a0a0a)
+![SQL](https://img.shields.io/badge/SQL-FF2D95?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0a0a0a)
+![Bash](https://img.shields.io/badge/Bash-00D4FF?style=for-the-badge&logo=gnubash&logoColor=white&labelColor=0a0a0a)
 
-<table>
-<tr>
-<td valign="top" width="25%">
+**Frameworks & Tools**
 
-#### ⚡ Frontend
-![JavaScript](https://img.shields.io/badge/JavaScript-FF2D95?style=flat-square&logo=javascript&logoColor=white&labelColor=0a0a0a)
-![TypeScript](https://img.shields.io/badge/TypeScript-00D4FF?style=flat-square&logo=typescript&logoColor=white&labelColor=0a0a0a)
-![React](https://img.shields.io/badge/React-BD00FF?style=flat-square&logo=react&logoColor=white&labelColor=0a0a0a)
-![Next.js](https://img.shields.io/badge/Next.js-FF2D95?style=flat-square&logo=next.js&logoColor=white&labelColor=0a0a0a)
-![Three.js](https://img.shields.io/badge/Three.js-00D4FF?style=flat-square&logo=three.js&logoColor=white&labelColor=0a0a0a)
-![Tailwind](https://img.shields.io/badge/Tailwind-BD00FF?style=flat-square&logo=tailwind-css&logoColor=white&labelColor=0a0a0a)
-
-</td>
-<td valign="top" width="25%">
-
-#### 🔧 Backend
-![Node.js](https://img.shields.io/badge/Node.js-FF2D95?style=flat-square&logo=node.js&logoColor=white&labelColor=0a0a0a)
-![Fastify](https://img.shields.io/badge/Fastify-00D4FF?style=flat-square&logo=fastify&logoColor=white&labelColor=0a0a0a)
-![Python](https://img.shields.io/badge/Python-BD00FF?style=flat-square&logo=python&logoColor=white&labelColor=0a0a0a)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-FF2D95?style=flat-square&logo=postgresql&logoColor=white&labelColor=0a0a0a)
-![Puppeteer](https://img.shields.io/badge/Puppeteer-00D4FF?style=flat-square&logo=puppeteer&logoColor=white&labelColor=0a0a0a)
-![Playwright](https://img.shields.io/badge/Playwright-BD00FF?style=flat-square&logo=playwright&logoColor=white&labelColor=0a0a0a)
-
-</td>
-<td valign="top" width="25%">
-
-#### 🤖 AI & Automation
-![Claude AI](https://img.shields.io/badge/Claude_AI-FF2D95?style=flat-square&logo=anthropic&logoColor=white&labelColor=0a0a0a)
-![GeeLark](https://img.shields.io/badge/GeeLark-00D4FF?style=flat-square&logo=android&logoColor=white&labelColor=0a0a0a)
-![Oxylabs](https://img.shields.io/badge/Oxylabs-BD00FF?style=flat-square&logo=tor-browser&logoColor=white&labelColor=0a0a0a)
-![Flows](https://img.shields.io/badge/Custom_Flows-FF2D95?style=flat-square&logo=json&logoColor=white&labelColor=0a0a0a)
-![Make](https://img.shields.io/badge/Make.com-00D4FF?style=flat-square&logo=integromat&logoColor=white&labelColor=0a0a0a)
-
-</td>
-<td valign="top" width="25%">
-
-#### ☁️ Cloud & DevOps
-![Hetzner](https://img.shields.io/badge/Hetzner-FF2D95?style=flat-square&logo=hetzner&logoColor=white&labelColor=0a0a0a)
-![Vercel](https://img.shields.io/badge/Vercel-00D4FF?style=flat-square&logo=vercel&logoColor=white&labelColor=0a0a0a)
-![Docker](https://img.shields.io/badge/Docker-BD00FF?style=flat-square&logo=docker&logoColor=white&labelColor=0a0a0a)
-![Actions](https://img.shields.io/badge/GH_Actions-FF2D95?style=flat-square&logo=githubactions&logoColor=white&labelColor=0a0a0a)
-![Git](https://img.shields.io/badge/Git-00D4FF?style=flat-square&logo=git&logoColor=white&labelColor=0a0a0a)
-
-</td>
-</tr>
-</table>
+![Next.js](https://img.shields.io/badge/Next.js_14-FF2D95?style=for-the-badge&logo=next.js&logoColor=white&labelColor=0a0a0a)
+![FastAPI](https://img.shields.io/badge/FastAPI-00D4FF?style=for-the-badge&logo=fastapi&logoColor=white&labelColor=0a0a0a)
+![React](https://img.shields.io/badge/React-BD00FF?style=for-the-badge&logo=react&logoColor=white&labelColor=0a0a0a)
+![Tailwind](https://img.shields.io/badge/Tailwind-FF2D95?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=0a0a0a)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-00D4FF?style=for-the-badge&logo=postgresql&logoColor=white&labelColor=0a0a0a)
+![Docker](https://img.shields.io/badge/Docker-BD00FF?style=for-the-badge&logo=docker&logoColor=white&labelColor=0a0a0a)
+![Prometheus](https://img.shields.io/badge/Prometheus-FF2D95?style=for-the-badge&logo=prometheus&logoColor=white&labelColor=0a0a0a)
 
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                    GITHUB ANALYTICS                     -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-## 📊 `// GITHUB_ANALYTICS.exe`
+## 📊 `$ git log --stats`
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=MatheusAgueda&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=5&margin-h=5" width="100%" alt="Trophies"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&include_all_commits=true&count_private=true&bg_color=0a0a0a&title_color=FF2D95&icon_color=00D4FF&text_color=ffffff&border_color=BD00FF"/>
 
-<br>
-
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&hide_border=true&bg_color=0a0a0a&title_color=FF2D95&icon_color=00D4FF&text_color=FFFFFF&ring_color=BD00FF&include_all_commits=true&count_private=true" />
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=MatheusAgueda&hide_border=true&background=0a0a0a&ring=FF2D95&fire=00D4FF&currStreakLabel=FF2D95&sideNums=00D4FF&dates=FFFFFF&currStreakNum=BD00FF&sideLabels=BD00FF" />
-
-<br><br>
-
-<img width="40%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatheusAgueda&layout=compact&hide_border=true&bg_color=0a0a0a&title_color=FF2D95&text_color=FFFFFF&langs_count=8" />
-
-<br><br>
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=MatheusAgueda&bg_color=0a0a0a&color=FF2D95&line=00D4FF&point=BD00FF&area=true&hide_border=true&custom_title=CONTRIBUTION+ACTIVITY&area_color=1a0025" />
-
-<!-- 3D CONTRIBUTION (auto-generated by workflow) -->
-<img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D Contrib"/>
-
-<!-- SNAKE (auto-generated by workflow) -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/output/github-snake.svg" />
-  <img alt="Snake" src="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/output/github-snake-dark.svg" />
-</picture>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatheusAgueda&layout=compact&langs_count=8&theme=radical&bg_color=0a0a0a&title_color=FF2D95&text_color=ffffff&border_color=BD00FF"/>
 
 </div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                   ADVANCED METRICS                      -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-## 🔬 `// ADVANCED_METRICS.exe` — AUTO-GENERATED
 
 <div align="center">
 
-<img src="./profile-summary-card-output/radical/0-profile-details.svg" width="100%" alt="Profile Details"/>
-
-<br>
-
-<img src="./profile-summary-card-output/radical/1-repos-per-language.svg" width="49%" alt="Repos Per Language"/>
-<img src="./profile-summary-card-output/radical/2-most-commit-language.svg" width="49%" alt="Most Commit Language"/>
-
-<br>
-
-<img src="./profile-summary-card-output/radical/3-stats.svg" width="49%" alt="Stats"/>
-<img src="./profile-summary-card-output/radical/4-productive-time.svg" width="49%" alt="Productive Time"/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=MatheusAgueda&theme=radical&background=0a0a0a&border=BD00FF&stroke=FF2D95&ring=00D4FF&fire=FF2D95&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00D4FF&sideLabels=BD00FF&dates=ffffff" alt="Streak"/>
 
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                    GREEN VILLAGE                         -->
-<!-- ═══════════════════════════════════════════════════════ -->
+## 🚀 `$ ls -la ~/projects/`
 
-## 🏡 `// GREEN_VILLAGE.exe`
+```
+drwxr-xr-x  GeelarkXvscode/         ← 🔥 FLAGSHIP — Social media automation platform
+                                         20 phones · 11-agent audit · P0=0 P1=0 P2=0
+                                         Next.js 14 · FastAPI · PostgreSQL · 25 Claude skills
+
+drwxr-xr-x  green-village-calculadora/  ← Import calculator · 13 EU countries
+                                              React · Tailwind · real-time pricing
+
+drwxr-xr-x  calculadoraoficial/         ← Global import calculator
+                                              Multi-currency · VAT/duties/taxes
+
+drwxr-xr-x  calculadoragreenvillagemh/  ← Mobile homes import calculator
+                                              Portugal · Spain · Brazil
+```
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+## 🏆 `$ cat ~/achievements/2026.log`
+
+```
+[2026-02-23] ✅ GeeLark Platform v4 — audit 100% clean (P0=0 P1=0 P2=0)
+[2026-02-23] ✅ 11-agent audit system (phone_health + proxy_validation added)
+[2026-02-23] ✅ PostgreSQL v017 tables created (leaders/regions/workers)
+[2026-02-23] ✅ Dashboard v4 — 9 pages, auto-refresh, 20/20 phones live
+[2026-02-22] ✅ 25 Claude Code skills — session-start, before-commit, phones-deep
+[2026-02-22] ✅ PostgreSQL migration fixed — preflight receipts + HMAC
+[2026-02-14] ✅ 20 phones online — monthly plan · US proxy · Android 15
+[2026-02-13] ✅ All 20 phones with TikTok v43.1.4 + Instagram + Facebook
+[2026-02-01] ✅ GeeLark Pro plan — 20 slots, $208.40/mês
+```
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+## 💼 `$ whois greenvillagemobilehomes.com`
 
 <div align="center">
 
 ```
-┌───────────────────────────────────────────────────────────────┐
-│                                                                │
-│   GREEN VILLAGE MOBILE HOMES                                   │
-│   Europe's Leading Mobile Home Marketplace                     │
-│                                                                │
-│   From 8,400 EUR  ·  7 Stores  ·  +3,000 Models              │
-│   PT · ES · BR    ·  Free Delivery  ·  iOS & Android          │
-│                                                                │
-│   ┌───────────────────────────────────────────────────┐       │
-│   │  STORE NETWORK                                     │       │
-│   │                                                    │       │
-│   │  PT  Grande Porto ──── Praceta Parque Nascente 35  │       │
-│   │  PT  Pombal (HQ) ───── Vermoil, Pombal             │       │
-│   │  PT  Algarve ────────── Nacional 125                │       │
-│   │  PT  Lisboa ─────────── Fernao Ferro                │       │
-│   │  PT  Acores ─────────── Rua das Covas N67           │       │
-│   │  ES  Vigo ───────────── Carr. Madrid 183            │       │
-│   │  BR  Chacara ────────── Rua Socrates Fernandes N35  │       │
-│   └───────────────────────────────────────────────────┘       │
-└───────────────────────────────────────────────────────────────┘
+domain:       greenvillagemobilehomes.com
+owner:        Matheus Agueda
+business:     Mobile Homes Premium — Europe
+stores:       7 active locations
+markets:      Portugal · Spain · Brazil + EU expansion
+automation:   20 cloud phones running 24/7
+              TikTok + Instagram + Facebook
+              Warmup → Engagement → DM Outreach
 ```
-
-<table>
-<tr>
-<td align="center" width="25%"><h2>🏡</h2><strong>Private</strong><br><sub>Custom homes</sub></td>
-<td align="center" width="25%"><h2>🏢</h2><strong>Corporate</strong><br><sub>Temp housing</sub></td>
-<td align="center" width="25%"><h2>⛺</h2><strong>Tourism</strong><br><sub>Glamping parks</sub></td>
-<td align="center" width="25%"><h2>🏙️</h2><strong>Projects</strong><br><sub>Developments</sub></td>
-</tr>
-</table>
 
 <p>
-  <a href="https://www.greenvillagemobilehomes.com"><img src="https://img.shields.io/badge/WEBSITE-FF2D95?style=for-the-badge&labelColor=0a0a0a"/></a>
-  <a href="https://apps.apple.com/app/green-village-mobile-homes"><img src="https://img.shields.io/badge/iOS_APP-00D4FF?style=for-the-badge&labelColor=0a0a0a"/></a>
-  <a href="https://play.google.com/store/apps/details?id=com.greenvillage"><img src="https://img.shields.io/badge/ANDROID-BD00FF?style=for-the-badge&labelColor=0a0a0a"/></a>
+  <a href="https://www.greenvillagemobilehomes.com">
+    <img src="https://img.shields.io/badge/🏠_Green_Village_Mobile_Homes-Visit_Website-FF2D95?style=for-the-badge&labelColor=0a0a0a" alt="Website"/>
+  </a>
 </p>
 
 </div>
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                    2026 ROADMAP                          -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-## 🎮 `// ROADMAP_2026.exe`
-
 <div align="center">
 
-```typescript
-const ROADMAP_2026 = {
-  Q1: {
-    "GeeLark":   "Scale 20 → 50 phones",
-    "Scraper":   "Add 30 more EU sites",
-    "TikTok":    "24/7 engagement + DM funnels",
-  },
-  Q2: {
-    "AI Agents": "Claude auto-responses",
-    "WhatsApp":  "Automated support",
-    "3D Room":   "VR showroom mode",
-  },
-  Q3: {
-    "Expansion": "10 new countries",
-    "Apps":      "Push notifs + analytics",
-    "Proxy":     "Multi-country rotation",
-  },
-  Q4: {
-    "Scale":     "100 phones × 3 platforms",
-    "ML":        "Predict best post times",
-    "Revenue":   "Full funnel automation",
-  },
-} as const;
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=14&duration=3000&pause=1000&color=BD00FF&center=true&vCenter=true&repeat=true&width=700&height=30&lines=Built+with+Claude+Code+%E2%80%94+Anthropic+AI+%7C+Zero+Outsourcing;20+phones+%C3%97+24%2F7+%C3%97+3+platforms+%3D+organic+growth+engine;Self-taught+CEO+%7C+Code+is+the+competitive+advantage" alt="Footer"/>
 
-type Stack2026 = {
-  mastering: ["GeeLark API", "Cloud Automation", "Custom Flows"];
-  learning:  ["Rust", "Go", "Kubernetes"];
-  exploring: ["WebGPU", "AI Agents", "Edge Computing"];
-};
-```
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                     PHILOSOPHY                           -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-## 💡 `// PHILOSOPHY.exe`
-
-<div align="center">
-
-```
-╔════════════════════════════════════════════════════════╗
-║                                                        ║
-║  「 Build it yourself. 」                               ║
-║                                                        ║
-║  The best tech is built by people who understand       ║
-║  the problem deeply. No middlemen. No agencies.        ║
-║  No outsourcing. Just clean code and results.          ║
-║                                                        ║
-║  자기 손으로 만들어라 — Build it with your own hands.    ║
-║                                                        ║
-╚════════════════════════════════════════════════════════╝
-```
-
-<table>
-<tr>
-<td align="center" width="25%"><h2>💻</h2><strong>Clean Code</strong><br><sub>Scalable</sub></td>
-<td align="center" width="25%"><h2>⚡</h2><strong>Performance</strong><br><sub>Optimized</sub></td>
-<td align="center" width="25%"><h2>🤖</h2><strong>Automation</strong><br><sub>Scale via Tech</sub></td>
-<td align="center" width="25%"><h2>🎯</h2><strong>Results</strong><br><sub>Business First</sub></td>
-</tr>
-</table>
-
-</div>
-
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
-
-<!-- ═══════════════════════════════════════════════════════ -->
-<!--                       FOOTER                             -->
-<!-- ═══════════════════════════════════════════════════════ -->
-
-<div align="center">
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=900&size=22&duration=2500&pause=1000&color=FF2D95&center=true&vCenter=true&width=700&height=70&lines=%E3%80%8C+CODE+IS+THE+MOST+EFFICIENT+WAY+TO+SCALE+%E3%80%8D;%E3%80%8C+%EC%BD%94%EB%93%9C%EB%8A%94+%EC%B5%9C%EA%B3%A0%EC%9D%98+%EB%AC%B4%EA%B8%B0%EB%8B%A4+%E3%80%8D;%E3%80%8C+20+PHONES+%C3%97+3+PLATFORMS+%C3%97+24%2F7+%E3%80%8D;%E3%80%8C+CEO+WHO+CODES+%E2%9A%A1+ZERO+OUTSOURCING+%E3%80%8D" alt="Footer" />
-
-<br>
-
-<p>
-  <a href="https://linkedin.com/in/matheus-agueda"><img src="https://img.shields.io/badge/LinkedIn-FF2D95?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0a0a"/></a>
-  <a href="https://www.greenvillagemobilehomes.com"><img src="https://img.shields.io/badge/Green_Village-00D4FF?style=for-the-badge&logo=google-chrome&logoColor=white&labelColor=0a0a0a"/></a>
-  <a href="mailto:info@greenvillagemobilehomes.com"><img src="https://img.shields.io/badge/Contact-BD00FF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a"/></a>
-</p>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:0a0a0a,25:1a0025,50:0a001a,100:0a0a0a&section=footer" width="100%" alt="Footer"/>
-
-<sub>Built with 💜 by a CEO who refuses to stop coding · Powered by Claude AI</sub>
+*Last updated: February 2026 · GeelarkXvscode commit `5d72e30`*
 
 </div>
