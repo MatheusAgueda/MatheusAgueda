@@ -213,7 +213,7 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&hide_border=true&bg_color=0a0a0a&title_color=FF2D95&icon_color=00D4FF&text_color=ffffff&ring_color=BD00FF&include_all_commits=true&count_private=true" width="49%" alt="stats"/>
+<img src="./metrics/base.svg" width="49%" alt="stats"/>
 <img src="https://streak-stats.demolab.com?user=MatheusAgueda&theme=radical&hide_border=true&background=0A0A0A&ring=FF2D95&fire=00D4FF&currStreakLabel=BD00FF&sideLabels=ffffff&dates=888888" width="49%" alt="streak"/>
 
 </div>
@@ -235,13 +235,43 @@
 <div align="center">
 
 <img src="./profile-summary-card-output/radical/3-stats.svg" width="49%" alt="stats card"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatheusAgueda&layout=donut-vertical&theme=radical&hide_border=true&bg_color=0a0a0a&title_color=FF2D95&text_color=ffffff&langs_count=10" width="49%" alt="top languages donut"/>
+<img src="./metrics/languages.svg" width="49%" alt="top languages"/>
 
 </div>
 
 <div align="center">
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=MatheusAgueda&theme=react-dark&hide_border=true&bg_color=0a0a0a&color=00D4FF&line=FF2D95&point=BD00FF&area=true&area_color=BD00FF" width="98%" alt="activity graph"/>
+
+</div>
+
+---
+
+## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="25"/> Metrics Deep Dive
+
+<div align="center">
+
+<img src="./metrics/isocalendar.svg" width="98%" alt="isocalendar"/>
+
+</div>
+
+<div align="center">
+
+<img src="./metrics/achievements.svg" width="49%" alt="achievements"/>
+<img src="./metrics/habits.svg" width="49%" alt="coding habits"/>
+
+</div>
+
+<div align="center">
+
+<img src="./metrics/lines.svg" width="49%" alt="lines of code"/>
+<img src="./metrics/stars.svg" width="49%" alt="starred repos"/>
+
+</div>
+
+<div align="center">
+
+<img src="./metrics/notable.svg" width="98%" alt="notable contributions"/>
 
 </div>
 
