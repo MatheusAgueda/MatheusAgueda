@@ -308,7 +308,7 @@ offensive = 39 CLI tools · 10 MCP servers
 > $\text{Throughput} = \sum_{i=1}^{n} \lambda_i \cdot \mu_i^{-1}, \quad n = 9 \text{ services}, \quad \lambda \sim \text{Poisson}(\bar{\lambda}=385/\text{day})$
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': { 'primaryColor': '#FF2D95', 'primaryTextColor': '#fff', 'primaryBorderColor': '#BD00FF', 'lineColor': '#00D4FF', 'secondaryColor': '#1a1a2e', 'tertiaryColor': '#16213e'}}}%%
+%%{init: {'theme': 'dark'}}%%
 
 graph TB
     CMD["COMMANDER DISPATCHER<br/><i>Routes tasks across 32 AI agents</i>"]
@@ -380,21 +380,7 @@ graph TB
     BIZ --> VC
     BIZ --> CF
 
-    classDef cmd fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
-    classDef pipeline fill:#0a1628,stroke:#00D4FF,color:#e6edf3,stroke-width:2px
-    classDef email fill:#1a0a2e,stroke:#BD00FF,color:#e6edf3,stroke-width:2px
-    classDef security fill:#2e0a1a,stroke:#FF2D95,color:#e6edf3,stroke-width:2px
-    classDef trading fill:#0a1628,stroke:#00D4FF,color:#e6edf3,stroke-width:2px
-    classDef business fill:#1a0a2e,stroke:#BD00FF,color:#e6edf3,stroke-width:2px
-    classDef infra fill:#2e0a1a,stroke:#FF2D95,color:#e6edf3,stroke-width:2px
-
-    class CMD cmd
-    class GLS,MAPS,DDG,CNPJ,VALID pipeline
-    class TURBO,R1,R2,R3 email
-    class CIA,OSINT,VULN,CRYPTO security
-    class JESSIE,RUG,MOON trading
-    class JOAO,GV,EMP business
-    class PG,RW,VC,CF,MON infra
+    style CMD fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
 ```
 
 > [!NOTE]
@@ -411,7 +397,7 @@ graph TB
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Classical%20Building.png" width="25"/> Class Hierarchy — CIA Einstein Agents
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#0a1628', 'primaryTextColor': '#00D4FF', 'primaryBorderColor': '#BD00FF', 'lineColor': '#FF2D95', 'secondaryColor': '#1a0a2e', 'tertiaryColor': '#2e0a1a', 'noteTextColor': '#cccccc', 'noteBkgColor': '#111118'}}}%%
+%%{init: {'theme': 'dark'}}%%
 classDiagram
     class BaseAgent {
         <<abstract>>
@@ -502,7 +488,7 @@ classDiagram
 > $\text{Storage} = \sum_{t \in \text{tables}} |t| \cdot \bar{w}_t, \quad |leads| = 1.93 \times 10^6, \quad \bar{w}_{lead} \approx 512\text{B}$
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#0a1628', 'primaryTextColor': '#00D4FF', 'primaryBorderColor': '#BD00FF', 'lineColor': '#FF2D95', 'secondaryColor': '#1a0a2e', 'tertiaryColor': '#2e0a1a'}}}%%
+%%{init: {'theme': 'dark'}}%%
 erDiagram
     LEADS {
         int id PK
@@ -737,7 +723,7 @@ pie showData
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Calendar.png" width="25"/> Development Timeline
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#0a1628', 'primaryTextColor': '#00D4FF', 'primaryBorderColor': '#BD00FF', 'gridColor': '#1a1a2e', 'todayLineColor': '#FF2D95', 'taskTextColor': '#e0e0e0', 'taskTextDarkColor': '#e0e0e0', 'sectionBkgColor': '#0d0d14', 'altSectionBkgColor': '#111118', 'taskBkgColor': '#0a1628', 'activeTaskBkgColor': '#1a0a2e', 'doneTaskBkgColor': '#0a2818', 'critBkgColor': '#2e0a1a'}}}%%
+%%{init: {'theme': 'dark'}}%%
 gantt
     title System Development Roadmap (2024-2026)
     dateFormat YYYY-MM-DD
@@ -788,7 +774,7 @@ gantt
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Compass.png" width="25"/> Technology Radar
 
 ```mermaid
-%%{init: {'theme': 'dark', 'themeVariables': {'quadrant1Fill': '#0a2818', 'quadrant2Fill': '#0a1628', 'quadrant3Fill': '#1a0a2e', 'quadrant4Fill': '#2e0a1a', 'quadrant1TextFill': '#00ff41', 'quadrant2TextFill': '#00D4FF', 'quadrant3TextFill': '#BD00FF', 'quadrant4TextFill': '#FF2D95', 'quadrantPointFill': '#00D4FF', 'quadrantPointTextFill': '#e0e0e0', 'quadrantXAxisTextFill': '#6a6a8a', 'quadrantYAxisTextFill': '#6a6a8a', 'quadrantTitleFill': '#00D4FF'}}}%%
+%%{init: {'theme': 'dark'}}%%
 quadrantChart
     title Technology Investment vs Maturity
     x-axis Low Maturity --> High Maturity
@@ -889,51 +875,48 @@ xychart-beta
 
 ```mermaid
 %%{init: {'theme': 'dark'}}%%
-block-beta
-    columns 5
 
-    space CMD["COMMANDER DISPATCHER"] space:3
+graph LR
+    CMD["COMMANDER<br/>DISPATCHER"]
 
-    block:DATA:2
-        columns 1
+    subgraph DATA["Data Pipeline"]
         GLS["Global Lead Scraper"]
         MAPS["Maps + DDG + CNPJ"]
         VALID["Email Validator"]
     end
 
-    block:MAIL:2
-        columns 1
+    subgraph MAIL["Email Engine"]
         TURBO["Turbo Sender"]
         RELAYS["3 DKIM Relays"]
         BOUNCE["Bounce Monitor"]
     end
 
-    space
-
-    block:SEC:2
-        columns 1
+    subgraph SEC["Security"]
         CIA["CIA Einstein"]
         OSINT["OSINT · 37 tools"]
         CRYPTO["Cryptanalysis"]
     end
 
-    block:TRADE:2
-        columns 1
+    subgraph TRADE["Trading"]
         JESSIE["Jessie Trader"]
         RUGPULL["RugPull Scanner"]
         MOON["MoonSniper"]
     end
 
-    space
-
-    PG[("PostgreSQL 16")] RW["Railway x3"] VC["Vercel x2"] CF["Cloudflare x2"] MON["Sentry + Grafana"]
+    subgraph INFRA["Infrastructure"]
+        PG[("PostgreSQL 16")]
+        RW["Railway x3"]
+        VC["Vercel x2"]
+    end
 
     CMD --> DATA
     CMD --> MAIL
     CMD --> SEC
     CMD --> TRADE
-    DATA --> PG
-    MAIL --> PG
+    DATA --> INFRA
+    MAIL --> INFRA
+
+    style CMD fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
 ```
 
 <!-- GRADIENT DIVIDER -->
@@ -2071,10 +2054,7 @@ graph TD
     CMD --> BUSINESS
     CMD --> META
 
-    classDef commander fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
-    classDef ops fill:#0a1628,stroke:#00D4FF,color:#e6edf3,stroke-width:2px
-    class CMD commander
-    class SO,SW,SR,LQ,EO,SM,RA,CD,SV,BZ,ER,CT,EP,JD,PT,RS,PF,SD,EX ops
+    style CMD fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
 ```
 
 > [!TIP]
