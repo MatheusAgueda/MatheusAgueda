@@ -747,6 +747,25 @@ function simulateSell(
 
 </div>
 
+<div align="center">
+
+<img src="./metrics/notable.svg" width="49%" alt="notable contributions"/>
+<img src="./metrics/habits.svg" width="49%" alt="coding habits"/>
+
+</div>
+
+<div align="center">
+
+<img src="./metrics/achievements.svg" width="98%" alt="achievements"/>
+
+</div>
+
+<div align="center">
+
+<img src="./metrics/code.svg" width="98%" alt="recent code snippets"/>
+
+</div>
+
 <!-- GRADIENT DIVIDER -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
 
@@ -1234,6 +1253,7 @@ Zombie Killer v2 — 5 layers running every 5 minutes via LaunchAgent
 + 8 Mermaid diagrams (7 types: flowchart, sequence, state, pie, graph, mindmap, gitgraph)
 + 1 GeoJSON interactive map with Leaflet.js rendering
 + 4 LaTeX equations (ECDSA, lattice SVP, birthday attack)
++ 11 lowlighter/metrics plugins (isocalendar, languages, activity, followup, topics, lines, base, notable, achievements, habits, code)
 + 4 GitHub Actions workflows auto-generating visuals
 + GPU-accelerated ECDSA research on Apple Silicon
 - 0 systems down
