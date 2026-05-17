@@ -177,20 +177,22 @@
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&hide_border=true&bg_color=0a0a0a&title_color=FF2D95&icon_color=00D4FF&text_color=ffffff&ring_color=BD00FF&include_all_commits=true&count_private=true" width="49%" alt="stats"/>
+<img src="./profile-summary-card-output/radical/3-stats.svg" width="49%" alt="stats"/>
 <img src="https://streak-stats.demolab.com?user=MatheusAgueda&theme=radical&hide_border=true&background=0A0A0A&ring=FF2D95&fire=00D4FF&currStreakLabel=BD00FF&sideLabels=ffffff&dates=888888" width="49%" alt="streak"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MatheusAgueda&layout=donut&theme=radical&hide_border=true&bg_color=0a0a0a&title_color=FF2D95&text_color=ffffff&langs_count=8" width="35%" alt="languages"/>
+<img src="./profile-summary-card-output/radical/1-repos-per-language.svg" width="33%" alt="repos per language"/>
+<img src="./profile-summary-card-output/radical/2-most-commit-language.svg" width="33%" alt="commit language"/>
+<img src="./profile-summary-card-output/radical/4-productive-time.svg" width="33%" alt="productive time"/>
 
 </div>
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=MatheusAgueda&theme=radical" width="98%" alt="contribution map"/>
+<img src="./profile-summary-card-output/radical/0-profile-details.svg" width="98%" alt="contribution map"/>
 
 </div>
 
@@ -203,9 +205,9 @@
 ---
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/output/snake.svg" />
-  <img alt="Snake animation" src="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/output/snake.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/output/github-snake.svg" />
+  <img alt="Snake animation" src="https://raw.githubusercontent.com/MatheusAgueda/MatheusAgueda/output/github-snake.svg" width="100%" />
 </picture>
 
 ---
