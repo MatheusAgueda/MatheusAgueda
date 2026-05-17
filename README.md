@@ -1582,7 +1582,7 @@ $$d_{\text{tree}} = \lceil \log_2(n) \rceil, \quad \text{root} = H\bigl(H(L_0 \|
 <!-- ║                         DEPTH SECTIONS                                  ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
-<details>
+<details open>
 <summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shield.png" width="18"/> <b>Security Research & Offensive Tooling</b></summary>
 <br/>
 
@@ -1605,7 +1605,7 @@ $$d_{\text{tree}} = \lceil \log_2(n) \rceil, \quad \text{root} = H\bigl(H(L_0 \|
 
 </details>
 
-<details>
+<details open>
 <summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="18"/> <b>Trading & DeFi Operations</b></summary>
 <br/>
 
@@ -1627,7 +1627,7 @@ $$d_{\text{tree}} = \lceil \log_2(n) \rceil, \quad \text{root} = H\bigl(H(L_0 \|
 
 </details>
 
-<details>
+<details open>
 <summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Incoming%20Envelope.png" width="18"/> <b>Email Delivery Infrastructure</b></summary>
 <br/>
 
@@ -1650,7 +1650,7 @@ $$d_{\text{tree}} = \lceil \log_2(n) \rceil, \quad \text{root} = H\bigl(H(L_0 \|
 
 </details>
 
-<details>
+<details open>
 <summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Floppy%20Disk.png" width="18"/> <b>Database Architecture</b></summary>
 <br/>
 
@@ -1688,7 +1688,7 @@ ORDER BY total DESC;
 
 </details>
 
-<details>
+<details open>
 <summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Globe%20Showing%20Europe-Africa.png" width="18"/> <b>Business Operations — 4 Countries</b></summary>
 <br/>
 
@@ -1705,7 +1705,7 @@ ORDER BY total DESC;
 
 </details>
 
-<details>
+<details open>
 <summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Electric%20Plug.png" width="18"/> <b>Development Environment</b></summary>
 <br/>
 
@@ -2503,9 +2503,9 @@ endsolid MatheusAgueda_Diamond_Crystal
 <div align="center">
 
 <!-- GitHub Actions Status -->
-<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/profile-3d.yml?style=flat-square&label=3D%20Contrib&labelColor=0a0a0a&color=00D4FF" alt="3D"/>
+<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/3d-contrib.yml?style=flat-square&label=3D%20Contrib&labelColor=0a0a0a&color=00D4FF" alt="3D"/>
 &nbsp;
-<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/profile-summary-cards.yml?style=flat-square&label=Summary%20Cards&labelColor=0a0a0a&color=BD00FF" alt="Summary"/>
+<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/metrics.yml?style=flat-square&label=Summary%20Cards&labelColor=0a0a0a&color=BD00FF" alt="Summary"/>
 &nbsp;
 <img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/snake.yml?style=flat-square&label=Snake&labelColor=0a0a0a&color=FF2D95" alt="Snake"/>
 &nbsp;
@@ -2513,7 +2513,7 @@ endsolid MatheusAgueda_Diamond_Crystal
 
 <br/><br/>
 
-<a href="mailto:aguedamatheus475@gmail.com"><img src="https://img.shields.io/badge/EMAIL-aguedamatheus475@gmail.com-FF2D95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a" alt="email"/></a>
+<a href="mailto:info@greenvillagemobilehomes.com"><img src="https://img.shields.io/badge/EMAIL-info@greenvillagemobilehomes.com-FF2D95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a" alt="email"/></a>
 &nbsp;
 <a href="https://www.greenvillagemobilehomes.com"><img src="https://img.shields.io/badge/GREEN_VILLAGE-Website-00D4FF?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0a0a0a" alt="website"/></a>
 &nbsp;
