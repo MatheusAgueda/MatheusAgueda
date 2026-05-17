@@ -38,43 +38,45 @@ jobs:
           config_display: large
           config_output: svg
 
-      # === ACHIEVEMENTS ===
-      - name: Achievements
+      # === ACTIVITY: Recent GitHub events timeline ===
+      - name: Activity
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics/achievements.svg
+          filename: metrics/activity.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_threshold: B
+          plugin_activity: yes
+          plugin_activity_limit: 5
+          plugin_activity_days: 14
+          plugin_activity_filter: all
           config_display: large
           config_output: svg
 
-      # === HABITS: Coding patterns ===
-      - name: Habits
+      # === FOLLOW-UP: Issues & PRs tracking ===
+      - name: Follow-up
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics/habits.svg
+          filename: metrics/followup.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_habits: yes
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
-          plugin_habits_days: 30
-          plugin_habits_from: 400
+          plugin_followup: yes
+          plugin_followup_sections: user
+          plugin_followup_indepth: yes
           config_display: large
           config_output: svg
 
-      # === STARS: Recently starred repos ===
-      - name: Stars
+      # === TOPICS: Repository topics word cloud ===
+      - name: Topics
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics/stars.svg
+          filename: metrics/topics.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          plugin_stars: yes
-          plugin_stars_limit: 4
+          plugin_topics: yes
+          plugin_topics_mode: mastered
+          plugin_topics_sort: stars
+          plugin_topics_limit: 0
+          config_display: large
           config_output: svg
 
       # === LINES: Lines of code history ===
