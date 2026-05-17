@@ -257,15 +257,15 @@
 
 <div align="center">
 
-<img src="./metrics/achievements.svg" width="49%" alt="achievements"/>
-<img src="./metrics/habits.svg" width="49%" alt="coding habits"/>
+<img src="./metrics/activity.svg" width="49%" alt="recent activity"/>
+<img src="./metrics/followup.svg" width="49%" alt="issues and PRs follow-up"/>
 
 </div>
 
 <div align="center">
 
 <img src="./metrics/lines.svg" width="49%" alt="lines of code"/>
-<img src="./metrics/stars.svg" width="49%" alt="starred repos"/>
+<img src="./metrics/topics.svg" width="49%" alt="repository topics"/>
 
 </div>
 
