@@ -1,0 +1,548 @@
+<svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" width="800" height="500" style="background:#0a0a0a;">
+  <defs>
+    <!-- Fonts -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+
+      text {
+        font-family: 'SF Mono','Fira Code','JetBrains Mono',monospace;
+      }
+
+      /* === 1. SCAN LINE === */
+      @keyframes scanline {
+        0%   { transform: translateY(-100%); opacity: 0.08; }
+        100% { transform: translateY(600px); opacity: 0.08; }
+      }
+
+      /* === 2. BORDER GLOW PULSE === */
+      @keyframes borderGlow {
+        0%,100% { filter: drop-shadow(0 0 4px #00D4FF) drop-shadow(0 0 10px #00D4FF); }
+        50%      { filter: drop-shadow(0 0 12px #FF2D95) drop-shadow(0 0 28px #FF2D95); }
+      }
+
+      /* === 3. RADAR BREATHE (current) === */
+      @keyframes breatheCurrent {
+        0%,100% { transform: scale(1);   opacity: 0.85; }
+        50%      { transform: scale(1.04); opacity: 1;    }
+      }
+
+      /* === 4. RADAR BREATHE (target) === */
+      @keyframes breatheTarget {
+        0%,100% { transform: scale(1.04); opacity: 0.65; }
+        50%      { transform: scale(0.98); opacity: 0.90; }
+      }
+
+      /* === 5. LABEL GLOW === */
+      @keyframes labelGlow {
+        0%,100% { fill: #00D4FF; filter: drop-shadow(0 0 3px #00D4FF); }
+        50%      { fill: #ffffff; filter: drop-shadow(0 0 8px #BD00FF); }
+      }
+
+      /* === 6. DOT PULSE === */
+      @keyframes dotPulse {
+        0%,100% { r: 4; opacity: 1;   filter: drop-shadow(0 0 4px #FF2D95); }
+        50%      { r: 7; opacity: 0.7; filter: drop-shadow(0 0 12px #FF2D95); }
+      }
+
+      /* === 7. GRID DASH FLOW === */
+      @keyframes dashFlow {
+        0%   { stroke-dashoffset: 0;   }
+        100% { stroke-dashoffset: -40; }
+      }
+
+      /* === 8. TITLE FLICKER === */
+      @keyframes titleFlicker {
+        0%,100% { opacity: 1;   fill: #FF2D95; filter: drop-shadow(0 0 6px #FF2D95) drop-shadow(0 0 18px #BD00FF); }
+        92%      { opacity: 1;   fill: #FF2D95; filter: drop-shadow(0 0 6px #FF2D95); }
+        93%      { opacity: 0.3; fill: #FF2D95; }
+        94%      { opacity: 1;   fill: #FF2D95; }
+        97%      { opacity: 0.5; fill: #BD00FF; }
+        98%      { opacity: 1;   fill: #FF2D95; }
+      }
+
+      /* === 9. STATUS BAR SCROLL === */
+      @keyframes statusScroll {
+        0%,100% { letter-spacing: 3px; opacity: 0.9; fill: #00ff41; filter: drop-shadow(0 0 4px #00ff41); }
+        50%      { letter-spacing: 6px; opacity: 1;   fill: #00D4FF; filter: drop-shadow(0 0 8px #00D4FF); }
+      }
+
+      /* === 10. GRID RING ROTATE === */
+      @keyframes ringRotate {
+        0%   { transform: rotate(0deg);   }
+        100% { transform: rotate(360deg); }
+      }
+
+      /* === 11. TARGET DOT PULSE === */
+      @keyframes targetDotPulse {
+        0%,100% { r: 4; opacity: 0.9;  filter: drop-shadow(0 0 4px #BD00FF); }
+        50%      { r: 6; opacity: 0.5;  filter: drop-shadow(0 0 14px #BD00FF); }
+      }
+
+      /* === 12. SUBTITLE FADE === */
+      @keyframes subtitleFade {
+        0%,100% { opacity: 0.6; }
+        50%      { opacity: 1;   }
+      }
+
+      .border-rect  { animation: borderGlow 3s ease-in-out infinite; }
+      .radar-current { transform-origin: 400px 248px; animation: breatheCurrent 4s ease-in-out infinite; }
+      .radar-target  { transform-origin: 400px 248px; animation: breatheTarget  5s ease-in-out infinite; }
+      .axis-label   { animation: labelGlow 3.5s ease-in-out infinite; }
+      .current-dot  { animation: dotPulse 2s ease-in-out infinite; }
+      .target-dot   { animation: targetDotPulse 2.5s ease-in-out infinite; }
+      .grid-hex     { animation: dashFlow 3s linear infinite; }
+      .title-text   { animation: titleFlicker 7s step-end infinite; }
+      .status-text  { animation: statusScroll 4s ease-in-out infinite; }
+      .subtitle-text { animation: subtitleFade 3s ease-in-out infinite; }
+    </style>
+
+    <!-- Glow filters -->
+    <filter id="cyanGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="pinkGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="purpleGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="greenGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="titleFilter" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Fill gradients -->
+    <linearGradient id="currentFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF2D95" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="targetFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BD00FF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#00ff41" stop-opacity="0.10"/>
+    </linearGradient>
+
+    <!-- Clip path for scan line -->
+    <clipPath id="svgClip">
+      <rect x="0" y="0" width="800" height="500"/>
+    </clipPath>
+  </defs>
+
+  <!-- ██ BACKGROUND ██ -->
+  <rect width="800" height="500" fill="#0a0a0a"/>
+
+  <!-- Subtle grid background -->
+  <g opacity="0.06">
+    <line x1="0" y1="50"  x2="800" y2="50"  stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="100" x2="800" y2="100" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="150" x2="800" y2="150" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="200" x2="800" y2="200" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="250" x2="800" y2="250" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="300" x2="800" y2="300" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="350" x2="800" y2="350" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="400" x2="800" y2="400" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="0" y1="450" x2="800" y2="450" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="500" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="200" y1="0" x2="200" y2="500" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="300" y1="0" x2="300" y2="500" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="400" y1="0" x2="400" y2="500" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="500" y1="0" x2="500" y2="500" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="500" stroke="#00D4FF" stroke-width="0.5"/>
+    <line x1="700" y1="0" x2="700" y2="500" stroke="#00D4FF" stroke-width="0.5"/>
+  </g>
+
+  <!-- ██ BORDER ██ -->
+  <rect class="border-rect" x="3" y="3" width="794" height="494" rx="4" ry="4"
+        fill="none" stroke="#00D4FF" stroke-width="1.5"/>
+  <rect x="8" y="8" width="784" height="484" rx="2" ry="2"
+        fill="none" stroke="#BD00FF" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Corner decorations -->
+  <polyline points="3,30 3,3 30,3" fill="none" stroke="#FF2D95" stroke-width="2"/>
+  <polyline points="770,3 797,3 797,30" fill="none" stroke="#FF2D95" stroke-width="2"/>
+  <polyline points="3,470 3,497 30,497" fill="none" stroke="#FF2D95" stroke-width="2"/>
+  <polyline points="770,497 797,497 797,470" fill="none" stroke="#FF2D95" stroke-width="2"/>
+
+  <!-- ██ TITLE ██ -->
+  <text class="title-text" x="400" y="38" text-anchor="middle"
+        font-size="22" font-weight="700" letter-spacing="8" fill="#FF2D95"
+        filter="url(#titleFilter)">SKILL MATRIX</text>
+  <text class="subtitle-text" x="400" y="56" text-anchor="middle"
+        font-size="9" fill="#00D4FF" letter-spacing="4" opacity="0.7">MATHEUS AGUEDA // OPERATOR PROFILE</text>
+
+  <!-- ██ RADAR CENTER: 400, 248 ██ -->
+  <!-- cx=400, cy=248, maxR=160 -->
+  <!-- 8 axes at 45° intervals: 0=top(-90°), 45°, 90°, 135°, 180°, 225°, 270°, 315° -->
+  <!-- angles in degrees from positive x-axis: -->
+  <!-- Python:0=-90° → (400,88) | Security:1=-45° → (+113,-113) | Infra:2=0° → (+160,0) -->
+  <!-- Crypto:3=45° → (+113,+113) | Trading:4=90° → (400,408) | Email:5=135° → (-113,+113) -->
+  <!-- Scraping:6=180° → (240,248) | AI/ML:7=225° → (-113,-113) ... wait let me recalc -->
+
+  <!--
+    Center: 400,248
+    maxR: 160
+    Axes (from top, clockwise 45° each):
+    0=Python:   angle=-90°  → 400, 88
+    1=Security: angle=-45°  → 400+113.1, 248-113.1 = 513,135
+    2=Infra:    angle=0°    → 560, 248
+    3=Crypto:   angle=45°   → 513, 361
+    4=Trading:  angle=90°   → 400, 408
+    5=Email:    angle=135°  → 287, 361
+    6=Scraping: angle=180°  → 240, 248
+    7=AI/ML:    angle=225°  → 287, 135
+    (225° = -135°, same as top-left)
+
+    sin/cos values (maxR=160):
+    -90°: cos=-90=0,   sin=-90=-1   → (+0,    -160)  = (400,  88)
+    -45°: cos=0.707,  sin=-0.707    → (+113,  -113)  = (513, 135)
+    0°:   cos=1,      sin=0         → (+160,   0)    = (560, 248)
+    45°:  cos=0.707,  sin=0.707     → (+113,  +113)  = (513, 361)
+    90°:  cos=0,      sin=1         → (+0,    +160)  = (400, 408)
+    135°: cos=-0.707, sin=0.707     → (-113,  +113)  = (287, 361)
+    180°: cos=-1,     sin=0         → (-160,   0)    = (240, 248)
+    225°: cos=-0.707, sin=-0.707    → (-113,  -113)  = (287, 135)
+  -->
+
+  <!-- ██ DOTTED GRID RINGS ██ -->
+  <!-- Ring 20% -->
+  <polygon class="grid-hex"
+    points="400,216 432,229 432,267 400,280 368,267 368,229"
+    fill="none" stroke="#00D4FF" stroke-width="0.7" stroke-dasharray="4,6" opacity="0.4"
+    stroke-dashoffset="0"/>
+  <!-- Ring 40% -->
+  <polygon class="grid-hex"
+    points="400,184 464,210 464,286 400,312 336,286 336,210"
+    fill="none" stroke="#00D4FF" stroke-width="0.7" stroke-dasharray="4,6" opacity="0.35"
+    stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="4s" repeatCount="indefinite"/>
+  </polygon>
+  <!-- Ring 60% -->
+  <polygon class="grid-hex"
+    points="400,152 496,191 496,305 400,344 304,305 304,191"
+    fill="none" stroke="#BD00FF" stroke-width="0.7" stroke-dasharray="4,6" opacity="0.3"
+    stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="3s" repeatCount="indefinite"/>
+  </polygon>
+  <!-- Ring 80% -->
+  <polygon class="grid-hex"
+    points="400,120 528,172 528,324 400,376 272,324 272,172"
+    fill="none" stroke="#BD00FF" stroke-width="0.7" stroke-dasharray="4,6" opacity="0.25"
+    stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="5s" repeatCount="indefinite"/>
+  </polygon>
+  <!-- Ring 100% (outer) -->
+  <polygon class="grid-hex"
+    points="400,88 560,168 560,328 400,408 240,328 240,168"
+    fill="none" stroke="#00D4FF" stroke-width="1" stroke-dasharray="4,6" opacity="0.5"
+    stroke-dashoffset="0">
+    <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="6s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- ██ AXIS LINES ██ -->
+  <g stroke="#00D4FF" stroke-width="0.7" opacity="0.4">
+    <!-- Python (up) -->
+    <line x1="400" y1="248" x2="400" y2="88"/>
+    <!-- Security (upper-right) -->
+    <line x1="400" y1="248" x2="513" y2="135"/>
+    <!-- Infra (right) -->
+    <line x1="400" y1="248" x2="560" y2="248"/>
+    <!-- Crypto (lower-right) -->
+    <line x1="400" y1="248" x2="513" y2="361"/>
+    <!-- Trading (down) -->
+    <line x1="400" y1="248" x2="400" y2="408"/>
+    <!-- Email (lower-left) -->
+    <line x1="400" y1="248" x2="287" y2="361"/>
+    <!-- Scraping (left) -->
+    <line x1="400" y1="248" x2="240" y2="248"/>
+    <!-- AI/ML (upper-left) -->
+    <line x1="400" y1="248" x2="287" y2="135"/>
+  </g>
+
+  <!--
+    Current skill values (0-1 of maxR=160):
+    Python=0.92 | Security=0.85 | Infra=0.80 | Crypto=0.75
+    Trading=0.65 | Email=0.90 | Scraping=0.88 | AI/ML=0.78
+
+    Points = center + value * direction:
+    Python(up):     400, 248-147=101
+    Security(NE):   400+108,248-108 = 508,140
+    Infra(right):   400+128,248 = 528,248
+    Crypto(SE):     400+96,248+96 = 496,344
+    Trading(down):  400,248+104=352
+    Email(SW):      400-144,248+144 = 256,392 → 256,392 but too far, let me recalc
+
+    maxR=160, directions (unit vectors):
+    Python:   (0,-1)
+    Security: (0.707,-0.707)
+    Infra:    (1,0)
+    Crypto:   (0.707,0.707)
+    Trading:  (0,1)
+    Email:    (-0.707,0.707)
+    Scraping: (-1,0)
+    AI/ML:    (-0.707,-0.707)
+
+    Current:
+    Python   0.92 * 160 = 147.2 → (400+0, 248-147) = (400,101)
+    Security 0.85 * 160 = 136   → (400+96, 248-96) = (496,152)
+    Infra    0.80 * 160 = 128   → (400+128, 248) = (528,248)
+    Crypto   0.75 * 160 = 120   → (400+85, 248+85) = (485,333)
+    Trading  0.65 * 160 = 104   → (400, 248+104) = (400,352)
+    Email    0.90 * 160 = 144   → (400-102, 248+102) = (298,350)
+    Scraping 0.88 * 160 = 141   → (400-141, 248) = (259,248)
+    AI/ML    0.78 * 160 = 124.8 → (400-88, 248-88) = (312,160)
+
+    Target:
+    Python   0.98 → 156.8 → (400,91)
+    Security 0.95 → 152   → (400+107,248-107) = (507,141)
+    Infra    0.90 → 144   → (544,248)
+    Crypto   0.88 → 140.8 → (400+100,248+100) = (500,348)
+    Trading  0.82 → 131.2 → (400,379)
+    Email    0.95 → 152   → (400-107,248+107) = (293,355)
+    Scraping 0.95 → 152   → (248,248)
+    AI/ML    0.92 → 147.2 → (400-104,248-104) = (296,144)
+  -->
+
+  <!-- ██ RADAR SHAPE: TARGET ██ -->
+  <polygon class="radar-target"
+    points="400,91 507,141 544,248 500,348 400,379 293,355 248,248 296,144"
+    fill="url(#targetFill)"
+    stroke="#BD00FF"
+    stroke-width="1.5"
+    stroke-dasharray="5,3"
+    filter="url(#purpleGlow)"
+    opacity="0.75">
+    <animate attributeName="opacity" values="0.75;0.9;0.75" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke" values="#BD00FF;#00ff41;#BD00FF" dur="8s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- ██ RADAR SHAPE: CURRENT ██ -->
+  <polygon class="radar-current"
+    points="400,101 496,152 528,248 485,333 400,352 298,350 259,248 312,160"
+    fill="url(#currentFill)"
+    stroke="#FF2D95"
+    stroke-width="2"
+    filter="url(#pinkGlow)"
+    opacity="0.85">
+    <animate attributeName="opacity" values="0.85;1;0.85" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke" values="#FF2D95;#00D4FF;#FF2D95" dur="6s" repeatCount="indefinite"/>
+  </polygon>
+
+  <!-- ██ CURRENT SKILL DOTS ██ -->
+  <!-- Python -->
+  <circle class="current-dot" cx="400" cy="101" r="5" fill="#FF2D95" filter="url(#pinkGlow)"/>
+  <!-- Security -->
+  <circle class="current-dot" cx="496" cy="152" r="5" fill="#FF2D95" filter="url(#pinkGlow)">
+    <animate attributeName="r" values="4;7;4" dur="2.3s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Infra -->
+  <circle class="current-dot" cx="528" cy="248" r="5" fill="#FF2D95" filter="url(#pinkGlow)">
+    <animate attributeName="r" values="5;7;5" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Crypto -->
+  <circle class="current-dot" cx="485" cy="333" r="5" fill="#FF2D95" filter="url(#pinkGlow)">
+    <animate attributeName="r" values="4;7;4" dur="2.6s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Trading -->
+  <circle class="current-dot" cx="400" cy="352" r="5" fill="#FF2D95" filter="url(#pinkGlow)">
+    <animate attributeName="r" values="5;8;5" dur="2.1s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Email -->
+  <circle class="current-dot" cx="298" cy="350" r="5" fill="#FF2D95" filter="url(#pinkGlow)">
+    <animate attributeName="r" values="4;7;4" dur="1.9s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Scraping -->
+  <circle class="current-dot" cx="259" cy="248" r="5" fill="#FF2D95" filter="url(#pinkGlow)">
+    <animate attributeName="r" values="5;7;5" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+  <!-- AI/ML -->
+  <circle class="current-dot" cx="312" cy="160" r="5" fill="#FF2D95" filter="url(#pinkGlow)">
+    <animate attributeName="r" values="4;7;4" dur="2.7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ██ TARGET SKILL DOTS ██ -->
+  <!-- Python -->
+  <circle class="target-dot" cx="400" cy="91" r="4" fill="#BD00FF" filter="url(#purpleGlow)"/>
+  <!-- Security -->
+  <circle class="target-dot" cx="507" cy="141" r="4" fill="#BD00FF" filter="url(#purpleGlow)">
+    <animate attributeName="r" values="3;6;3" dur="3.1s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Infra -->
+  <circle class="target-dot" cx="544" cy="248" r="4" fill="#BD00FF" filter="url(#purpleGlow)">
+    <animate attributeName="r" values="4;6;4" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Crypto -->
+  <circle class="target-dot" cx="500" cy="348" r="4" fill="#BD00FF" filter="url(#purpleGlow)">
+    <animate attributeName="r" values="3;6;3" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Trading -->
+  <circle class="target-dot" cx="400" cy="379" r="4" fill="#BD00FF" filter="url(#purpleGlow)">
+    <animate attributeName="r" values="4;7;4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Email -->
+  <circle class="target-dot" cx="293" cy="355" r="4" fill="#BD00FF" filter="url(#purpleGlow)">
+    <animate attributeName="r" values="3;6;3" dur="3.2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Scraping -->
+  <circle class="target-dot" cx="248" cy="248" r="4" fill="#BD00FF" filter="url(#purpleGlow)">
+    <animate attributeName="r" values="4;6;4" dur="2.9s" repeatCount="indefinite"/>
+  </circle>
+  <!-- AI/ML -->
+  <circle class="target-dot" cx="296" cy="144" r="4" fill="#BD00FF" filter="url(#purpleGlow)">
+    <animate attributeName="r" values="3;6;3" dur="3.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ██ CENTER DOT ██ -->
+  <circle cx="400" cy="248" r="5" fill="#00D4FF" filter="url(#cyanGlow)">
+    <animate attributeName="r" values="3;6;3" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#00D4FF;#FF2D95;#00D4FF" dur="4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ██ AXIS LABELS ██ -->
+  <!-- Python: top center -->
+  <text class="axis-label" x="400" y="78" text-anchor="middle"
+        font-size="11" font-weight="700" fill="#00D4FF" letter-spacing="2"
+        filter="url(#cyanGlow)">PYTHON</text>
+  <!-- Security: upper right -->
+  <text class="axis-label" x="526" y="122" text-anchor="start"
+        font-size="11" font-weight="700" fill="#00D4FF" letter-spacing="2"
+        filter="url(#cyanGlow)">SECURITY</text>
+  <!-- Infra: right -->
+  <text class="axis-label" x="570" y="252" text-anchor="start"
+        font-size="11" font-weight="700" fill="#00D4FF" letter-spacing="2"
+        filter="url(#cyanGlow)">INFRA</text>
+  <!-- Crypto: lower right -->
+  <text class="axis-label" x="524" y="376" text-anchor="start"
+        font-size="11" font-weight="700" fill="#00D4FF" letter-spacing="2"
+        filter="url(#cyanGlow)">CRYPTO</text>
+  <!-- Trading: bottom -->
+  <text class="axis-label" x="400" y="430" text-anchor="middle"
+        font-size="11" font-weight="700" fill="#00D4FF" letter-spacing="2"
+        filter="url(#cyanGlow)">TRADING</text>
+  <!-- Email: lower left -->
+  <text class="axis-label" x="275" y="376" text-anchor="end"
+        font-size="11" font-weight="700" fill="#00D4FF" letter-spacing="2"
+        filter="url(#cyanGlow)">EMAIL</text>
+  <!-- Scraping: left -->
+  <text class="axis-label" x="228" y="252" text-anchor="end"
+        font-size="11" font-weight="700" fill="#00D4FF" letter-spacing="2"
+        filter="url(#cyanGlow)">SCRAPING</text>
+  <!-- AI/ML: upper left -->
+  <text class="axis-label" x="274" y="122" text-anchor="end"
+        font-size="11" font-weight="700" fill="#00D4FF" letter-spacing="2"
+        filter="url(#cyanGlow)">AI/ML</text>
+
+  <!-- ██ SKILL PERCENTAGE LABELS ██ -->
+  <g font-size="9" fill="#00ff41" font-family="'SF Mono','Fira Code','JetBrains Mono',monospace"
+     opacity="0.85" filter="url(#greenGlow)">
+    <text x="400" y="113" text-anchor="middle">92%</text>
+    <text x="505" y="145" text-anchor="start">85%</text>
+    <text x="534" y="243" text-anchor="start">80%</text>
+    <text x="492" y="325" text-anchor="start">75%</text>
+    <text x="400" y="346" text-anchor="middle">65%</text>
+    <text x="290" y="344" text-anchor="end">90%</text>
+    <text x="265" y="243" text-anchor="end">88%</text>
+    <text x="316" y="175" text-anchor="end">78%</text>
+  </g>
+
+  <!-- ██ ROTATING OUTER RING (SMIL) ██ -->
+  <g transform="translate(400,248)">
+    <circle r="175" fill="none" stroke="#BD00FF" stroke-width="0.5"
+            stroke-dasharray="3,12" opacity="0.4">
+      <animateTransform attributeName="transform" type="rotate"
+                        from="0" to="360" dur="30s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  <g transform="translate(400,248)">
+    <circle r="185" fill="none" stroke="#FF2D95" stroke-width="0.5"
+            stroke-dasharray="2,16" opacity="0.3">
+      <animateTransform attributeName="transform" type="rotate"
+                        from="360" to="0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ██ LEGEND ██ -->
+  <!-- Current box -->
+  <rect x="610" y="80" width="12" height="12" fill="#FF2D95" opacity="0.8" rx="1"/>
+  <text x="628" y="91" font-size="10" fill="#FF2D95" font-family="'SF Mono','Fira Code',monospace"
+        letter-spacing="1">CURRENT</text>
+  <!-- Target box -->
+  <rect x="610" y="98" width="12" height="12" fill="none" stroke="#BD00FF" stroke-width="1.5"
+        stroke-dasharray="3,2" opacity="0.8" rx="1"/>
+  <text x="628" y="109" font-size="10" fill="#BD00FF" font-family="'SF Mono','Fira Code',monospace"
+        letter-spacing="1">TARGET</text>
+
+  <!-- Version tag -->
+  <text x="785" y="20" text-anchor="end" font-size="8" fill="#333333"
+        font-family="'SF Mono','Fira Code',monospace">v2.6.0</text>
+
+  <!-- ██ SCAN LINE OVERLAY ██ -->
+  <g clip-path="url(#svgClip)">
+    <rect x="0" y="-60" width="800" height="60"
+          fill="url(#scanGrad)" opacity="0.08">
+      <animate attributeName="y" values="-60;560" dur="4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  <!-- Scan line gradient definition -->
+  <defs>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#00D4FF" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#00D4FF" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ██ BOTTOM STATUS BAR ██ -->
+  <rect x="3" y="470" width="794" height="27" fill="#0d0d0d" opacity="0.9"/>
+  <line x1="3" y1="470" x2="797" y2="470" stroke="#00D4FF" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Animated status text -->
+  <text class="status-text" x="400" y="488" text-anchor="middle"
+        font-size="11" font-weight="700" letter-spacing="4"
+        fill="#00ff41" filter="url(#greenGlow)">
+    8 DOMAINS | 230+ TOOLS | 32 AGENTS
+  </text>
+
+  <!-- Left status badge -->
+  <rect x="15" y="474" width="72" height="18" rx="2" fill="none"
+        stroke="#00D4FF" stroke-width="0.7" opacity="0.6"/>
+  <text x="51" y="487" text-anchor="middle" font-size="8"
+        fill="#00D4FF" font-family="'SF Mono','Fira Code',monospace" letter-spacing="1">OPERATOR</text>
+
+  <!-- Right status badge -->
+  <rect x="713" y="474" width="72" height="18" rx="2" fill="none"
+        stroke="#FF2D95" stroke-width="0.7" opacity="0.6"/>
+  <text x="749" y="487" text-anchor="middle" font-size="8"
+        fill="#FF2D95" font-family="'SF Mono','Fira Code',monospace" letter-spacing="1">
+    <animate attributeName="fill" values="#FF2D95;#00D4FF;#FF2D95" dur="3s" repeatCount="indefinite"/>
+    ONLINE
+  </text>
+
+  <!-- ██ SMIL: RADAR COLOR CYCLE ██ -->
+  <!-- Additional SMIL pulse on center ring -->
+  <circle cx="400" cy="248" r="165" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.2">
+    <animate attributeName="r" values="165;172;165" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke" values="#00D4FF;#FF2D95;#00D4FF" dur="8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ██ DECORATIVE TOP CORNER LABELS ██ -->
+  <text x="20" y="22" font-size="8" fill="#333333"
+        font-family="'SF Mono','Fira Code',monospace" letter-spacing="1">SYS::RADAR</text>
+  <text x="780" y="22" text-anchor="end" font-size="8" fill="#333333"
+        font-family="'SF Mono','Fira Code',monospace" letter-spacing="1">2026.05.17</text>
+
+  <!-- ██ GRID LEVEL LABELS ██ -->
+  <g font-size="7" fill="#444444" font-family="'SF Mono','Fira Code',monospace">
+    <text x="404" y="212" text-anchor="start">20</text>
+    <text x="404" y="180" text-anchor="start">40</text>
+    <text x="404" y="148" text-anchor="start">60</text>
+    <text x="404" y="116" text-anchor="start">80</text>
+  </g>
+
+</svg>

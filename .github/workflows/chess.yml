@@ -1,0 +1,22 @@
+name: Chess Game
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  chess:
+    if: startsWith(github.event.issue.title, 'chess|')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Chess Bot
+        uses: timburgan/chess@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit
+        run: |
+          git config --global user.name "Chess Bot"
+          git config --global user.email "bot@github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "chess: update board"
+          git push

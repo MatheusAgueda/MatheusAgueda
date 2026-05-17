@@ -1,0 +1,21 @@
+name: "Chess Move"
+description: "Make a chess move against me!"
+title: "chess|{MOVE}"
+labels: ["chess"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Make Your Move!
+
+        Edit the issue title above, replacing `{MOVE}` with your move in algebraic notation (e.g., `e2e4`, `Nf3`, `O-O`).
+
+        Current board is displayed in the README. Click "Submit new issue" to make your move!
+  - type: input
+    id: move
+    attributes:
+      label: Your Move
+      description: "Enter your move in algebraic notation"
+      placeholder: "e.g., e2e4"
+    validations:
+      required: true
