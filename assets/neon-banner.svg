@@ -1,0 +1,307 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200">
+  <defs>
+    <style>
+      @keyframes pulseGlow {
+        0%, 100% {
+          text-shadow: 0 0 10px #FF2D95, 0 0 20px #FF2D95, 0 0 40px #FF2D95, 0 0 80px #FF2D95;
+          filter: drop-shadow(0 0 8px #FF2D95) drop-shadow(0 0 20px #FF2D95);
+          opacity: 1;
+        }
+        50% {
+          text-shadow: 0 0 5px #FF2D95, 0 0 10px #FF2D95, 0 0 20px #FF2D95;
+          filter: drop-shadow(0 0 3px #FF2D95) drop-shadow(0 0 10px #FF2D95);
+          opacity: 0.85;
+        }
+      }
+
+      @keyframes subtitleFade {
+        0% { opacity: 0; filter: drop-shadow(0 0 0px #00D4FF); }
+        30% { opacity: 0; }
+        60% { opacity: 0.7; filter: drop-shadow(0 0 6px #00D4FF); }
+        100% { opacity: 1; filter: drop-shadow(0 0 12px #00D4FF) drop-shadow(0 0 24px #00D4FF); }
+      }
+
+      @keyframes borderPulse {
+        0%, 100% { stroke-opacity: 1; filter: drop-shadow(0 0 6px #BD00FF) drop-shadow(0 0 14px #BD00FF); }
+        50% { stroke-opacity: 0.5; filter: drop-shadow(0 0 2px #BD00FF); }
+      }
+
+      @keyframes scanLine {
+        0% { transform: translateY(-10px); opacity: 0.15; }
+        100% { transform: translateY(210px); opacity: 0; }
+      }
+
+      @keyframes scanLine2 {
+        0% { transform: translateY(-10px); opacity: 0.1; }
+        100% { transform: translateY(210px); opacity: 0; }
+      }
+
+      @keyframes cornerPulse {
+        0%, 100% { stroke-opacity: 1; filter: drop-shadow(0 0 5px #00D4FF); }
+        50% { stroke-opacity: 0.3; filter: drop-shadow(0 0 2px #00D4FF); }
+      }
+
+      @keyframes circlePulse {
+        0%, 100% {
+          r: 4;
+          fill-opacity: 1;
+          filter: drop-shadow(0 0 6px #FF2D95) drop-shadow(0 0 12px #FF2D95);
+        }
+        50% {
+          r: 6;
+          fill-opacity: 0.6;
+          filter: drop-shadow(0 0 3px #FF2D95);
+        }
+      }
+
+      @keyframes cyanCirclePulse {
+        0%, 100% {
+          r: 3;
+          fill-opacity: 1;
+          filter: drop-shadow(0 0 6px #00D4FF) drop-shadow(0 0 12px #00D4FF);
+        }
+        50% {
+          r: 5;
+          fill-opacity: 0.5;
+          filter: drop-shadow(0 0 2px #00D4FF);
+        }
+      }
+
+      @keyframes accentLinePulse {
+        0%, 100% { stroke-opacity: 0.9; filter: drop-shadow(0 0 4px #00D4FF); }
+        50% { stroke-opacity: 0.3; filter: drop-shadow(0 0 1px #00D4FF); }
+      }
+
+      @keyframes purpleLinePulse {
+        0%, 100% { stroke-opacity: 0.8; filter: drop-shadow(0 0 5px #BD00FF) drop-shadow(0 0 10px #BD00FF); }
+        50% { stroke-opacity: 0.2; filter: drop-shadow(0 0 1px #BD00FF); }
+      }
+
+      @keyframes gradientShift {
+        0%, 100% { stop-color: #FF2D95; }
+        33% { stop-color: #BD00FF; }
+        66% { stop-color: #00D4FF; }
+      }
+
+      @keyframes gradientShift2 {
+        0%, 100% { stop-color: #00D4FF; }
+        33% { stop-color: #FF2D95; }
+        66% { stop-color: #BD00FF; }
+      }
+
+      @keyframes titleSlideIn {
+        0% { opacity: 0; transform: translateY(-15px); }
+        40% { opacity: 0; transform: translateY(-8px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+
+      @keyframes hexPulse {
+        0%, 100% { stroke-opacity: 0.6; filter: drop-shadow(0 0 3px #BD00FF); }
+        50% { stroke-opacity: 0.15; filter: none; }
+      }
+
+      .main-title {
+        font-family: 'Arial Black', 'Impact', sans-serif;
+        font-size: 54px;
+        font-weight: 900;
+        letter-spacing: 6px;
+        fill: #FF2D95;
+        animation: pulseGlow 2.8s ease-in-out infinite, titleSlideIn 1.2s ease-out forwards;
+      }
+
+      .subtitle {
+        font-family: 'Courier New', 'Consolas', monospace;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        fill: #00D4FF;
+        animation: subtitleFade 2.5s ease-out 0.8s forwards;
+        opacity: 0;
+      }
+
+      .border-rect {
+        fill: none;
+        stroke-width: 2;
+        animation: borderPulse 3s ease-in-out infinite;
+      }
+
+      .border-outer {
+        stroke: #BD00FF;
+        animation: borderPulse 3s ease-in-out infinite;
+      }
+
+      .border-inner {
+        stroke: #BD00FF;
+        stroke-opacity: 0.4;
+        animation: borderPulse 3s ease-in-out infinite 0.5s;
+      }
+
+      .scan-line {
+        fill: none;
+        stroke: #00D4FF;
+        stroke-width: 1;
+        animation: scanLine 4s linear infinite;
+      }
+
+      .scan-line-2 {
+        fill: none;
+        stroke: #FF2D95;
+        stroke-width: 0.5;
+        animation: scanLine2 4s linear 2s infinite;
+      }
+
+      .corner-accent {
+        fill: none;
+        stroke: #00D4FF;
+        stroke-width: 2;
+        animation: cornerPulse 2.5s ease-in-out infinite;
+      }
+
+      .accent-dot-pink {
+        fill: #FF2D95;
+        animation: circlePulse 2s ease-in-out infinite;
+      }
+
+      .accent-dot-cyan {
+        fill: #00D4FF;
+        animation: cyanCirclePulse 2.5s ease-in-out infinite 0.5s;
+      }
+
+      .h-line-cyan {
+        stroke: #00D4FF;
+        stroke-width: 1;
+        animation: accentLinePulse 3s ease-in-out infinite;
+      }
+
+      .v-line-purple {
+        stroke: #BD00FF;
+        stroke-width: 1;
+        animation: purpleLinePulse 2.5s ease-in-out infinite 1s;
+      }
+
+      .hex-accent {
+        fill: none;
+        stroke: #BD00FF;
+        stroke-width: 1;
+        animation: hexPulse 3.5s ease-in-out infinite;
+      }
+    </style>
+
+    <!-- Animated gradient for title underline -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF2D95; animation: gradientShift 4s ease-in-out infinite;" />
+      <stop offset="50%" style="stop-color:#BD00FF; animation: gradientShift 4s ease-in-out infinite 1.3s;" />
+      <stop offset="100%" style="stop-color:#00D4FF; animation: gradientShift2 4s ease-in-out infinite 2.6s;" />
+    </linearGradient>
+
+    <!-- Glow filter for border -->
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Clip path for scan lines -->
+    <clipPath id="bannerClip">
+      <rect x="0" y="0" width="800" height="200" />
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="200" fill="#0a0a0a" />
+
+  <!-- Subtle grid texture -->
+  <line x1="0" y1="25" x2="800" y2="25" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="0" y1="50" x2="800" y2="50" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="0" y1="75" x2="800" y2="75" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="0" y1="100" x2="800" y2="100" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="0" y1="125" x2="800" y2="125" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="0" y1="175" x2="800" y2="175" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="100" y1="0" x2="100" y2="200" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="200" y1="0" x2="200" y2="200" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="300" y1="0" x2="300" y2="200" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="400" y1="0" x2="400" y2="200" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="500" y1="0" x2="500" y2="200" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="600" y1="0" x2="600" y2="200" stroke="#1a1a1a" stroke-width="0.5" />
+  <line x1="700" y1="0" x2="700" y2="200" stroke="#1a1a1a" stroke-width="0.5" />
+
+  <!-- Scan lines (clipped to banner) -->
+  <g clip-path="url(#bannerClip)">
+    <line class="scan-line" x1="0" y1="0" x2="800" y2="0" />
+    <line class="scan-line-2" x1="0" y1="0" x2="800" y2="0" />
+  </g>
+
+  <!-- Outer border -->
+  <rect class="border-rect border-outer" x="4" y="4" width="792" height="192" rx="4" ry="4" filter="url(#glowPurple)" />
+
+  <!-- Inner border -->
+  <rect class="border-rect border-inner" x="10" y="10" width="780" height="180" rx="2" ry="2" />
+
+  <!-- Corner accents — top-left -->
+  <polyline class="corner-accent" points="10,40 10,10 40,10" />
+  <!-- top-right -->
+  <polyline class="corner-accent" points="760,10 790,10 790,40" />
+  <!-- bottom-left -->
+  <polyline class="corner-accent" points="10,160 10,190 40,190" />
+  <!-- bottom-right -->
+  <polyline class="corner-accent" points="760,190 790,190 790,160" />
+
+  <!-- Left side hex accent -->
+  <polygon class="hex-accent" points="35,80 45,73 55,80 55,94 45,101 35,94" />
+  <!-- Right side hex accent -->
+  <polygon class="hex-accent" points="745,80 755,73 765,80 765,94 755,101 745,94" />
+
+  <!-- Left vertical accent lines -->
+  <line class="v-line-purple" x1="68" y1="20" x2="68" y2="180" />
+  <line class="v-line-purple" x1="74" y1="50" x2="74" y2="150" />
+
+  <!-- Right vertical accent lines -->
+  <line class="v-line-purple" x1="732" y1="20" x2="732" y2="180" />
+  <line class="v-line-purple" x1="726" y1="50" x2="726" y2="150" />
+
+  <!-- Horizontal accent lines top -->
+  <line class="h-line-cyan" x1="90" y1="28" x2="710" y2="28" />
+  <!-- Horizontal accent lines bottom -->
+  <line class="h-line-cyan" x1="90" y1="172" x2="710" y2="172" />
+
+  <!-- Pink accent dots — left -->
+  <circle class="accent-dot-pink" cx="68" cy="100" r="4" />
+  <!-- Cyan accent dots — right -->
+  <circle class="accent-dot-cyan" cx="732" cy="100" r="3" />
+
+  <!-- Small corner dots -->
+  <circle class="accent-dot-pink" cx="90" cy="28" r="2.5" />
+  <circle class="accent-dot-pink" cx="710" cy="28" r="2.5" />
+  <circle class="accent-dot-cyan" cx="90" cy="172" r="2.5" />
+  <circle class="accent-dot-cyan" cx="710" cy="172" r="2.5" />
+
+  <!-- Gradient underline for title -->
+  <rect x="175" y="128" width="450" height="2.5" fill="url(#titleGrad)" rx="1" />
+
+  <!-- Main title -->
+  <text
+    class="main-title"
+    x="400"
+    y="118"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >MATHEUS AGUEDA</text>
+
+  <!-- Subtitle -->
+  <text
+    class="subtitle"
+    x="400"
+    y="158"
+    text-anchor="middle"
+    dominant-baseline="middle"
+  >Full-Stack Engineer · Cryptographer · AI Architect</text>
+
+  <!-- Bottom small decorative elements -->
+  <circle class="accent-dot-cyan" cx="350" cy="172" r="2" />
+  <circle class="accent-dot-pink" cx="400" cy="172" r="2" />
+  <circle class="accent-dot-cyan" cx="450" cy="172" r="2" />
+
+</svg>
