@@ -257,13 +257,13 @@ graph TB
     BIZ --> VC
     BIZ --> CF
 
-    classDef cmd fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold
-    classDef pipeline fill:#0d1117,stroke:#00D4FF,color:#c9d1d9
-    classDef email fill:#0d1117,stroke:#BD00FF,color:#c9d1d9
-    classDef security fill:#0d1117,stroke:#FF2D95,color:#c9d1d9
-    classDef trading fill:#0d1117,stroke:#00D4FF,color:#c9d1d9
-    classDef business fill:#0d1117,stroke:#BD00FF,color:#c9d1d9
-    classDef infra fill:#0d1117,stroke:#FF2D95,color:#c9d1d9
+    classDef cmd fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
+    classDef pipeline fill:#0a1628,stroke:#00D4FF,color:#e6edf3,stroke-width:2px
+    classDef email fill:#1a0a2e,stroke:#BD00FF,color:#e6edf3,stroke-width:2px
+    classDef security fill:#2e0a1a,stroke:#FF2D95,color:#e6edf3,stroke-width:2px
+    classDef trading fill:#0a1628,stroke:#00D4FF,color:#e6edf3,stroke-width:2px
+    classDef business fill:#1a0a2e,stroke:#BD00FF,color:#e6edf3,stroke-width:2px
+    classDef infra fill:#2e0a1a,stroke:#FF2D95,color:#e6edf3,stroke-width:2px
 
     class CMD cmd
     class GLS,MAPS,DDG,CNPJ,VALID pipeline
@@ -811,8 +811,8 @@ graph TD
     CMD --> BUSINESS
     CMD --> META
 
-    classDef commander fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold
-    classDef ops fill:#0d1117,stroke:#00D4FF,color:#c9d1d9
+    classDef commander fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
+    classDef ops fill:#0a1628,stroke:#00D4FF,color:#e6edf3,stroke-width:2px
     class CMD commander
     class SO,SW,SR,LQ,EO,SM,RA,CD,SV,BZ,ER,CT,EP,JD,PT,RS,PF,SD,EX ops
 ```
