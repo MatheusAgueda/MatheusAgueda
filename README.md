@@ -738,8 +738,8 @@ function simulateSell(
 
 <div align="center">
 
-<img src="./metrics/activity.svg" width="49%" alt="recent activity"/>
 <img src="./metrics/followup.svg" width="49%" alt="issues and PRs"/>
+<img src="./metrics/notable.svg" width="49%" alt="notable contributions"/>
 
 </div>
 
@@ -747,19 +747,6 @@ function simulateSell(
 
 <img src="./metrics/topics.svg" width="49%" alt="topics"/>
 <img src="./metrics/base.svg" width="49%" alt="base stats"/>
-
-</div>
-
-<div align="center">
-
-<img src="./metrics/notable.svg" width="49%" alt="notable contributions"/>
-<img src="./metrics/habits.svg" width="49%" alt="coding habits"/>
-
-</div>
-
-<div align="center">
-
-<img src="./metrics/achievements.svg" width="98%" alt="achievements"/>
 
 </div>
 
@@ -1039,7 +1026,7 @@ gitGraph LR:
     commit id: "deploy" type: HIGHLIGHT
 ```
 
-> `git push main` = production. 4 GitHub Actions workflows generate 3D contributions, profile cards, contribution snake, and 8 lowlighter metrics SVGs every 12h. Zero manual deploys — Railway, Vercel, and Cloudflare auto-deploy from main branch.
+> `git push main` = production. 4 GitHub Actions workflows generate 3D contributions, profile cards, contribution snake, and 8 lowlighter/metrics SVGs every 12h. Zero manual deploys — Railway, Vercel, and Cloudflare auto-deploy from main branch.
 
 <!-- GRADIENT DIVIDER -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
@@ -1256,7 +1243,7 @@ Zombie Killer v2 — 5 layers running every 5 minutes via LaunchAgent
 + 8 Mermaid diagrams (7 types: flowchart, sequence, state, pie, graph, mindmap, gitgraph)
 + 1 GeoJSON interactive map with Leaflet.js rendering
 + 4 LaTeX equations (ECDSA, lattice SVP, birthday attack)
-+ 11 lowlighter/metrics plugins (isocalendar, languages, activity, followup, topics, lines, base, notable, achievements, habits, code)
++ 8 lowlighter/metrics plugins (isocalendar, languages, followup, topics, lines, base, notable, code)
 + 4 GitHub Actions workflows auto-generating visuals
 + GPU-accelerated ECDSA research on Apple Silicon
 - 0 systems down

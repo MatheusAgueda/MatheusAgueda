@@ -38,20 +38,6 @@ jobs:
           config_display: large
           config_output: svg
 
-      # === ACTIVITY: Recent GitHub events timeline ===
-      - name: Activity
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics/activity.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_activity: yes
-          plugin_activity_limit: 5
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          config_display: large
-          config_output: svg
-
       # === FOLLOW-UP: Issues & PRs tracking ===
       - name: Follow-up
         uses: lowlighter/metrics@latest
@@ -113,35 +99,6 @@ jobs:
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_repositories: yes
-          config_output: svg
-
-      # === ACHIEVEMENTS: Unlock badges based on GitHub activity ===
-      - name: Achievements
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics/achievements.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_achievements: yes
-          plugin_achievements_display: detailed
-          plugin_achievements_threshold: C
-          config_display: large
-          config_output: svg
-
-      # === HABITS: Coding patterns & schedule heatmap ===
-      - name: Habits
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics/habits.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
-          plugin_habits_charts_type: classic
-          plugin_habits_days: 30
-          plugin_habits_from: 200
-          config_display: large
           config_output: svg
 
       # === CODE: Recent code snippets from activity ===
