@@ -1,0 +1,239 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <defs>
+    <style>
+      @keyframes blink { 0%,49%{opacity:1}50%,100%{opacity:0} }
+      @keyframes typeIn { from{opacity:0;transform:translateX(-4px)}to{opacity:1;transform:translateX(0)} }
+      @keyframes scanLine { 0%{transform:translateY(-420px)}100%{transform:translateY(420px)} }
+      @keyframes matrixFall1 { 0%{transform:translateY(-60px);opacity:0}10%{opacity:.6}90%{opacity:.6}100%{transform:translateY(440px);opacity:0} }
+      @keyframes matrixFall2 { 0%{transform:translateY(-90px);opacity:0}10%{opacity:.4}90%{opacity:.4}100%{transform:translateY(460px);opacity:0} }
+      @keyframes matrixFall3 { 0%{transform:translateY(-40px);opacity:0}10%{opacity:.5}90%{opacity:.5}100%{transform:translateY(450px);opacity:0} }
+      @keyframes glowPulse { 0%,100%{filter:drop-shadow(0 0 3px #00D4FF)}50%{filter:drop-shadow(0 0 12px #00D4FF) drop-shadow(0 0 20px #BD00FF)} }
+      @keyframes statusPulse { 0%,100%{fill:#00ff41}50%{fill:#00D4FF} }
+      @keyframes borderGlow { 0%,100%{stroke:#1a1a2e}50%{stroke:#BD00FF} }
+
+      .bg { fill: #0a0a0a; }
+      .window-chrome { fill: #111118; stroke: #1a1a2e; stroke-width: 1.5; rx: 10; ry: 10; animation: borderGlow 4s ease-in-out infinite; }
+      .title-text { font-family: 'SF Mono','Fira Code','JetBrains Mono',monospace; font-size: 11px; fill: #6a6a8a; }
+      .prompt { font-family: 'SF Mono','Fira Code','JetBrains Mono',monospace; font-size: 12.5px; fill: #00D4FF; }
+      .command { font-family: 'SF Mono','Fira Code','JetBrains Mono',monospace; font-size: 12.5px; fill: #e0e0e0; }
+      .output { font-family: 'SF Mono','Fira Code','JetBrains Mono',monospace; font-size: 12px; fill: #00ff41; }
+      .output-cyan { font-family: 'SF Mono','Fira Code','JetBrains Mono',monospace; font-size: 12px; fill: #00D4FF; }
+      .output-pink { font-family: 'SF Mono','Fira Code','JetBrains Mono',monospace; font-size: 12px; fill: #FF2D95; }
+      .output-purple { font-family: 'SF Mono','Fira Code','JetBrains Mono',monospace; font-size: 12px; fill: #BD00FF; }
+      .matrix-char { font-family: 'SF Mono',monospace; font-size: 10px; fill: #00D4FF; opacity: 0; }
+      .cursor { animation: blink 1s step-end infinite; }
+      .line1 { opacity:0; animation: typeIn .4s ease forwards .3s; }
+      .line2 { opacity:0; animation: typeIn .4s ease forwards 1.0s; }
+      .line3 { opacity:0; animation: typeIn .4s ease forwards 1.7s; }
+      .line4 { opacity:0; animation: typeIn .4s ease forwards 2.4s; }
+      .line5 { opacity:0; animation: typeIn .4s ease forwards 3.3s; }
+      .line6 { opacity:0; animation: typeIn .4s ease forwards 4.0s; }
+      .line7 { opacity:0; animation: typeIn .4s ease forwards 4.7s; }
+      .line8 { opacity:0; animation: typeIn .4s ease forwards 5.4s; }
+      .line9 { opacity:0; animation: typeIn .4s ease forwards 6.1s; }
+      .line10 { opacity:0; animation: typeIn .4s ease forwards 6.8s; }
+      .line11 { opacity:0; animation: typeIn .4s ease forwards 7.5s; }
+
+      .mc1 { animation: matrixFall1 6s linear infinite; }
+      .mc2 { animation: matrixFall2 8s linear infinite 1s; }
+      .mc3 { animation: matrixFall3 7s linear infinite .5s; }
+      .mc4 { animation: matrixFall1 9s linear infinite 2s; }
+      .mc5 { animation: matrixFall2 5.5s linear infinite .3s; }
+      .mc6 { animation: matrixFall3 7.5s linear infinite 1.5s; }
+      .mc7 { animation: matrixFall1 6.5s linear infinite 3s; }
+      .mc8 { animation: matrixFall2 8.5s linear infinite .8s; }
+      .mc9 { animation: matrixFall3 5s linear infinite 2.5s; }
+      .mc10 { animation: matrixFall1 7s linear infinite 1.2s; }
+      .mc11 { animation: matrixFall2 6s linear infinite 3.5s; }
+      .mc12 { animation: matrixFall3 9s linear infinite .7s; }
+      .mc13 { animation: matrixFall1 5.5s linear infinite 2.2s; }
+      .mc14 { animation: matrixFall2 7.5s linear infinite 1.8s; }
+
+      .scan-line { fill: url(#scanGrad); opacity: 0.04; animation: scanLine 4s linear infinite; }
+      .terminal-group { animation: glowPulse 6s ease-in-out infinite; }
+      .status-dot { animation: statusPulse 3s ease-in-out infinite; }
+    </style>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="40%" stop-color="#00D4FF"/>
+      <stop offset="60%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#111118"/>
+      <stop offset="50%" stop-color="#14141e"/>
+      <stop offset="100%" stop-color="#111118"/>
+    </linearGradient>
+    <clipPath id="termClip">
+      <rect x="4" y="4" width="792" height="412" rx="10" ry="10"/>
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="420" class="bg"/>
+
+  <!-- MATRIX RAIN — data/fleet themed -->
+  <g clip-path="url(#termClip)" opacity="0.15">
+    <text x="30" y="0" class="matrix-char mc1">FLUX</text>
+    <text x="30" y="20" class="matrix-char mc1">0.96</text>
+    <text x="30" y="40" class="matrix-char mc1">WIS</text>
+    <text x="100" y="0" class="matrix-char mc2">LEAD</text>
+    <text x="100" y="20" class="matrix-char mc2">1.93M</text>
+    <text x="100" y="40" class="matrix-char mc2">SMTP</text>
+    <text x="170" y="0" class="matrix-char mc3">DKIM</text>
+    <text x="170" y="20" class="matrix-char mc3">PASS</text>
+    <text x="240" y="0" class="matrix-char mc4">PG16</text>
+    <text x="240" y="20" class="matrix-char mc4">6GB</text>
+    <text x="240" y="40" class="matrix-char mc4">TUNE</text>
+    <text x="310" y="0" class="matrix-char mc5">RAIL</text>
+    <text x="310" y="20" class="matrix-char mc5">EDGE</text>
+    <text x="380" y="0" class="matrix-char mc6">NEXT</text>
+    <text x="380" y="20" class="matrix-char mc6">NEST</text>
+    <text x="380" y="40" class="matrix-char mc6">RUST</text>
+    <text x="450" y="0" class="matrix-char mc7">MQL5</text>
+    <text x="450" y="20" class="matrix-char mc7">ALGO</text>
+    <text x="520" y="0" class="matrix-char mc8">TSMP</text>
+    <text x="520" y="20" class="matrix-char mc8">UCB1</text>
+    <text x="520" y="40" class="matrix-char mc8">MAB</text>
+    <text x="590" y="0" class="matrix-char mc9">FREE</text>
+    <text x="590" y="20" class="matrix-char mc9">94.2</text>
+    <text x="660" y="0" class="matrix-char mc10">PIPE</text>
+    <text x="660" y="20" class="matrix-char mc10">FLOW</text>
+    <text x="660" y="40" class="matrix-char mc10">NODE</text>
+    <text x="730" y="0" class="matrix-char mc11">EMIT</text>
+    <text x="730" y="20" class="matrix-char mc11">SEND</text>
+    <text x="60" y="60" class="matrix-char mc12">JARVIS</text>
+    <text x="200" y="60" class="matrix-char mc13">FLEET</text>
+    <text x="340" y="60" class="matrix-char mc14">HARNESS</text>
+    <text x="480" y="60" class="matrix-char mc12">AGENTS</text>
+    <text x="620" y="60" class="matrix-char mc13">MODELS</text>
+    <text x="130" y="80" class="matrix-char mc11">thompson</text>
+    <text x="420" y="80" class="matrix-char mc9">bandit</text>
+    <text x="560" y="80" class="matrix-char mc7">router</text>
+  </g>
+
+  <!-- TERMINAL WINDOW -->
+  <g class="terminal-group">
+    <rect x="4" y="4" width="792" height="412" class="window-chrome"/>
+
+    <!-- Title bar -->
+    <rect x="5" y="5" width="790" height="30" rx="10" ry="10" fill="url(#barGrad)"/>
+    <rect x="5" y="25" width="790" height="10" fill="url(#barGrad)"/>
+
+    <!-- macOS dots -->
+    <circle cx="24" cy="20" r="5" fill="#ff5f57">
+      <animate attributeName="r" values="5;6;5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="44" cy="20" r="5" fill="#febc2e">
+      <animate attributeName="r" values="5;6;5" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="64" cy="20" r="5" fill="#28c840">
+      <animate attributeName="r" values="5;6;5" dur="3s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Title text -->
+    <text x="400" y="24" text-anchor="middle" class="title-text">matheus@m4pro:~/fleet <tspan fill="#3a3a5a">|</tspan> zsh <tspan fill="#3a3a5a">|</tspan> 228 models</text>
+
+    <!-- Live indicator -->
+    <circle cx="740" cy="20" r="3" class="status-dot"/>
+    <text x="750" y="23" class="title-text" font-size="9">LIVE</text>
+
+    <line x1="5" y1="35" x2="795" y2="35" stroke="#1a1a2e" stroke-width="0.5"/>
+
+    <!-- TERMINAL CONTENT -->
+    <g transform="translate(20, 55)">
+      <g class="line1">
+        <text y="0" class="prompt">matheus@m4pro</text>
+        <text y="0" x="112" class="output-purple">:</text>
+        <text y="0" x="119" class="output-cyan">~/fleet</text>
+        <text y="0" x="176" class="prompt">$</text>
+        <text y="0" x="192" class="command">fleet status --all</text>
+      </g>
+
+      <g class="line2">
+        <text y="22" class="output-pink">[FLEET]</text>
+        <text y="22" x="56" class="output"> 228 models loaded | 179 alive | WIS 0.9643</text>
+      </g>
+
+      <g class="line3">
+        <text y="44" class="output-pink">[ROUTE]</text>
+        <text y="44" x="56" class="output"> Thompson Sampling + UCB1 | 94.2% free routing</text>
+      </g>
+
+      <g class="line4">
+        <text y="66" class="output-pink">[DATA]</text>
+        <text y="66" x="48" class="output"> Pipeline: 1.93M scraped → 752K eligible → 789K verified</text>
+      </g>
+
+      <g class="line5">
+        <text y="100" class="prompt">matheus@m4pro</text>
+        <text y="100" x="112" class="output-purple">:</text>
+        <text y="100" x="119" class="output-cyan">~/fleet</text>
+        <text y="100" x="176" class="prompt">$</text>
+        <text y="100" x="192" class="command">smtp_pool_sender.py --relays 3 --campaign live</text>
+      </g>
+
+      <g class="line6">
+        <text y="122" class="output-cyan">[SMTP]</text>
+        <text y="122" x="48" class="output"> Resend 65/d + SendGrid 120/d + Google 200/d = 385/day</text>
+      </g>
+
+      <g class="line7">
+        <text y="144" class="output-cyan">[DKIM]</text>
+        <text y="144" x="48" class="output"> All 3 relays verified | SPF pass | DMARC: quarantine</text>
+      </g>
+
+      <g class="line8">
+        <text y="178" class="prompt">matheus@m4pro</text>
+        <text y="178" x="112" class="output-purple">:</text>
+        <text y="178" x="119" class="output-cyan">~/fleet</text>
+        <text y="178" x="176" class="prompt">$</text>
+        <text y="178" x="192" class="command">jarvis agents --count | harness skills --total</text>
+      </g>
+
+      <g class="line9">
+        <text y="200" class="output-pink">[AGENTS]</text>
+        <text y="200" x="68" class="output"> 17 specialized | 85+ tools | 40 skills | self-improving</text>
+      </g>
+
+      <g class="line10">
+        <text y="222" class="output-pink">[JARVIS]</text>
+        <text y="222" x="64" class="output"> 4 browser lanes | 17 cognitive modules | cursor-less</text>
+      </g>
+
+      <g class="line11">
+        <text y="256" class="output-cyan">[===]</text>
+        <text y="256" x="42" class="output-pink"> ALL 12 SYSTEMS OPERATIONAL</text>
+        <text y="256" x="270" class="output"> -- zero downtime</text>
+      </g>
+
+      <!-- Blinking cursor -->
+      <g class="line11">
+        <text y="284" class="prompt">matheus@m4pro</text>
+        <text y="284" x="112" class="output-purple">:</text>
+        <text y="284" x="119" class="output-cyan">~/fleet</text>
+        <text y="284" x="176" class="prompt">$</text>
+        <rect x="192" y="272" width="8" height="16" fill="#00D4FF" class="cursor"/>
+      </g>
+    </g>
+
+    <!-- Bottom status bar -->
+    <rect x="5" y="390" width="790" height="25" rx="0" ry="0" fill="#0d0d14"/>
+    <rect x="5" y="400" width="790" height="15" rx="10" ry="10" fill="#0d0d14"/>
+    <text x="20" y="406" class="title-text" font-size="9">
+      <tspan fill="#00ff41">AGENTS: 17</tspan>
+      <tspan fill="#3a3a5a"> | </tspan>
+      <tspan fill="#00D4FF">MODELS: 228</tspan>
+      <tspan fill="#3a3a5a"> | </tspan>
+      <tspan fill="#FF2D95">LEADS: 1.93M</tspan>
+      <tspan fill="#3a3a5a"> | </tspan>
+      <tspan fill="#BD00FF">RELAYS: 3 DKIM</tspan>
+      <tspan fill="#3a3a5a"> | </tspan>
+      <tspan fill="#00ff41">WIS: 0.9643</tspan>
+      <tspan fill="#3a3a5a"> | </tspan>
+      <tspan fill="#00D4FF">M4 PRO 14-CORE</tspan>
+    </text>
+  </g>
+
+  <!-- SCAN LINE OVERLAY -->
+  <rect x="4" y="4" width="792" height="30" class="scan-line" clip-path="url(#termClip)"/>
+</svg>
