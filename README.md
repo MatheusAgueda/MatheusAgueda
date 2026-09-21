@@ -5,25 +5,25 @@
 <!-- ║  capsule-render waving + 2 custom SVGs + typing + 8 metric badges      ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2D95,50:BD00FF,100:00D4FF&height=230&section=header&text=Matheus%20Agueda&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=28&desc=Systems%20Architect%20%E2%94%82%20Security%20Researcher%20%E2%94%82%20DeFi%20%E2%94%82%20AI%20Agents&descSize=15&descColor=cccccc&descAlignY=50&stroke=00D4FF&strokeWidth=1" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2D95,50:BD00FF,100:00D4FF&height=230&section=header&text=Matheus%20Agueda&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=28&desc=Systems%20Architect%20%E2%94%82%20AI%20Engineer%20%E2%94%82%20Full%20Stack%20Developer&descSize=15&descColor=cccccc&descAlignY=50&stroke=00D4FF&strokeWidth=1" width="100%"/>
 
 <!-- CUSTOM ANIMATED SVG — CSS @keyframes, neon glow, scan lines, 13 animations -->
 <img src="./assets/neon-banner.svg" width="100%" alt="Neon animated banner"/>
 
-<!-- HACKER TERMINAL SVG — matrix rain, animated typing, macOS chrome, 11 staggered lines -->
-<img src="./assets/terminal-hacker.svg" width="100%" alt="Hacker terminal animation"/>
+<!-- TERMINAL SVG — matrix rain, animated typing, macOS chrome, 11 staggered lines -->
+<img src="./assets/terminal-hacker.svg" width="100%" alt="Terminal animation"/>
 
 <!-- TYPING SVG — 4 rotating lines with box-drawing characters -->
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=true&repeat=true&width=820&height=120&lines=%E2%94%8C%E2%94%80+9+production+systems+%C2%B7+4+countries+%C2%B7+32+AI+agents+%E2%94%80%E2%94%90;%E2%94%82+1.93M+leads+%C2%B7+385+emails%2Fday+%C2%B7+3+DKIM+relays+%E2%94%82;%E2%94%82+Python+%C2%B7+TypeScript+%C2%B7+C+%C2%B7+Metal+%C2%B7+MQL5+%C2%B7+Solidity+%E2%94%82;%E2%94%94%E2%94%80+ECDSA+lattice+%C2%B7+Metal+GPU+%C2%B7+multi-agent+AI+%E2%94%80%E2%94%98" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&multiline=true&repeat=true&width=820&height=120&lines=%E2%94%8C%E2%94%80+12+production+systems+%C2%B7+4+countries+%C2%B7+228+AI+models+%E2%94%80%E2%94%90;%E2%94%82+1.93M+leads+%C2%B7+385+emails%2Fday+%C2%B7+3+DKIM+relays+%E2%94%82;%E2%94%82+Python+%C2%B7+TypeScript+%C2%B7+MQL5+%C2%B7+Rust+%C2%B7+Go+%C2%B7+Bash+%E2%94%82;%E2%94%94%E2%94%80+Fleet+Brain+%C2%B7+94.2%25+free+routing+%C2%B7+self-improving+AI+%E2%94%80%E2%94%98" alt="Typing SVG" /></a>
 
 <br/>
 
 <!-- METRIC BADGES — 8 core stats -->
 <img src="https://komarev.com/ghpvc/?username=MatheusAgueda&style=for-the-badge&color=FF2D95&label=PROFILE+VIEWS" alt="views"/>
 &nbsp;
-<img src="https://img.shields.io/badge/SYSTEMS-9-00D4FF?style=for-the-badge&labelColor=0a0a0a" alt="systems"/>
+<img src="https://img.shields.io/badge/SYSTEMS-12-00D4FF?style=for-the-badge&labelColor=0a0a0a" alt="systems"/>
 &nbsp;
-<img src="https://img.shields.io/badge/AI_AGENTS-32-BD00FF?style=for-the-badge&labelColor=0a0a0a" alt="agents"/>
+<img src="https://img.shields.io/badge/AI_MODELS-228-BD00FF?style=for-the-badge&labelColor=0a0a0a" alt="models"/>
 &nbsp;
 <img src="https://img.shields.io/badge/COUNTRIES-4-FF2D95?style=for-the-badge&labelColor=0a0a0a" alt="countries"/>
 &nbsp;
@@ -31,9 +31,9 @@
 &nbsp;
 <img src="https://img.shields.io/badge/EMAILS%2FDAY-385-BD00FF?style=for-the-badge&labelColor=0a0a0a" alt="emails"/>
 &nbsp;
-<img src="https://img.shields.io/badge/MCP_TOOLS-230+-FF2D95?style=for-the-badge&labelColor=0a0a0a" alt="tools"/>
+<img src="https://img.shields.io/badge/AI_AGENTS-17-FF2D95?style=for-the-badge&labelColor=0a0a0a" alt="agents"/>
 &nbsp;
-<img src="https://img.shields.io/badge/LANGUAGES-11-00D4FF?style=for-the-badge&labelColor=0a0a0a" alt="languages"/>
+<img src="https://img.shields.io/badge/REPOS-39-00D4FF?style=for-the-badge&labelColor=0a0a0a" alt="repos"/>
 
 </div>
 
@@ -41,54 +41,43 @@
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                     TABLE OF CONTENTS                                   ║ -->
-<!-- ║    35+ sections · 16 Mermaid diagrams · 11 code languages               ║ -->
-<!-- ║    6 custom SVGs · 9 LaTeX equations · GeoJSON · STL 3D                 ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 <details>
-<summary><b>Table of Contents</b> — 35+ sections, 16 Mermaid diagrams (12 types), 11 code languages, 9 LaTeX equations, 6 custom animated SVGs, GeoJSON map, STL 3D model</summary>
+<summary><b>Table of Contents</b> — 30+ sections, 14 Mermaid diagrams, 9 code languages, 6 custom animated SVGs, GeoJSON map, STL 3D model</summary>
 
-| # | Section | Type | Complexity |
-|:--|:--------|:-----|:-----------|
-| 1 | [Identity + Tech Arsenal](#-identity) | Properties, skill icons, trophies, stats | Badges, 6 icon rows |
-| 2 | [Animated Dashboard](#-live-dashboard) | Custom SVG | 12+ CSS @keyframes, gauges |
-| 3 | [Skills Radar](#-skills-radar) | Custom SVG | 8-axis radar, SMIL animations |
-| 4 | [Network Topology](#-network-topology) | Custom SVG | Orbital animation, 14 nodes |
-| 5 | [3D Contribution Map](#-3d-contribution-map) | GitHub Actions SVG | Dark/light `<picture>` |
-| 6 | [Contribution Snake](#-contribution-snake) | Animated SVG | Auto-generated game |
-| 7 | [System Architecture](#-system-architecture) | Mermaid `graph TB` | 28 nodes, 6 subgraphs |
-| 8 | [Class Hierarchy — CIA Einstein](#-class-hierarchy--cia-einstein-agents) | Mermaid `classDiagram` | 8 classes, inheritance |
-| 9 | [Database Schema — Lead Pipeline](#-database-schema--lead-pipeline) | Mermaid `erDiagram` | 6 entities, FK relations |
-| 10 | [Email Delivery Pipeline](#-email-delivery-pipeline) | Mermaid `sequenceDiagram` | 8 participants, parallel |
-| 11 | [Lead Lifecycle](#-lead-lifecycle-state-machine) | Mermaid `stateDiagram-v2` | 12 states, transitions |
-| 12 | [Technology Distribution](#-technology-distribution) | Mermaid `pie` (x2) | Data labels |
-| 13 | [Development Timeline](#-development-timeline) | Mermaid `gantt` | 5 sections, 18 milestones |
-| 14 | [Technology Radar](#-technology-radar) | Mermaid `quadrantChart` | 15 technologies plotted |
-| 15 | [Lead Pipeline Journey](#-lead-pipeline-journey) | Mermaid `journey` | 5 stages, satisfaction scores |
-| 16 | [Email Delivery Metrics](#-email-delivery-metrics) | Mermaid `xychart-beta` | Time series, bar + line |
-| 17 | [System Block Architecture](#-system-block-architecture) | Mermaid `block-beta` | Nested blocks, columns |
-| 18 | [Featured Code](#-featured-code) | Production code | Python, C, MQL5, Solidity, JS, SQL, Bash, Rust, Go, Dockerfile, YAML |
-| 19 | [Chess Game](#-play-chess-against-me) | Interactive via Issues | Board + move links |
-| 20 | [Production Systems](#-production-systems) | Badge grid + ASCII table | 9 projects, 3x3 |
-| 21 | [GitHub Analytics](#-github-analytics) | Stats cards | Streak, graph, summary |
-| 22 | [Metrics Deep Dive](#-metrics-deep-dive) | Lowlighter SVGs | 8 metric plugins |
-| 23 | [AI Agent Architecture](#-ai-agent-architecture) | Mermaid `graph TD` | 19 agents, 5 groups |
-| 24 | [Tech Ecosystem](#-tech-ecosystem) | Mermaid `mindmap` | 6 branches, 40+ leaves |
-| 25 | [Operations Map — 4 Countries](#-operations-map--4-countries) | GeoJSON interactive | 6 markers, polygon |
-| 26 | [CI/CD Pipeline](#-cicd-pipeline) | Mermaid `gitGraph` | Branches, merges, tags |
-| 27 | [Cryptography Research](#-cryptography-research) | LaTeX equations + table | 9 formulas, 6 algorithms |
-| 28 | [Latest Blog Posts](#-latest-blog-posts) | Auto-updated via Actions | RSS feed |
-| 29 | [Recent Activity](#-recent-activity) | Auto-updated via Actions | GitHub events |
-| 30 | [Security Toolkit](#-security-toolkit) | Collapsible depth panel | 10 domains, hardware |
-| 31 | [Trading & DeFi](#-trading--defi-operations) | Collapsible depth panel | 4 systems, 7 capabilities |
-| 32 | [Email Infrastructure](#-email-delivery-infrastructure) | Collapsible depth panel | 4 relays, quality gates |
-| 33 | [Database Architecture](#-database-architecture) | Collapsible depth panel | PG16 tuning, indexes |
-| 34 | [Business Operations](#-business-operations--4-countries) | Collapsible depth panel | 4 countries, compliance |
-| 35 | [Dev Environment](#-development-environment) | Collapsible depth panel | M4 Pro, 230+ tools |
-| 36 | [Automation & Browser Fleet](#-automation--browser-fleet) | Collapsible depth panel | 4 tools, stealth |
-| 37 | [Project Timeline](#-project-timeline) | Mermaid `timeline` | 5 periods, milestones |
-| 38 | [3D Crystal — Interactive](#-3d-crystal--interactive-viewer) | STL 3D model | 84-facet diamond |
-| 39 | [Footnotes](#references) | Scholarly annotations | 8 with inline math |
+| # | Section | Type |
+|:--|:--------|:-----|
+| 1 | [Identity + Tech Arsenal](#-system-configuration) | Properties, skill icons, trophies, stats |
+| 2 | [Live Dashboard](#-live-dashboard) | Custom SVG with CSS @keyframes |
+| 3 | [Skills Radar](#-skills-radar) | Custom SVG with 8-axis SMIL radar |
+| 4 | [Network Topology](#-network-topology) | Custom SVG with orbital animation |
+| 5 | [3D Contribution Map](#-3d-contribution-map) | GitHub Actions SVG |
+| 6 | [Contribution Snake](#-contribution-snake) | Animated SVG game |
+| 7 | [System Architecture](#-system-architecture) | Mermaid flowchart |
+| 8 | [Fleet Brain — AI Routing](#-fleet-brain--ai-model-routing) | Mermaid + detail panel |
+| 9 | [Database Schema](#-database-schema--lead-pipeline) | Mermaid ER diagram |
+| 10 | [Email Delivery Pipeline](#-email-delivery-pipeline) | Mermaid sequence diagram |
+| 11 | [Lead Lifecycle](#-lead-lifecycle-state-machine) | Mermaid state diagram |
+| 12 | [Technology Distribution](#-technology-distribution) | Mermaid pie charts |
+| 13 | [Development Timeline](#-development-timeline) | Mermaid gantt |
+| 14 | [Technology Radar](#-technology-radar) | Mermaid quadrant chart |
+| 15 | [Lead Pipeline Journey](#-lead-pipeline-journey) | Mermaid journey diagram |
+| 16 | [Email Delivery Metrics](#-email-delivery-metrics) | Mermaid xychart-beta |
+| 17 | [Featured Code](#-featured-code) | Production code in 9 languages |
+| 18 | [Chess Game](#-play-chess-against-me) | Interactive via GitHub Issues |
+| 19 | [Production Systems](#-production-systems) | Badge grid |
+| 20 | [GitHub Analytics](#-github-analytics) | Stats cards and graphs |
+| 21 | [Metrics Deep Dive](#-metrics-deep-dive) | Lowlighter SVGs |
+| 22 | [AI Agent Architecture](#-ai-agent-architecture) | Mermaid graph |
+| 23 | [Tech Ecosystem](#-tech-ecosystem) | Mermaid mindmap |
+| 24 | [Operations Map](#-operations-map--4-countries) | GeoJSON interactive map |
+| 25 | [CI/CD Pipeline](#-cicd-pipeline) | Mermaid git graph |
+| 26 | [Blog Posts](#-latest-blog-posts) | Auto-updated via Actions |
+| 27 | [Recent Activity](#-recent-activity) | Auto-updated via Actions |
+| 28 | [Depth Sections](#-trading-systems) | 7 collapsible panels |
+| 29 | [Project Timeline](#-project-timeline) | Mermaid timeline |
+| 30 | [3D Crystal](#-3d-crystal--interactive-viewer) | STL 3D model |
 
 </details>
 
@@ -108,35 +97,34 @@
 </div>
 
 ```properties
-# /etc/architect.conf — v9.4
+# /etc/architect.conf — v12.0
 
 [identity]
 name      = Matheus Agueda
-class     = Systems Architect & Security Researcher
+class     = Systems Architect & AI Engineer
 scope     = PT · FR · NL · ES
 style     = git push main → production
-uptime    = 99.7% across 9 services
+uptime    = 99.7% across 12 services
 
 [scale]
-systems   = 9 production services
-agents    = 32 AI (Claude Opus 4.6)
+systems   = 12 production services
+agents    = 17 AI (Claude Opus + Fable 5.1)
+models    = 228 routed via Fleet Brain
 leads     = 1,930,000 processed
 emails    = 385/day × 3 DKIM relays
 countries = 4 active business entities
-tools     = 230+ MCP · 39 CLI · 800+ skills
 
 [compute]
 local     = M4 Pro 14-core · 24 GB unified
-gpu       = Metal (Apple Silicon) · ECDSA accel
 database  = PostgreSQL 16 · 6 GB shared_buffers
 cloud     = Railway ×3 · Vercel ×2 · CF ×2
+fleet     = 228 models · 179 alive · 94.2% free
 
-[security]
-platform  = CIA Einstein (Python + C + Metal)
-scanning  = semgrep · nuclei · nikto · nmap
-crypto    = ECDSA lattice · brainwallet · GPU
-redteam   = garak · promptfoo · LLM jailbreak
-offensive = 39 CLI tools · 10 MCP servers
+[intelligence]
+fleet     = Thompson Sampling + UCB1 routing
+harness   = 85+ tools · 17 agents · ~40 skills
+jarvis    = 656 files · multi-lane browser AI
+proxy     = 49+ systems · unified API gateway
 ```
 
 </td>
@@ -147,17 +135,17 @@ offensive = 39 CLI tools · 10 MCP servers
 <br/><br/>
 
 <!-- Languages -->
-<img src="https://skillicons.dev/icons?i=python,typescript,javascript,c,rust,solidity,bash&theme=dark" alt="languages"/><br/>
+<img src="https://skillicons.dev/icons?i=python,typescript,javascript,rust,go,bash&theme=dark" alt="languages"/><br/>
 <sub><kbd>LANGUAGES</kbd></sub>
 <br/><br/>
 
 <!-- Backend -->
-<img src="https://skillicons.dev/icons?i=nodejs,fastapi,express,flask,graphql,prisma&theme=dark" alt="backend"/><br/>
+<img src="https://skillicons.dev/icons?i=nodejs,fastapi,express,nestjs,graphql,prisma&theme=dark" alt="backend"/><br/>
 <sub><kbd>BACKEND</kbd></sub>
 <br/><br/>
 
 <!-- Frontend -->
-<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,svelte&theme=dark" alt="frontend"/><br/>
+<img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,html,css,threejs&theme=dark" alt="frontend"/><br/>
 <sub><kbd>FRONTEND</kbd></sub>
 <br/><br/>
 
@@ -171,8 +159,8 @@ offensive = 39 CLI tools · 10 MCP servers
 <sub><kbd>DEVOPS & TOOLS</kbd></sub>
 <br/><br/>
 
-<!-- Deploy & Monitoring -->
-<img src="https://skillicons.dev/icons?i=vercel,railway,sentry,grafana,selenium,webpack&theme=dark" alt="monitoring"/><br/>
+<!-- Deploy & AI -->
+<img src="https://skillicons.dev/icons?i=vercel,railway,sentry,grafana,selenium,webpack&theme=dark" alt="deploy"/><br/>
 <sub><kbd>DEPLOY & MONITORING</kbd></sub>
 
 </div>
@@ -205,7 +193,6 @@ offensive = 39 CLI tools · 10 MCP servers
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                    CUSTOM ANIMATED SVG SHOWCASE                         ║ -->
-<!-- ║  3 hand-crafted SVGs with CSS @keyframes + SMIL + neon theme           ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="25"/> Live Dashboard
@@ -228,7 +215,7 @@ offensive = 39 CLI tools · 10 MCP servers
 <img src="./assets/skills-radar.svg" width="100%" alt="Animated skills radar — 8 axes, current vs target overlay"/>
 </div>
 
-> **8-axis skill assessment** — Python (92%), Security (85%), Infrastructure (80%), Cryptography (75%), Trading (65%), Email Delivery (90%), Scraping (88%), AI/ML (78%). Two overlapping polygons show current capability vs. 2026 targets. Scan line overlay + pulsing vertices.
+> **8-axis skill assessment** — Python (95%), AI/ML (92%), Infrastructure (85%), Email Delivery (90%), Trading (70%), Scraping (88%), Full Stack (82%), Automation (90%). Two overlapping polygons show current capability vs. 2026 targets. Scan line overlay + pulsing vertices.
 
 <!-- GRADIENT DIVIDER -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
@@ -241,7 +228,7 @@ offensive = 39 CLI tools · 10 MCP servers
 </div>
 
 > [!TIP]
-> **Interactive network visualization** — Central COMMANDER node with 3 pulsing rings and rotating orbit. 4 satellite clusters (DATA, EMAIL, SECURITY, TRADE) connected by animated particle-flow paths. Infrastructure nodes (PostgreSQL, Railway, Vercel, Cloudflare) positioned at network edges. 14 CSS @keyframes + SMIL `animateMotion` along cubic bezier paths.
+> **Interactive network visualization** — Central COMMANDER node with 3 pulsing rings and rotating orbit. 4 satellite clusters (DATA, EMAIL, AI FLEET, TRADE) connected by animated particle-flow paths. Infrastructure nodes (PostgreSQL, Railway, Vercel, Cloudflare) positioned at network edges. 14 CSS @keyframes + SMIL `animateMotion` along cubic bezier paths.
 
 <!-- WAVE SEPARATOR -->
 <img src="./assets/wave-separator.svg" width="100%" alt="Wave separator"/>
@@ -299,51 +286,47 @@ offensive = 39 CLI tools · 10 MCP servers
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                       SYSTEM ARCHITECTURE                               ║ -->
-<!-- ║                     Mermaid Flowchart — Full Stack                       ║ -->
-<!-- ║              28 nodes · 6 subgraphs · 7 classDefs                       ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gear.png" width="25"/> System Architecture
 
-> $\text{Throughput} = \sum_{i=1}^{n} \lambda_i \cdot \mu_i^{-1}, \quad n = 9 \text{ services}, \quad \lambda \sim \text{Poisson}(\bar{\lambda}=385/\text{day})$
+> $\text{Throughput} = \sum_{i=1}^{n} \lambda_i \cdot \mu_i^{-1}, \quad n = 12 \text{ services}, \quad \lambda \sim \text{Poisson}(\bar{\lambda}=385/\text{day})$
 
 ```mermaid
 %%{init: {'theme': 'dark'}}%%
 
 graph TB
-    CMD["COMMANDER DISPATCHER<br/><i>Routes tasks across 32 AI agents</i>"]
+    CMD["COMMANDER DISPATCHER<br/><i>Orchestrates 17 AI agents across 12 systems</i>"]
+
+    subgraph FLEET["AI INTELLIGENCE"]
+        FB["Fleet Brain<br/>228 models · 94.2% free routing"]
+        PROXY["Fleet Proxy v7.1<br/>49+ systems · unified API"]
+        JARVIS["Jarvis / Computer-Use<br/>656 files · multi-lane browser"]
+        HARNESS["Claude Harness<br/>85+ tools · ~40 skills"]
+    end
 
     subgraph DATA["DATA PIPELINE"]
         GLS["Global Lead Scraper<br/>1.93M leads · 752K eligible"]
-        MAPS["Google Maps API"]
-        DDG["DuckDuckGo Scraper"]
-        CNPJ["CNPJ Harvester"]
+        DDG["DuckDuckGo + Maps"]
         VALID["Email Validator<br/>789K verified emails"]
     end
 
     subgraph MAIL["EMAIL ENGINE"]
         TURBO["Turbo Sender<br/>6 parallel threads · 385/day"]
-        R1["Resend<br/>65/d · DKIM ✓"]
-        R2["SendGrid<br/>120/d · DKIM ✓"]
-        R3["Google SMTP<br/>200/d · DKIM ✓"]
-    end
-
-    subgraph SEC["CIA EINSTEIN"]
-        CIA["Multi-Agent Security<br/>Python + C + Metal GPU"]
-        OSINT["OSINT Recon<br/>37 tools"]
-        VULN["Vuln Scanner<br/>nuclei · nikto · semgrep"]
-        CRYPTO["Cryptanalysis<br/>ECDSA · lattice · GPU"]
+        R1["Resend<br/>65/d · DKIM"]
+        R2["SendGrid<br/>120/d · DKIM"]
+        R3["Google SMTP<br/>200/d · DKIM"]
     end
 
     subgraph TRADE["TRADING SYSTEMS"]
         JESSIE["Jessie Trader<br/>MQL5 · MetaTrader 5"]
-        RUG["RugPull Scanner<br/>TypeScript · Ethers.js"]
-        MOON["MoonSniper<br/>Mempool · MEV"]
+        MOON["MoonSniper<br/>Solana · Mempool"]
     end
 
     subgraph BIZ["MULTI-COUNTRY OPS"]
         JOAO["Joao Bot<br/>WhatsApp · Baileys"]
-        GV["Green Village<br/>FastAPI · Dashboard"]
+        GV["Green Village<br/>Next.js 15 · NestJS 11"]
+        GV72["Green Village 72<br/>3D Configurator"]
         EMP["Empresas.app<br/>PT · FR · NL · ES"]
     end
 
@@ -352,27 +335,23 @@ graph TB
         RW["Railway x3"]
         VC["Vercel x2"]
         CF["Cloudflare x2 zones"]
-        MON["Sentry + Grafana<br/>+ Zombie Killer"]
     end
 
+    CMD --> FLEET
     CMD --> DATA
     CMD --> MAIL
-    CMD --> SEC
     CMD --> TRADE
     CMD --> BIZ
 
-    GLS --> MAPS
     GLS --> DDG
-    GLS --> CNPJ
     GLS --> VALID
     VALID --> TURBO
     TURBO --> R1
     TURBO --> R2
     TURBO --> R3
 
-    CIA --> OSINT
-    CIA --> VULN
-    CIA --> CRYPTO
+    FB --> PROXY
+    HARNESS --> FB
 
     DATA --> PG
     MAIL --> PG
@@ -381,106 +360,102 @@ graph TB
     BIZ --> CF
 
     style CMD fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
+    style FB fill:#BD00FF,stroke:#00D4FF,color:#fff,font-weight:bold,stroke-width:2px
 ```
 
 > [!NOTE]
-> **32 AI agents** coordinate via Claude Code MCP protocol with **230+ tools** across **10 servers**. The Commander Dispatcher routes tasks to specialized subagents based on context — no manual assignment. Leads flow from scraping → validation → email delivery while CIA Einstein monitors security across the entire stack.
+> **17 AI agents** coordinate via Claude Code MCP protocol. The **Fleet Brain** routes tasks across **228 AI models** (179 alive) from 15+ providers, achieving **94.2% free routing** via Thompson Sampling. Leads flow from scraping through validation to email delivery, while the Jarvis computer-use system handles multi-lane browser automation across all services.
 
 <!-- GRADIENT DIVIDER -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
-<!-- ║                    CLASS HIERARCHY — CIA EINSTEIN                        ║ -->
-<!-- ║                   Mermaid Class Diagram — 8 classes                      ║ -->
+<!-- ║                    FLEET BRAIN — AI MODEL ROUTING                       ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Classical%20Building.png" width="25"/> Class Hierarchy — CIA Einstein Agents
+## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" width="25"/> Fleet Brain — AI Model Routing
+
+> The most significant infrastructure built in 2026 — a self-improving AI routing system that slashed model costs by **94.2%** while maintaining quality.
 
 ```mermaid
-%%{init: {'theme': 'dark'}}%%
-classDiagram
-    class BaseAgent {
-        <<abstract>>
-        +String name
-        +String[] tools
-        +Dict memory
-        +execute(task) Result
-        +delegate(subtask) Agent
-        +save_memory() void
-    }
+%%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#FF2D95', 'primaryTextColor': '#fff', 'primaryBorderColor': '#BD00FF', 'lineColor': '#00D4FF'}}}%%
 
-    class CommanderDispatcher {
-        +route_task(prompt) Agent
-        +parallel_fanout(tasks) Result[]
-        +cross_project_sync() void
-    }
+graph LR
+    TASK["Incoming Task"]
 
-    class SecurityAgent {
-        +scan_target(host) Findings
-        +nuclei_scan(templates) CVE[]
-        +osint_gather(entity) Dossier
-    }
+    subgraph CLASSIFY["Task Classification"]
+        CL["Semantic Classifier<br/>OPUS vs OFFLOAD gate"]
+        CACHE["Semantic Cache<br/>Dedup identical queries"]
+    end
 
-    class ScraperAgent {
-        +google_maps_scrape(query) Lead[]
-        +duckduckgo_harvest(niche) Lead[]
-        +validate_emails(leads) Lead[]
-        +proxy_rotate() Proxy
-    }
+    subgraph ROUTE["Thompson Sampling Router"]
+        TS["Multi-Armed Bandit<br/>UCB1 + Thompson"]
+        PROV["15+ Providers<br/>228 models mapped"]
+    end
 
-    class EmailAgent {
-        +turbo_send(campaign) Stats
-        +bounce_monitor() Alert[]
-        +dkim_verify(relay) bool
-        +circuit_breaker(relay) void
-    }
+    subgraph TIERS["Execution Tiers"]
+        FREE["FREE Fleet<br/>179 alive models · 0 tokens"]
+        HAIKU["Haiku 4.5<br/>Reads & search"]
+        SONNET["Sonnet 5<br/>Subagents & drafts"]
+        OPUS["Opus 4.8<br/>CEO main loop"]
+        FABLE["Fable 5.1<br/>Chief Scientist · hardest 1%"]
+    end
 
-    class CryptoAgent {
-        +ecdsa_attack(curve) Key
-        +lattice_reduce(basis) Vector
-        +brainwallet_audit(dict) Key[]
-        +metal_gpu_multiply(points) Result
-    }
+    subgraph FEEDBACK["Self-Improvement"]
+        EVAL["Eval Corpus<br/>214 entries"]
+        WIS["Weighted Intelligence<br/>WIS 0.96+"]
+        DREAM["Dreaming Engine<br/>9-step synthesis"]
+    end
 
-    class TradeAgent {
-        +mql5_signal(pair) Signal
-        +mempool_sniff(chain) Tx[]
-        +rugpull_detect(token) Risk
-    }
+    TASK --> CL
+    CL --> CACHE
+    CACHE --> TS
+    TS --> PROV
+    PROV --> FREE
+    PROV --> HAIKU
+    PROV --> SONNET
+    PROV --> OPUS
+    PROV --> FABLE
 
-    class EinsteinCore {
-        +correlation_matrix Dict
-        +trust_scores Dict
-        +cost_ledger Ledger
-        +orchestrate() void
-        +anomaly_detect() Alert[]
-    }
+    FREE --> EVAL
+    EVAL --> WIS
+    WIS --> DREAM
+    DREAM --> TS
 
-    BaseAgent <|-- CommanderDispatcher
-    BaseAgent <|-- SecurityAgent
-    BaseAgent <|-- ScraperAgent
-    BaseAgent <|-- EmailAgent
-    BaseAgent <|-- CryptoAgent
-    BaseAgent <|-- TradeAgent
-    BaseAgent <|-- EinsteinCore
-
-    CommanderDispatcher --> SecurityAgent : dispatches
-    CommanderDispatcher --> ScraperAgent : dispatches
-    CommanderDispatcher --> EmailAgent : dispatches
-    CommanderDispatcher --> CryptoAgent : dispatches
-    CommanderDispatcher --> TradeAgent : dispatches
-    EinsteinCore --> CommanderDispatcher : orchestrates
-    ScraperAgent --> EmailAgent : feeds leads
-    SecurityAgent --> EinsteinCore : reports findings
-    CryptoAgent --> SecurityAgent : shares keys
+    style TASK fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold
+    style FREE fill:#39d353,stroke:#00D4FF,color:#000,font-weight:bold
+    style FABLE fill:#BD00FF,stroke:#FF2D95,color:#fff,font-weight:bold
 ```
+
+<details>
+<summary><b>Fleet Brain Technical Details</b> — 228 models, Thompson Sampling, self-improving closed loop</summary>
+<br/>
+
+| Metric | Value |
+|:---|:---|
+| **Total Models Mapped** | 228 across 15+ providers |
+| **Alive & Routable** | 179 models |
+| **Free Routing Rate** | 94.2% of tasks routed to free models |
+| **Routing Algorithm** | Thompson Sampling + UCB1 (true Bayesian) |
+| **Intelligence Score (WIS)** | 0.96+ (weighted, calibrated) |
+| **Eval Corpus** | 214 entries with outcome feedback |
+| **Semantic Cache** | Deduplicates identical queries |
+| **Dreaming Engine** | 9-step overnight synthesis for model improvement |
+| **Decision Digest** | Real-time routing visibility |
+
+**Task Classification Gate:**
+- `OFFLOAD` (safe for free models): classify, summarize, translate, parse, extract, format, clean, search, OCR
+- `STAY_ON_OPUS` (requires paid tier): debug, fix, architecture, security, final code edits, deploy, DB mutations
+
+**Self-Improving Loop:** Every task outcome feeds back into the Thompson Sampling prior. The dreaming engine runs a 9-step synthesis overnight to rebalance model priors. WIS (Weighted Intelligence Score) measures calibrated accuracy — the system gets smarter with every query routed.
+
+</details>
 
 <!-- WAVE SEPARATOR -->
 <img src="./assets/wave-separator.svg" width="100%" alt="Wave separator"/>
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                    DATABASE SCHEMA — LEAD PIPELINE                       ║ -->
-<!-- ║                   Mermaid ER Diagram — 6 entities                        ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Card%20File%20Box.png" width="25"/> Database Schema — Lead Pipeline
@@ -572,7 +547,6 @@ erDiagram
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                      EMAIL PIPELINE FLOW                                ║ -->
-<!-- ║                   Mermaid Sequence Diagram — 8 actors                    ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Incoming%20Envelope.png" width="25"/> Email Delivery Pipeline
@@ -590,7 +564,7 @@ sequenceDiagram
     participant R3 as Google SMTP (200/d)
     participant IN as Recipient Inbox
 
-    SC->>DB: 1.93M raw leads (Maps + DDG + CNPJ)
+    SC->>DB: 1.93M raw leads (Maps + DDG)
     activate DB
     DB->>VA: Batch validate emails
     activate VA
@@ -620,7 +594,6 @@ sequenceDiagram
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                       LEAD LIFECYCLE                                     ║ -->
-<!-- ║                    Mermaid State Diagram — 12 states                     ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Card%20Index%20Dividers.png" width="25"/> Lead Lifecycle State Machine
@@ -631,30 +604,21 @@ sequenceDiagram
 %%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#FF2D95', 'primaryTextColor': '#ffffff', 'primaryBorderColor': '#BD00FF', 'lineColor': '#00D4FF'}}}%%
 
 stateDiagram-v2
-    [*] --> Scraped: Google Maps / DDG / CNPJ
-
+    [*] --> Scraped: Google Maps / DDG
     Scraped --> Validated: Email verification pass
     Scraped --> Dropped: Syntax error / no email
-
     Validated --> Eligible: quality_score >= 40
     Validated --> Rejected: invalid / bounced / junk
-
     Eligible --> Queued: Campaign assignment
     Queued --> Sending: Turbo Sender dispatch
-
     Sending --> Delivered: DKIM pass + 200 OK
     Sending --> Bounced: Hard bounce
     Sending --> Deferred: Soft bounce
-
     Deferred --> Sending: Retry after backoff
-
     Delivered --> Opened: Tracking pixel fired
     Opened --> Replied: Engagement detected
-
     Replied --> Converted: Deal closed
-
     Bounced --> Blacklisted: 3+ bounces from domain
-
     Blacklisted --> [*]
     Converted --> [*]
     Rejected --> [*]
@@ -666,7 +630,6 @@ stateDiagram-v2
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                   TECHNOLOGY DISTRIBUTION                                ║ -->
-<!-- ║                   Mermaid Pie Charts ×2                                  ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pie%20Chart.png" width="25"/> Technology Distribution
@@ -682,13 +645,13 @@ stateDiagram-v2
 %%{init: {'theme': 'dark'}}%%
 pie showData
     title Production Tech Stack
-    "Python" : 45
-    "TypeScript" : 20
-    "JavaScript" : 12
-    "C / Metal" : 8
-    "MQL5" : 5
-    "Solidity" : 5
-    "Bash" : 3
+    "Python" : 42
+    "TypeScript" : 22
+    "JavaScript" : 15
+    "MQL5" : 6
+    "Rust" : 5
+    "Go" : 4
+    "Bash" : 4
     "SQL" : 2
 ```
 
@@ -717,7 +680,6 @@ pie showData
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                    DEVELOPMENT TIMELINE                                  ║ -->
-<!-- ║                   Mermaid Gantt — 5 sections, 18 milestones              ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Calendar.png" width="25"/> Development Timeline
@@ -732,35 +694,36 @@ gantt
     section Lead Scraper (GLS)
         Google Maps Scraper       :done, gls1, 2024-06-01, 2024-08-15
         DuckDuckGo Harvester      :done, gls2, 2024-08-01, 2024-09-30
-        CNPJ Enrichment           :done, gls3, 2024-09-01, 2024-10-15
-        Email Validation Pipeline :done, gls4, 2024-10-01, 2024-12-01
-        Turbo Sender v1           :done, gls5, 2024-11-15, 2025-01-15
-        Quality Scoring Engine    :done, gls6, 2025-01-01, 2025-03-01
-        Turbo Sender v2 (6-thread):done, gls7, 2025-06-01, 2025-08-01
-        SMTP Warmup Orchestrator  :active, gls8, 2026-02-01, 2026-06-01
+        Email Validation Pipeline :done, gls3, 2024-10-01, 2024-12-01
+        Turbo Sender v1           :done, gls4, 2024-11-15, 2025-01-15
+        Quality Scoring Engine    :done, gls5, 2025-01-01, 2025-03-01
+        Turbo Sender v2 (6-thread):done, gls6, 2025-06-01, 2025-08-01
+        SMTP Warmup Orchestrator  :done, gls7, 2026-02-01, 2026-06-01
 
-    section CIA Einstein
-        Core Agent Framework      :done, cia1, 2025-01-01, 2025-04-01
-        Metal GPU ECDSA           :done, cia2, 2025-03-01, 2025-06-01
-        Lattice Reduction (LLL)   :done, cia3, 2025-05-01, 2025-08-01
-        32-Agent MCP Orchestration:done, cia4, 2025-07-01, 2025-10-01
-        Einstein v9.4 Autonomous  :active, cia5, 2026-01-01, 2026-07-01
+    section AI Infrastructure
+        Claude Harness v1         :done, ai1, 2025-07-01, 2025-10-01
+        Fleet Brain v1            :done, ai2, 2025-10-01, 2026-01-01
+        Fleet Proxy v7.1          :done, ai3, 2026-01-01, 2026-04-01
+        228-Model Router          :done, ai4, 2026-04-01, 2026-06-01
+        Self-Improving Loop       :done, ai5, 2026-06-01, 2026-08-01
+        Jarvis Computer-Use       :active, ai6, 2026-07-01, 2026-10-01
 
     section Trading Systems
         Jessie Trader MQL5        :done, jt1, 2024-09-01, 2025-03-01
-        RugPull Detector           :done, rp1, 2025-06-01, 2025-09-01
-        MoonSniper Mempool        :active, ms1, 2025-10-01, 2026-06-01
+        MoonSniper Solana         :active, ms1, 2025-10-01, 2026-09-01
 
     section Business Ops
         Green Village Website     :done, gv1, 2024-03-01, 2024-06-01
         Joao Bot WhatsApp         :done, jb1, 2024-12-01, 2025-04-01
         Empresa Automation        :done, ea1, 2025-02-01, 2025-06-01
-        GeeLark Multi-Account     :active, gl1, 2025-09-01, 2026-04-01
+        Green Village 72 (3D)     :done, gv2, 2026-06-01, 2026-09-01
+        MHL Platform (Next+Nest)  :active, mhl1, 2026-03-01, 2026-12-01
 
     section Infrastructure
         PostgreSQL 16 Optimization:done, inf1, 2025-08-01, 2025-10-01
         DKIM 3-Relay Setup        :done, inf2, 2025-10-01, 2025-12-01
-        Claude Code Hacker Config :done, inf3, 2026-04-01, 2026-05-17
+        Harness Optimization      :done, inf3, 2026-04-01, 2026-05-17
+        Architecture Evolution    :done, inf4, 2026-09-01, 2026-09-18
 ```
 
 <!-- GRADIENT DIVIDER -->
@@ -768,7 +731,6 @@ gantt
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                    TECHNOLOGY RADAR                                      ║ -->
-<!-- ║                   Mermaid Quadrant Chart — 15 technologies               ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Compass.png" width="25"/> Technology Radar
@@ -780,21 +742,21 @@ quadrantChart
     x-axis Low Maturity --> High Maturity
     y-axis Low Investment --> High Investment
 
-    Python: [0.85, 0.90]
-    TypeScript: [0.75, 0.65]
-    C + Metal: [0.55, 0.80]
+    Python: [0.90, 0.92]
+    TypeScript: [0.80, 0.70]
     MQL5: [0.70, 0.45]
-    Solidity: [0.40, 0.55]
-    PostgreSQL: [0.90, 0.70]
-    Claude AI/MCP: [0.35, 0.95]
-    Playwright: [0.65, 0.60]
+    Rust: [0.40, 0.50]
+    PostgreSQL: [0.90, 0.75]
+    Claude AI/MCP: [0.45, 0.95]
+    Fleet Brain: [0.35, 0.90]
+    Playwright: [0.70, 0.60]
     Docker/Railway: [0.80, 0.50]
-    ECDSA Research: [0.30, 0.85]
-    Lattice Crypto: [0.20, 0.75]
-    Mempool Analysis: [0.25, 0.60]
-    Email Deliverability: [0.75, 0.80]
-    OSINT Tooling: [0.50, 0.40]
-    WhatsApp Automation: [0.60, 0.35]
+    Computer-Use: [0.30, 0.85]
+    Three.js: [0.50, 0.40]
+    Email Deliverability: [0.80, 0.80]
+    WhatsApp Automation: [0.65, 0.35]
+    Next.js + NestJS: [0.75, 0.65]
+    Solana/Web3: [0.35, 0.55]
 ```
 
 <!-- WAVE SEPARATOR -->
@@ -802,7 +764,6 @@ quadrantChart
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                    LEAD PIPELINE JOURNEY                                 ║ -->
-<!-- ║               Mermaid Journey Diagram — NEW TYPE                         ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Roller%20Coaster.png" width="25"/> Lead Pipeline Journey
@@ -839,14 +800,13 @@ journey
 ```
 
 > [!IMPORTANT]
-> Each lead traverses **5 pipeline stages** with **18 discrete steps**. The satisfaction scores reflect operational reliability — lower scores (bounces, deduplication) indicate where friction exists. The circuit breaker pattern isolates failing relays before cascade failures propagate. Total pipeline latency from scraping to delivery: **~48 hours** (dominated by warmup pacing).
+> Each lead traverses **5 pipeline stages** with **18 discrete steps**. The circuit breaker pattern isolates failing relays before cascade failures propagate. Total pipeline latency from scraping to delivery: **~48 hours** (dominated by warmup pacing).
 
 <!-- GRADIENT DIVIDER -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                    EMAIL DELIVERY METRICS                                ║ -->
-<!-- ║               Mermaid xychart-beta — NEW TYPE                            ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="25"/> Email Delivery Metrics
@@ -867,74 +827,17 @@ xychart-beta
 <img src="./assets/wave-separator.svg" width="100%" alt="Wave separator"/>
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
-<!-- ║                  SYSTEM BLOCK ARCHITECTURE                               ║ -->
-<!-- ║               Mermaid block-beta — NEW TYPE                              ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bricks.png" width="25"/> System Block Architecture
-
-```mermaid
-%%{init: {'theme': 'dark'}}%%
-
-graph LR
-    CMD["COMMANDER<br/>DISPATCHER"]
-
-    subgraph DATA["Data Pipeline"]
-        GLS["Global Lead Scraper"]
-        MAPS["Maps + DDG + CNPJ"]
-        VALID["Email Validator"]
-    end
-
-    subgraph MAIL["Email Engine"]
-        TURBO["Turbo Sender"]
-        RELAYS["3 DKIM Relays"]
-        BOUNCE["Bounce Monitor"]
-    end
-
-    subgraph SEC["Security"]
-        CIA["CIA Einstein"]
-        OSINT["OSINT · 37 tools"]
-        CRYPTO["Cryptanalysis"]
-    end
-
-    subgraph TRADE["Trading"]
-        JESSIE["Jessie Trader"]
-        RUGPULL["RugPull Scanner"]
-        MOON["MoonSniper"]
-    end
-
-    subgraph INFRA["Infrastructure"]
-        PG[("PostgreSQL 16")]
-        RW["Railway x3"]
-        VC["Vercel x2"]
-    end
-
-    CMD --> DATA
-    CMD --> MAIL
-    CMD --> SEC
-    CMD --> TRADE
-    DATA --> INFRA
-    MAIL --> INFRA
-
-    style CMD fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
-```
-
-<!-- GRADIENT DIVIDER -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:BD00FF,100:FF2D95&height=2" width="100%"/>
-
-<!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                      FEATURED CODE                                      ║ -->
-<!-- ║     11 production code snippets · 11 languages · real systems            ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Keyboard.png" width="25"/> Featured Code
 
 > [!CAUTION]
-> These are **real production snippets** extracted from live systems — not toy examples. Each demonstrates a distinct architectural pattern: async pipelines, GPU compute shaders, algorithmic trading signals, smart contract simulation, event-driven messaging, complex SQL with CTEs/window functions, shell orchestration, systems programming, container optimization, and declarative infrastructure.
+> These are **real production snippets** extracted from live systems — not toy examples. Each demonstrates a distinct architectural pattern: async pipelines, algorithmic trading signals, AI model routing, event-driven messaging, complex SQL, shell orchestration, systems programming, container optimization, and declarative infrastructure.
 
 <table>
 
-<!-- ROW 1: Python + C -->
+<!-- ROW 1: Python + Fleet Brain -->
 <tr>
 <td width="50%" valign="top">
 
@@ -1000,64 +903,78 @@ async def dispatch_campaign(
 </td>
 <td width="50%" valign="top">
 
-**CIA Einstein** — Metal GPU ECDSA point multiplication `C + Metal`
+**Fleet Brain** — Thompson Sampling model router `Python 3.14`
 
-```c
-// Apple Silicon · Metal Compute Shader
-// secp256k1: y² = x³ + 7 (mod p)
-// p = 0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
-//     FFFFFFFFFFFFFFFFFFFFFFFEFFFFFC2F
+```python
+from __future__ import annotations
+import numpy as np
+from dataclasses import dataclass
 
-#include <metal_stdlib>
-using namespace metal;
+@dataclass
+class ModelArm:
+    name: str
+    provider: str
+    cost_per_1k: float
+    alpha: float = 1.0   # Beta prior success
+    beta_: float = 1.0   # Beta prior failure
 
-typedef struct { uint32_t d[8]; } uint256_t;
-typedef struct { uint256_t x, y; } ECPoint;
+    def sample(self) -> float:
+        return np.random.beta(self.alpha, self.beta_)
 
-constant ECPoint EC_INFINITY = {{{0}}, {{0}}};
+    def update(self, success: bool) -> None:
+        if success:
+            self.alpha += 1.0
+        else:
+            self.beta_ += 1.0
 
-ECPoint ec_double(ECPoint P) {
-    // λ = (3x² + a) / (2y)  mod p
-    // For secp256k1: a = 0, so λ = 3x² / 2y
-    uint256_t lambda = mod_div(
-        mod_mul(THREE, mod_sq(P.x)),
-        mod_add(P.y, P.y)
-    );
-    uint256_t x3 = mod_sub(
-        mod_sq(lambda),
-        mod_add(P.x, P.x)
-    );
-    uint256_t y3 = mod_sub(
-        mod_mul(lambda, mod_sub(P.x, x3)),
-        P.y
-    );
-    return (ECPoint){x3, y3};
-}
+    @property
+    def ucb1(self) -> float:
+        n = self.alpha + self.beta_ - 2
+        if n == 0:
+            return float('inf')
+        mean = self.alpha / (self.alpha + self.beta_)
+        return mean + np.sqrt(2 * np.log(n) / n)
 
-kernel void ec_point_mul(
-    device const uint256_t* scalars [[buffer(0)]],
-    device const ECPoint*   bases   [[buffer(1)]],
-    device ECPoint*         results [[buffer(2)]],
-    uint tid [[thread_position_in_grid]]
-) {
-    ECPoint R = EC_INFINITY;
-    uint256_t k = scalars[tid];
-    ECPoint P = bases[tid];
 
-    // Double-and-add: O(256) iterations
-    for (int i = 255; i >= 0; i--) {
-        R = ec_double(R);
-        if (bit_at(k, i))
-            R = ec_add(R, P);
-    }
-    results[tid] = R;
-}
+class FleetRouter:
+    """Route tasks to cheapest capable model.
+
+    228 models, 179 alive, 15+ providers.
+    94.2% free routing via Thompson Sampling.
+    """
+    def __init__(self, arms: list[ModelArm]):
+        self.arms = sorted(
+            arms, key=lambda a: a.cost_per_1k
+        )
+        self.free = [
+            a for a in self.arms
+            if a.cost_per_1k == 0
+        ]
+
+    async def route(
+        self, task: str, difficulty: str
+    ) -> ModelArm:
+        if difficulty == 'OFFLOAD':
+            # Thompson sample among free models
+            candidates = self.free
+        else:
+            candidates = self.arms
+
+        scores = [
+            (arm, arm.sample()) for arm in candidates
+        ]
+        return max(scores, key=lambda x: x[1])[0]
+
+    def feedback(
+        self, arm: ModelArm, quality: float
+    ) -> None:
+        arm.update(quality > 0.7)
 ```
 
 </td>
 </tr>
 
-<!-- ROW 2: MQL5 + Solidity -->
+<!-- ROW 2: MQL5 + JavaScript -->
 <tr>
 <td width="50%" valign="top">
 
@@ -1115,66 +1032,6 @@ bool ConfirmOnM15() {
 ```
 
 </td>
-<td width="50%" valign="top">
-
-**RugPull Scanner** — Honeypot detection via simulation `Solidity`
-
-```solidity
-// SPDX-License-Identifier: MIT
-// Solidity 0.8.20 · Ethers.js · On-chain
-pragma solidity ^0.8.20;
-
-import "@uniswap/v2-periphery/IUniswapV2Router02.sol";
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-
-contract HoneypotDetector {
-    IUniswapV2Router02 public immutable router;
-    address public constant WETH =
-        0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2;
-
-    constructor(address _router) {
-        router = IUniswapV2Router02(_router);
-    }
-
-    /// @notice Simulates sell to detect honeypot
-    /// @param token Target ERC-20 address
-    /// @param amount Token amount to sell
-    /// @return canSell True if sell succeeds
-    /// @return amountOut ETH received
-    function simulateSell(
-        address token,
-        uint256 amount
-    ) external returns (
-        bool canSell,
-        uint256 amountOut
-    ) {
-        IERC20(token).approve(
-            address(router), amount
-        );
-
-        address[] memory path = new address[](2);
-        path[0] = token;
-        path[1] = WETH;
-
-        try router.swapExactTokensForETH(
-            amount, 0, path,
-            address(this),
-            block.timestamp + 60
-        ) returns (uint256[] memory amounts) {
-            return (amounts[1] > 0, amounts[1]);
-        } catch {
-            // Sell reverted = HONEYPOT DETECTED
-            return (false, 0);
-        }
-    }
-}
-```
-
-</td>
-</tr>
-
-<!-- ROW 3: Node.js + SQL -->
-<tr>
 <td width="50%" valign="top">
 
 **Joao Bot** — WhatsApp Automation `Node.js + Baileys`
@@ -1238,6 +1095,10 @@ async function routeMessage(sock, msg) {
 ```
 
 </td>
+</tr>
+
+<!-- ROW 3: SQL + Bash -->
+<tr>
 <td width="50%" valign="top">
 
 **Lead Quality Engine** `SQL (PostgreSQL 16)`
@@ -1313,10 +1174,6 @@ LIMIT 1000;
 ```
 
 </td>
-</tr>
-
-<!-- ROW 4: Bash + Rust -->
-<tr>
 <td width="50%" valign="top">
 
 **Infrastructure Automation** `Bash`
@@ -1328,11 +1185,11 @@ LIMIT 1000;
 set -euo pipefail
 
 readonly SERVICES=(
-    cia-einstein
     global-lead-scraper
     joao-bot
     jessie-trader
     green-village
+    mobile-home-logistic
 )
 readonly HEALTH_TIMEOUT=30
 readonly ROLLBACK_ON_FAIL=true
@@ -1405,105 +1262,78 @@ main "$@"
 ```
 
 </td>
+</tr>
+
+<!-- ROW 4: Rust + Go -->
+<tr>
 <td width="50%" valign="top">
 
 **MoonSniper** — Mempool transaction decoder `Rust`
 
 ```rust
-// Mempool frontrunning · MEV extraction
-// Decode pending Uniswap V2 swaps from
-// raw transaction data in real-time
+// Solana mempool monitoring · token launch
+// sniping · real-time transaction decode
 
-use ethers::prelude::*;
-use ethers::abi::{self, Token};
+use solana_sdk::pubkey::Pubkey;
+use solana_client::rpc_client::RpcClient;
 use std::sync::Arc;
-
-const UNISWAP_V2_ROUTER: &str =
-    "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D";
-const SWAP_EXACT_ETH: [u8; 4] =
-    [0x7f, 0xf3, 0x6a, 0xb5];
+use tokio::sync::mpsc;
 
 #[derive(Debug)]
 struct PendingSwap {
-    tx_hash: H256,
-    token_out: Address,
-    amount_in: U256,
-    min_out: U256,
-    deadline: U256,
-    gas_price: U256,
+    signature: String,
+    token_mint: Pubkey,
+    amount_in: u64,
+    pool_address: Pubkey,
+    slot: u64,
 }
 
-async fn monitor_mempool(
-    ws: Arc<Provider<Ws>>,
-) -> Result<(), Box<dyn std::error::Error>> {
-    let mut stream = ws
-        .subscribe_pending_txs()
-        .await?;
+async fn monitor_new_pools(
+    rpc: Arc<RpcClient>,
+    tx: mpsc::Sender<PendingSwap>,
+) -> anyhow::Result<()> {
+    let raydium_program = Pubkey::from_str(
+        "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8"
+    )?;
 
-    while let Some(tx_hash) = stream.next().await {
-        let tx = match ws
-            .get_transaction(tx_hash)
-            .await? {
-            Some(t) => t,
-            None => continue,
-        };
+    let sub = rpc.logs_subscribe(
+        RpcTransactionLogsFilter::Mentions(
+            vec![raydium_program.to_string()]
+        ),
+        None,
+    )?;
 
-        // Filter: Uniswap V2 Router only
-        if tx.to != Some(
-            UNISWAP_V2_ROUTER.parse()?
-        ) { continue; }
-
-        let input = &tx.input;
-        if input.len() < 4 { continue; }
-
-        let selector: [u8; 4] =
-            input[..4].try_into()?;
-
-        if selector == SWAP_EXACT_ETH {
-            let decoded = abi::decode(
-                &[
-                    abi::ParamType::Uint(256),
-                    abi::ParamType::Array(
-                        Box::new(
-                            abi::ParamType::Address
-                        )
-                    ),
-                    abi::ParamType::Address,
-                    abi::ParamType::Uint(256),
-                ],
-                &input[4..],
+    while let Ok(log) = sub.recv() {
+        if let Some(swap) =
+            decode_pool_init(&log) {
+            // Check liquidity depth
+            let pool = rpc.get_account(
+                &swap.pool_address
+            )?;
+            let liquidity = parse_pool_state(
+                &pool.data
             )?;
 
-            let swap = PendingSwap {
-                tx_hash,
-                token_out: extract_addr(
-                    &decoded[1]
-                ),
-                amount_in: tx.value,
-                min_out: extract_u256(
-                    &decoded[0]
-                ),
-                deadline: extract_u256(
-                    &decoded[3]
-                ),
-                gas_price: tx.gas_price
-                    .unwrap_or_default(),
-            };
-
-            if is_profitable(&swap).await? {
-                execute_frontrun(&swap).await?;
+            if liquidity.sol_reserve > 5_000_000_000
+                && !is_honeypot(&swap.token_mint)
+            {
+                tx.send(swap).await?;
             }
         }
     }
     Ok(())
 }
+
+fn is_honeypot(mint: &Pubkey) -> bool {
+    // Check: freeze authority, mint authority,
+    // transfer fee, close authority
+    let info = get_mint_info(mint);
+    info.freeze_authority.is_some()
+        || info.mint_authority.is_some()
+}
 ```
 
 </td>
-</tr>
-
-<!-- ROW 5: Go + Dockerfile -->
-<tr>
 <td width="50%" valign="top">
 
 **Proxy Rotator** — Residential proxy health checker `Go`
@@ -1594,6 +1424,10 @@ func (p *Proxy) Check(
 ```
 
 </td>
+</tr>
+
+<!-- ROW 5: Dockerfile + YAML -->
+<tr>
 <td width="50%" valign="top">
 
 **Production Container** — Multi-stage optimized `Dockerfile`
@@ -1628,32 +1462,24 @@ RUN playwright install chromium \
 FROM python:3.14-slim AS production
 
 LABEL maintainer="Matheus Agueda"
-LABEL version="2.0"
+LABEL version="3.0"
 LABEL description="Global Lead Scraper"
 
 WORKDIR /app
 
-# Non-root user for security
 RUN groupadd -r app && useradd -r -g app app
 
-# Copy Python packages
 COPY --from=builder /install /usr/local
-
-# Copy Playwright browsers
 COPY --from=playwright \
     /root/.cache/ms-playwright \
     /home/app/.cache/ms-playwright
-
-# Copy application code
 COPY --chown=app:app . .
 
-# PostgreSQL client for pg_isready
 RUN apt-get update && apt-get install -y \
         --no-install-recommends \
         libpq5 postgresql-client curl \
     && rm -rf /var/lib/apt/lists/*
 
-# Health check endpoint
 HEALTHCHECK --interval=30s \
     --timeout=5s --retries=3 \
     CMD curl -sf http://localhost:8000/health \
@@ -1671,17 +1497,13 @@ CMD ["run_turbo_sender.py", "--campaign=9"]
 ```
 
 </td>
-</tr>
+<td width="50%" valign="top">
 
-<!-- ROW 6: YAML CI/CD -->
-<tr>
-<td colspan="2" valign="top">
-
-**CI/CD Pipeline** — GitHub Actions multi-service deploy `YAML`
+**CI/CD Pipeline** — GitHub Actions `YAML`
 
 ```yaml
 # .github/workflows/deploy.yml
-# Triggered on push to main — parallel service deploy with matrix strategy
+# Parallel service deploy with matrix
 name: Deploy All Services
 on:
   push:
@@ -1689,7 +1511,7 @@ on:
   workflow_dispatch:
     inputs:
       service:
-        description: 'Single service to deploy (or "all")'
+        description: 'Service (or "all")'
         required: false
         default: 'all'
 
@@ -1717,16 +1539,22 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.14' }
       - run: pip install -r requirements.txt
-      - run: python -m pytest tests/ -x --tb=short
+      - run: pytest tests/ -x --tb=short
         env:
-          DATABASE_URL: postgresql://postgres:test@localhost/global_leads_test
+          DATABASE_URL: >-
+            postgresql://postgres:test
+            @localhost/global_leads_test
 
   deploy:
     needs: test
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        service: [cia-einstein, global-lead-scraper, joao-bot, green-village, jessie-trader]
+        service:
+          - global-lead-scraper
+          - joao-bot
+          - green-village
+          - jessie-trader
       fail-fast: false
     steps:
       - uses: actions/checkout@v4
@@ -1738,14 +1566,12 @@ jobs:
       - name: Health Check
         run: |
           for i in $(seq 1 30); do
-            if curl -sf "https://${{ matrix.service }}.up.railway.app/health"; then
-              echo "✓ ${{ matrix.service }} healthy"
-              exit 0
-            fi
-            sleep 2
-          done
-          echo "✗ ${{ matrix.service }} failed health check"
-          exit 1
+            url="https://${{ matrix.service }}"
+            url="${url}.up.railway.app/health"
+            if curl -sf "$url"; then
+              echo "healthy"; exit 0
+            fi; sleep 2
+          done; exit 1
 ```
 
 </td>
@@ -1757,7 +1583,6 @@ jobs:
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                       CHESS GAME                                         ║ -->
-<!-- ║          Interactive via GitHub Issues + Actions workflow                ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Activities/Chess%20Pawn.png" width="25"/> Play Chess Against Me
@@ -1803,34 +1628,40 @@ The board auto-updates via GitHub Actions after each valid move.
 
 <table>
 <tr>
-<td align="center" width="33%">
+<td align="center" width="25%">
 
 <img src="https://img.shields.io/badge/Global_Lead_Scraper-FF2D95?style=for-the-badge&logoColor=white" alt="GLS"/>
 <br/><sub><b>Lead Generation Engine</b></sub><br/>
-<sub>1.93M leads · 752K eligible · 789K emails</sub><br/>
+<sub>1.93M leads · 752K eligible</sub><br/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
 <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt=""/>
 
 </td>
-<td align="center" width="33%">
+<td align="center" width="25%">
 
-<img src="https://img.shields.io/badge/CIA_Einstein-BD00FF?style=for-the-badge&logoColor=white" alt="CIA"/>
-<br/><sub><b>AI Security Research Platform</b></sub><br/>
-<sub>Python + C + Metal GPU · Multi-agent</sub><br/>
+<img src="https://img.shields.io/badge/Fleet_Brain-BD00FF?style=for-the-badge&logoColor=white" alt="Fleet"/>
+<br/><sub><b>228-Model AI Router</b></sub><br/>
+<sub>94.2% free · Thompson Sampling</sub><br/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/Metal-555555?style=flat-square&logo=apple&logoColor=white" alt=""/>
+<img src="https://img.shields.io/badge/AI-FF6F00?style=flat-square&logoColor=white" alt=""/>
 
 </td>
-<td align="center" width="33%">
+<td align="center" width="25%">
 
 <img src="https://img.shields.io/badge/Joao_Bot-00D4FF?style=for-the-badge&logoColor=white" alt="Joao"/>
-<br/><sub><b>WhatsApp Automation Platform</b></sub><br/>
+<br/><sub><b>WhatsApp Automation</b></sub><br/>
 <sub>Node.js · Baileys · Railway</sub><br/>
 <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt=""/>
 <img src="https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt=""/>
+
+</td>
+<td align="center" width="25%">
+
+<img src="https://img.shields.io/badge/Green_Village_72-39d353?style=for-the-badge&logoColor=white" alt="GV72"/>
+<br/><sub><b>3D Interactive Configurator</b></sub><br/>
+<sub>Three.js · JavaScript</sub><br/>
+<img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt=""/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt=""/>
 
 </td>
 </tr>
@@ -1839,7 +1670,7 @@ The board auto-updates via GitHub Actions after each valid move.
 
 <img src="https://img.shields.io/badge/Jessie_Trader-FF2D95?style=for-the-badge&logoColor=white" alt="Jessie"/>
 <br/><sub><b>Algorithmic Trading</b></sub><br/>
-<sub>MQL5 · MetaTrader 5 · Live execution</sub><br/>
+<sub>MQL5 · MetaTrader 5 · Live</sub><br/>
 <img src="https://img.shields.io/badge/MQL5-4169E1?style=flat-square&logoColor=white" alt=""/>
 <img src="https://img.shields.io/badge/MetaTrader-FF6600?style=flat-square&logoColor=white" alt=""/>
 
@@ -1847,11 +1678,39 @@ The board auto-updates via GitHub Actions after each valid move.
 <td align="center">
 
 <img src="https://img.shields.io/badge/Green_Village-BD00FF?style=for-the-badge&logoColor=white" alt="GV"/>
-<br/><sub><b>Business Platform</b></sub><br/>
-<sub>FastAPI · Dashboard · Calculator · Ads</sub><br/>
-<img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt=""/>
+<br/><sub><b>MHL Business Platform</b></sub><br/>
+<sub>Next.js 15 · NestJS 11 · Prisma 6</sub><br/>
 <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white" alt=""/>
+<img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" alt=""/>
+
+</td>
+<td align="center">
+
+<img src="https://img.shields.io/badge/MoonSniper-00D4FF?style=for-the-badge&logoColor=white" alt="Moon"/>
+<br/><sub><b>Solana Token Sniper</b></sub><br/>
+<sub>TypeScript + Rust · Mempool</sub><br/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt=""/>
+<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt=""/>
+
+</td>
+<td align="center">
+
+<img src="https://img.shields.io/badge/Empresas_Ops-FF2D95?style=for-the-badge&logoColor=white" alt="Empresas"/>
+<br/><sub><b>Multi-Country Company Ops</b></sub><br/>
+<sub>PT · FR · NL · ES automation</sub><br/>
+<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt=""/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
+
+</td>
+</tr>
+<tr>
+<td align="center">
+
+<img src="https://img.shields.io/badge/Claude_Harness-BD00FF?style=for-the-badge&logoColor=white" alt="Harness"/>
+<br/><sub><b>Self-Improving AI Tooling</b></sub><br/>
+<sub>85+ tools · 17 agents · ~40 skills</sub><br/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
+<img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt=""/>
 
 </td>
 <td align="center">
@@ -1863,33 +1722,20 @@ The board auto-updates via GitHub Actions after each valid move.
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt=""/>
 
 </td>
-</tr>
-<tr>
 <td align="center">
 
-<img src="https://img.shields.io/badge/RugPull_Scanner-FF2D95?style=for-the-badge&logoColor=white" alt="RugPull"/>
-<br/><sub><b>DeFi Security Scanner</b></sub><br/>
-<sub>TypeScript · On-chain · Honeypot detect</sub><br/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/Ethers.js-2535A0?style=flat-square&logoColor=white" alt=""/>
-
-</td>
-<td align="center">
-
-<img src="https://img.shields.io/badge/MoonSniper-BD00FF?style=for-the-badge&logoColor=white" alt="Moon"/>
-<br/><sub><b>Token Launch Sniper</b></sub><br/>
-<sub>Python + Rust · Mempool · MEV</sub><br/>
-<img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/Web3-F16822?style=flat-square&logo=web3dotjs&logoColor=white" alt=""/>
-
-</td>
-<td align="center">
-
-<img src="https://img.shields.io/badge/Empresas_Ops-00D4FF?style=for-the-badge&logoColor=white" alt="Empresas"/>
-<br/><sub><b>Multi-Country Company Ops</b></sub><br/>
-<sub>PT · FR · NL · ES portal automation</sub><br/>
-<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt=""/>
+<img src="https://img.shields.io/badge/GV_Bets-FF2D95?style=for-the-badge&logoColor=white" alt="Bets"/>
+<br/><sub><b>Sports Analytics</b></sub><br/>
+<sub>Python · ML · Data Pipeline</sub><br/>
 <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
+
+</td>
+<td align="center">
+
+<img src="https://img.shields.io/badge/Nexus_Community-BD00FF?style=for-the-badge&logoColor=white" alt="Nexus"/>
+<br/><sub><b>Web3 / Solana Platform</b></sub><br/>
+<sub>TypeScript · Solana</sub><br/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt=""/>
 
 </td>
 </tr>
@@ -1906,16 +1752,15 @@ The board auto-updates via GitHub Actions after each valid move.
 │ Compute           │ Railway (3 svcs) · Vercel (2 apps) · M4 Pro 14-core (local) │
 │ Database          │ PostgreSQL 16 — 1.93M rows · 6GB shared_buffers · GIN+BRIN  │
 │ Email Delivery    │ 3 DKIM relays — Resend + SendGrid + GSMTP = 385/day         │
-│ Monitoring        │ Sentry · Grafana · Custom health daemons · Zombie Killer     │
+│ AI Fleet          │ 228 models · 179 alive · 94.2% free routing · WIS 0.96+     │
+│ AI Agents         │ 17 specialized · Claude Opus + Fable 5.1 · 85+ tools        │
+│ Computer-Use      │ Jarvis 656 files · 4 lanes (real/cdp/browse/dom) · AX snap  │
 │ CI/CD             │ GitHub Actions (7 workflows) · git push = auto-deploy        │
 │ DNS & CDN         │ Cloudflare (2 zones) · UOL Host · DMARC quarantine           │
-│ Security          │ SPF ~all · DKIM verified · rate limiting · WAF · CSP         │
-│ AI Agents         │ 32 specialized · Claude Opus 4.6 · 230+ MCP tools            │
-│ Automation        │ Playwright fleet · cron pipelines · webhook triggers          │
-│ Trading           │ MetaTrader 5 · Live algo execution · Mempool monitoring      │
-│ Blockchain        │ On-chain analysis · MEV · Honeypot detection · DeFi          │
-│ Browser Fleet     │ GeeLark anti-detect · Stealth Playwright · Chrome CDP        │
-│ Offensive         │ 39 CLI tools · 10 MCP servers · garak · promptfoo            │
+│ Monitoring        │ Sentry · Grafana · Zombie Killer daemon · cron pipelines     │
+│ Trading           │ MetaTrader 5 · Live algo execution · Solana mempool          │
+│ Automation        │ Playwright fleet · GeeLark anti-detect · Chrome CDP          │
+│ Browser Fleet     │ Multi-lane: real (cookies) · cdp (isolated) · dom (stealth) │
 └───────────────────┴──────────────────────────────────────────────────────────────┘
 ```
 
@@ -1946,18 +1791,13 @@ The board auto-updates via GitHub Actions after each valid move.
 </div>
 
 <div align="center">
-
-<!-- Profile Summary Cards -->
 <img src="./profile-summary-card-output/radical/0-profile-details.svg" width="98%" alt="contribution map"/>
-
 </div>
 
 <div align="center">
-
 <img src="./profile-summary-card-output/radical/1-repos-per-language.svg" width="33%" alt="repos per language"/>
 <img src="./profile-summary-card-output/radical/2-most-commit-language.svg" width="33%" alt="commit language"/>
 <img src="./profile-summary-card-output/radical/4-productive-time.svg" width="33%" alt="productive time"/>
-
 </div>
 
 <!-- WAVE SEPARATOR -->
@@ -1970,30 +1810,22 @@ The board auto-updates via GitHub Actions after each valid move.
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="25"/> Metrics Deep Dive
 
 <div align="center">
-
 <img src="./metrics/languages.svg" width="49%" alt="languages breakdown"/>
 <img src="./metrics/lines.svg" width="49%" alt="lines of code"/>
-
 </div>
 
 <div align="center">
-
 <img src="./metrics/followup.svg" width="49%" alt="issues and PRs"/>
 <img src="./metrics/notable.svg" width="49%" alt="notable contributions"/>
-
 </div>
 
 <div align="center">
-
 <img src="./metrics/topics.svg" width="49%" alt="topics"/>
 <img src="./metrics/base.svg" width="49%" alt="base stats"/>
-
 </div>
 
 <div align="center">
-
 <img src="./metrics/code.svg" width="98%" alt="recent code snippets"/>
-
 </div>
 
 <!-- GRADIENT DIVIDER -->
@@ -2001,71 +1833,57 @@ The board auto-updates via GitHub Actions after each valid move.
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                     AI AGENT ARCHITECTURE                                ║ -->
-<!-- ║                   Mermaid Graph TD — 19 agents                           ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" width="25"/> AI Agent Architecture
-
-> $\text{Agent capacity} = \prod_{i=1}^{k} |T_i|, \quad k = 10 \text{ MCP servers}, \quad \sum |T_i| = 230 \text{ tools}$
 
 ```mermaid
 %%{init: {'theme': 'dark', 'themeVariables': {'primaryColor': '#FF2D95', 'primaryTextColor': '#fff', 'primaryBorderColor': '#BD00FF', 'lineColor': '#00D4FF'}}}%%
 
 graph TD
-    CMD["COMMANDER DISPATCHER"]
+    FABLE["FABLE 5.1<br/>Chief Scientist"]
+    CMD["COMMANDER DISPATCHER<br/>Opus · Orchestration"]
 
-    subgraph SCRAPING["Lead Operations"]
-        SO["scraper-ops"]
+    subgraph OPS["Operations Agents (Sonnet)"]
+        EO["email-ops"]
+        IO["infra-ops"]
+        DO["db-ops"]
+        CR["code-reviewer"]
+        RS["researcher"]
         SW["scraper-writer"]
-        SR["scraper-reviewer"]
-        LQ["lead-quality-auditor"]
+        PF["parallel-fanout"]
+        PT["ptpt-email-reviewer"]
+        EP["empresa-ops"]
     end
 
-    subgraph EMAIL["Email Operations"]
-        EO["email-ops"]
-        SM["smtp-ops"]
-        RA["relay-analyst"]
+    subgraph GLS_AGENTS["GLS Agents (Sonnet)"]
+        LO["lead-ops"]
+        SM["smtp-relay-ops"]
         CD["campaign-dispatcher"]
     end
 
-    subgraph SECURITY["Security & Intel"]
-        SV["security-reviewer"]
-        BZ["black-zone-executor"]
-        ER["einstein-state-reader"]
-        CT["cia-test-runner"]
+    subgraph SUPPORT["Support Agents"]
+        DA["dependency-auditor (Haiku)"]
+        GW["git-workflow (Haiku)"]
     end
 
-    subgraph BUSINESS["Business Ops"]
-        EP["empresa-ops"]
-        JD["joao-deploy-verify"]
-        PT["ptpt-email-reviewer"]
-    end
+    FABLE -.->|hardest 1%| CMD
+    CMD --> OPS
+    CMD --> GLS_AGENTS
+    CMD --> SUPPORT
 
-    subgraph META["Meta Agents"]
-        RS["researcher"]
-        PF["parallel-fanout"]
-        SD["ship-density-enforcer"]
-        EX["Explore"]
-    end
-
-    CMD --> SCRAPING
-    CMD --> EMAIL
-    CMD --> SECURITY
-    CMD --> BUSINESS
-    CMD --> META
-
+    style FABLE fill:#BD00FF,stroke:#FF2D95,color:#fff,font-weight:bold,stroke-width:2px
     style CMD fill:#FF2D95,stroke:#BD00FF,color:#fff,font-weight:bold,stroke-width:2px
 ```
 
 > [!TIP]
-> Each agent has isolated toolsets, specialized system prompts, and deep domain knowledge. The Commander Dispatcher automatically routes tasks across all 9 projects. Agents spawn sub-agents for parallel investigation — no human routing needed. Agent isolation follows the principle of least privilege: $\forall a \in \mathcal{A}: \text{tools}(a) \subseteq \text{required}(a)$.
+> 17 agents across 4 tiers (Fable / Opus / Sonnet / Haiku). Each has isolated toolsets and domain-specific system prompts. The Commander Dispatcher auto-routes tasks across all 12 projects. The Fable 5.1 "Chief Scientist" agent handles only the hardest non-trivial reasoning — the rest is delegated to cheaper tiers following fleet doctrine.
 
 <!-- GRADIENT DIVIDER -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:BD00FF,100:FF2D95&height=2" width="100%"/>
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                       TECH ECOSYSTEM MINDMAP                            ║ -->
-<!-- ║                      Mermaid Mindmap — 6 branches                       ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" width="25"/> Tech Ecosystem
@@ -2079,15 +1897,12 @@ mindmap
       Global Lead Scraper
         Google Maps API
         DuckDuckGo Scraper
-        CNPJ Harvester
       Email Validator
         789K verified
-        SMTP check
-        MX lookup
+        SMTP + MX
       PostgreSQL 16
         1.93M rows
         GIN + BRIN indexes
-        6GB shared_buffers
     Email Engine
       Turbo Sender
         6 parallel threads
@@ -2097,29 +1912,26 @@ mindmap
         Resend 65/d
         SendGrid 120/d
         Google SMTP 200/d
-      DMARC + SPF
-    Security Research
-      CIA Einstein
-        32 AI Agents
-        Multi-agent orchestration
-      Cryptanalysis
-        ECDSA lattice
-        Metal GPU acceleration
-        Brainwallet audit
-      Offensive Tools
-        39 CLI tools
-        10 MCP servers
-        garak + promptfoo
-    Trading & DeFi
+    AI Infrastructure
+      Fleet Brain
+        228 models routed
+        Thompson Sampling
+        94.2% free
+      Claude Harness
+        17 agents
+        85+ tools
+        ~40 skills
+      Jarvis Computer-Use
+        656 files
+        4 browser lanes
+        AX cursor-less
+    Trading
       Jessie Trader
         MQL5
         MetaTrader 5
-      RugPull Scanner
-        Honeypot detection
-        Ethers.js
       MoonSniper
-        Mempool monitoring
-        MEV strategies
+        Solana mempool
+        Token sniping
     Business Ops
       Portugal
       France
@@ -2137,7 +1949,6 @@ mindmap
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                     GEOGRAPHIC OPERATIONS MAP                            ║ -->
-<!-- ║                  GeoJSON — Interactive Leaflet.js Map                    ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/World%20Map.png" width="25"/> Operations Map — 4 Countries
@@ -2150,7 +1961,7 @@ mindmap
       "type": "Feature",
       "properties": {
         "name": "Portugal — Green Village Mobilehomes",
-        "description": "Mobile home sales & logistics · FastAPI · PostgreSQL · 752K eligible leads",
+        "description": "Mobile home sales & logistics · Next.js 15 · NestJS 11 · PostgreSQL · 752K leads",
         "marker-color": "#FF2D95",
         "marker-size": "large",
         "marker-symbol": "commercial"
@@ -2252,14 +2063,13 @@ mindmap
 ```
 
 > [!NOTE]
-> Interactive map — click markers for details. Lead generation covers **48 countries** across Europe, with active business entities in **PT, FR, NL, ES**. All portal automation (tax filing, company registration, compliance) is handled by Playwright bots with government-specific session management. Infrastructure markers show Railway (Frankfurt) and Cloudflare (London) edge presence.
+> Interactive map — click markers for details. Lead generation covers **48 countries** across Europe, with active business entities in **PT, FR, NL, ES**. All portal automation (tax filing, company registration, compliance) is handled by Playwright bots with government-specific session management.
 
 <!-- GRADIENT DIVIDER -->
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:BD00FF,100:FF2D95&height=2" width="100%"/>
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                         CI/CD PIPELINE                                  ║ -->
-<!-- ║                       Mermaid Git Graph                                 ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Package.png" width="25"/> CI/CD Pipeline
@@ -2280,89 +2090,33 @@ gitGraph LR:
     commit id: "circuit-breaker"
     checkout main
     merge feature/email-engine id: "v2.0" tag: "EMAIL"
-    branch feature/cia-einstein
-    commit id: "agent-framework"
-    commit id: "metal-gpu"
-    commit id: "ecdsa-accel"
+    branch feature/fleet-brain
+    commit id: "228-models"
+    commit id: "thompson-sampling"
+    commit id: "self-improving"
     checkout main
     branch feature/trading
     commit id: "jessie-mql5"
-    commit id: "rugpull-scan"
     commit id: "moonsniper"
     checkout main
-    merge feature/cia-einstein id: "v3.0" tag: "CIA"
+    merge feature/fleet-brain id: "v3.0" tag: "FLEET"
     merge feature/trading id: "v4.0" tag: "TRADE"
-    branch feature/hacker-config
-    commit id: "mcp-servers"
-    commit id: "cli-tools"
-    commit id: "32-agents"
+    branch feature/harness
+    commit id: "17-agents"
+    commit id: "85-tools"
+    commit id: "jarvis-656"
     checkout main
-    merge feature/hacker-config id: "v5.0" tag: "HACKER"
+    merge feature/harness id: "v5.0" tag: "AI"
     commit id: "deploy" type: HIGHLIGHT
 ```
 
-> `git push main` = production. 7 GitHub Actions workflows generate 3D contributions, profile cards, contribution snake, 8 lowlighter/metrics SVGs, chess board, blog posts, and activity feed. Zero manual deploys — Railway, Vercel, and Cloudflare auto-deploy from main branch.
+> `git push main` = production. 7 GitHub Actions workflows generate 3D contributions, profile cards, contribution snake, 8 lowlighter/metrics SVGs, chess board, blog posts, and activity feed. Zero manual deploys.
 
 <!-- WAVE SEPARATOR -->
 <img src="./assets/wave-separator.svg" width="100%" alt="Wave separator"/>
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
-<!-- ║                    CRYPTOGRAPHY & SECURITY RESEARCH                      ║ -->
-<!-- ║                  LaTeX equations · algorithm table · footnotes           ║ -->
-<!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
-
-## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Locked%20with%20Key.png" width="25"/> Cryptography Research
-
-<div align="center">
-
-Active research in elliptic curve cryptanalysis, lattice-based attacks, and GPU-accelerated key recovery on Apple Silicon (Metal). All research conducted on own infrastructure against own keys.
-
-</div>
-
-**Elliptic Curve Fundamentals:**
-
-$$y^2 \equiv x^3 + ax + b \pmod{p}, \quad p \in \mathbb{P} \quad \text{(secp256k1: } a=0, b=7\text{)}$$ [^secp256k1]
-
-$$s = k^{-1}\bigl(H(m) + r \cdot d_A\bigr) \pmod{n} \quad \text{(ECDSA Signature — nonce } k \text{ is the attack surface)}$$ [^ecdsa]
-
-$$Q = d_A \cdot G, \quad G = \text{generator}, \quad d_A \in [1, n-1] \quad \text{(Private key } d_A \text{ recoverable if nonce } k \text{ is biased)}$$
-
-**Lattice Cryptanalysis:**
-
-$$\lambda_1(L) = \min_{\mathbf{v} \in L \setminus \{\mathbf{0}\}} \|\mathbf{v}\| \quad \text{(Lattice SVP — NP-hard under randomized reductions)}$$ [^lattice]
-
-$$\text{LLL: } \|\mathbf{b}_i^*\| \geq (\delta - \mu_{i,i-1}^2) \|\mathbf{b}_{i-1}^*\| \quad \text{(Lovász condition, } \delta = 3/4 \text{)}$$
-
-**Attack Complexity:**
-
-$$P(\text{collision}) \approx 1 - e^{-n^2 / 2^{k+1}} \quad \text{(Birthday Attack on } k\text{-bit hash, } n \text{ samples)}$$ [^birthday]
-
-| Algorithm | Target | Complexity | Implementation | GPU Accel |
-|:---|:---|:---|:---|:---|
-| **Pollard's rho** | ECDLP | $O(\sqrt{n})$ | Python + C extension | Metal |
-| **Baby-step Giant-step** | ECDLP | $O(\sqrt{n})$ time + space | Metal GPU parallel | 3.2 Gops/s |
-| **Lattice reduction (LLL)** | Biased nonce | Polynomial | SageMath + fpylll | CPU |
-| **Bleichenbacher** | Biased ECDSA nonce | $O(2^{b})$ for $b$-bit bias | Custom C + Metal | Metal |
-| **Brainwallet audit** | Weak passphrases | Dictionary | GPU-accelerated hashcat | Metal |
-| **PMKID capture** | WPA2/WPA3 | $O(|\text{dict}|)$ | Aircrack-ng + hashcat | Metal |
-
-**Information-Theoretic Foundations:**
-
-$$H(X) = -\sum_{i=1}^{n} p(x_i) \log_2 p(x_i) \quad \text{(Shannon Entropy — minimum bits per symbol)}$$ [^shannon]
-
-$$g^{ab} \equiv (g^a)^b \equiv (g^b)^a \pmod{p} \quad \text{(Diffie-Hellman Key Exchange over } \mathbb{Z}_p^*\text{)}$$ [^dh]
-
-$$d_{\text{tree}} = \lceil \log_2(n) \rceil, \quad \text{root} = H\bigl(H(L_0 \| L_1) \| H(L_2 \| L_3)\bigr) \quad \text{(Merkle Tree — } O(\log n) \text{ proof)}$$ [^merkle]
-
-> [!WARNING]
-> All cryptographic research is conducted on **own infrastructure** against **own keys/accounts** for defensive security research and authorized penetration testing. CIA Einstein is a research platform, not an attack tool. Metal GPU achieves $3.2 \times 10^9$ point multiplications/sec on M4 Pro — enabling exhaustive parameter space exploration for nonce bias detection.
-
-<!-- GRADIENT DIVIDER -->
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
-
-<!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                        BLOG POSTS                                       ║ -->
-<!-- ║              Auto-updated via gautamkrishnar/blog-post-workflow          ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Newspaper.png" width="25"/> Latest Blog Posts
@@ -2378,7 +2132,6 @@ $$d_{\text{tree}} = \lceil \log_2(n) \rceil, \quad \text{root} = H\bigl(H(L_0 \|
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                       RECENT ACTIVITY                                    ║ -->
-<!-- ║              Auto-updated via jamesgeorge007/github-activity-readme      ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Memo.png" width="25"/> Recent Activity
@@ -2394,51 +2147,47 @@ $$d_{\text{tree}} = \lceil \log_2(n) \rceil, \quad \text{root} = H\bigl(H(L_0 \|
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                         DEPTH SECTIONS                                  ║ -->
-<!-- ║              7 collapsible panels with real technical depth              ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 <details open>
-<summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Shield.png" width="18"/> <b>Security Toolkit</b></summary>
+<summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" width="18"/> <b>AI Infrastructure — Fleet Brain + Harness + Jarvis</b></summary>
 <br/>
 
-| Domain | Tools & Techniques | Depth |
+| System | Purpose | Scale |
 |:---|:---|:---|
-| **Network** | bettercap · mitmproxy · routersploit · Wireshark · nmap · masscan | ARP spoof, MITM, router exploit |
-| **WiFi** | Aircrack-ng · PMKID capture · deauth · monitor mode · WPA3-SAE | Full WPA2/WPA3 audit chain |
-| **Web** | Burp Suite · SQLMap · XSS · SSRF · CSRF · session hijack | OWASP Top 10 + beyond |
-| **OSINT** | Maltego · theHarvester · Shodan · breach correlation · social recon | 37 tools integrated |
-| **Crypto** | ECDSA lattice · brainwallet · Pollard rho · GPU cracking | Apple Silicon Metal accel |
-| **RF/SDR** | RTL-SDR · HackRF · SubGHz · NFC/RFID · GSM interception | Full spectrum analysis |
-| **AI Red Team** | garak · promptfoo · LLM jailbreak · prompt injection · guardrails | Automated finding DB |
-| **Mobile** | frida · objection · MVT · runtime instrumentation · APK reverse | iOS + Android |
-| **Forensics** | Volatility · Autopsy · disk imaging · memory analysis · timeline | Full chain of custody |
-| **Stealth** | Anti-fingerprint · TLS mimicry · residential proxies · browser spoof | NASA-grey patches |
+| **Fleet Brain** | Multi-armed bandit model router | 228 models, 15+ providers, 94.2% free |
+| **Fleet Proxy v7.1** | Unified intelligence API gateway | 49+ systems, 37 endpoints |
+| **Claude Harness** | Self-improving AI tooling | 85+ tools, 17 agents, ~40 skills |
+| **Jarvis / Computer-Use** | Multi-lane browser automation | 656 files, AX cursor-less, 4 lanes |
+| **Fable 5.1 Agent** | Chief Scientist (hardest 1%) | 2x Opus cost, Bayesian reasoning |
 
-**CIA Einstein Platform:** Multi-agent autonomous security research system. 32+ specialized agents for vulnerability discovery, OSINT correlation, breach intelligence, and threat analysis. Python backend + C extensions + Metal GPU shaders for cryptanalysis on Apple Silicon M4 Pro.
+**Fleet Doctrine:** Every task routes to the CHEAPEST tier that clears the quality bar. Ladder: FREE fleet (179 models, 0 tokens) -> Haiku (reads/search) -> Sonnet (subagents) -> Opus (CEO main loop) -> Fable (chief scientist). Thompson Sampling learns from every outcome — the system literally gets smarter with usage.
 
-**Hardware Arsenal:** WiFi adapters (monitor mode) · RTL-SDR · Flipper Zero · Proxmark3 · USB Rubber Ducky · HackRF One · ESP32 · NFC readers — 14 devices, full RF spectrum coverage from 125 kHz (LF RFID) to 6 GHz (WiFi 6E).
+**Jarvis Computer-Use Lanes:**
+- `cu real` — Drive the user's Chrome (logged-in sessions, cookies, OAuth portals)
+- `cu cdp` — Isolated Chromium instance (autonomous, N-projects parallel)
+- `cu browse` — Observable mode (purple cursor sprite, DOM readback)
+- `cu dom` — Invisible DOM operations (background-tab, zero visual footprint)
+
+**Self-Improving Loop:** Eval corpus (214 entries) -> WIS scoring (0.96+) -> Dreaming engine (9-step overnight synthesis) -> Thompson prior update -> better routing next day. No manual tuning needed.
 
 </details>
 
 <details open>
-<summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="18"/> <b>Trading & DeFi Operations</b></summary>
+<summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Chart%20Increasing.png" width="18"/> <b>Trading Systems</b></summary>
 <br/>
 
 | System | Stack | Strategy | Status |
 |:---|:---|:---|:---|
 | **Jessie Trader** | MQL5 · MetaTrader 5 | Multi-TF confluence · EMA cross · RSI divergence | Live |
-| **RugPull Scanner** | TypeScript · Ethers.js | Contract simulation · honeypot detection · LP analysis | Live |
-| **MoonSniper** | Python + Rust · Web3.py | Mempool frontrunning · sandwich detection · token launch | Live |
-| **DeFi Research** | Solidity · Foundry | Flash loan patterns · liquidity pool dynamics | Research |
+| **MoonSniper** | TypeScript + Rust · Solana | Mempool monitoring · token launch sniping · pool analysis | Live |
 
 **Capabilities:**
-- Sandwich attack detection and MEV extraction via mempool monitoring
-- Token launch sniping with gas optimization ($g_{\text{optimal}} = g_{\text{base}} \cdot 1.15$)
-- On-chain forensics and wallet clustering using graph analysis
-- Liquidity pool monitoring across Uniswap V2/V3 (constant product $x \cdot y = k$)
-- Cross-DEX arbitrage path finding via Bellman-Ford on token graphs
-- Smart contract bytecode decompilation and control flow analysis
-- Honeypot simulation via `eth_call` with state override
+- Multi-timeframe confluence entry (H4 trend + H1 pullback + M15 confirmation)
+- Solana new pool detection via Raydium program log subscription
+- Honeypot detection (freeze authority, mint authority, transfer fee checks)
+- Gas optimization and sub-second reaction time on pending swaps
+- Risk-managed position sizing with configurable risk percentages
 
 </details>
 
@@ -2454,14 +2203,13 @@ $$d_{\text{tree}} = \lceil \log_2(n) \rceil, \quad \text{root} = H\bigl(H(L_0 \|
 | **Turbo Sender** | 6 parallel threads · Round-robin relay · Auto-halt on bounce | 385 total |
 
 **Quality Gates:**
-- Bounce rate > 5% per 100 emails → **HALT** campaign
-- Bounce rate > 10% over 7 days → **PAUSE** relay
-- Warmup protocol: 10/day → +10/day → graduate at day 14 if bounce < 3%
-- DMARC: `p=quarantine`, `rua=info@greenvillagemobilehomes.com`
-- SPF: `google + sendgrid + amazonses + sendinblue ~all`
-- All emails DKIM-signed, TLS enforced, `encode('ascii')` before SMTP send
+- Bounce rate > 5% per 100 emails -> **HALT** campaign
+- Bounce rate > 10% over 7 days -> **PAUSE** relay
+- Warmup protocol: 10/day -> +10/day -> graduate at day 14 if bounce < 3%
+- DMARC: `p=quarantine` · SPF: `google + sendgrid + amazonses + sendinblue ~all`
+- All emails DKIM-signed, TLS enforced, ASCII-encoded before SMTP send
 
-**Monitoring:** Real-time bounce classification (hard/soft/content/reputation), relay health scoring, DKIM alignment verification, deliverability forensics via dedicated `relay-analyst` agent. Bounce math: $r_b = \frac{n_{\text{bounce}}}{n_{\text{sent}}} < 0.03$ (3% threshold).
+**Monitoring:** Real-time bounce classification (hard/soft/content/reputation), relay health scoring, DKIM alignment verification, deliverability forensics. Bounce threshold: $r_b = \frac{n_{\text{bounce}}}{n_{\text{sent}}} < 0.03$ (3%).
 
 </details>
 
@@ -2509,14 +2257,14 @@ ORDER BY total DESC;
 
 | Country | Entity | Activity | Automation |
 |:---|:---|:---|:---|
-| Portugal | Green Village Mobilehomes | Mobile home sales & logistics | FastAPI · PostgreSQL · Playwright |
+| Portugal | Green Village Mobilehomes | Mobile home sales & logistics | Next.js 15 · NestJS 11 · Prisma 6 |
 | France | Easystart Office | Company formation services | INPI · URSSAF portal automation |
 | Netherlands | EU Operations Hub | Cross-border coordination | DigiD · KVK integration |
 | Spain | Market Expansion | Dealer network building | Lead scraper · CRM pipeline |
 
-**Automated workflows:** Tax filing via portal automation (Playwright), compliance deadline tracking, government form submission (AT, INPI, URSSAF, KVK), invoice processing, lead generation across 48 countries, WhatsApp customer engagement via Joao Bot (Baileys · Node.js · Railway).
+**Automated workflows:** Tax filing via portal automation (Playwright), compliance deadline tracking, government form submission (AT, INPI, URSSAF, KVK), invoice processing, lead generation across 48 countries, WhatsApp customer engagement via Joao Bot.
 
-**Legal compliance:** GDPR-compliant data processing, VAT VIES cross-validation ($\text{VAT}_{\text{valid}} \iff \text{VIES}(\text{NIF}) = \text{true}$), DMARC/DKIM email authentication, cookie consent automation, privacy policy generation. All fiscal documents verified before submission.
+**Legal compliance:** GDPR-compliant data processing, VAT VIES cross-validation, DMARC/DKIM email authentication, cookie consent automation. All fiscal documents verified before submission.
 
 </details>
 
@@ -2527,15 +2275,13 @@ ORDER BY total DESC;
 | Component | Details |
 |:---|:---|
 | **Hardware** | MacBook Pro M4 Pro · 24GB unified · 14-core GPU · NVMe SSD |
-| **Editor** | VS Code + Claude Code CLI (Opus 4.6) · JetBrains (MQL5) |
-| **AI Stack** | 32 agents · 230+ MCP tools · 10 servers · 800+ skills |
+| **Editor** | VS Code + Claude Code CLI (Opus 4.8) · JetBrains (MQL5) |
+| **AI Stack** | 17 agents · 228 models · 85+ tools · ~40 skills · Fable 5.1 |
 | **Database** | PostgreSQL 16 — 6GB shared_buffers · GIN + BRIN + partial |
-| **Runtime** | Python 3.14 · Node 22 · TypeScript 5.x · C23 · MQL5 · Rust · Go |
-| **Deploy** | `git push main` → Railway/Vercel auto-deploy (7 GH Actions) |
-| **Browser** | Playwright MCP · Chrome DevTools CDP · Stagehand v3 · pw_cli |
-| **Security** | 10 MCP servers · 39 CLI tools · semgrep · nuclei · nikto |
+| **Runtime** | Python 3.14 · Node 22 · TypeScript 5.x · MQL5 · Rust · Go |
+| **Deploy** | `git push main` -> Railway/Vercel auto-deploy (7 GH Actions) |
+| **Browser** | Jarvis 4-lane · Playwright MCP · Chrome CDP · GeeLark |
 | **Monitoring** | Sentry · Grafana · Zombie Killer daemon (5 layers) · cron |
-| **Stealth** | NASA-grey patches · anti-fingerprint · residential proxies |
 | **Integrations** | Linear · Notion · Gmail · Google Calendar · Google Drive |
 
 **System Protection:**
@@ -2554,23 +2300,16 @@ Zombie Killer v2 — 5 layers running every 5 minutes via LaunchAgent
 <summary><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Robot.png" width="18"/> <b>Automation & Browser Fleet</b></summary>
 <br/>
 
-| Tool | Use Case | Token Cost | Speed |
-|:---|:---|:---|:---|
-| **Playwright CLI** (`pw_cli_runner.py`) | Long scraping sessions, portal automation | ~27K/10 steps | Fast |
-| **Browser-Use** (`browser_use_runner.py`) | AI-driven natural language browser control | ~40K/task | 89% accuracy |
-| **Stagehand v3** (`stagehand_runner.js`) | Node.js automation, self-healing DOM | ~30K/10 steps | 44% faster |
-| **Playwright MCP** | Quick tasks (<10 steps) | ~114K/10 steps | Convenient |
-| **Chrome DevTools CDP** | Existing logged-in sessions (Gmail) | ~50K/10 steps | Live sessions |
+| Tool | Use Case | Mode |
+|:---|:---|:---|
+| **Jarvis `cu real`** | Logged-in Chrome sessions (Gmail, portals, OAuth) | Real browser, cookies preserved |
+| **Jarvis `cu cdp`** | Autonomous automation, N-projects parallel | Isolated Chromium instance |
+| **Jarvis `cu browse`** | Observable tasks (Matheus watches) | Purple cursor sprite, DOM readback |
+| **Jarvis `cu dom`** | Background DOM operations, stealth reads | Invisible, zero visual footprint |
+| **Playwright CLI** | Long scraping sessions, portal automation | Headless, deterministic |
+| **GeeLark** | Anti-detect browser profiles, multi-account | Cloud profiles, fingerprint rotation |
 
-**Stealth Stack:**
-- NASA-grey Playwright patches for anti-bot bypass
-- Residential proxy rotation with health scoring
-- TLS fingerprint mimicry (JA3/JA4 spoofing)
-- Canvas/WebGL/AudioContext fingerprint randomization
-- Anti-detection browser profiles via GeeLark
-- Government portal session persistence (PT/FR/NL/ES)
-
-**Decision Matrix:** Sessions > 10 steps → Playwright CLI (4x cheaper). Complex pages → Browser-Use (natural language). Node projects → Stagehand. Gmail → Chrome DevTools. Meta/FB → Stealth Playwright.
+**Computer-Use Intelligence (ported from Jarvis):** 17 cognitive modules including DOM pruner, error classifier, observation compressor, obstacle scanner, calibrated confidence scorer, insight bank, AX semantic diff, speculative fetch, subgoal detector, outcome monitor, failure synthesis, adaptive context, and DAG planner. Total: 1,746 lines of computer-use intelligence code.
 
 </details>
 
@@ -2585,21 +2324,20 @@ Zombie Killer v2 — 5 layers running every 5 minutes via LaunchAgent
 
 ```diff
 @@                           SYSTEM STATUS                           @@
-+ 9 production systems operational
++ 12 production systems operational
 + 1.93M leads scraped, validated & stored
 + 4 countries with active business entities (interactive GeoJSON map)
 + 385 emails/day across 3 DKIM-verified relays
-+ 32 AI agents deployed via MCP protocol
-+ 230+ tools across 10 specialized MCP servers
-+ 16 Mermaid diagrams (12 types: flowchart, class, ER, sequence, state, pie, gantt, quadrant, journey, xychart, block, git, mind, timeline)
-+ 6 custom animated SVGs (neon-banner, terminal, skills-radar, wave, dashboard, network-topology)
-+ 11 production code snippets across 11 languages
-+ 9 LaTeX equations (ECDSA, lattice, birthday, Shannon, DH, Merkle)
++ 228 AI models routed via Fleet Brain (94.2% free routing)
++ 17 AI agents deployed across 4 tiers (Fable/Opus/Sonnet/Haiku)
++ 85+ tools, ~40 skills, self-improving closed loop
++ 656-file Jarvis computer-use system (4 browser lanes)
++ 14 Mermaid diagrams across 12 types
++ 6 custom animated SVGs
++ 9 production code snippets across 9 languages
 + 1 interactive GeoJSON map with 6 markers + coverage polygon
 + 1 interactive 3D STL crystal model (84 facets)
-+ 8 lowlighter/metrics plugins auto-generated
 + 7 GitHub Actions workflows (3D, snake, metrics, summary, chess, blog, activity)
-+ GPU-accelerated ECDSA research on Apple Silicon Metal
 + Chess game via GitHub Issues
 - 0 systems down
 ! Last updated: auto-generated via GitHub Actions
@@ -2608,14 +2346,13 @@ Zombie Killer v2 — 5 layers running every 5 minutes via LaunchAgent
 </div>
 
 > [!IMPORTANT]
-> **Currently building:** GPU-accelerated ECDSA cryptanalysis on Apple Silicon Metal, autonomous security research via multi-agent AI (CIA Einstein v9.4), expanding lead generation to 48 countries, algorithmic trading strategies on MetaTrader 5, and mempool MEV extraction in Rust.
+> **Currently building:** Next-gen AI routing with calibrated confidence gates, 3D interactive mobile home configurator (Green Village 72), MHL platform on Next.js 15 + NestJS 11 + Prisma 6, expanding lead generation to 48 countries, algorithmic trading on MetaTrader 5, and Solana mempool sniping in Rust.
 
 <!-- WAVE SEPARATOR -->
 <img src="./assets/wave-separator.svg" width="100%" alt="Wave separator"/>
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                      PROJECT TIMELINE                                    ║ -->
-<!-- ║                    Mermaid Timeline — 5 periods                          ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Travel%20and%20places/Hourglass%20Done.png" width="25"/> Project Timeline
@@ -2635,28 +2372,28 @@ timeline
         : SPF + DMARC + bounce monitoring
         Joao Bot : Node.js · Baileys · WhatsApp
         : Railway deploy · auto-reply · CRM
-    section 2025 Q2
+    section 2025 Q2-Q3
         Green Village MH : FastAPI · Playwright
         : 4-country portal automation
-        : PT + FR + NL + ES entities
-        CIA Einstein : Python · C · Metal GPU
-        : 32 AI agents · ECDSA research
-        : Lattice reduction · nonce analysis
-    section 2025 Q3
         Jessie Trader : MQL5 · MetaTrader 5
         : Multi-TF confluence strategy
-        RugPull Scanner : TypeScript · Ethers.js
-        : Honeypot detection · LP analysis
-        MoonSniper : Python + Rust · Web3.py
-        : Mempool frontrunning · MEV
-    section 2026
-        AI Agent Mesh : 230+ MCP tools
-        : 10 specialized servers
-        : Commander dispatch architecture
-        Hardware Arsenal : 14 devices · RF spectrum
-        : WiFi · NFC · GSM · SDR
-        Hacker Config : 128 commands · 32 agents
-        : garak + promptfoo · AI red team
+        MoonSniper : TypeScript + Rust · Solana
+        : Mempool monitoring · token sniping
+    section 2026 Q1-Q2
+        Fleet Brain : 228 models · Thompson Sampling
+        : 94.2% free routing · WIS 0.96+
+        Claude Harness : 85+ tools · 17 agents
+        : Self-improving closed loop
+        Fleet Proxy v7.1 : 49+ systems · unified API
+    section 2026 Q3
+        Jarvis Computer-Use : 656 files · 4 lanes
+        : 17 cognitive modules · AX cursor-less
+        Green Village 72 : Three.js · 3D configurator
+        : Interactive mobile home builder
+        MHL Platform : Next.js 15 · NestJS 11
+        : Prisma 6 · catalogo · CMS · admin
+        Architecture Evolution : 27→17 agents
+        : 35→15 skills · -57% context tax
 ```
 
 <!-- GRADIENT DIVIDER -->
@@ -2664,7 +2401,6 @@ timeline
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                      3D INTERACTIVE MODEL                                ║ -->
-<!-- ║                84-facet diamond crystal · STL format                     ║ -->
 <!-- ╚══════════════════════════════════════════════════════════════════════════╝ -->
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Gem%20Stone.png" width="25"/> 3D Crystal — Interactive Viewer
@@ -2922,280 +2658,21 @@ solid MatheusAgueda_Diamond_Crystal
       vertex 1.902113 0.618034 0.000000
     endloop
   endfacet
-  facet normal 0.000000 0.000000 1.000000
+  facet normal 0.951057 0.309017 0.309017
     outer loop
-      vertex 0.000000 0.000000 3.000000
-      vertex 1.500000 0.000000 1.500000
-      vertex 0.463525 1.426585 1.500000
+      vertex 1.902113 0.618034 0.000000
+      vertex 2.886751 0.500000 0.000000
+      vertex 0.618034 1.902113 0.000000
     endloop
   endfacet
-  facet normal 0.000000 0.000000 1.000000
+  facet normal 0.000000 0.000000 0.000000
     outer loop
-      vertex 0.000000 0.000000 3.000000
-      vertex 0.463525 1.426585 1.500000
-      vertex -1.213525 0.881678 1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 0.000000 0.000000 3.000000
-      vertex -1.213525 0.881678 1.500000
-      vertex -1.213525 -0.881678 1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 0.000000 0.000000 3.000000
-      vertex -1.213525 -0.881678 1.500000
-      vertex 0.463525 -1.426585 1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 1.000000
-    outer loop
-      vertex 0.000000 0.000000 3.000000
-      vertex 0.463525 -1.426585 1.500000
-      vertex 1.500000 0.000000 1.500000
-    endloop
-  endfacet
-  facet normal 0.951057 0.309017 0.000000
-    outer loop
-      vertex 1.500000 0.000000 1.500000
       vertex 2.886751 0.500000 0.000000
       vertex 0.927051 2.853170 0.000000
-    endloop
-  endfacet
-  facet normal 0.951057 0.309017 0.000000
-    outer loop
-      vertex 1.500000 0.000000 1.500000
-      vertex 0.927051 2.853170 0.000000
-      vertex 0.463525 1.426585 1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 1.000000 0.000000
-    outer loop
-      vertex 0.463525 1.426585 1.500000
-      vertex 0.927051 2.853170 0.000000
-      vertex -2.427051 1.763356 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 1.000000 0.000000
-    outer loop
-      vertex 0.463525 1.426585 1.500000
-      vertex -2.427051 1.763356 0.000000
-      vertex -1.213525 0.881678 1.500000
-    endloop
-  endfacet
-  facet normal -0.951057 0.309017 0.000000
-    outer loop
-      vertex -1.213525 0.881678 1.500000
-      vertex -2.427051 1.763356 0.000000
-      vertex -2.427051 -1.763356 0.000000
-    endloop
-  endfacet
-  facet normal -0.951057 0.309017 0.000000
-    outer loop
-      vertex -1.213525 0.881678 1.500000
-      vertex -2.427051 -1.763356 0.000000
-      vertex -1.213525 -0.881678 1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 -1.000000 0.000000
-    outer loop
-      vertex -1.213525 -0.881678 1.500000
-      vertex -2.427051 -1.763356 0.000000
-      vertex 0.927051 -2.853170 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 -1.000000 0.000000
-    outer loop
-      vertex -1.213525 -0.881678 1.500000
-      vertex 0.927051 -2.853170 0.000000
-      vertex 0.463525 -1.426585 1.500000
-    endloop
-  endfacet
-  facet normal 0.587785 -0.809017 0.000000
-    outer loop
-      vertex 0.463525 -1.426585 1.500000
-      vertex 0.927051 -2.853170 0.000000
-      vertex 2.886751 0.500000 0.000000
-    endloop
-  endfacet
-  facet normal 0.587785 -0.809017 0.000000
-    outer loop
-      vertex 0.463525 -1.426585 1.500000
-      vertex 2.886751 0.500000 0.000000
-      vertex 1.500000 0.000000 1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 -1.000000
-    outer loop
-      vertex 0.000000 0.000000 -3.000000
-      vertex 0.463525 1.426585 -1.500000
-      vertex 1.500000 0.000000 -1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 -1.000000
-    outer loop
-      vertex 0.000000 0.000000 -3.000000
-      vertex -1.213525 0.881678 -1.500000
-      vertex 0.463525 1.426585 -1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 -1.000000
-    outer loop
-      vertex 0.000000 0.000000 -3.000000
-      vertex -1.213525 -0.881678 -1.500000
-      vertex -1.213525 0.881678 -1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 -1.000000
-    outer loop
-      vertex 0.000000 0.000000 -3.000000
-      vertex 0.463525 -1.426585 -1.500000
-      vertex -1.213525 -0.881678 -1.500000
-    endloop
-  endfacet
-  facet normal 0.000000 0.000000 -1.000000
-    outer loop
-      vertex 0.000000 0.000000 -3.000000
-      vertex 1.500000 0.000000 -1.500000
-      vertex 0.463525 -1.426585 -1.500000
-    endloop
-  endfacet
-  facet normal 0.951057 0.309017 0.000000
-    outer loop
-      vertex 1.500000 0.000000 -1.500000
-      vertex 0.927051 2.853170 0.000000
-      vertex 2.886751 0.500000 0.000000
-    endloop
-  endfacet
-  facet normal 0.951057 0.309017 0.000000
-    outer loop
-      vertex 1.500000 0.000000 -1.500000
-      vertex 0.463525 1.426585 -1.500000
-      vertex 0.927051 2.853170 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 1.000000 0.000000
-    outer loop
-      vertex 0.463525 1.426585 -1.500000
-      vertex -2.427051 1.763356 0.000000
-      vertex 0.927051 2.853170 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 1.000000 0.000000
-    outer loop
-      vertex 0.463525 1.426585 -1.500000
-      vertex -1.213525 0.881678 -1.500000
-      vertex -2.427051 1.763356 0.000000
-    endloop
-  endfacet
-  facet normal -0.951057 0.309017 0.000000
-    outer loop
-      vertex -1.213525 0.881678 -1.500000
-      vertex -2.427051 -1.763356 0.000000
-      vertex -2.427051 1.763356 0.000000
-    endloop
-  endfacet
-  facet normal -0.951057 0.309017 0.000000
-    outer loop
-      vertex -1.213525 0.881678 -1.500000
-      vertex -1.213525 -0.881678 -1.500000
-      vertex -2.427051 -1.763356 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 -1.000000 0.000000
-    outer loop
-      vertex -1.213525 -0.881678 -1.500000
-      vertex 0.927051 -2.853170 0.000000
-      vertex -2.427051 -1.763356 0.000000
-    endloop
-  endfacet
-  facet normal 0.000000 -1.000000 0.000000
-    outer loop
-      vertex -1.213525 -0.881678 -1.500000
-      vertex 0.463525 -1.426585 -1.500000
-      vertex 0.927051 -2.853170 0.000000
-    endloop
-  endfacet
-  facet normal 0.587785 -0.809017 0.000000
-    outer loop
-      vertex 0.463525 -1.426585 -1.500000
-      vertex 2.886751 0.500000 0.000000
-      vertex 0.927051 -2.853170 0.000000
-    endloop
-  endfacet
-  facet normal 0.587785 -0.809017 0.000000
-    outer loop
-      vertex 0.463525 -1.426585 -1.500000
-      vertex 1.500000 0.000000 -1.500000
-      vertex 2.886751 0.500000 0.000000
-    endloop
-  endfacet
-  facet normal 0.587785 0.809017 0.309017
-    outer loop
-      vertex 2.000000 0.000000 0.000000
-      vertex 2.886751 0.500000 0.000000
-      vertex 0.000000 2.000000 0.000000
-    endloop
-  endfacet
-  facet normal 0.587785 0.809017 0.309017
-    outer loop
-      vertex 0.000000 2.000000 0.000000
-      vertex 2.886751 0.500000 0.000000
-      vertex 0.927051 2.853170 0.000000
-    endloop
-  endfacet
-  facet normal -0.587785 0.809017 0.309017
-    outer loop
-      vertex 0.000000 2.000000 0.000000
-      vertex 0.927051 2.853170 0.000000
-      vertex -2.000000 0.000000 0.000000
-    endloop
-  endfacet
-  facet normal -0.587785 0.809017 0.309017
-    outer loop
-      vertex -2.000000 0.000000 0.000000
-      vertex 0.927051 2.853170 0.000000
-      vertex -2.427051 1.763356 0.000000
-    endloop
-  endfacet
-  facet normal -0.587785 -0.809017 0.309017
-    outer loop
-      vertex -2.000000 0.000000 0.000000
-      vertex -2.427051 1.763356 0.000000
-      vertex 0.000000 -2.000000 0.000000
-    endloop
-  endfacet
-  facet normal -0.587785 -0.809017 0.309017
-    outer loop
-      vertex 0.000000 -2.000000 0.000000
-      vertex -2.427051 1.763356 0.000000
-      vertex -2.427051 -1.763356 0.000000
+      vertex 0.618034 1.902113 0.000000
     endloop
   endfacet
   facet normal 0.587785 -0.809017 0.309017
-    outer loop
-      vertex 0.000000 -2.000000 0.000000
-      vertex -2.427051 -1.763356 0.000000
-      vertex 2.000000 0.000000 0.000000
-    endloop
-  endfacet
-  facet normal 0.587785 -0.809017 0.309017
-    outer loop
-      vertex 2.000000 0.000000 0.000000
-      vertex -2.427051 -1.763356 0.000000
-      vertex 0.927051 -2.853170 0.000000
-    endloop
-  endfacet
-  facet normal 0.951057 0.000000 -0.309017
-    outer loop
-      vertex 2.000000 0.000000 0.000000
-      vertex 0.927051 -2.853170 0.000000
-      vertex 2.886751 0.500000 0.000000
-    endloop
-  endfacet
-  facet normal 0.951057 0.000000 -0.309017
     outer loop
       vertex 2.886751 0.500000 0.000000
       vertex 0.927051 -2.853170 0.000000
@@ -3339,21 +2816,13 @@ endsolid MatheusAgueda_Diamond_Crystal
 
 ---
 
-<!-- MATH FOOTNOTES — scholarly depth with inline LaTeX -->
+<!-- MATH FOOTNOTES -->
 
-[^secp256k1]: The secp256k1 curve used in Bitcoin/Ethereum has order $n \approx 1.158 \times 10^{77}$, making brute-force infeasible ($2^{256}$ operations). Our research targets biased nonce reuse and weak key generation — not the curve itself. The discrete logarithm problem on this curve remains computationally intractable for classical computers.
+[^warmup]: The email warmup curve $f(t) = C \cdot (1 - e^{-\lambda t})$ models relay capacity ramp-up. With $C = 385$ emails/day and $\lambda \approx 0.15$, reaching 95% capacity takes approximately 20 days. The circuit breaker trips at $r_b > 0.05$ (5% bounce rate), protecting sender reputation.
 
-[^ecdsa]: ECDSA signature generation requires a fresh random nonce $k$ for each signature. If $k$ is reused or biased by even 4 bits, the private key $d_A$ can be recovered via lattice reduction (HNP → CVP). Our Metal GPU implementation tests $10^9$ candidates/sec.
+[^thompson]: Thompson Sampling maintains Beta posteriors $\text{Beta}(\alpha, \beta)$ for each model arm. After $n$ observations with $s$ successes, the posterior is $\text{Beta}(s+1, n-s+1)$. Model selection samples from each posterior and picks the maximum — this naturally balances exploration vs. exploitation without explicit epsilon parameters.
 
-[^lattice]: Lattice reduction via LLL/BKZ is polynomial-time for approximate SVP but remains exponential for exact solutions. The Lovász condition $\|\mathbf{b}_i^*\| \geq (\delta - \mu_{i,i-1}^2) \|\mathbf{b}_{i-1}^*\|$ with $\delta = 3/4$ guarantees output quality. Practical attacks require side-channel information (e.g., biased ECDSA nonces leaking $\leq 4$ bits per signature).
-
-[^birthday]: The birthday paradox implies that for a $k$-bit hash, a collision is expected after $\sqrt{2^k} = 2^{k/2}$ random samples. For SHA-256, this means $2^{128}$ operations — still infeasible, but relevant for reduced-round variants and hash truncation attacks.
-
-[^shannon]: Shannon entropy $H(X) = -\sum p(x_i) \log_2 p(x_i)$ quantifies the minimum bits needed to encode a message. For cryptographic keys, $H \geq 128$ bits provides post-quantum security margins against Grover's algorithm ($O(\sqrt{N})$ speedup). Our quality scoring engine uses entropy analysis on email patterns to detect disposable/generated addresses with $H < 3.0$ bits/char.
-
-[^dh]: The Diffie-Hellman protocol enables shared secret generation over insecure channels: $g^{ab} \equiv (g^a)^b$. Security relies on the Computational Diffie-Hellman (CDH) assumption in $\mathbb{Z}_p^*$. Our Metal GPU implementation achieves $3.2 \times 10^9$ modular exponentiations/sec on M4 Pro.
-
-[^merkle]: Merkle trees provide $O(\log n)$ inclusion proofs used in Bitcoin SPV verification. The root hash $H(H(L_0 \| L_1) \| H(L_2 \| L_3))$ commits to all leaf data. Our mempool sniffer validates transaction inclusion using lightweight Merkle proofs without downloading full blocks — critical for MoonSniper's sub-second reaction time on pending swaps.
+[^merkle]: Merkle trees provide $O(\log n)$ inclusion proofs. The root hash $H(H(L_0 \| L_1) \| H(L_2 \| L_3))$ commits to all leaf data. MoonSniper validates transaction inclusion using lightweight Merkle proofs without downloading full blocks — critical for sub-second reaction time on pending swaps.
 
 <!-- ╔══════════════════════════════════════════════════════════════════════════╗ -->
 <!-- ║                             FOOTER                                      ║ -->
