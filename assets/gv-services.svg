@@ -1,95 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
-<defs>
-<style>
-@keyframes glow {
-  0%, 100% { opacity: 0.3; }
-  50% { opacity: 0.8; }
-}
-.card-border {
-  animation: glow 3s infinite;
-}
-.card-title {
-  font-family: "Courier New", monospace;
-  font-size: 11px;
-  font-weight: bold;
-  text-anchor: middle;
-}
-.card-sub {
-  font-family: "Courier New", monospace;
-  font-size: 9px;
-  fill: #888888;
-  text-anchor: middle;
-}
-</style>
-</defs>
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="ng" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2D95"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+    <style>
+      @keyframes glow-pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 0.9; } }
+      @keyframes blink { 0%,49%,100% { opacity: 1; } 50%,99% { opacity: 0.15; } }
+      .gp { animation: glow-pulse 3s infinite; }
+      .bl { animation: blink 1.4s infinite; }
+      .ct { font-family: 'Courier New', monospace; font-size: 11px; font-weight: bold; text-anchor: middle; }
+      .cs { font-family: 'Courier New', monospace; font-size: 9px; fill: #666; text-anchor: middle; }
+    </style>
+  </defs>
+  <rect width="900" height="200" fill="#06060e"/>
 
-<rect width="900" height="200" fill="#0a0a0a"/>
-
-<!-- Card 1 -->
-<g transform="translate(18, 15)">
-  <rect width="197" height="160" rx="8" fill="#0d0d1a" stroke="#22c55e" stroke-width="1.5" class="card-border"/>
-  
-  <g transform="translate(98.5, 52)">
-    <animateTransform attributeName="transform" type="translate" values="98.5,52; 98.5,50; 98.5,52" dur="3s" repeatCount="indefinite" />
-    <rect x="-20" y="-8" width="40" height="20" fill="#22c55e" opacity="0.8" rx="2"/>
-    <polygon points="-24,-8 0,-24 24,-8" fill="#22c55e"/>
-    <circle cx="-10" cy="14" r="4" fill="#333333" stroke="#22c55e" stroke-width="1"/>
-    <circle cx="10" cy="14" r="4" fill="#333333" stroke="#22c55e" stroke-width="1"/>
+  <!-- Card 1: Mobile Homes -->
+  <g transform="translate(18, 15)">
+    <rect width="197" height="160" rx="8" fill="#0a0a14" stroke="#FF2D95" stroke-width="1.5" class="gp"/>
+    <g transform="translate(98.5, 52)" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" values="98.5,52;98.5,49;98.5,52" dur="3s" repeatCount="indefinite"/>
+      <rect x="-20" y="-8" width="40" height="20" fill="none" stroke="#FF2D95" stroke-width="1.5" rx="2"/>
+      <polygon points="-24,-8 0,-24 24,-8" fill="none" stroke="#FF2D95" stroke-width="1.5"/>
+      <rect x="-4" y="0" width="8" height="12" fill="none" stroke="#FF2D95" stroke-width="1"/>
+      <circle cx="-10" cy="14" r="4" fill="none" stroke="#FF2D95" stroke-width="1"/>
+      <circle cx="10" cy="14" r="4" fill="none" stroke="#FF2D95" stroke-width="1"/>
+    </g>
+    <text x="98.5" y="95" fill="#FF2D95" class="ct">Mobile Homes</text>
+    <text x="98.5" y="115" class="cs">Premium static caravans</text>
   </g>
-  
-  <text x="98.5" y="95" fill="#22c55e" class="card-title">Mobile Homes</text>
-  <text x="98.5" y="115" class="card-sub">Premium static caravans</text>
-</g>
 
-<!-- Card 2 -->
-<g transform="translate(235, 15)">
-  <rect width="197" height="160" rx="8" fill="#0d0d1a" stroke="#fbbf24" stroke-width="1.5" class="card-border"/>
-  
-  <g transform="translate(98.5, 52)">
-    <animateTransform attributeName="transform" type="translate" values="98.5,52; 98.5,50; 98.5,52" dur="3s" repeatCount="indefinite" />
-    <circle r="18" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
-    <line x1="-18" y1="0" x2="18" y2="0" stroke="#fbbf24" stroke-width="1"/>
-    <line x1="0" y1="-18" x2="0" y2="18" stroke="#fbbf24" stroke-width="1"/>
-    <ellipse rx="9" ry="18" fill="none" stroke="#fbbf24" stroke-width="1.5"/>
+  <!-- Card 2: 4 Countries -->
+  <g transform="translate(235, 15)">
+    <rect width="197" height="160" rx="8" fill="#0a0a14" stroke="#BD00FF" stroke-width="1.5" class="gp" style="animation-delay:-.5s"/>
+    <g transform="translate(98.5, 52)" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" values="98.5,52;98.5,49;98.5,52" dur="3.5s" repeatCount="indefinite"/>
+      <circle r="18" fill="none" stroke="#BD00FF" stroke-width="1.5"/>
+      <line x1="-18" y1="0" x2="18" y2="0" stroke="#BD00FF" stroke-width="1"/>
+      <line x1="0" y1="-18" x2="0" y2="18" stroke="#BD00FF" stroke-width="1"/>
+      <ellipse rx="9" ry="18" fill="none" stroke="#BD00FF" stroke-width="1"/>
+    </g>
+    <text x="98.5" y="95" fill="#BD00FF" class="ct">4 Countries</text>
+    <text x="98.5" y="115" class="cs">PT · FR · NL · ES</text>
   </g>
-  
-  <text x="98.5" y="95" fill="#fbbf24" class="card-title">4 Countries</text>
-  <text x="98.5" y="115" class="card-sub">PT . FR . NL . ES</text>
-</g>
 
-<!-- Card 3 -->
-<g transform="translate(452, 15)">
-  <rect width="197" height="160" rx="8" fill="#0d0d1a" stroke="#00D4FF" stroke-width="1.5" class="card-border"/>
-  
-  <g transform="translate(98.5, 52)">
-    <animateTransform attributeName="transform" type="translate" values="98.5,52; 98.5,50; 98.5,52" dur="3s" repeatCount="indefinite" />
-    <rect x="-20" y="-12" width="40" height="24" fill="none" stroke="#00D4FF" stroke-width="1.5" rx="2"/>
-    <polyline points="-20,-12 0,4 20,-12" fill="none" stroke="#00D4FF" stroke-width="1.5"/>
+  <!-- Card 3: Email Engine -->
+  <g transform="translate(452, 15)">
+    <rect width="197" height="160" rx="8" fill="#0a0a14" stroke="#00D4FF" stroke-width="1.5" class="gp" style="animation-delay:-1s"/>
+    <g transform="translate(98.5, 52)" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" values="98.5,52;98.5,49;98.5,52" dur="4s" repeatCount="indefinite"/>
+      <rect x="-20" y="-12" width="40" height="24" fill="none" stroke="#00D4FF" stroke-width="1.5" rx="2"/>
+      <polyline points="-20,-12 0,4 20,-12" fill="none" stroke="#00D4FF" stroke-width="1.5"/>
+    </g>
+    <text x="98.5" y="95" fill="#00D4FF" class="ct">Email Engine</text>
+    <text x="98.5" y="115" class="cs">385/day · 3 DKIM relays</text>
   </g>
-  
-  <text x="98.5" y="95" fill="#00D4FF" class="card-title">Email Engine</text>
-  <text x="98.5" y="115" class="card-sub">385/day capacity</text>
-</g>
 
-<!-- Card 4 -->
-<g transform="translate(669, 15)">
-  <rect width="197" height="160" rx="8" fill="#0d0d1a" stroke="#BD00FF" stroke-width="1.5" class="card-border"/>
-  
-  <g transform="translate(98.5, 52)">
-    <animateTransform attributeName="transform" type="translate" values="98.5,52; 98.5,50; 98.5,52" dur="3s" repeatCount="indefinite" />
-    <circle r="16" fill="none" stroke="#BD00FF" stroke-width="1.5"/>
-    <path d="M 0 -16 Q 6 -6 0 0 Q -6 6 0 16" fill="none" stroke="#BD00FF" stroke-width="1.2"/>
-    <path d="M -10 -8 Q -2 -2 -12 6" fill="none" stroke="#BD00FF" stroke-width="1.2"/>
-    <path d="M 10 -8 Q 2 -2 12 6" fill="none" stroke="#BD00FF" stroke-width="1.2"/>
+  <!-- Card 4: AI Fleet -->
+  <g transform="translate(669, 15)">
+    <rect width="197" height="160" rx="8" fill="#0a0a14" stroke="#00ff41" stroke-width="1.5" class="gp" style="animation-delay:-1.5s"/>
+    <g transform="translate(98.5, 52)" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="translate" values="98.5,52;98.5,49;98.5,52" dur="3.2s" repeatCount="indefinite"/>
+      <circle r="16" fill="none" stroke="#00ff41" stroke-width="1.5"/>
+      <path d="M0-16Q6-6 0 0Q-6 6 0 16" fill="none" stroke="#00ff41" stroke-width="1.2"/>
+      <path d="M-10-8Q-2-2-12 6" fill="none" stroke="#00ff41" stroke-width="1.2"/>
+      <path d="M10-8Q2-2 12 6" fill="none" stroke="#00ff41" stroke-width="1.2"/>
+    </g>
+    <text x="98.5" y="95" fill="#00ff41" class="ct">AI Fleet</text>
+    <text x="98.5" y="115" class="cs">228 models · 94.2% free</text>
   </g>
-  
-  <text x="98.5" y="95" fill="#BD00FF" class="card-title">AI Fleet</text>
-  <text x="98.5" y="115" class="card-sub">228 models</text>
-</g>
 
-<!-- Bottom line -->
-<line x1="30" y1="190" x2="870" y2="190" stroke="#22c55e" stroke-width="1" stroke-dasharray="840" stroke-dashoffset="840">
-  <animate attributeName="stroke-dashoffset" from="840" to="0" dur="3s" fill="freeze"/>
-</line>
-
+  <!-- Bottom neon line -->
+  <line x1="30" y1="190" x2="870" y2="190" stroke="url(#ng)" stroke-width="1.5" stroke-dasharray="840" stroke-dashoffset="840" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" from="840" to="0" dur="3s" fill="freeze"/>
+  </line>
 </svg>

@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" width="900" height="350">
+  <style>
+    @keyframes warmglow { 0%,100% { opacity: 0.4; } 50% { opacity: 0.85; } }
+    @keyframes flicker { 0% { opacity: 0.3; } 20% { opacity: 0.9; } 40% { opacity: 0.5; } 60% { opacity: 1; } 80% { opacity: 0.6; } 100% { opacity: 0.3; } }
+    @keyframes twinkle { 0%,100% { opacity: 0.15; } 50% { opacity: 0.9; } }
+    @keyframes star { 0%,100% { opacity: 0.1; } 50% { opacity: 0.7; } }
+    @keyframes fireglow { 0%,100% { opacity: 0.5; } 25% { opacity: 1; } 50% { opacity: 0.6; } 75% { opacity: 0.95; } }
+    .wg { animation: warmglow 3s ease-in-out infinite; }
+    .fl { animation: flicker 2s ease-in-out infinite; }
+    .fg { animation: fireglow 1.5s ease-in-out infinite; }
+    .st { animation: star 4s ease-in-out infinite; }
+    .tw { animation: twinkle 2s ease-in-out infinite; }
+    .txt { font-family: 'Courier New', monospace; }
+  </style>
+  <defs>
+    <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF2D95"/>
+      <stop offset="100%" stop-color="#BD00FF"/>
+    </linearGradient>
+    <linearGradient id="skyg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a1a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#06060e"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-lg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sm" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="350" fill="#06060e"/>
+
+  <!-- Stars -->
+  <circle cx="80" cy="30" r="1" fill="#fff" class="st"/>
+  <circle cx="220" cy="55" r="1.2" fill="#00D4FF" class="st" style="animation-delay:-1s"/>
+  <circle cx="390" cy="20" r="0.8" fill="#fff" class="st" style="animation-delay:-2s"/>
+  <circle cx="560" cy="40" r="1" fill="#BD00FF" class="st" style="animation-delay:-.5s"/>
+  <circle cx="710" cy="25" r="1.3" fill="#fff" class="st" style="animation-delay:-3s"/>
+  <circle cx="830" cy="50" r="0.9" fill="#FF2D95" class="st" style="animation-delay:-1.5s"/>
+  <circle cx="150" cy="65" r="0.7" fill="#fff" class="st" style="animation-delay:-2.5s"/>
+  <circle cx="480" cy="15" r="1" fill="#00D4FF" class="st" style="animation-delay:-0.8s"/>
+
+  <!-- ===== TREES LEFT ===== -->
+  <g filter="url(#glow)">
+    <!-- Tree 1 -->
+    <line x1="80" y1="185" x2="80" y2="235" stroke="#00ff41" stroke-width="1.5" opacity="0.7"/>
+    <circle cx="80" cy="170" r="22" fill="none" stroke="#00ff41" stroke-width="1.2" opacity="0.5"/>
+    <circle cx="80" cy="170" r="14" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.3"/>
+    <!-- Tree 2 -->
+    <line x1="140" y1="195" x2="140" y2="235" stroke="#00ff41" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="140" cy="178" r="20" fill="none" stroke="#00ff41" stroke-width="1.2" opacity="0.45"/>
+    <circle cx="140" cy="178" r="12" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.25"/>
+  </g>
+
+  <!-- ===== TREES RIGHT ===== -->
+  <g filter="url(#glow)">
+    <!-- Tree 3 -->
+    <line x1="800" y1="190" x2="800" y2="235" stroke="#00ff41" stroke-width="1.5" opacity="0.6"/>
+    <circle cx="800" cy="175" r="18" fill="none" stroke="#00ff41" stroke-width="1.2" opacity="0.45"/>
+    <!-- Tree 4 -->
+    <line x1="850" y1="200" x2="850" y2="235" stroke="#00ff41" stroke-width="1.2" opacity="0.5"/>
+    <circle cx="850" cy="185" r="16" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <!-- ===== MOBILE HOME BODY ===== -->
+  <g filter="url(#glow-lg)">
+    <!-- Main structure -->
+    <rect x="180" y="140" width="440" height="100" fill="none" stroke="#00D4FF" stroke-width="2" rx="3"/>
+    <!-- Roof (slight angle trapezoid) -->
+    <polygon points="170,140 630,140 620,110 180,110" fill="none" stroke="#00D4FF" stroke-width="1.8"/>
+    <!-- Roof ridge line -->
+    <line x1="180" y1="110" x2="620" y2="110" stroke="#00D4FF" stroke-width="1" opacity="0.5"/>
+    <!-- Base / undercarriage -->
+    <line x1="185" y1="240" x2="615" y2="240" stroke="#00D4FF" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <!-- Chimney -->
+  <rect x="260" y="85" width="15" height="25" fill="none" stroke="#00D4FF" stroke-width="1" opacity="0.6"/>
+
+  <!-- Chimney smoke (SMIL upward float) -->
+  <circle cx="267" cy="80" r="4" fill="none" stroke="#888" stroke-width="0.8" opacity="0">
+    <animate attributeName="cy" from="80" to="45" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0.3;0" keyTimes="0;0.2;0.7;1" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="r" from="3" to="8" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="270" cy="78" r="3" fill="none" stroke="#888" stroke-width="0.8" opacity="0">
+    <animate attributeName="cy" from="78" to="40" dur="5s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="opacity" values="0;0.4;0.25;0" keyTimes="0;0.2;0.7;1" dur="5s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="r" from="2.5" to="7" dur="5s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+  <circle cx="264" cy="82" r="3.5" fill="none" stroke="#888" stroke-width="0.8" opacity="0">
+    <animate attributeName="cy" from="82" to="50" dur="4.5s" repeatCount="indefinite" begin="3s"/>
+    <animate attributeName="opacity" values="0;0.35;0.2;0" keyTimes="0;0.2;0.7;1" dur="4.5s" repeatCount="indefinite" begin="3s"/>
+    <animate attributeName="r" from="3" to="9" dur="4.5s" repeatCount="indefinite" begin="3s"/>
+  </circle>
+
+  <!-- ===== PANORAMIC WINDOWS ===== -->
+  <g filter="url(#glow)">
+    <!-- Window 1 -->
+    <rect x="210" y="150" width="55" height="70" fill="none" stroke="#FF2D95" stroke-width="1.5" rx="1"/>
+    <rect x="215" y="155" width="45" height="60" fill="#fbbf24" opacity="0.15" class="wg"/>
+    <!-- Window 2 -->
+    <rect x="290" y="150" width="55" height="70" fill="none" stroke="#FF2D95" stroke-width="1.5" rx="1"/>
+    <rect x="295" y="155" width="45" height="60" fill="#fbbf24" opacity="0.15" class="wg" style="animation-delay:-.8s"/>
+    <!-- Window 3 -->
+    <rect x="370" y="150" width="55" height="70" fill="none" stroke="#FF2D95" stroke-width="1.5" rx="1"/>
+    <rect x="375" y="155" width="45" height="60" fill="#fbbf24" opacity="0.15" class="wg" style="animation-delay:-1.6s"/>
+    <!-- Window 4 (larger — patio door style) -->
+    <rect x="450" y="148" width="70" height="75" fill="none" stroke="#FF2D95" stroke-width="1.5" rx="1"/>
+    <rect x="455" y="153" width="60" height="65" fill="#fbbf24" opacity="0.12" class="wg" style="animation-delay:-.4s"/>
+    <line x1="485" y1="148" x2="485" y2="223" stroke="#FF2D95" stroke-width="0.8" opacity="0.6"/>
+  </g>
+
+  <!-- Door -->
+  <rect x="548" y="165" width="35" height="58" fill="none" stroke="#00D4FF" stroke-width="1.2" rx="1"/>
+  <circle cx="577" cy="194" r="2" fill="#fbbf24" opacity="0.6"/>
+
+  <!-- Wheels -->
+  <circle cx="250" cy="248" r="10" fill="none" stroke="#00D4FF" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="250" cy="248" r="4" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="540" cy="248" r="10" fill="none" stroke="#00D4FF" stroke-width="1.2" opacity="0.5"/>
+  <circle cx="540" cy="248" r="4" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.3"/>
+
+  <!-- ===== WOODEN DECK ===== -->
+  <g filter="url(#glow)">
+    <!-- Deck platform -->
+    <rect x="620" y="220" width="160" height="20" fill="none" stroke="#BD00FF" stroke-width="1.2" opacity="0.7"/>
+    <!-- Deck planks -->
+    <line x1="640" y1="220" x2="640" y2="240" stroke="#BD00FF" stroke-width="0.5" opacity="0.3"/>
+    <line x1="660" y1="220" x2="660" y2="240" stroke="#BD00FF" stroke-width="0.5" opacity="0.3"/>
+    <line x1="680" y1="220" x2="680" y2="240" stroke="#BD00FF" stroke-width="0.5" opacity="0.3"/>
+    <line x1="700" y1="220" x2="700" y2="240" stroke="#BD00FF" stroke-width="0.5" opacity="0.3"/>
+    <line x1="720" y1="220" x2="720" y2="240" stroke="#BD00FF" stroke-width="0.5" opacity="0.3"/>
+    <line x1="740" y1="220" x2="740" y2="240" stroke="#BD00FF" stroke-width="0.5" opacity="0.3"/>
+    <line x1="760" y1="220" x2="760" y2="240" stroke="#BD00FF" stroke-width="0.5" opacity="0.3"/>
+    <!-- Railing posts -->
+    <line x1="625" y1="190" x2="625" y2="220" stroke="#BD00FF" stroke-width="1" opacity="0.6"/>
+    <line x1="700" y1="190" x2="700" y2="220" stroke="#BD00FF" stroke-width="1" opacity="0.6"/>
+    <line x1="775" y1="190" x2="775" y2="220" stroke="#BD00FF" stroke-width="1" opacity="0.6"/>
+    <!-- Railing rail -->
+    <line x1="625" y1="195" x2="775" y2="195" stroke="#BD00FF" stroke-width="1" opacity="0.5"/>
+  </g>
+
+  <!-- ===== OUTDOOR FURNITURE ===== -->
+  <!-- Table -->
+  <rect x="645" y="205" width="30" height="15" fill="none" stroke="#BD00FF" stroke-width="0.8" opacity="0.5"/>
+  <!-- Chair 1 -->
+  <rect x="635" y="207" width="8" height="10" fill="none" stroke="#BD00FF" stroke-width="0.6" opacity="0.4"/>
+  <!-- Chair 2 -->
+  <rect x="678" y="207" width="8" height="10" fill="none" stroke="#BD00FF" stroke-width="0.6" opacity="0.4"/>
+
+  <!-- ===== FIRE PIT ===== -->
+  <g filter="url(#glow-sm)">
+    <circle cx="740" cy="212" r="10" fill="none" stroke="#FF2D95" stroke-width="1" opacity="0.6"/>
+    <circle cx="740" cy="212" r="6" fill="#ff6b35" opacity="0.15" class="fg"/>
+    <circle cx="740" cy="210" r="3" fill="#fbbf24" opacity="0.2" class="fg" style="animation-delay:-.3s"/>
+    <circle cx="738" cy="208" r="2" fill="#ff4500" opacity="0.25" class="fl"/>
+  </g>
+
+  <!-- ===== FAIRY LIGHTS ===== -->
+  <!-- Curved string path -->
+  <path d="M 620 188 Q 640 180 660 186 Q 680 192 700 184 Q 720 176 740 183 Q 760 190 780 185" fill="none" stroke="#fbbf24" stroke-width="0.4" opacity="0.3"/>
+  <!-- Bulbs -->
+  <circle cx="625" cy="187" r="1.8" fill="#fbbf24" class="tw" filter="url(#glow-sm)"/>
+  <circle cx="640" cy="182" r="1.5" fill="#FF2D95" class="tw" style="animation-delay:-.3s" filter="url(#glow-sm)"/>
+  <circle cx="652" cy="185" r="1.8" fill="#fbbf24" class="tw" style="animation-delay:-.6s" filter="url(#glow-sm)"/>
+  <circle cx="665" cy="188" r="1.5" fill="#00D4FF" class="tw" style="animation-delay:-.9s" filter="url(#glow-sm)"/>
+  <circle cx="678" cy="190" r="1.8" fill="#fbbf24" class="tw" style="animation-delay:-1.2s" filter="url(#glow-sm)"/>
+  <circle cx="690" cy="186" r="1.5" fill="#FF2D95" class="tw" style="animation-delay:-1.5s" filter="url(#glow-sm)"/>
+  <circle cx="703" cy="183" r="1.8" fill="#fbbf24" class="tw" style="animation-delay:-.2s" filter="url(#glow-sm)"/>
+  <circle cx="716" cy="179" r="1.5" fill="#00D4FF" class="tw" style="animation-delay:-.7s" filter="url(#glow-sm)"/>
+  <circle cx="728" cy="181" r="1.8" fill="#fbbf24" class="tw" style="animation-delay:-1s" filter="url(#glow-sm)"/>
+  <circle cx="742" cy="184" r="1.5" fill="#FF2D95" class="tw" style="animation-delay:-1.4s" filter="url(#glow-sm)"/>
+  <circle cx="755" cy="188" r="1.8" fill="#fbbf24" class="tw" style="animation-delay:-.4s" filter="url(#glow-sm)"/>
+  <circle cx="768" cy="186" r="1.5" fill="#00D4FF" class="tw" style="animation-delay:-1.8s" filter="url(#glow-sm)"/>
+  <circle cx="780" cy="185" r="1.8" fill="#fbbf24" class="tw" style="animation-delay:-.1s" filter="url(#glow-sm)"/>
+
+  <!-- ===== GROUND ===== -->
+  <line x1="40" y1="258" x2="860" y2="258" stroke="#22c55e" stroke-width="1" opacity="0.4"/>
+  <!-- Grass marks -->
+  <g stroke="#22c55e" stroke-width="0.6" opacity="0.3">
+    <line x1="60" y1="258" x2="58" y2="252"/><line x1="63" y1="258" x2="65" y2="253"/>
+    <line x1="100" y1="258" x2="98" y2="253"/><line x1="103" y1="258" x2="105" y2="252"/>
+    <line x1="160" y1="258" x2="158" y2="253"/><line x1="163" y1="258" x2="165" y2="252"/>
+    <line x1="350" y1="258" x2="348" y2="253"/><line x1="353" y1="258" x2="355" y2="252"/>
+    <line x1="450" y1="258" x2="448" y2="253"/><line x1="453" y1="258" x2="455" y2="252"/>
+    <line x1="650" y1="258" x2="648" y2="253"/><line x1="653" y1="258" x2="655" y2="252"/>
+    <line x1="810" y1="258" x2="808" y2="253"/><line x1="813" y1="258" x2="815" y2="252"/>
+    <line x1="840" y1="258" x2="838" y2="253"/><line x1="843" y1="258" x2="845" y2="252"/>
+  </g>
+
+  <!-- Stepping stones to deck -->
+  <rect x="615" y="250" width="12" height="4" fill="none" stroke="#BD00FF" stroke-width="0.6" opacity="0.3" rx="1"/>
+  <rect x="600" y="252" width="12" height="4" fill="none" stroke="#BD00FF" stroke-width="0.6" opacity="0.25" rx="1"/>
+
+  <!-- ===== TEXT ===== -->
+  <text x="50" y="300" class="txt" font-size="16" font-weight="bold" fill="url(#tg)" filter="url(#glow)">PREMIUM MOBILE HOMES</text>
+  <text x="50" y="320" class="txt" font-size="10" fill="#888">Luxury living · Closer to nature</text>
+
+  <!-- Right side subtle data -->
+  <text x="850" y="300" class="txt" font-size="9" fill="#444" text-anchor="end">48 countries</text>
+  <text x="850" y="315" class="txt" font-size="9" fill="#444" text-anchor="end">greenvillagemobilehomes.com</text>
+
+  <!-- Top neon accent line -->
+  <line x1="0" y1="0" x2="900" y2="0" stroke="url(#tg)" stroke-width="2" opacity="0.6"/>
+  <!-- Bottom line animated draw -->
+  <line x1="50" y1="340" x2="850" y2="340" stroke="#00D4FF" stroke-width="1" stroke-dasharray="800" stroke-dashoffset="800" opacity="0.4">
+    <animate attributeName="stroke-dashoffset" from="800" to="0" dur="3s" fill="freeze"/>
+  </line>
+</svg>
