@@ -40,7 +40,7 @@
     <circle cx="44" cy="0" r="6" fill="#00D4FF" class="pulse" style="animation-delay:-.6s" filter="url(#glow)"/>
     <circle cx="66" cy="0" r="6" fill="#00ff41" class="pulse" style="animation-delay:-.9s" filter="url(#glow)"/>
   </g>
-  <text x="734" y="70" font-family="'Courier New',monospace" font-size="8" fill="#555" text-anchor="start">PT &nbsp; FR &nbsp; NL &nbsp; ES</text>
+  <text x="734" y="70" font-family="'Courier New',monospace" font-size="8" fill="#555" text-anchor="start">PT &#160; FR &#160; NL &#160; ES</text>
 
   <!-- Bottom neon line -->
   <line x1="50" y1="112" x2="850" y2="112" stroke="url(#neonGrad)" stroke-width="2" stroke-dasharray="800" stroke-dashoffset="800" filter="url(#glow)">
