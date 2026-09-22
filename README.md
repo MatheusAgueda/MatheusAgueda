@@ -21,11 +21,11 @@
 </div>
 
 <!-- ═══════════════════════════════════════════════
-     HERO SYSTEM DASHBOARD — animated SVG
+     HERO — AI-generated neural network visualization
      ═══════════════════════════════════════════════ -->
 
 <div align="center">
-<img src="./assets/hero-system.svg" width="100%" alt="Animated system dashboard with gauges, sparklines, and live metrics"/>
+<img src="./assets/hero-banner-ai.png" width="100%" alt="AI-generated neural network visualization with neon nodes, holographic HUD, and data streams"/>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
@@ -107,7 +107,7 @@ hardware:
 > A **multi-armed bandit** that routes every AI sub-task to the cheapest model that clears the quality bar — Thompson Sampling + UCB1 with calibrated confidence gates.
 
 <div align="center">
-<img src="./assets/neural-routing.svg" width="100%" alt="Neural routing visualization with animated particles flowing between model tiers"/>
+<img src="./assets/dashboard-ai.png" width="100%" alt="AI-generated holographic dashboard with brain core, neon gauges, and European map"/>
 </div>
 
 <div align="center">
