@@ -206,16 +206,17 @@ flowchart LR
 }}}%%
 
 flowchart TB
-  SCRAPE["48 Countries<br/><sub>campings · RV parks · glamping</sub>"]:::green
-  --> ENRICH["Email Discovery<br/><sub>MX + SMTP verification</sub>"]:::gold
-  --> SCORE["Lead Scoring<br/><sub>40+ signals · ML pipeline</sub>"]:::green
+  SCRAPE["48 Countries<br/><sub>campings · RV parks · glamping</sub>"]:::cyan
+  --> ENRICH["Email Discovery<br/><sub>MX + SMTP verification</sub>"]:::pink
+  --> SCORE["Lead Scoring<br/><sub>40+ signals · ML pipeline</sub>"]:::cyan
   --> GATE{"Quality<br/>Gate"}:::gate
-  GATE -->|"score >= 40"| SEND["Email Engine<br/><sub>385/day · 3 DKIM relays</sub>"]:::green
-  GATE -->|"score >= 40"| WA["Joao Bot<br/><sub>WhatsApp outreach</sub>"]:::gold
-  GATE -->|"verified"| MHL["MHL Website<br/><sub>public listings</sub>"]:::green
+  GATE -->|"score >= 40"| SEND["Email Engine<br/><sub>385/day · 3 DKIM relays</sub>"]:::cyan
+  GATE -->|"score >= 40"| WA["Joao Bot<br/><sub>WhatsApp outreach</sub>"]:::pink
+  GATE -->|"verified"| MHL["MHL Website<br/><sub>public listings</sub>"]:::neon
 
   classDef pink fill:#1a0a14,stroke:#FF2D95,color:#FF2D95
-  classDef purple fill:#140a1a,stroke:#BD00FF,color:#BD00FF
+  classDef cyan fill:#0a0a1a,stroke:#00D4FF,color:#00D4FF
+  classDef neon fill:#0a140a,stroke:#00ff41,color:#00ff41
   classDef gate fill:#0a0a0a,stroke:#BD00FF,color:#BD00FF
 ```
 
@@ -796,7 +797,7 @@ endsolid diamond
       "properties": {
         "name": "Portugal — HQ",
         "description": "Green Village Mobile Homes · CEO base",
-        "marker-color": "#22c55e",
+        "marker-color": "#00D4FF",
         "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [-8.61, 41.15] }
@@ -806,7 +807,7 @@ endsolid diamond
       "properties": {
         "name": "France — Easystart",
         "description": "Company formation · INPI/URSSAF",
-        "marker-color": "#fbbf24",
+        "marker-color": "#FF2D95",
         "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [2.35, 48.86] }
@@ -816,7 +817,7 @@ endsolid diamond
       "properties": {
         "name": "Netherlands — EU Ops",
         "description": "Cross-border · KVK · VAT VIES",
-        "marker-color": "#22c55e",
+        "marker-color": "#00D4FF",
         "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [4.90, 52.37] }
@@ -826,7 +827,7 @@ endsolid diamond
       "properties": {
         "name": "Spain — Expansion",
         "description": "Dealer network · Lead gen · CRM",
-        "marker-color": "#fbbf24",
+        "marker-color": "#FF2D95",
         "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [-3.70, 40.42] }
@@ -835,9 +836,9 @@ endsolid diamond
       "type": "Feature",
       "properties": {
         "name": "Lead Coverage — 48 Countries",
-        "stroke": "#22c55e",
+        "stroke": "#00D4FF",
         "stroke-width": 2,
-        "fill": "#22c55e",
+        "fill": "#00D4FF",
         "fill-opacity": 0.06
       },
       "geometry": {
