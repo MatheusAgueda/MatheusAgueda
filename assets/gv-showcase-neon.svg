@@ -3,13 +3,11 @@
     @keyframes pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
     @keyframes pulse2 { 0%,100% { opacity: 0.3; } 50% { opacity: 0.85; } }
     @keyframes blink { 0%,49%,100% { opacity: 1; } 50%,99% { opacity: 0.15; } }
-    @keyframes dash { to { stroke-dashoffset: -60; } }
     @keyframes flicker { 0%,100% { opacity: 0.8; } 30% { opacity: 1; } 50% { opacity: 0.25; } 52% { opacity: 1; } }
     .p { animation: pulse 3s ease-in-out infinite; }
     .p2 { animation: pulse2 4s ease-in-out infinite; }
     .bl { animation: blink 1.4s infinite; }
     .fl { animation: flicker 2.5s infinite; }
-    .dsh { animation: dash 3s linear infinite; }
     .mono { font-family: 'Courier New', monospace; }
   </style>
   <defs>
@@ -31,50 +29,81 @@
   <rect width="900" height="350" fill="#06060e"/>
   <rect x="0" y="0" width="900" height="2" fill="url(#tg)"/>
 
-  <!-- ====== LUXURY MOBILE HOME (wireframe, large, centered-left) ====== -->
+  <!-- ====== STATIC CARAVAN (proper wide bungalow shape) ====== -->
   <g filter="url(#g)">
-    <rect x="80" y="130" width="280" height="100" rx="3" fill="none" stroke="#FF2D95" stroke-width="2.5"/>
-    <polygon points="75,130 220,75 365,130" fill="none" stroke="#FF2D95" stroke-width="2"/>
-    <rect x="195" y="180" width="28" height="50" rx="2" fill="none" stroke="#BD00FF" stroke-width="1.5" class="p"/>
-    <circle cx="218" cy="208" r="2" fill="#BD00FF" class="bl"/>
-    <rect x="98" y="150" width="30" height="22" rx="1" fill="none" stroke="#00D4FF" stroke-width="1.2" class="p" style="animation-delay:-0.5s"/>
-    <rect x="138" y="150" width="30" height="22" rx="1" fill="none" stroke="#00D4FF" stroke-width="1.2" class="p" style="animation-delay:-1s"/>
-    <rect x="248" y="150" width="30" height="22" rx="1" fill="none" stroke="#00D4FF" stroke-width="1.2" class="p" style="animation-delay:-1.5s"/>
-    <rect x="295" y="150" width="30" height="22" rx="1" fill="none" stroke="#00D4FF" stroke-width="1.2" class="p" style="animation-delay:-2s"/>
-    <line x1="113" y1="150" x2="113" y2="172" stroke="#00D4FF" stroke-width="0.6" opacity="0.5"/>
-    <line x1="98" y1="161" x2="128" y2="161" stroke="#00D4FF" stroke-width="0.6" opacity="0.5"/>
-    <line x1="153" y1="150" x2="153" y2="172" stroke="#00D4FF" stroke-width="0.6" opacity="0.5"/>
-    <line x1="138" y1="161" x2="168" y2="161" stroke="#00D4FF" stroke-width="0.6" opacity="0.5"/>
-    <line x1="263" y1="150" x2="263" y2="172" stroke="#00D4FF" stroke-width="0.6" opacity="0.5"/>
-    <line x1="248" y1="161" x2="278" y2="161" stroke="#00D4FF" stroke-width="0.6" opacity="0.5"/>
-    <line x1="310" y1="150" x2="310" y2="172" stroke="#00D4FF" stroke-width="0.6" opacity="0.5"/>
-    <line x1="295" y1="161" x2="325" y2="161" stroke="#00D4FF" stroke-width="0.6" opacity="0.5"/>
-    <rect x="260" y="78" width="18" height="40" fill="none" stroke="#FF2D95" stroke-width="1.2"/>
+    <!-- Foundation blocks -->
+    <rect x="92" y="237" width="12" height="10" fill="none" stroke="#FF2D95" stroke-width="0.6" opacity="0.3"/>
+    <rect x="175" y="237" width="12" height="10" fill="none" stroke="#FF2D95" stroke-width="0.6" opacity="0.3"/>
+    <rect x="265" y="237" width="12" height="10" fill="none" stroke="#FF2D95" stroke-width="0.6" opacity="0.3"/>
+    <rect x="340" y="237" width="12" height="10" fill="none" stroke="#FF2D95" stroke-width="0.6" opacity="0.3"/>
+
+    <!-- Body: wide, low bungalow proportions -->
+    <rect x="80" y="145" width="285" height="92" rx="3" fill="none" stroke="#FF2D95" stroke-width="2.5"/>
+
+    <!-- Horizontal cladding/siding lines -->
+    <line x1="80" y1="160" x2="365" y2="160" stroke="#FF2D95" stroke-width="0.3" opacity="0.15"/>
+    <line x1="80" y1="175" x2="365" y2="175" stroke="#FF2D95" stroke-width="0.3" opacity="0.15"/>
+    <line x1="80" y1="190" x2="365" y2="190" stroke="#FF2D95" stroke-width="0.3" opacity="0.15"/>
+    <line x1="80" y1="205" x2="365" y2="205" stroke="#FF2D95" stroke-width="0.3" opacity="0.15"/>
+    <line x1="80" y1="220" x2="365" y2="220" stroke="#FF2D95" stroke-width="0.3" opacity="0.15"/>
+
+    <!-- Roof: low-pitch gable with ridge -->
+    <polygon points="70,145 222,100 375,145" fill="none" stroke="#FF2D95" stroke-width="2"/>
+    <!-- Ridge line -->
+    <line x1="222" y1="100" x2="222" y2="145" stroke="#FF2D95" stroke-width="0.5" opacity="0.2"/>
+
+    <!-- Large panoramic windows (wider than tall, with mullions) -->
+    <!-- Window 1: living room bay -->
+    <rect x="100" y="158" width="65" height="35" rx="2" fill="none" stroke="#00D4FF" stroke-width="1.5" class="p" style="animation-delay:-.5s"/>
+    <rect x="104" y="162" width="57" height="27" fill="#fbbf24" opacity="0.08" class="p" style="animation-delay:-.5s"/>
+    <line x1="133" y1="158" x2="133" y2="193" stroke="#00D4FF" stroke-width="0.7" opacity="0.5"/>
+
+    <!-- Window 2 -->
+    <rect x="180" y="158" width="45" height="30" rx="1" fill="none" stroke="#00D4FF" stroke-width="1.2" class="p" style="animation-delay:-1s"/>
+    <rect x="183" y="161" width="39" height="24" fill="#fbbf24" opacity="0.06" class="p" style="animation-delay:-1s"/>
+    <line x1="203" y1="158" x2="203" y2="188" stroke="#00D4FF" stroke-width="0.6" opacity="0.4"/>
+
+    <!-- Small bathroom window -->
+    <rect x="242" y="162" width="22" height="18" rx="1" fill="none" stroke="#00D4FF" stroke-width="0.8" class="p" style="animation-delay:-1.5s"/>
+    <rect x="245" y="165" width="16" height="12" fill="#fbbf24" opacity="0.04" class="p" style="animation-delay:-1.5s"/>
+
+    <!-- Window 3: bedroom -->
+    <rect x="290" y="158" width="50" height="30" rx="1" fill="none" stroke="#00D4FF" stroke-width="1.2" class="p" style="animation-delay:-2s"/>
+    <rect x="293" y="161" width="44" height="24" fill="#fbbf24" opacity="0.06" class="p" style="animation-delay:-2s"/>
+    <line x1="315" y1="158" x2="315" y2="188" stroke="#00D4FF" stroke-width="0.6" opacity="0.4"/>
+
+    <!-- Door -->
+    <rect x="240" y="200" width="28" height="37" rx="2" fill="none" stroke="#BD00FF" stroke-width="1.5" class="p"/>
+    <circle cx="262" cy="221" r="2.5" fill="#BD00FF" class="bl"/>
+    <!-- Door glass panel -->
+    <rect x="246" y="205" width="16" height="14" rx="1" fill="none" stroke="#BD00FF" stroke-width="0.6" opacity="0.4"/>
+
+    <!-- Front deck/veranda with railing -->
+    <rect x="220" y="237" width="60" height="22" fill="none" stroke="#FF2D95" stroke-width="1" opacity="0.5"/>
+    <!-- Railing posts -->
+    <line x1="220" y1="237" x2="220" y2="248" stroke="#FF2D95" stroke-width="0.7" opacity="0.4"/>
+    <line x1="250" y1="237" x2="250" y2="248" stroke="#FF2D95" stroke-width="0.5" opacity="0.3"/>
+    <line x1="280" y1="237" x2="280" y2="248" stroke="#FF2D95" stroke-width="0.7" opacity="0.4"/>
+    <!-- Railing bar -->
+    <line x1="220" y1="244" x2="280" y2="244" stroke="#FF2D95" stroke-width="0.5" opacity="0.35"/>
+    <!-- Steps down from deck -->
+    <rect x="240" y="259" width="28" height="5" fill="none" stroke="#BD00FF" stroke-width="0.8" opacity="0.5"/>
+    <rect x="243" y="264" width="28" height="5" fill="none" stroke="#BD00FF" stroke-width="0.7" opacity="0.4"/>
+    <rect x="246" y="269" width="28" height="5" fill="none" stroke="#BD00FF" stroke-width="0.6" opacity="0.3"/>
+
+    <!-- Chimney -->
+    <rect x="300" y="88" width="12" height="15" fill="none" stroke="#FF2D95" stroke-width="1"/>
     <!-- Smoke -->
-    <circle cx="269" cy="78" r="3" fill="none" stroke="#555" stroke-width="0.8" opacity="0">
-      <animate attributeName="cy" from="75" to="40" dur="4s" repeatCount="indefinite"/>
+    <circle cx="306" cy="85" r="3" fill="none" stroke="#555" stroke-width="0.8" opacity="0">
+      <animate attributeName="cy" from="82" to="45" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0;0.4;0.2;0" dur="4s" repeatCount="indefinite"/>
       <animate attributeName="r" from="2" to="8" dur="4s" repeatCount="indefinite"/>
     </circle>
-    <circle cx="271" cy="73" r="2.5" fill="none" stroke="#555" stroke-width="0.8" opacity="0">
-      <animate attributeName="cy" from="73" to="35" dur="5s" repeatCount="indefinite" begin="1.5s"/>
+    <circle cx="308" cy="80" r="2.5" fill="none" stroke="#555" stroke-width="0.8" opacity="0">
+      <animate attributeName="cy" from="80" to="40" dur="5s" repeatCount="indefinite" begin="1.5s"/>
       <animate attributeName="opacity" values="0;0.35;0.15;0" dur="5s" repeatCount="indefinite" begin="1.5s"/>
       <animate attributeName="r" from="2" to="7" dur="5s" repeatCount="indefinite" begin="1.5s"/>
     </circle>
-    <rect x="75" y="230" width="295" height="25" rx="2" fill="none" stroke="#FF2D95" stroke-width="1" stroke-dasharray="4 3" opacity="0.4"/>
-    <line x1="115" y1="230" x2="115" y2="255" stroke="#FF2D95" stroke-width="0.5" opacity="0.3"/>
-    <line x1="155" y1="230" x2="155" y2="255" stroke="#FF2D95" stroke-width="0.5" opacity="0.3"/>
-    <line x1="195" y1="230" x2="195" y2="255" stroke="#FF2D95" stroke-width="0.5" opacity="0.3"/>
-    <line x1="235" y1="230" x2="235" y2="255" stroke="#FF2D95" stroke-width="0.5" opacity="0.3"/>
-    <line x1="275" y1="230" x2="275" y2="255" stroke="#FF2D95" stroke-width="0.5" opacity="0.3"/>
-    <line x1="315" y1="230" x2="315" y2="255" stroke="#FF2D95" stroke-width="0.5" opacity="0.3"/>
-    <line x1="195" y1="255" x2="224" y2="255" stroke="#BD00FF" stroke-width="1.2"/>
-    <line x1="192" y1="265" x2="227" y2="265" stroke="#BD00FF" stroke-width="1.2"/>
-    <line x1="189" y1="275" x2="230" y2="275" stroke="#BD00FF" stroke-width="1.2"/>
-    <circle cx="120" cy="240" r="8" fill="none" stroke="#FF2D95" stroke-width="1.2" opacity="0.5"/>
-    <circle cx="120" cy="240" r="2" fill="#FF2D95" opacity="0.3"/>
-    <circle cx="320" cy="240" r="8" fill="none" stroke="#FF2D95" stroke-width="1.2" opacity="0.5"/>
-    <circle cx="320" cy="240" r="2" fill="#FF2D95" opacity="0.3"/>
   </g>
 
   <!-- ====== SPEC PANEL (right side) ====== -->
@@ -102,15 +131,20 @@
   <rect x="720" y="270" width="140" height="22" rx="3" fill="none" stroke="#FF2D95" stroke-width="1.5" class="p"/>
   <text x="790" y="286" class="mono" font-size="12" font-weight="bold" fill="#FF2D95" text-anchor="middle">FROM EUR 24,900</text>
 
-  <line x1="0" y1="300" x2="440" y2="300" stroke="#1a1a3a" stroke-width="1" stroke-dasharray="6 4"/>
+  <!-- Ground line -->
+  <line x1="0" y1="278" x2="440" y2="278" stroke="#00ff41" stroke-width="0.8" opacity="0.25"/>
 
   <!-- Trees -->
   <g filter="url(#gs)">
-    <circle cx="30" cy="200" r="16" fill="none" stroke="#00ff41" stroke-width="1.5" class="p2"/>
-    <line x1="30" y1="216" x2="30" y2="260" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
-    <circle cx="405" cy="160" r="14" fill="none" stroke="#00ff41" stroke-width="1.3" class="p2" style="animation-delay:-1s"/>
-    <line x1="405" y1="174" x2="405" y2="210" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
-    <circle cx="420" cy="220" r="10" fill="none" stroke="#00ff41" stroke-width="1" class="p2" style="animation-delay:-2s"/>
+    <!-- Round tree left -->
+    <circle cx="30" cy="210" r="18" fill="none" stroke="#00ff41" stroke-width="1.5" class="p2"/>
+    <line x1="30" y1="228" x2="30" y2="278" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
+    <!-- Pine tree right of caravan -->
+    <line x1="405" y1="230" x2="405" y2="278" stroke="#00ff41" stroke-width="1.2" opacity="0.5"/>
+    <polygon points="405,180 392,240 418,240" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.4"/>
+    <polygon points="405,195 395,232 415,232" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.3"/>
+    <!-- Small bush -->
+    <circle cx="55" cy="268" r="9" fill="none" stroke="#00ff41" stroke-width="0.8" class="p2" style="animation-delay:-2s" opacity="0.3"/>
   </g>
 
   <!-- Status bar bottom -->
@@ -135,10 +169,5 @@
     <animate attributeName="cx" values="800;500;100;800" dur="15s" repeatCount="indefinite"/>
     <animate attributeName="cy" values="300;50;250;300" dur="15s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.8;0.4;0" dur="15s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="0" cy="0" r="2" fill="#BD00FF" filter="url(#g)">
-    <animate attributeName="cx" values="450;200;700;450" dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="150;280;80;150" dur="10s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.9;0.3;0" dur="10s" repeatCount="indefinite"/>
   </circle>
 </svg>

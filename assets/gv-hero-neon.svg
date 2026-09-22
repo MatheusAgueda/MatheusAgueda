@@ -45,119 +45,206 @@
   <circle cx="820" cy="48" r="1" fill="#00D4FF" class="st" style="animation-delay:-.8s"/>
   <circle cx="105" cy="60" r="0.6" fill="#fff" class="st" style="animation-delay:-3.5s"/>
   <circle cx="350" cy="55" r="0.8" fill="#fff" class="st" style="animation-delay:-1.2s"/>
-  <circle cx="580" cy="12" r="1" fill="#BD00FF" class="st" style="animation-delay:-2.2s"/>
-  <circle cx="870" cy="30" r="0.7" fill="#fff" class="st" style="animation-delay:-.3s"/>
 
   <!-- ===== MOON ===== -->
-  <circle cx="780" cy="70" r="30" fill="none" stroke="#BD00FF" stroke-width="1.5" opacity="0.4" filter="url(#glow-lg)"/>
-  <circle cx="780" cy="70" r="30" fill="#BD00FF" opacity="0.04"/>
-  <circle cx="790" cy="70" r="30" fill="#06060e"/>
+  <circle cx="790" cy="65" r="28" fill="none" stroke="#BD00FF" stroke-width="1.5" opacity="0.4" filter="url(#glow-lg)"/>
+  <circle cx="790" cy="65" r="28" fill="#BD00FF" opacity="0.04"/>
+  <circle cx="799" cy="65" r="28" fill="#06060e"/>
 
   <!-- ===== DISTANT HILLS ===== -->
-  <path d="M0 180 Q100 140 200 165 Q300 135 400 160 Q500 130 600 155 Q700 125 800 150 Q850 140 900 155 L900 200 L0 200Z" fill="none" stroke="#1a1a3a" stroke-width="1" opacity="0.5"/>
+  <path d="M0 175 Q120 145 220 162 Q340 130 440 158 Q530 128 620 150 Q720 125 820 148 Q860 138 900 152 L900 195 L0 195Z" fill="none" stroke="#1a1a3a" stroke-width="1" opacity="0.4"/>
 
-  <!-- ===== MOBILE HOME 1 (LEFT — large, main) ===== -->
+  <!-- =============================================== -->
+  <!-- STATIC CARAVAN 1 (LEFT — large, main, cyan)     -->
+  <!-- Proper static caravan: wide bungalow, low-pitch -->
+  <!-- roof with ridge, large windows, deck, on blocks -->
+  <!-- =============================================== -->
   <g filter="url(#glow)">
-    <rect x="60" y="185" width="260" height="85" fill="none" stroke="#00D4FF" stroke-width="1.8" rx="2"/>
-    <polygon points="50,185 330,185 320,155 60,155" fill="none" stroke="#00D4FF" stroke-width="1.5"/>
-    <rect x="85" y="198" width="40" height="55" fill="none" stroke="#FF2D95" stroke-width="1.2" rx="1"/>
-    <rect x="90" y="203" width="30" height="45" fill="#fbbf24" opacity="0.1" class="wg"/>
-    <rect x="145" y="198" width="40" height="55" fill="none" stroke="#FF2D95" stroke-width="1.2" rx="1"/>
-    <rect x="150" y="203" width="30" height="45" fill="#fbbf24" opacity="0.1" class="wg" style="animation-delay:-.6s"/>
-    <rect x="205" y="198" width="40" height="55" fill="none" stroke="#FF2D95" stroke-width="1.2" rx="1"/>
-    <rect x="210" y="203" width="30" height="45" fill="#fbbf24" opacity="0.1" class="wg" style="animation-delay:-1.2s"/>
-    <rect x="265" y="210" width="30" height="50" fill="none" stroke="#00D4FF" stroke-width="1" rx="1"/>
-    <circle cx="290" cy="235" r="2" fill="#fbbf24" opacity="0.5"/>
-    <rect x="270" y="262" width="25" height="5" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.4"/>
-    <rect x="273" y="267" width="19" height="5" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.3"/>
+    <!-- Foundation blocks -->
+    <rect x="72" y="265" width="10" height="8" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.3"/>
+    <rect x="152" y="265" width="10" height="8" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.3"/>
+    <rect x="242" y="265" width="10" height="8" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.3"/>
+    <rect x="302" y="265" width="10" height="8" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.3"/>
+    <!-- Body: wide, low bungalow -->
+    <rect x="60" y="210" width="260" height="55" fill="none" stroke="#00D4FF" stroke-width="1.8" rx="2"/>
+    <!-- Horizontal cladding lines -->
+    <line x1="60" y1="222" x2="320" y2="222" stroke="#00D4FF" stroke-width="0.3" opacity="0.15"/>
+    <line x1="60" y1="234" x2="320" y2="234" stroke="#00D4FF" stroke-width="0.3" opacity="0.15"/>
+    <line x1="60" y1="246" x2="320" y2="246" stroke="#00D4FF" stroke-width="0.3" opacity="0.15"/>
+    <line x1="60" y1="258" x2="320" y2="258" stroke="#00D4FF" stroke-width="0.3" opacity="0.15"/>
+    <!-- Roof: low-pitch gable with ridge and overhang -->
+    <polygon points="50,210 190,185 330,210" fill="none" stroke="#00D4FF" stroke-width="1.5"/>
+    <line x1="190" y1="185" x2="190" y2="210" stroke="#00D4FF" stroke-width="0.4" opacity="0.2"/>
+    <!-- Large panoramic windows -->
+    <rect x="75" y="218" width="55" height="28" fill="none" stroke="#FF2D95" stroke-width="1.2" rx="1"/>
+    <rect x="78" y="221" width="49" height="22" fill="#fbbf24" opacity="0.1" class="wg"/>
+    <line x1="103" y1="218" x2="103" y2="246" stroke="#FF2D95" stroke-width="0.6" opacity="0.5"/>
+    <rect x="145" y="218" width="55" height="28" fill="none" stroke="#FF2D95" stroke-width="1.2" rx="1"/>
+    <rect x="148" y="221" width="49" height="22" fill="#fbbf24" opacity="0.1" class="wg" style="animation-delay:-.6s"/>
+    <line x1="173" y1="218" x2="173" y2="246" stroke="#FF2D95" stroke-width="0.6" opacity="0.5"/>
+    <!-- Small bathroom window -->
+    <rect x="220" y="222" width="18" height="16" fill="none" stroke="#FF2D95" stroke-width="0.8" rx="1"/>
+    <rect x="222" y="224" width="14" height="12" fill="#fbbf24" opacity="0.06" class="wg" style="animation-delay:-1.2s"/>
+    <!-- Door -->
+    <rect x="255" y="222" width="24" height="38" fill="none" stroke="#00D4FF" stroke-width="1.2" rx="1"/>
+    <circle cx="274" cy="241" r="2" fill="#fbbf24" opacity="0.5"/>
+    <!-- Front deck/veranda with railing -->
+    <rect x="248" y="260" width="38" height="15" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.5"/>
+    <line x1="248" y1="260" x2="248" y2="268" stroke="#00D4FF" stroke-width="0.6" opacity="0.4"/>
+    <line x1="286" y1="260" x2="286" y2="268" stroke="#00D4FF" stroke-width="0.6" opacity="0.4"/>
+    <line x1="248" y1="264" x2="286" y2="264" stroke="#00D4FF" stroke-width="0.4" opacity="0.3"/>
+    <!-- Steps down from deck -->
+    <rect x="262" y="275" width="20" height="4" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.4"/>
+    <rect x="264" y="279" width="20" height="4" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.3"/>
   </g>
 
   <!-- Chimney + smoke -->
-  <rect x="110" y="135" width="12" height="20" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.5"/>
-  <circle cx="116" cy="130" r="3" fill="none" stroke="#666" stroke-width="0.6" opacity="0">
-    <animate attributeName="cy" from="130" to="95" dur="5s" repeatCount="indefinite"/>
+  <rect x="170" y="180" width="8" height="8" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.4"/>
+  <circle cx="174" cy="175" r="3" fill="none" stroke="#666" stroke-width="0.6" opacity="0">
+    <animate attributeName="cy" from="175" to="138" dur="5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.35;0.2;0" keyTimes="0;0.2;0.7;1" dur="5s" repeatCount="indefinite"/>
     <animate attributeName="r" from="3" to="8" dur="5s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- ===== MOBILE HOME 2 (CENTER) ===== -->
+  <!-- =============================================== -->
+  <!-- STATIC CARAVAN 2 (CENTER — purple)              -->
+  <!-- =============================================== -->
   <g filter="url(#glow)">
-    <rect x="370" y="195" width="200" height="70" fill="none" stroke="#BD00FF" stroke-width="1.5" rx="2"/>
-    <polygon points="362,195 578,195 570,170 370,170" fill="none" stroke="#BD00FF" stroke-width="1.2"/>
-    <rect x="390" y="205" width="35" height="45" fill="none" stroke="#FF2D95" stroke-width="1" rx="1"/>
-    <rect x="394" y="209" width="27" height="37" fill="#fbbf24" opacity="0.08" class="wg" style="animation-delay:-.4s"/>
-    <rect x="440" y="205" width="35" height="45" fill="none" stroke="#FF2D95" stroke-width="1" rx="1"/>
-    <rect x="444" y="209" width="27" height="37" fill="#fbbf24" opacity="0.08" class="wg" style="animation-delay:-1s"/>
-    <rect x="500" y="215" width="25" height="40" fill="none" stroke="#BD00FF" stroke-width="0.8" rx="1"/>
-    <circle cx="520" cy="235" r="1.5" fill="#fbbf24" opacity="0.4"/>
-    <line x1="495" y1="195" x2="540" y2="195" stroke="#BD00FF" stroke-width="1.2"/>
-    <line x1="540" y1="195" x2="545" y2="210" stroke="#BD00FF" stroke-width="0.8" opacity="0.6"/>
-    <line x1="495" y1="195" x2="490" y2="210" stroke="#BD00FF" stroke-width="0.8" opacity="0.6"/>
+    <!-- Foundation blocks -->
+    <rect x="405" y="262" width="8" height="6" fill="none" stroke="#BD00FF" stroke-width="0.5" opacity="0.25"/>
+    <rect x="470" y="262" width="8" height="6" fill="none" stroke="#BD00FF" stroke-width="0.5" opacity="0.25"/>
+    <rect x="545" y="262" width="8" height="6" fill="none" stroke="#BD00FF" stroke-width="0.5" opacity="0.25"/>
+    <!-- Body -->
+    <rect x="395" y="215" width="170" height="47" fill="none" stroke="#BD00FF" stroke-width="1.5" rx="2"/>
+    <!-- Cladding -->
+    <line x1="395" y1="225" x2="565" y2="225" stroke="#BD00FF" stroke-width="0.3" opacity="0.12"/>
+    <line x1="395" y1="235" x2="565" y2="235" stroke="#BD00FF" stroke-width="0.3" opacity="0.12"/>
+    <line x1="395" y1="245" x2="565" y2="245" stroke="#BD00FF" stroke-width="0.3" opacity="0.12"/>
+    <line x1="395" y1="255" x2="565" y2="255" stroke="#BD00FF" stroke-width="0.3" opacity="0.12"/>
+    <!-- Roof -->
+    <polygon points="388,215 480,195 572,215" fill="none" stroke="#BD00FF" stroke-width="1.2"/>
+    <line x1="480" y1="195" x2="480" y2="215" stroke="#BD00FF" stroke-width="0.3" opacity="0.15"/>
+    <!-- Bay window (bump-out) -->
+    <rect x="408" y="220" width="48" height="26" fill="none" stroke="#FF2D95" stroke-width="1" rx="1"/>
+    <rect x="411" y="223" width="42" height="20" fill="#fbbf24" opacity="0.08" class="wg" style="animation-delay:-.4s"/>
+    <line x1="432" y1="220" x2="432" y2="246" stroke="#FF2D95" stroke-width="0.5" opacity="0.4"/>
+    <!-- Window 2 -->
+    <rect x="468" y="222" width="32" height="20" fill="none" stroke="#FF2D95" stroke-width="0.8" rx="1"/>
+    <rect x="471" y="225" width="26" height="14" fill="#fbbf24" opacity="0.07" class="wg" style="animation-delay:-1s"/>
+    <!-- Door -->
+    <rect x="515" y="224" width="20" height="34" fill="none" stroke="#BD00FF" stroke-width="0.9" rx="1"/>
+    <circle cx="531" cy="241" r="1.5" fill="#fbbf24" opacity="0.4"/>
+    <!-- Deck -->
+    <rect x="508" y="258" width="32" height="12" fill="none" stroke="#BD00FF" stroke-width="0.6" opacity="0.4"/>
+    <line x1="508" y1="258" x2="508" y2="265" stroke="#BD00FF" stroke-width="0.5" opacity="0.3"/>
+    <line x1="540" y1="258" x2="540" y2="265" stroke="#BD00FF" stroke-width="0.5" opacity="0.3"/>
+    <line x1="508" y1="262" x2="540" y2="262" stroke="#BD00FF" stroke-width="0.3" opacity="0.25"/>
+    <!-- Steps -->
+    <rect x="518" y="270" width="16" height="3.5" fill="none" stroke="#BD00FF" stroke-width="0.5" opacity="0.35"/>
+    <rect x="520" y="273.5" width="16" height="3.5" fill="none" stroke="#BD00FF" stroke-width="0.5" opacity="0.25"/>
   </g>
 
-  <!-- ===== MOBILE HOME 3 (RIGHT) ===== -->
+  <!-- =============================================== -->
+  <!-- STATIC CARAVAN 3 (RIGHT — cyan, smaller)        -->
+  <!-- =============================================== -->
   <g filter="url(#glow)">
-    <rect x="650" y="200" width="160" height="60" fill="none" stroke="#00D4FF" stroke-width="1.2" rx="2"/>
-    <polygon points="643,200 817,200 810,178 650,178" fill="none" stroke="#00D4FF" stroke-width="1"/>
-    <rect x="668" y="208" width="28" height="38" fill="none" stroke="#FF2D95" stroke-width="0.8" rx="1"/>
-    <rect x="671" y="211" width="22" height="32" fill="#fbbf24" opacity="0.07" class="wg" style="animation-delay:-.8s"/>
-    <rect x="710" y="208" width="28" height="38" fill="none" stroke="#FF2D95" stroke-width="0.8" rx="1"/>
-    <rect x="713" y="211" width="22" height="32" fill="#fbbf24" opacity="0.07" class="wg" style="animation-delay:-1.4s"/>
-    <rect x="758" y="218" width="20" height="32" fill="none" stroke="#00D4FF" stroke-width="0.6" rx="1"/>
+    <!-- Foundation blocks -->
+    <rect x="668" y="260" width="7" height="5" fill="none" stroke="#00D4FF" stroke-width="0.4" opacity="0.2"/>
+    <rect x="725" y="260" width="7" height="5" fill="none" stroke="#00D4FF" stroke-width="0.4" opacity="0.2"/>
+    <rect x="795" y="260" width="7" height="5" fill="none" stroke="#00D4FF" stroke-width="0.4" opacity="0.2"/>
+    <!-- Body -->
+    <rect x="660" y="220" width="150" height="40" fill="none" stroke="#00D4FF" stroke-width="1.2" rx="2"/>
+    <!-- Cladding -->
+    <line x1="660" y1="228" x2="810" y2="228" stroke="#00D4FF" stroke-width="0.25" opacity="0.1"/>
+    <line x1="660" y1="236" x2="810" y2="236" stroke="#00D4FF" stroke-width="0.25" opacity="0.1"/>
+    <line x1="660" y1="244" x2="810" y2="244" stroke="#00D4FF" stroke-width="0.25" opacity="0.1"/>
+    <line x1="660" y1="252" x2="810" y2="252" stroke="#00D4FF" stroke-width="0.25" opacity="0.1"/>
+    <!-- Roof -->
+    <polygon points="654,220 735,203 816,220" fill="none" stroke="#00D4FF" stroke-width="0.9"/>
+    <line x1="735" y1="203" x2="735" y2="220" stroke="#00D4FF" stroke-width="0.3" opacity="0.12"/>
+    <!-- Windows -->
+    <rect x="672" y="226" width="38" height="18" fill="none" stroke="#FF2D95" stroke-width="0.8" rx="1"/>
+    <rect x="675" y="229" width="32" height="12" fill="#fbbf24" opacity="0.06" class="wg" style="animation-delay:-.8s"/>
+    <line x1="691" y1="226" x2="691" y2="244" stroke="#FF2D95" stroke-width="0.4" opacity="0.35"/>
+    <rect x="720" y="226" width="28" height="18" fill="none" stroke="#FF2D95" stroke-width="0.7" rx="1"/>
+    <rect x="723" y="229" width="22" height="12" fill="#fbbf24" opacity="0.05" class="wg" style="animation-delay:-1.6s"/>
+    <!-- Door -->
+    <rect x="762" y="228" width="16" height="28" fill="none" stroke="#00D4FF" stroke-width="0.7" rx="1"/>
+    <circle cx="775" cy="242" r="1" fill="#fbbf24" opacity="0.3"/>
+    <!-- Small deck -->
+    <rect x="757" y="256" width="26" height="9" fill="none" stroke="#00D4FF" stroke-width="0.5" opacity="0.35"/>
+    <line x1="757" y1="256" x2="757" y2="262" stroke="#00D4FF" stroke-width="0.4" opacity="0.25"/>
+    <line x1="783" y1="256" x2="783" y2="262" stroke="#00D4FF" stroke-width="0.4" opacity="0.25"/>
+    <!-- Steps -->
+    <rect x="765" y="265" width="12" height="3" fill="none" stroke="#00D4FF" stroke-width="0.4" opacity="0.3"/>
+    <rect x="767" y="268" width="12" height="3" fill="none" stroke="#00D4FF" stroke-width="0.4" opacity="0.2"/>
   </g>
 
   <!-- ===== TREES ===== -->
   <g filter="url(#glow-sm)">
-    <line x1="340" y1="230" x2="340" y2="270" stroke="#00ff41" stroke-width="1.2" opacity="0.6"/>
-    <polygon points="340,200 325,240 355,240" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.45"/>
-    <polygon points="340,210 328,235 352,235" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.3"/>
-    <line x1="610" y1="235" x2="610" y2="270" stroke="#00ff41" stroke-width="1.2" opacity="0.6"/>
-    <polygon points="610,208 597,245 623,245" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.45"/>
-    <polygon points="610,218 600,240 620,240" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.3"/>
-    <line x1="25" y1="230" x2="25" y2="270" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
-    <circle cx="25" cy="215" r="18" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.4"/>
-    <line x1="855" y1="235" x2="855" y2="270" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
-    <circle cx="855" cy="220" r="16" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.35"/>
-    <line x1="840" y1="230" x2="840" y2="270" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
-    <polygon points="840,205 830,238 850,238" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.35"/>
+    <!-- Pine between 1 and 2 -->
+    <line x1="358" y1="240" x2="358" y2="278" stroke="#00ff41" stroke-width="1.2" opacity="0.6"/>
+    <polygon points="358,210 345,248 371,248" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.45"/>
+    <polygon points="358,220 348,242 368,242" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.3"/>
+    <!-- Pine between 2 and 3 -->
+    <line x1="628" y1="242" x2="628" y2="278" stroke="#00ff41" stroke-width="1.2" opacity="0.6"/>
+    <polygon points="628,215 617,250 639,250" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.45"/>
+    <polygon points="628,225 620,245 636,245" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.3"/>
+    <!-- Round tree far left -->
+    <line x1="30" y1="245" x2="30" y2="278" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
+    <circle cx="30" cy="230" r="16" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.4"/>
+    <!-- Round tree far right -->
+    <line x1="860" y1="242" x2="860" y2="278" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
+    <circle cx="860" cy="228" r="14" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.35"/>
+    <!-- Small bush left of caravan 1 -->
+    <circle cx="48" cy="268" r="8" fill="none" stroke="#00ff41" stroke-width="0.7" opacity="0.25"/>
+    <!-- Small bush right of caravan 3 -->
+    <circle cx="835" cy="264" r="7" fill="none" stroke="#00ff41" stroke-width="0.6" opacity="0.2"/>
   </g>
 
   <!-- ===== PATHWAY ===== -->
-  <path d="M420 270 Q440 275 435 285 Q425 295 440 305 Q460 315 445 325 Q430 335 445 345" fill="none" stroke="#BD00FF" stroke-width="1" opacity="0.3" stroke-dasharray="5,5"/>
+  <path d="M430 280 Q445 288 440 298 Q432 308 445 318 Q458 328 448 338" fill="none" stroke="#BD00FF" stroke-width="1" opacity="0.3" stroke-dasharray="5,5"/>
 
   <!-- ===== GROUND ===== -->
-  <line x1="0" y1="270" x2="900" y2="270" stroke="#22c55e" stroke-width="1" opacity="0.35"/>
+  <line x1="0" y1="280" x2="900" y2="280" stroke="#00ff41" stroke-width="1" opacity="0.3"/>
 
   <!-- ===== POND ===== -->
-  <ellipse cx="480" cy="310" rx="60" ry="18" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.3"/>
-  <ellipse cx="480" cy="310" rx="40" ry="12" fill="#00D4FF" opacity="0.03" class="wa"/>
-  <line x1="460" y1="308" x2="475" y2="308" stroke="#00D4FF" stroke-width="0.4" opacity="0.2" class="wa" style="animation-delay:-1s"/>
-  <line x1="485" y1="312" x2="500" y2="312" stroke="#00D4FF" stroke-width="0.4" opacity="0.2" class="wa" style="animation-delay:-2s"/>
+  <ellipse cx="480" cy="318" rx="50" ry="14" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.3"/>
+  <ellipse cx="480" cy="318" rx="32" ry="9" fill="#00D4FF" opacity="0.03" class="wa"/>
+  <line x1="465" y1="316" x2="478" y2="316" stroke="#00D4FF" stroke-width="0.4" opacity="0.2" class="wa" style="animation-delay:-1s"/>
+  <line x1="482" y1="320" x2="495" y2="320" stroke="#00D4FF" stroke-width="0.4" opacity="0.2" class="wa" style="animation-delay:-2s"/>
 
-  <!-- ===== FAIRY LIGHTS ===== -->
-  <path d="M295 175 Q350 165 370 170" fill="none" stroke="#fbbf24" stroke-width="0.3" opacity="0.25"/>
-  <circle cx="310" cy="173" r="1.2" fill="#fbbf24" class="fl" filter="url(#glow-sm)"/>
-  <circle cx="325" cy="170" r="1" fill="#FF2D95" class="fl" style="animation-delay:-.4s" filter="url(#glow-sm)"/>
-  <circle cx="340" cy="168" r="1.2" fill="#fbbf24" class="fl" style="animation-delay:-.8s" filter="url(#glow-sm)"/>
-  <circle cx="355" cy="169" r="1" fill="#00D4FF" class="fl" style="animation-delay:-1.2s" filter="url(#glow-sm)"/>
+  <!-- ===== FAIRY LIGHTS between caravans ===== -->
+  <path d="M320 208 Q340 200 365 210" fill="none" stroke="#fbbf24" stroke-width="0.3" opacity="0.25"/>
+  <circle cx="330" cy="206" r="1.2" fill="#fbbf24" class="fl" filter="url(#glow-sm)"/>
+  <circle cx="342" cy="203" r="1" fill="#FF2D95" class="fl" style="animation-delay:-.4s" filter="url(#glow-sm)"/>
+  <circle cx="355" cy="206" r="1.2" fill="#00D4FF" class="fl" style="animation-delay:-.8s" filter="url(#glow-sm)"/>
 
   <!-- ===== LAMPPOST ===== -->
-  <line x1="350" y1="270" x2="350" y2="240" stroke="#BD00FF" stroke-width="1" opacity="0.4"/>
-  <circle cx="350" cy="237" r="4" fill="#fbbf24" opacity="0.15" class="pu" filter="url(#glow)"/>
-  <circle cx="350" cy="237" r="8" fill="#fbbf24" opacity="0.05" class="pu"/>
+  <line x1="365" y1="280" x2="365" y2="252" stroke="#BD00FF" stroke-width="1" opacity="0.4"/>
+  <circle cx="365" cy="249" r="4" fill="#fbbf24" opacity="0.15" class="pu" filter="url(#glow)"/>
+  <circle cx="365" cy="249" r="8" fill="#fbbf24" opacity="0.05" class="pu"/>
 
   <!-- ===== CAMPFIRE ===== -->
   <g filter="url(#glow-sm)">
-    <circle cx="180" cy="310" r="12" fill="none" stroke="#FF2D95" stroke-width="0.8" opacity="0.5"/>
-    <circle cx="180" cy="310" r="7" fill="#ff6b35" opacity="0.1" class="fl"/>
-    <circle cx="180" cy="308" r="4" fill="#fbbf24" opacity="0.15" class="fl" style="animation-delay:-.3s"/>
-    <circle cx="178" cy="306" r="2" fill="#ff4500" opacity="0.2" class="fl" style="animation-delay:-.6s"/>
-    <line x1="170" y1="318" x2="190" y2="318" stroke="#444" stroke-width="1.5" opacity="0.3"/>
+    <circle cx="200" cy="312" r="9" fill="none" stroke="#FF2D95" stroke-width="0.8" opacity="0.5"/>
+    <circle cx="200" cy="312" r="5" fill="#ff6b35" opacity="0.1" class="fl"/>
+    <circle cx="200" cy="310" r="3" fill="#fbbf24" opacity="0.15" class="fl" style="animation-delay:-.3s"/>
+    <circle cx="198" cy="308" r="1.5" fill="#ff4500" opacity="0.2" class="fl" style="animation-delay:-.6s"/>
+    <line x1="193" y1="320" x2="207" y2="320" stroke="#444" stroke-width="1.5" opacity="0.3"/>
+  </g>
+
+  <!-- ===== PICNIC TABLE ===== -->
+  <g opacity="0.4">
+    <rect x="700" y="286" width="24" height="2" fill="none" stroke="#BD00FF" stroke-width="0.6"/>
+    <line x1="706" y1="288" x2="704" y2="296" stroke="#BD00FF" stroke-width="0.5"/>
+    <line x1="718" y1="288" x2="720" y2="296" stroke="#BD00FF" stroke-width="0.5"/>
+    <line x1="700" y1="292" x2="724" y2="292" stroke="#BD00FF" stroke-width="0.4"/>
   </g>
 
   <!-- ===== TITLE ===== -->
-  <text x="450" y="355" class="txt" font-size="22" font-weight="bold" fill="url(#tg)" text-anchor="middle" filter="url(#glow-lg)">GREEN VILLAGE MOBILE HOMES</text>
-  <text x="450" y="378" class="txt" font-size="11" fill="#888" text-anchor="middle">Premium Living · 48 Countries · Closer to Nature</text>
+  <text x="450" y="358" class="txt" font-size="22" font-weight="bold" fill="url(#tg)" text-anchor="middle" filter="url(#glow-lg)">GREEN VILLAGE MOBILE HOMES</text>
+  <text x="450" y="378" class="txt" font-size="11" fill="#888" text-anchor="middle">Premium Static Caravans · 48 Countries · Closer to Nature</text>
 
   <!-- Top accent -->
   <line x1="0" y1="0" x2="900" y2="0" stroke="url(#tg)" stroke-width="2" opacity="0.7"/>
