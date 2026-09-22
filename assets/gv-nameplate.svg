@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120">
+  <defs>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+
+    <style>
+      @keyframes pulse {
+        0% { opacity: 0.85; }
+        50% { opacity: 1.0; }
+        100% { opacity: 0.85; }
+      }
+      .pulsing-name {
+        animation: pulse 3s infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="120" fill="#0a0a0a" rx="6" />
+
+  <!-- Border -->
+  <rect x="1" y="1" width="898" height="118" fill="none" stroke="url(#borderGrad)" stroke-width="1.5" rx="6" />
+
+  <!-- Left Side: Mobile Home Icon -->
+  <g transform="translate(30, 32)">
+    <animateTransform attributeName="transform" type="translate" values="30,32; 30,29; 30,32" dur="4s" repeatCount="indefinite" additive="sum" />
+    <path d="M 0,26 L 36,26 L 36,46 L 0,46 Z" fill="#22c55e" fill-opacity="0.8" />
+    <path d="M -3,26 L 39,26 L 18,6 Z" fill="#22c55e" fill-opacity="0.8" />
+    <rect x="14" y="32" width="8" height="14" fill="#0a0a0a" />
+    <circle cx="8" cy="50" r="4" fill="#22c55e" fill-opacity="0.8" />
+    <circle cx="28" cy="50" r="4" fill="#22c55e" fill-opacity="0.8" />
+  </g>
+
+  <!-- Center Text -->
+  <text x="450" y="52" font-family="Courier New, monospace" font-size="28" font-weight="bold" fill="url(#textGrad)" text-anchor="middle" class="pulsing-name">MATHEUS AGUEDA</text>
+  <text x="450" y="77" font-family="Courier New, monospace" font-size="13" fill="#88cc88" text-anchor="middle">CEO — Green Village Mobile Homes</text>
+
+  <!-- Right Side: Country Circles -->
+  <g transform="translate(734, 52)">
+    <!-- PT -->
+    <circle cx="0" cy="0" r="6" fill="#ff0000" />
+    <!-- FR -->
+    <circle cx="22" cy="0" r="6" fill="#0055a4" />
+    <!-- NL -->
+    <circle cx="44" cy="0" r="6" fill="#ff6600" />
+    <!-- ES -->
+    <circle cx="66" cy="0" r="6" fill="#ffc400" />
+  </g>
+
+  <!-- Bottom Animated Gold Line -->
+  <line x1="50" y1="115" x2="850" y2="115" stroke="#fbbf24" stroke-width="2" stroke-dasharray="800" stroke-dashoffset="800">
+    <animate attributeName="stroke-dashoffset" from="800" to="0" dur="2.5s" fill="freeze" />
+  </line>
+</svg>

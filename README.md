@@ -1,41 +1,41 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2D95,50:BD00FF,100:00D4FF&height=200&section=header&text=&fontSize=1" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22c55e,50:fbbf24,100:22c55e&height=200&section=header&text=&fontSize=1" width="100%"/>
 
-<img src="./assets/neon-banner.svg" width="100%" alt="Neon animated banner"/>
-
-<br/>
-
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=FF2D95&center=true&vCenter=true&repeat=true&width=700&height=45&lines=Systems+Architect+%E2%94%82+AI+Engineer+%E2%94%82+Full+Stack+Dev" alt="Typing SVG" /></a>
+<img src="./assets/gv-nameplate.svg" width="100%" alt="Matheus Agueda — CEO Green Village Mobile Homes"/>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=MatheusAgueda&style=for-the-badge&color=FF2D95&label=VISITORS" alt="views"/>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=3000&pause=1000&color=22c55e&center=true&vCenter=true&repeat=true&width=700&height=45&lines=CEO+Green+Village+Mobile+Homes;Systems+Architect+%E2%94%82+AI+Engineer;1.93M+Leads+%E2%94%82+228+AI+Models+%E2%94%82+4+Countries;Premium+Mobile+Homes+%E2%94%82+PT+%C2%B7+FR+%C2%B7+NL+%C2%B7+ES" alt="Typing SVG" /></a>
+
+<br/>
+
+<img src="https://komarev.com/ghpvc/?username=MatheusAgueda&style=for-the-badge&color=22c55e&label=VISITORS" alt="views"/>
 &nbsp;
-<img src="https://img.shields.io/badge/SYSTEMS-12-00D4FF?style=for-the-badge&labelColor=0a0a0a" alt="systems"/>
+<img src="https://img.shields.io/badge/MOBILE_HOMES-Premium-22c55e?style=for-the-badge&labelColor=0a0a0a" alt="mobile homes"/>
 &nbsp;
-<img src="https://img.shields.io/badge/AI_MODELS-228-BD00FF?style=for-the-badge&labelColor=0a0a0a" alt="models"/>
+<img src="https://img.shields.io/badge/AI_MODELS-228-fbbf24?style=for-the-badge&labelColor=0a0a0a" alt="models"/>
 &nbsp;
-<img src="https://img.shields.io/badge/LEADS-1.93M-FF2D95?style=for-the-badge&labelColor=0a0a0a" alt="leads"/>
+<img src="https://img.shields.io/badge/COUNTRIES-PT·FR·NL·ES-22c55e?style=for-the-badge&labelColor=0a0a0a" alt="countries"/>
 
 </div>
 
 <!-- ═══════════════════════════════════════════════
-     HERO — AI-generated neural network visualization
+     HERO — AI-generated mobile home park
      ═══════════════════════════════════════════════ -->
 
 <div align="center">
-<img src="./assets/hero-neural.svg" width="100%" alt="Animated neural network with travelling particles, rotating hexagonal core, pulsing nodes, and HUD panels"/>
+<img src="./assets/gv-hero.png" width="100%" alt="Luxury mobile home park in the Algarve with pool, Mediterranean pines, and ocean view at golden sunset"/>
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:22c55e,50:fbbf24,100:22c55e&height=2" width="100%"/>
 
 <!-- ═══════════════════════════════════════════════
-     TERMINAL — Fleet status
+     SERVICES — What we do
      ═══════════════════════════════════════════════ -->
 
 <div align="center">
-<img src="./assets/terminal-fleet.svg" width="100%" alt="Terminal showing fleet status"/>
+<img src="./assets/gv-services.svg" width="100%" alt="Services: Mobile Homes, 4 Countries, Email Engine, AI Fleet"/>
 </div>
 
 <img src="./assets/wave-separator.svg" width="100%" alt=""/>
@@ -49,24 +49,26 @@
 <td width="40%" valign="top">
 
 ```properties
-# ~/.config/architect.yml
+# ~/.config/greenvillage.yml
 
 identity:
   name:  Matheus Agueda
-  role:  Systems Architect & AI Engineer
-  ceo:   Green Village Mobile Homes
+  role:  CEO & Systems Architect
+  company: Green Village Mobile Homes
   scope: PT · FR · NL · ES
 
-scale:
-  systems:   12 production services
-  ai_models: 228 (94.2% routed free)
+business:
+  product:   Premium static caravans
+  market:    Campings, RV parks, glamping
   leads:     1,930,000 processed
   emails:    385/day × 3 DKIM relays
-  agents:    17 self-improving AI agents
+  countries: 48 covered
 
-hardware:
-  local: M4 Pro 14-core · 24GB unified
-  db:    PostgreSQL 16 · 6GB shared_buffers
+technology:
+  ai_models: 228 (94.2% routed free)
+  agents:    17 self-improving AI agents
+  systems:   12 production services
+  hardware:  M4 Pro 14-core · 24GB
 ```
 
 </td>
@@ -95,19 +97,36 @@ hardware:
 </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:22c55e,50:fbbf24,100:22c55e&height=2" width="100%"/>
 
 <!-- ═══════════════════════════════════════════════
-     FLEET BRAIN — Neural Routing SVG
+     SHOWCASE — Premium Mobile Home
      ═══════════════════════════════════════════════ -->
 
-## <img src="https://img.shields.io/badge/FLEET_BRAIN-FF2D95?style=for-the-badge&labelColor=0a0a0a" alt=""/> Neural AI Router
+<div align="center">
+
+## Our Product
 
 > [!IMPORTANT]
-> A **multi-armed bandit** that routes every AI sub-task to the cheapest model that clears the quality bar — Thompson Sampling + UCB1 with calibrated confidence gates.
+> Premium **static caravans** and **mobile homes** for campings, RV parks, and glamping sites across Europe. From sourcing to delivery.
+
+<img src="./assets/gv-showcase.png" width="100%" alt="Luxury mobile home at dusk with panoramic windows, wooden deck, fire pit, and fairy lights"/>
+
+</div>
+
+<img src="./assets/wave-separator.svg" width="100%" alt=""/>
+
+<!-- ═══════════════════════════════════════════════
+     SYSTEM DASHBOARD — Green Village branded
+     ═══════════════════════════════════════════════ -->
+
+## <img src="https://img.shields.io/badge/SYSTEM-MONITOR-22c55e?style=for-the-badge&labelColor=0a0a0a" alt=""/> Technology Stack
+
+> [!NOTE]
+> The engine behind Green Village — **228 AI models** routing tasks via Thompson Sampling, **1.93M leads** scraped and verified, **385 emails/day** across 3 DKIM relays.
 
 <div align="center">
-<img src="./assets/dashboard-system.svg" width="100%" alt="Animated system dashboard with circular gauges, progress bars, sparkline chart, radar sweep, and status rows"/>
+<img src="./assets/gv-dashboard.svg" width="100%" alt="Green Village system monitoring dashboard with gauges, progress bars, sparkline, and status rows"/>
 </div>
 
 <div align="center">
@@ -122,16 +141,16 @@ $$P(\theta_i \mid \mathcal{D}) \propto \prod_{t=1}^{n} \text{Bernoulli}(r_t \mid
 
 ```mermaid
 %%{init: {'theme': 'dark', 'themeVariables': {
-  'primaryColor': '#FF2D95',
+  'primaryColor': '#22c55e',
   'primaryTextColor': '#fff',
-  'primaryBorderColor': '#BD00FF',
-  'lineColor': '#00D4FF',
+  'primaryBorderColor': '#fbbf24',
+  'lineColor': '#22c55e',
   'secondaryColor': '#0a0a14',
   'tertiaryColor': '#111122',
   'edgeLabelBackground': '#0a0a0a',
   'clusterBkg': '#0d0d1a',
-  'clusterBorder': '#BD00FF',
-  'titleColor': '#00D4FF',
+  'clusterBorder': '#fbbf24',
+  'titleColor': '#22c55e',
   'nodeTextColor': '#cccccc'
 }}}%%
 
@@ -153,12 +172,12 @@ flowchart LR
   OPUS --> OUT
   FABLE --> OUT
 
-  classDef input fill:#00D4FF,stroke:#00D4FF,color:#0a0a0a,font-weight:bold
+  classDef input fill:#22c55e,stroke:#22c55e,color:#0a0a0a,font-weight:bold
   classDef output fill:#00ff41,stroke:#00ff41,color:#0a0a0a,font-weight:bold
-  classDef gate fill:#0d0d1a,stroke:#BD00FF,color:#BD00FF
-  classDef opus fill:#111122,stroke:#FF2D95,color:#FF2D95
-  classDef fable fill:#111122,stroke:#BD00FF,color:#BD00FF
-  classDef mab fill:#0d0d1a,stroke:#00D4FF,color:#00D4FF
+  classDef gate fill:#0d0d1a,stroke:#fbbf24,color:#fbbf24
+  classDef opus fill:#111122,stroke:#22c55e,color:#22c55e
+  classDef fable fill:#111122,stroke:#fbbf24,color:#fbbf24
+  classDef mab fill:#0d0d1a,stroke:#22c55e,color:#22c55e
   classDef free fill:#111122,stroke:#00ff41,color:#00ff41
 ```
 
@@ -167,64 +186,57 @@ flowchart LR
 <img src="./assets/wave-separator.svg" width="100%" alt=""/>
 
 <!-- ═══════════════════════════════════════════════
-     TECH BREAKDOWN — animated SVG
-     ═══════════════════════════════════════════════ -->
-
-<div align="center">
-<img src="./assets/tech-breakdown.svg" width="100%" alt="Animated tech stack breakdown with progress bars and metric circles"/>
-</div>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:BD00FF,100:FF2D95&height=2" width="100%"/>
-
-<!-- ═══════════════════════════════════════════════
-     DATA PIPELINE + SKILLS RADAR
+     DATA PIPELINE + LIFESTYLE
      ═══════════════════════════════════════════════ -->
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### Skills Radar
-
-<img src="./assets/skills-radar.svg" width="100%" alt="8-axis skills radar"/>
-
-</td>
-<td width="50%" valign="top">
-
 ### Data Pipeline
 
 ```mermaid
 %%{init: {'theme': 'dark', 'themeVariables': {
-  'primaryColor': '#FF2D95',
+  'primaryColor': '#22c55e',
   'primaryTextColor': '#cccccc',
-  'primaryBorderColor': '#BD00FF',
-  'lineColor': '#00D4FF',
+  'primaryBorderColor': '#fbbf24',
+  'lineColor': '#22c55e',
   'secondaryColor': '#111122',
   'tertiaryColor': '#0d0d1a'
 }}}%%
 
 flowchart TB
-  SCRAPE["48 Countries<br/><sub>campings · RV parks · glamping</sub>"]:::pink
-  --> ENRICH["Email Discovery<br/><sub>MX + SMTP verification</sub>"]:::purple
-  --> SCORE["Lead Scoring<br/><sub>40+ signals · ML pipeline</sub>"]:::cyan
+  SCRAPE["48 Countries<br/><sub>campings · RV parks · glamping</sub>"]:::green
+  --> ENRICH["Email Discovery<br/><sub>MX + SMTP verification</sub>"]:::gold
+  --> SCORE["Lead Scoring<br/><sub>40+ signals · ML pipeline</sub>"]:::green
   --> GATE{"Quality<br/>Gate"}:::gate
-  GATE -->|"score >= 40"| SEND["Email Engine<br/><sub>385/day · 3 DKIM relays</sub>"]:::pink
-  GATE -->|"score >= 40"| WA["Joao Bot<br/><sub>WhatsApp outreach</sub>"]:::purple
-  GATE -->|"verified"| MHL["MHL Website<br/><sub>public listings</sub>"]:::cyan
+  GATE -->|"score >= 40"| SEND["Email Engine<br/><sub>385/day · 3 DKIM relays</sub>"]:::green
+  GATE -->|"score >= 40"| WA["Joao Bot<br/><sub>WhatsApp outreach</sub>"]:::gold
+  GATE -->|"verified"| MHL["MHL Website<br/><sub>public listings</sub>"]:::green
 
-  classDef pink fill:#1a0a14,stroke:#FF2D95,color:#FF2D95
-  classDef purple fill:#140a1a,stroke:#BD00FF,color:#BD00FF
-  classDef cyan fill:#0a141a,stroke:#00D4FF,color:#00D4FF
-  classDef gate fill:#0a0a0a,stroke:#BD00FF,color:#BD00FF
+  classDef green fill:#0a1a0a,stroke:#22c55e,color:#22c55e
+  classDef gold fill:#1a140a,stroke:#fbbf24,color:#fbbf24
+  classDef gate fill:#0a0a0a,stroke:#fbbf24,color:#fbbf24
 ```
 
 $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum w_i = 1$$
 
 </td>
+<td width="50%" valign="top">
+
+### The Lifestyle
+
+<img src="./assets/gv-lifestyle.png" width="100%" alt="Couple enjoying sunset on mobile home deck with wine, BBQ, and countryside views"/>
+
+<div align="center">
+<sub>Premium living, closer to nature.</sub>
+</div>
+
+</td>
 </tr>
 </table>
 
-<img src="./assets/wave-separator.svg" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:22c55e,50:fbbf24,100:22c55e&height=2" width="100%"/>
 
 <!-- ═══════════════════════════════════════════════
      3D CONTRIBUTION + SNAKE
@@ -250,7 +262,7 @@ $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:22c55e,50:fbbf24,100:22c55e&height=2" width="100%"/>
 
 <!-- ═══════════════════════════════════════════════
      GITHUB STATS
@@ -258,12 +270,12 @@ $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum
 
 <div align="center">
 
-<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&bg_color=0a0a0a&title_color=00D4FF&text_color=cccccc&icon_color=FF2D95&border_color=BD00FF&hide_border=false&include_all_commits=true&count_private=true&custom_title=Stats" width="49%" alt="GitHub Stats"/>
-<img src="https://streak-stats.demolab.com?user=MatheusAgueda&theme=radical&hide_border=false&background=0A0A0A&ring=FF2D95&fire=00D4FF&currStreakLabel=BD00FF&sideLabels=ffffff&dates=888888&border=BD00FF" width="49%" alt="Streak"/>
+<img src="https://github-readme-stats-eight-theta.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&bg_color=0a0a0a&title_color=22c55e&text_color=cccccc&icon_color=fbbf24&border_color=22c55e&hide_border=false&include_all_commits=true&count_private=true&custom_title=Stats" width="49%" alt="GitHub Stats"/>
+<img src="https://streak-stats.demolab.com?user=MatheusAgueda&theme=radical&hide_border=false&background=0A0A0A&ring=22c55e&fire=fbbf24&currStreakLabel=22c55e&sideLabels=ffffff&dates=888888&border=22c55e" width="49%" alt="Streak"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph-eosin.vercel.app/graph?username=MatheusAgueda&theme=react-dark&hide_border=true&bg_color=0a0a0a&color=00D4FF&line=FF2D95&point=BD00FF&area=true&area_color=BD00FF" width="98%" alt="Activity graph"/>
+<img src="https://github-readme-activity-graph-eosin.vercel.app/graph?username=MatheusAgueda&theme=react-dark&hide_border=true&bg_color=0a0a0a&color=22c55e&line=fbbf24&point=22c55e&area=true&area_color=22c55e" width="98%" alt="Activity graph"/>
 
 <img src="https://github-trophies.vercel.app/?username=MatheusAgueda&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10" width="98%" alt="Trophies"/>
 
@@ -290,7 +302,7 @@ $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum
 
 <br/>
 
-<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=MatheusAgueda&layout=donut-vertical&theme=radical&bg_color=0a0a0a&title_color=00D4FF&text_color=cccccc&border_color=BD00FF&hide_border=false&langs_count=10&custom_title=Languages" width="40%" alt="Top Languages"/>
+<img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=MatheusAgueda&layout=donut-vertical&theme=radical&bg_color=0a0a0a&title_color=22c55e&text_color=cccccc&border_color=22c55e&hide_border=false&langs_count=10&custom_title=Languages" width="40%" alt="Top Languages"/>
 
 </div>
 
@@ -764,7 +776,7 @@ solid diamond
 endsolid diamond
 ```
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:22c55e,50:fbbf24,100:22c55e&height=2" width="100%"/>
 
 <div align="center">
 
@@ -784,7 +796,7 @@ endsolid diamond
       "properties": {
         "name": "Portugal — HQ",
         "description": "Green Village Mobile Homes · CEO base",
-        "marker-color": "#FF2D95",
+        "marker-color": "#22c55e",
         "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [-8.61, 41.15] }
@@ -794,7 +806,7 @@ endsolid diamond
       "properties": {
         "name": "France — Easystart",
         "description": "Company formation · INPI/URSSAF",
-        "marker-color": "#BD00FF",
+        "marker-color": "#fbbf24",
         "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [2.35, 48.86] }
@@ -804,7 +816,7 @@ endsolid diamond
       "properties": {
         "name": "Netherlands — EU Ops",
         "description": "Cross-border · KVK · VAT VIES",
-        "marker-color": "#00D4FF",
+        "marker-color": "#22c55e",
         "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [4.90, 52.37] }
@@ -814,7 +826,7 @@ endsolid diamond
       "properties": {
         "name": "Spain — Expansion",
         "description": "Dealer network · Lead gen · CRM",
-        "marker-color": "#FF2D95",
+        "marker-color": "#fbbf24",
         "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [-3.70, 40.42] }
@@ -823,9 +835,9 @@ endsolid diamond
       "type": "Feature",
       "properties": {
         "name": "Lead Coverage — 48 Countries",
-        "stroke": "#BD00FF",
+        "stroke": "#22c55e",
         "stroke-width": 2,
-        "fill": "#BD00FF",
+        "fill": "#22c55e",
         "fill-opacity": 0.06
       },
       "geometry": {
@@ -886,9 +898,9 @@ endsolid diamond
 
 <div align="center">
 
-<a href="https://github.com/MatheusAgueda/MatheusAgueda/issues/new?template=chess-move.yml&title=chess%7Ce2e4"><img src="https://img.shields.io/badge/e2e4-FF2D95?style=flat-square&labelColor=0a0a0a" alt="e2e4"/></a>
-<a href="https://github.com/MatheusAgueda/MatheusAgueda/issues/new?template=chess-move.yml&title=chess%7Cd2d4"><img src="https://img.shields.io/badge/d2d4-BD00FF?style=flat-square&labelColor=0a0a0a" alt="d2d4"/></a>
-<a href="https://github.com/MatheusAgueda/MatheusAgueda/issues/new?template=chess-move.yml&title=chess%7CNf3"><img src="https://img.shields.io/badge/Nf3-00D4FF?style=flat-square&labelColor=0a0a0a" alt="Nf3"/></a>
+<a href="https://github.com/MatheusAgueda/MatheusAgueda/issues/new?template=chess-move.yml&title=chess%7Ce2e4"><img src="https://img.shields.io/badge/e2e4-22c55e?style=flat-square&labelColor=0a0a0a" alt="e2e4"/></a>
+<a href="https://github.com/MatheusAgueda/MatheusAgueda/issues/new?template=chess-move.yml&title=chess%7Cd2d4"><img src="https://img.shields.io/badge/d2d4-fbbf24?style=flat-square&labelColor=0a0a0a" alt="d2d4"/></a>
+<a href="https://github.com/MatheusAgueda/MatheusAgueda/issues/new?template=chess-move.yml&title=chess%7CNf3"><img src="https://img.shields.io/badge/Nf3-22c55e?style=flat-square&labelColor=0a0a0a" alt="Nf3"/></a>
 
 </div>
 
@@ -904,24 +916,24 @@ endsolid diamond
 
 <div align="center">
 
-<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/3d-contrib.yml?style=flat-square&label=3D&labelColor=0a0a0a&color=00D4FF" alt="3D"/>
+<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/3d-contrib.yml?style=flat-square&label=3D&labelColor=0a0a0a&color=22c55e" alt="3D"/>
 &nbsp;
-<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/snake.yml?style=flat-square&label=Snake&labelColor=0a0a0a&color=FF2D95" alt="Snake"/>
+<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/snake.yml?style=flat-square&label=Snake&labelColor=0a0a0a&color=fbbf24" alt="Snake"/>
 &nbsp;
-<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/lowlighter-metrics.yml?style=flat-square&label=Metrics&labelColor=0a0a0a&color=BD00FF" alt="Metrics"/>
+<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/lowlighter-metrics.yml?style=flat-square&label=Metrics&labelColor=0a0a0a&color=22c55e" alt="Metrics"/>
 &nbsp;
-<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/chess.yml?style=flat-square&label=Chess&labelColor=0a0a0a&color=00D4FF" alt="Chess"/>
+<img src="https://img.shields.io/github/actions/workflow/status/MatheusAgueda/MatheusAgueda/chess.yml?style=flat-square&label=Chess&labelColor=0a0a0a&color=fbbf24" alt="Chess"/>
 
 <br/><br/>
 
-<a href="mailto:info@greenvillagemobilehomes.com"><img src="https://img.shields.io/badge/EMAIL-info@greenvillagemobilehomes.com-FF2D95?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a" alt="email"/></a>
+<a href="mailto:info@greenvillagemobilehomes.com"><img src="https://img.shields.io/badge/EMAIL-info@greenvillagemobilehomes.com-22c55e?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a" alt="email"/></a>
 &nbsp;
-<a href="https://www.greenvillagemobilehomes.com"><img src="https://img.shields.io/badge/GREEN_VILLAGE-Website-00D4FF?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0a0a0a" alt="website"/></a>
+<a href="https://www.greenvillagemobilehomes.com"><img src="https://img.shields.io/badge/GREEN_VILLAGE-Website-fbbf24?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0a0a0a" alt="website"/></a>
 
 <br/><br/>
 
-<sub>Built with hand-crafted animated SVGs, Thompson Sampling, and too much coffee.</sub>
+<sub>Built with AI-generated visuals, Thompson Sampling, and premium mobile homes.</sub>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2D95,50:BD00FF,100:00D4FF&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:22c55e,50:fbbf24,100:22c55e&height=120&section=footer" width="100%"/>

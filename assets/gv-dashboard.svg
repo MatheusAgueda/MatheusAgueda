@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" width="900" height="350">
+  <defs>
+    <style>
+      text { font-family: 'Courier New', monospace; }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.15; }
+      }
+      .blinking {
+        animation: blink 1.4s infinite;
+      }
+    </style>
+    
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+
+    <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="350" fill="#06060e"/>
+
+  <!-- HEADER BAR -->
+  <rect x="0" y="0" width="900" height="25" fill="#0a0a14"/>
+  <rect x="0" y="23" width="900" height="2" fill="url(#headerGrad)"/>
+  
+  <text x="12" y="16" font-size="10" font-weight="bold" fill="#22c55e">GREEN VILLAGE // SYSTEM MONITOR</text>
+  
+  <!-- Header Right -->
+  <g transform="translate(760, 8)">
+    <circle cx="5" cy="4" r="2.5" fill="#22c55e" class="blinking"/>
+    <text x="15" y="7" font-size="8" fill="#52527a">NODE: EU-WEST-1</text>
+  </g>
+
+  <!-- ==================== PANEL 1: SUBSYSTEMS ==================== -->
+  <g transform="translate(10, 35)">
+    <rect width="280" height="305" fill="#0a0a14" stroke="#1a2e1a" rx="4"/>
+    <text x="14" y="22" font-size="10" font-weight="bold" fill="#e0e0ff">SYSTEM SUBSYSTEMS</text>
+
+    <!-- Row Generator helper concept applied manually -->
+    <!-- Row 1 -->
+    <g transform="translate(14, 73)">
+      <circle cx="2.5" cy="0" r="2.5" fill="#00FF66" class="blinking"/>
+      <text x="15" y="3" font-size="8" fill="#52527a">Fleet Brain</text>
+      <text x="253" y="3" font-size="9" fill="#e0e0ff" text-anchor="end">228 models</text>
+    </g>
+    <!-- Row 2 -->
+    <g transform="translate(14, 110)">
+      <circle cx="2.5" cy="0" r="2.5" fill="#00FF66" class="blinking"/>
+      <text x="15" y="3" font-size="8" fill="#52527a">Lead Scraper</text>
+      <text x="253" y="3" font-size="9" fill="#00D4FF" text-anchor="end">1.93M</text>
+    </g>
+    <!-- Row 3 -->
+    <g transform="translate(14, 147)">
+      <circle cx="2.5" cy="0" r="2.5" fill="#00FF66" class="blinking"/>
+      <text x="15" y="3" font-size="8" fill="#52527a">Email Engine</text>
+      <text x="253" y="3" font-size="9" fill="#fbbf24" text-anchor="end">385/day</text>
+    </g>
+    <!-- Row 4 -->
+    <g transform="translate(14, 184)">
+      <circle cx="2.5" cy="0" r="2.5" fill="#00FF66" class="blinking"/>
+      <text x="15" y="3" font-size="8" fill="#52527a">Claude Harness</text>
+      <text x="253" y="3" font-size="9" fill="#e0e0ff" text-anchor="end">17 agents</text>
+    </g>
+    <!-- Row 5 -->
+    <g transform="translate(14, 221)">
+      <circle cx="2.5" cy="0" r="2.5" fill="#00FF66" class="blinking"/>
+      <text x="15" y="3" font-size="8" fill="#52527a">Jarvis CU</text>
+      <text x="253" y="3" font-size="9" fill="#e0e0ff" text-anchor="end">4 lanes</text>
+    </g>
+    <!-- Row 6 -->
+    <g transform="translate(14, 258)">
+      <circle cx="2.5" cy="0" r="2.5" fill="#00FF66" class="blinking"/>
+      <text x="15" y="3" font-size="8" fill="#52527a">MHL Platform</text>
+      <text x="253" y="3" font-size="9" fill="#22c55e" text-anchor="end">Next.js 15</text>
+    </g>
+    <!-- Row 7 -->
+    <g transform="translate(14, 295)">
+      <circle cx="2.5" cy="0" r="2.5" fill="#00FF66" class="blinking"/>
+      <text x="15" y="3" font-size="8" fill="#52527a">Trading Jessie</text>
+      <text x="253" y="3" font-size="9" fill="#00FF66" text-anchor="end">+Moon active</text>
+    </g>
+  </g>
+
+  <!-- ==================== PANEL 2: PERFORMANCE METRICS ==================== -->
+  <g transform="translate(300, 35)">
+    <rect width="290" height="305" fill="#0a0a14" stroke="#1a2e1a" rx="4"/>
+    <text x="14" y="22" font-size="10" font-weight="bold" fill="#e0e0ff">PERFORMANCE METRICS</text>
+
+    <!-- Circular Gauges -->
+    <!-- Gauge 1 -->
+    <g transform="translate(58, 95)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#1a1a2e" stroke-width="4"/>
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#22c55e" stroke-width="4" stroke-linecap="round" stroke-dasharray="176" stroke-dashoffset="176" transform="rotate(-90)">
+        <!-- 9 filled out of circumference 176 (approx 18 offset remaining) -->
+        <animate attributeName="stroke-dashoffset" from="176" to="18" dur="2s" fill="freeze"/>
+      </circle>
+      <text x="0" y="3" font-size="8" font-weight="bold" fill="#e0e0ff" text-anchor="middle">1.93M</text>
+      <text x="0" y="44" font-size="8" fill="#52527a" text-anchor="middle">THROUGHPUT</text>
+    </g>
+
+    <!-- Gauge 2 -->
+    <g transform="translate(145, 95)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#1a1a2e" stroke-width="4"/>
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#fbbf24" stroke-width="4" stroke-linecap="round" stroke-dasharray="176" stroke-dashoffset="176" transform="rotate(-90)">
+        <!-- 60 mapped value -> offset ~70 -->
+        <animate attributeName="stroke-dashoffset" from="176" to="70" dur="2s" fill="freeze"/>
+      </circle>
+      <text x="0" y="3" font-size="8" font-weight="bold" fill="#e0e0ff" text-anchor="middle">385/d</text>
+      <text x="0" y="44" font-size="8" fill="#52527a" text-anchor="middle">VELOCITY</text>
+    </g>
+
+    <!-- Gauge 3 -->
+    <g transform="translate(232, 95)">
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#1a1a2e" stroke-width="4"/>
+      <circle cx="0" cy="0" r="28" fill="none" stroke="#00D4FF" stroke-width="4" stroke-linecap="round" stroke-dasharray="176" stroke-dashoffset="176" transform="rotate(-90)">
+        <!-- 10 mapped value -> offset ~20 -->
+        <animate attributeName="stroke-dashoffset" from="176" to="20" dur="2s" fill="freeze"/>
+      </circle>
+      <text x="0" y="3" font-size="8" font-weight="bold" fill="#e0e0ff" text-anchor="middle">94.2%</text>
+      <text x="0" y="44" font-size="8" fill="#52527a" text-anchor="middle">EFFICIENCY</text>
+    </g>
+
+    <!-- Progress Bars -->
+    <g transform="translate(20, 175)">
+      <!-- Bar 1 -->
+      <g transform="translate(0, 0)">
+        <text x="0" y="0" font-size="8" fill="#52527a">Node.js Core</text>
+        <text x="250" y="0" font-size="9" fill="#00D4FF" text-anchor="end">95%</text>
+        <rect x="0" y="6" width="250" height="4" fill="#1a1a2e" rx="2"/>
+        <rect x="0" y="6" width="0" height="4" fill="#00D4FF" rx="2">
+          <animate attributeName="width" from="0" to="237" dur="1.5s" fill="freeze"/>
+        </rect>
+      </g>
+
+      <!-- Bar 2 -->
+      <g transform="translate(0, 30)">
+        <text x="0" y="0" font-size="8" fill="#52527a">Python Pipeline</text>
+        <text x="250" y="0" font-size="9" fill="#fbbf24" text-anchor="end">92%</text>
+        <rect x="0" y="6" width="250" height="4" fill="#1a1a2e" rx="2"/>
+        <rect x="0" y="6" width="0" height="4" fill="#fbbf24" rx="2">
+          <animate attributeName="width" from="0" to="230" dur="1.5s" fill="freeze"/>
+        </rect>
+      </g>
+
+      <!-- Bar 3 -->
+      <g transform="translate(0, 60)">
+        <text x="0" y="0" font-size="8" fill="#52527a">PostgreSQL</text>
+        <text x="250" y="0" font-size="9" fill="#22c55e" text-anchor="end">88%</text>
+        <rect x="0" y="6" width="250" height="4" fill="#1a1a2e" rx="2"/>
+        <rect x="0" y="6" width="0" height="4" fill="#22c55e" rx="2">
+          <animate attributeName="width" from="0" to="220" dur="1.5s" fill="freeze"/>
+        </rect>
+      </g>
+
+      <!-- Bar 4 -->
+      <g transform="translate(0, 90)">
+        <text x="0" y="0" font-size="8" fill="#52527a">AI Engineering</text>
+        <text x="250" y="0" font-size="9" fill="#00FF66" text-anchor="end">90%</text>
+        <rect x="0" y="6" width="250" height="4" fill="#1a1a2e" rx="2"/>
+        <rect x="0" y="6" width="0" height="4" fill="#00FF66" rx="2">
+          <animate attributeName="width" from="0" to="225" dur="1.5s" fill="freeze"/>
+        </rect>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== PANEL 3: NEURAL TELEMETRY ==================== -->
+  <g transform="translate(600, 35)">
+    <rect width="290" height="305" fill="#0a0a14" stroke="#1a2e1a" rx="4"/>
+    <text x="14" y="22" font-size="10" font-weight="bold" fill="#e0e0ff">NEURAL TELEMETRY</text>
+
+    <!-- Sparkline Area (y: 80 to 185) -->
+    <!-- Grid Lines -->
+    <line x1="15" y1="80" x2="275" y2="80" stroke="#121222" stroke-width="1"/>
+    <line x1="15" y1="115" x2="275" y2="115" stroke="#121222" stroke-width="1"/>
+    <line x1="15" y1="150" x2="275" y2="150" stroke="#121222" stroke-width="1"/>
+    <line x1="15" y1="185" x2="275" y2="185" stroke="#121222" stroke-width="1"/>
+
+    <!-- Sparkline Background Polygon -->
+    <polygon points="15,185 15,140 50,155 85,120 120,135 155,100 190,125 225,95 260,110 275,90 275,185" fill="url(#sparkGrad)"/>
+
+    <!-- Sparkline Polyline -->
+    <polyline points="15,140 50,155 85,120 120,135 155,100 190,125 225,95 260,110 275,90" fill="none" stroke="#22c55e" stroke-width="2" stroke-dasharray="400" stroke-dashoffset="400">
+      <animate attributeName="stroke-dashoffset" from="400" to="0" dur="2.5s" fill="freeze"/>
+    </polyline>
+
+    <!-- Blinking Peak Dots -->
+    <circle cx="155" cy="100" r="3" fill="#22c55e" class="blinking"/>
+    <circle cx="225" cy="95" r="3" fill="#22c55e" class="blinking"/>
+    <circle cx="275" cy="90" r="3" fill="#22c55e" class="blinking"/>
+
+    <!-- Sparkline Labels -->
+    <text x="15" y="200" font-size="8" fill="#52527a">BANDWIDTH LOAD (24H)</text>
+    <text x="275" y="200" font-size="8" fill="#fbbf24" text-anchor="end">PEAK 98.4%</text>
+
+    <!-- Status Box (y: 215 to 325) -->
+    <g transform="translate(15, 215)">
+      <rect width="260" height="75" fill="#06060e" stroke="#1a2e1a" rx="3"/>
+      
+      <!-- Left: Concentric Radar/Crosshair -->
+      <g transform="translate(45, 37.5)">
+        <circle cx="0" cy="0" r="30" fill="none" stroke="#1a2e1a"/>
+        <circle cx="0" cy="0" r="20" fill="none" stroke="#1a2e1a"/>
+        <circle cx="0" cy="0" r="10" fill="none" stroke="#1a2e1a"/>
+        <!-- Crosshair lines -->
+        <line x1="-32" y1="0" x2="32" y2="0" stroke="#1a2e1a" stroke-dasharray="2 2"/>
+        <line x1="0" y1="-32" x2="0" y2="32" stroke="#1a2e1a" stroke-dasharray="2 2"/>
+        <!-- Sweep line -->
+        <line x1="0" y1="0" x2="0" y2="-30" stroke="#22c55e" stroke-width="1.5">
+          <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite"/>
+        </line>
+        <circle cx="0" cy="0" r="2" fill="#22c55e"/>
+      </g>
+
+      <!-- Right: Text Information -->
+      <g transform="translate(95, 23)">
+        <text x="0" y="0" font-size="9" font-weight="bold" fill="#e0e0ff">AUTONOMOUS MESH</text>
+        <text x="0" y="15" font-size="8" fill="#52527a">Status: Optimal / Latency: 12ms</text>
+        <text x="0" y="32" font-size="8" fill="#22c55e">SECURE ENCRYPTION [ACTIVE]</text>
+      </g>
+    </g>
+  </g>
+
+</svg>
