@@ -12,11 +12,11 @@
 
 <img src="https://komarev.com/ghpvc/?username=MatheusAgueda&style=for-the-badge&color=FF2D95&label=VISITORS" alt="views"/>
 &nbsp;
-<img src="https://img.shields.io/badge/MOBILE_HOMES-Premium-22c55e?style=for-the-badge&labelColor=0a0a0a" alt="mobile homes"/>
+<img src="https://img.shields.io/badge/MOBILE_HOMES-Premium-BD00FF?style=for-the-badge&labelColor=0a0a0a" alt="mobile homes"/>
 &nbsp;
-<img src="https://img.shields.io/badge/AI_MODELS-228-fbbf24?style=for-the-badge&labelColor=0a0a0a" alt="models"/>
+<img src="https://img.shields.io/badge/AI_MODELS-228-00D4FF?style=for-the-badge&labelColor=0a0a0a" alt="models"/>
 &nbsp;
-<img src="https://img.shields.io/badge/COUNTRIES-PT·FR·NL·ES-22c55e?style=for-the-badge&labelColor=0a0a0a" alt="countries"/>
+<img src="https://img.shields.io/badge/COUNTRIES-PT·FR·NL·ES-00ff41?style=for-the-badge&labelColor=0a0a0a" alt="countries"/>
 
 </div>
 
@@ -226,7 +226,7 @@ $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum
 
 ### The Lifestyle
 
-<img src="./assets/gv-hero-neon.svg" width="100%" alt="Couple enjoying sunset on mobile home deck with wine, BBQ, and countryside views"/>
+<img src="./assets/gv-lifestyle-neon.svg" width="100%" alt="Couple enjoying sunset on mobile home deck with wine, BBQ, and countryside views"/>
 
 <div align="center">
 <sub>Premium living, closer to nature.</sub>
@@ -271,7 +271,7 @@ $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum
 <div align="center">
 
 <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&bg_color=0a0a0a&title_color=FF2D95&text_color=cccccc&icon_color=BD00FF&border_color=FF2D95&hide_border=false&include_all_commits=true&count_private=true&custom_title=Stats" width="49%" alt="GitHub Stats"/>
-<img src="https://streak-stats.demolab.com?user=MatheusAgueda&theme=radical&hide_border=false&background=0A0A0A&ring=FF2D95&fire=00D4FF&currStreakLabel=BD00FF&sideLabels=ffffff&dates=888888&border=22c55e" width="49%" alt="Streak"/>
+<img src="https://streak-stats.demolab.com?user=MatheusAgueda&theme=radical&hide_border=false&background=0A0A0A&ring=FF2D95&fire=00D4FF&currStreakLabel=BD00FF&sideLabels=ffffff&dates=888888&border=BD00FF" width="49%" alt="Streak"/>
 
 <br/>
 

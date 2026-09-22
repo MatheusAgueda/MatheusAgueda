@@ -1,230 +1,168 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400">
   <style>
-    @keyframes pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
-    @keyframes pulse-slow { 0%,100% { opacity: 0.3; } 50% { opacity: 0.85; } }
-    @keyframes blink { 0%,49%,100% { opacity: 1; } 50%,99% { opacity: 0.15; } }
-    @keyframes dash { to { stroke-dashoffset: -80; } }
-    @keyframes flicker { 0%,100% { opacity: 0.8; } 30% { opacity: 1; } 50% { opacity: 0.3; } 52% { opacity: 1; } }
-    .p { animation: pulse 3s ease-in-out infinite; }
-    .ps { animation: pulse-slow 4s ease-in-out infinite; }
-    .bl { animation: blink 1.4s infinite; }
-    .fl { animation: flicker 2.5s infinite; }
-    .wave { animation: dash 3s linear infinite; }
+    @keyframes pulse { 0%,100% { opacity: 0.5; } 50% { opacity: 1; } }
+    @keyframes warmglow { 0%,100% { opacity: 0.12; } 50% { opacity: 0.35; } }
+    @keyframes flicker { 0% { opacity: 0.3; } 20% { opacity: 0.9; } 40% { opacity: 0.5; } 60% { opacity: 1; } 80% { opacity: 0.6; } 100% { opacity: 0.3; } }
+    @keyframes star { 0%,100% { opacity: 0.1; } 50% { opacity: 0.8; } }
+    @keyframes water { 0%,100% { opacity: 0.2; } 50% { opacity: 0.45; } }
+    .pu { animation: pulse 3s ease-in-out infinite; }
+    .wg { animation: warmglow 3s ease-in-out infinite; }
+    .fl { animation: flicker 2s ease-in-out infinite; }
+    .st { animation: star 4s ease-in-out infinite; }
+    .wa { animation: water 5s ease-in-out infinite; }
     .txt { font-family: 'Courier New', monospace; }
   </style>
   <defs>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glow-soft" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <linearGradient id="title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#FF2D95"/>
       <stop offset="50%" stop-color="#BD00FF"/>
       <stop offset="100%" stop-color="#00D4FF"/>
     </linearGradient>
-    <linearGradient id="pool-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00D4FF"/>
-      <stop offset="100%" stop-color="#BD00FF"/>
-    </linearGradient>
-    <!-- Particle paths -->
-    <path id="pp1" d="M160,140 C300,100 400,180 450,200"/>
-    <path id="pp2" d="M740,140 C600,100 500,180 450,200"/>
-    <path id="pp3" d="M160,300 C300,340 400,240 450,220"/>
-    <path id="pp4" d="M740,300 C600,340 500,240 450,220"/>
-    <path id="pp5" d="M300,100 C350,200 500,300 700,280"/>
-    <path id="pp6" d="M200,350 C350,250 550,150 800,120"/>
-    <path id="pp7" d="M100,200 C250,150 650,250 850,200"/>
-    <path id="pp8" d="M450,80 C350,200 550,300 450,380"/>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-lg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sm" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
 
-  <!-- Background -->
   <rect width="900" height="400" fill="#06060e"/>
 
-  <!-- Grid -->
-  <g opacity="0.25">
-    <line x1="0" y1="80" x2="900" y2="80" stroke="#121228" stroke-width="0.5" stroke-dasharray="4 8"/>
-    <line x1="0" y1="160" x2="900" y2="160" stroke="#121228" stroke-width="0.5" stroke-dasharray="4 8"/>
-    <line x1="0" y1="240" x2="900" y2="240" stroke="#121228" stroke-width="0.5" stroke-dasharray="4 8"/>
-    <line x1="0" y1="320" x2="900" y2="320" stroke="#121228" stroke-width="0.5" stroke-dasharray="4 8"/>
-    <line x1="150" y1="0" x2="150" y2="400" stroke="#121228" stroke-width="0.5" stroke-dasharray="4 8"/>
-    <line x1="300" y1="0" x2="300" y2="400" stroke="#121228" stroke-width="0.5" stroke-dasharray="4 8"/>
-    <line x1="450" y1="0" x2="450" y2="400" stroke="#121228" stroke-width="0.5" stroke-dasharray="4 8"/>
-    <line x1="600" y1="0" x2="600" y2="400" stroke="#121228" stroke-width="0.5" stroke-dasharray="4 8"/>
-    <line x1="750" y1="0" x2="750" y2="400" stroke="#121228" stroke-width="0.5" stroke-dasharray="4 8"/>
-  </g>
+  <!-- ===== STARS ===== -->
+  <circle cx="50" cy="25" r="1" fill="#fff" class="st"/>
+  <circle cx="150" cy="45" r="1.3" fill="#00D4FF" class="st" style="animation-delay:-1s"/>
+  <circle cx="280" cy="18" r="0.8" fill="#fff" class="st" style="animation-delay:-2s"/>
+  <circle cx="410" cy="35" r="1.1" fill="#BD00FF" class="st" style="animation-delay:-.5s"/>
+  <circle cx="520" cy="22" r="0.9" fill="#fff" class="st" style="animation-delay:-3s"/>
+  <circle cx="640" cy="40" r="1.2" fill="#FF2D95" class="st" style="animation-delay:-1.5s"/>
+  <circle cx="730" cy="15" r="0.7" fill="#fff" class="st" style="animation-delay:-2.5s"/>
+  <circle cx="820" cy="48" r="1" fill="#00D4FF" class="st" style="animation-delay:-.8s"/>
+  <circle cx="105" cy="60" r="0.6" fill="#fff" class="st" style="animation-delay:-3.5s"/>
+  <circle cx="350" cy="55" r="0.8" fill="#fff" class="st" style="animation-delay:-1.2s"/>
+  <circle cx="580" cy="12" r="1" fill="#BD00FF" class="st" style="animation-delay:-2.2s"/>
+  <circle cx="870" cy="30" r="0.7" fill="#fff" class="st" style="animation-delay:-.3s"/>
 
-  <!-- Title -->
-  <text x="450" y="42" class="txt" font-size="18" font-weight="bold" fill="url(#title-grad)" text-anchor="middle" letter-spacing="5" filter="url(#glow)">GREEN VILLAGE MOBILE HOMES</text>
-  <text x="450" y="62" class="txt" font-size="10" fill="#52527a" text-anchor="middle" letter-spacing="2">HOLOGRAPHIC BLUEPRINT · NEON EDITION</text>
+  <!-- ===== MOON ===== -->
+  <circle cx="780" cy="70" r="30" fill="none" stroke="#BD00FF" stroke-width="1.5" opacity="0.4" filter="url(#glow-lg)"/>
+  <circle cx="780" cy="70" r="30" fill="#BD00FF" opacity="0.04"/>
+  <circle cx="790" cy="70" r="30" fill="#06060e"/>
 
-  <!-- Top gradient bar -->
-  <rect x="0" y="0" width="900" height="3" fill="url(#title-grad)"/>
+  <!-- ===== DISTANT HILLS ===== -->
+  <path d="M0 180 Q100 140 200 165 Q300 135 400 160 Q500 130 600 155 Q700 125 800 150 Q850 140 900 155 L900 200 L0 200Z" fill="none" stroke="#1a1a3a" stroke-width="1" opacity="0.5"/>
 
-  <!-- ====== ROADS / PATHS ====== -->
-  <g stroke="#1a1a3a" stroke-width="1" fill="none" stroke-dasharray="6 4">
-    <!-- Horizontal main road -->
-    <line x1="80" y1="210" x2="820" y2="210"/>
-    <!-- Vertical main road -->
-    <line x1="450" y1="80" x2="450" y2="360"/>
-    <!-- Diagonals to homes -->
-    <line x1="160" y1="140" x2="380" y2="190"/>
-    <line x1="740" y1="140" x2="520" y2="190"/>
-    <line x1="160" y1="300" x2="380" y2="230"/>
-    <line x1="740" y1="300" x2="520" y2="230"/>
-    <line x1="300" y1="110" x2="420" y2="190"/>
-    <line x1="600" y1="320" x2="490" y2="230"/>
-  </g>
-
-  <!-- ====== SWIMMING POOL (center) ====== -->
+  <!-- ===== MOBILE HOME 1 (LEFT — large, main) ===== -->
   <g filter="url(#glow)">
-    <rect x="400" y="180" width="100" height="55" rx="12" fill="none" stroke="url(#pool-grad)" stroke-width="2.5"/>
-    <!-- Water wave lines -->
-    <path d="M412,195 Q425,190 438,195 Q451,200 464,195 Q477,190 490,195" fill="none" stroke="#00D4FF" stroke-width="1" opacity="0.6" stroke-dasharray="8 6" class="wave"/>
-    <path d="M412,207 Q425,202 438,207 Q451,212 464,207 Q477,202 490,207" fill="none" stroke="#00D4FF" stroke-width="1" opacity="0.4" stroke-dasharray="8 6" class="wave" style="animation-delay:-1.5s"/>
-    <path d="M412,219 Q425,214 438,219 Q451,224 464,219 Q477,214 490,219" fill="none" stroke="#BD00FF" stroke-width="1" opacity="0.3" stroke-dasharray="8 6" class="wave" style="animation-delay:-0.8s"/>
-    <!-- Pool label -->
-    <text x="450" y="247" class="txt" font-size="7" fill="#00D4FF" text-anchor="middle" opacity="0.6">POOL</text>
+    <rect x="60" y="185" width="260" height="85" fill="none" stroke="#00D4FF" stroke-width="1.8" rx="2"/>
+    <polygon points="50,185 330,185 320,155 60,155" fill="none" stroke="#00D4FF" stroke-width="1.5"/>
+    <rect x="85" y="198" width="40" height="55" fill="none" stroke="#FF2D95" stroke-width="1.2" rx="1"/>
+    <rect x="90" y="203" width="30" height="45" fill="#fbbf24" opacity="0.1" class="wg"/>
+    <rect x="145" y="198" width="40" height="55" fill="none" stroke="#FF2D95" stroke-width="1.2" rx="1"/>
+    <rect x="150" y="203" width="30" height="45" fill="#fbbf24" opacity="0.1" class="wg" style="animation-delay:-.6s"/>
+    <rect x="205" y="198" width="40" height="55" fill="none" stroke="#FF2D95" stroke-width="1.2" rx="1"/>
+    <rect x="210" y="203" width="30" height="45" fill="#fbbf24" opacity="0.1" class="wg" style="animation-delay:-1.2s"/>
+    <rect x="265" y="210" width="30" height="50" fill="none" stroke="#00D4FF" stroke-width="1" rx="1"/>
+    <circle cx="290" cy="235" r="2" fill="#fbbf24" opacity="0.5"/>
+    <rect x="270" y="262" width="25" height="5" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.4"/>
+    <rect x="273" y="267" width="19" height="5" fill="none" stroke="#00D4FF" stroke-width="0.6" opacity="0.3"/>
   </g>
 
-  <!-- ====== MOBILE HOME 1 (top-left) — pink ====== -->
+  <!-- Chimney + smoke -->
+  <rect x="110" y="135" width="12" height="20" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.5"/>
+  <circle cx="116" cy="130" r="3" fill="none" stroke="#666" stroke-width="0.6" opacity="0">
+    <animate attributeName="cy" from="130" to="95" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.35;0.2;0" keyTimes="0;0.2;0.7;1" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="r" from="3" to="8" dur="5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ===== MOBILE HOME 2 (CENTER) ===== -->
   <g filter="url(#glow)">
-    <rect x="120" y="110" width="80" height="42" rx="2" fill="none" stroke="#FF2D95" stroke-width="2"/>
-    <!-- Door -->
-    <rect x="152" y="138" width="12" height="14" fill="none" stroke="#FF2D95" stroke-width="1" class="p"/>
-    <!-- Windows -->
-    <rect x="128" y="118" width="10" height="8" fill="none" stroke="#FF2D95" stroke-width="0.8" class="p" style="animation-delay:-1s"/>
-    <rect x="172" y="118" width="10" height="8" fill="none" stroke="#FF2D95" stroke-width="0.8" class="p" style="animation-delay:-2s"/>
-    <!-- Deck -->
-    <line x1="120" y1="152" x2="200" y2="152" stroke="#FF2D95" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.5"/>
-    <!-- Wheels -->
-    <circle cx="135" cy="155" r="3" fill="none" stroke="#FF2D95" stroke-width="0.8" opacity="0.5"/>
-    <circle cx="185" cy="155" r="3" fill="none" stroke="#FF2D95" stroke-width="0.8" opacity="0.5"/>
+    <rect x="370" y="195" width="200" height="70" fill="none" stroke="#BD00FF" stroke-width="1.5" rx="2"/>
+    <polygon points="362,195 578,195 570,170 370,170" fill="none" stroke="#BD00FF" stroke-width="1.2"/>
+    <rect x="390" y="205" width="35" height="45" fill="none" stroke="#FF2D95" stroke-width="1" rx="1"/>
+    <rect x="394" y="209" width="27" height="37" fill="#fbbf24" opacity="0.08" class="wg" style="animation-delay:-.4s"/>
+    <rect x="440" y="205" width="35" height="45" fill="none" stroke="#FF2D95" stroke-width="1" rx="1"/>
+    <rect x="444" y="209" width="27" height="37" fill="#fbbf24" opacity="0.08" class="wg" style="animation-delay:-1s"/>
+    <rect x="500" y="215" width="25" height="40" fill="none" stroke="#BD00FF" stroke-width="0.8" rx="1"/>
+    <circle cx="520" cy="235" r="1.5" fill="#fbbf24" opacity="0.4"/>
+    <line x1="495" y1="195" x2="540" y2="195" stroke="#BD00FF" stroke-width="1.2"/>
+    <line x1="540" y1="195" x2="545" y2="210" stroke="#BD00FF" stroke-width="0.8" opacity="0.6"/>
+    <line x1="495" y1="195" x2="490" y2="210" stroke="#BD00FF" stroke-width="0.8" opacity="0.6"/>
   </g>
 
-  <!-- ====== MOBILE HOME 2 (top-center) — cyan ====== -->
+  <!-- ===== MOBILE HOME 3 (RIGHT) ===== -->
   <g filter="url(#glow)">
-    <rect x="270" y="85" width="85" height="45" rx="2" fill="none" stroke="#00D4FF" stroke-width="2"/>
-    <rect x="305" y="116" width="12" height="14" fill="none" stroke="#00D4FF" stroke-width="1" class="p" style="animation-delay:-.5s"/>
-    <rect x="278" y="93" width="10" height="8" fill="none" stroke="#00D4FF" stroke-width="0.8" class="p" style="animation-delay:-1.5s"/>
-    <rect x="335" y="93" width="10" height="8" fill="none" stroke="#00D4FF" stroke-width="0.8" class="p" style="animation-delay:-2.5s"/>
-    <line x1="270" y1="130" x2="355" y2="130" stroke="#00D4FF" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.5"/>
-    <circle cx="285" cy="133" r="3" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.5"/>
-    <circle cx="340" cy="133" r="3" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.5"/>
+    <rect x="650" y="200" width="160" height="60" fill="none" stroke="#00D4FF" stroke-width="1.2" rx="2"/>
+    <polygon points="643,200 817,200 810,178 650,178" fill="none" stroke="#00D4FF" stroke-width="1"/>
+    <rect x="668" y="208" width="28" height="38" fill="none" stroke="#FF2D95" stroke-width="0.8" rx="1"/>
+    <rect x="671" y="211" width="22" height="32" fill="#fbbf24" opacity="0.07" class="wg" style="animation-delay:-.8s"/>
+    <rect x="710" y="208" width="28" height="38" fill="none" stroke="#FF2D95" stroke-width="0.8" rx="1"/>
+    <rect x="713" y="211" width="22" height="32" fill="#fbbf24" opacity="0.07" class="wg" style="animation-delay:-1.4s"/>
+    <rect x="758" y="218" width="20" height="32" fill="none" stroke="#00D4FF" stroke-width="0.6" rx="1"/>
   </g>
 
-  <!-- ====== MOBILE HOME 3 (top-right) — purple ====== -->
-  <g filter="url(#glow)">
-    <rect x="700" y="110" width="80" height="42" rx="2" fill="none" stroke="#BD00FF" stroke-width="2"/>
-    <rect x="732" y="138" width="12" height="14" fill="none" stroke="#BD00FF" stroke-width="1" class="p" style="animation-delay:-1s"/>
-    <rect x="708" y="118" width="10" height="8" fill="none" stroke="#BD00FF" stroke-width="0.8" class="p" style="animation-delay:-.3s"/>
-    <rect x="762" y="118" width="10" height="8" fill="none" stroke="#BD00FF" stroke-width="0.8" class="p" style="animation-delay:-1.8s"/>
-    <line x1="700" y1="152" x2="780" y2="152" stroke="#BD00FF" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.5"/>
-    <circle cx="715" cy="155" r="3" fill="none" stroke="#BD00FF" stroke-width="0.8" opacity="0.5"/>
-    <circle cx="765" cy="155" r="3" fill="none" stroke="#BD00FF" stroke-width="0.8" opacity="0.5"/>
+  <!-- ===== TREES ===== -->
+  <g filter="url(#glow-sm)">
+    <line x1="340" y1="230" x2="340" y2="270" stroke="#00ff41" stroke-width="1.2" opacity="0.6"/>
+    <polygon points="340,200 325,240 355,240" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.45"/>
+    <polygon points="340,210 328,235 352,235" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.3"/>
+    <line x1="610" y1="235" x2="610" y2="270" stroke="#00ff41" stroke-width="1.2" opacity="0.6"/>
+    <polygon points="610,208 597,245 623,245" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.45"/>
+    <polygon points="610,218 600,240 620,240" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.3"/>
+    <line x1="25" y1="230" x2="25" y2="270" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
+    <circle cx="25" cy="215" r="18" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.4"/>
+    <line x1="855" y1="235" x2="855" y2="270" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
+    <circle cx="855" cy="220" r="16" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.35"/>
+    <line x1="840" y1="230" x2="840" y2="270" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
+    <polygon points="840,205 830,238 850,238" fill="none" stroke="#00ff41" stroke-width="0.8" opacity="0.35"/>
   </g>
 
-  <!-- ====== MOBILE HOME 4 (bottom-left) — cyan ====== -->
-  <g filter="url(#glow)">
-    <rect x="120" y="275" width="80" height="42" rx="2" fill="none" stroke="#00D4FF" stroke-width="2"/>
-    <rect x="152" y="275" width="12" height="14" fill="none" stroke="#00D4FF" stroke-width="1" class="p" style="animation-delay:-2s"/>
-    <rect x="128" y="295" width="10" height="8" fill="none" stroke="#00D4FF" stroke-width="0.8" class="p" style="animation-delay:-.7s"/>
-    <rect x="172" y="295" width="10" height="8" fill="none" stroke="#00D4FF" stroke-width="0.8" class="p" style="animation-delay:-2.2s"/>
-    <line x1="120" y1="317" x2="200" y2="317" stroke="#00D4FF" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.5"/>
-    <circle cx="135" cy="320" r="3" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.5"/>
-    <circle cx="185" cy="320" r="3" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.5"/>
+  <!-- ===== PATHWAY ===== -->
+  <path d="M420 270 Q440 275 435 285 Q425 295 440 305 Q460 315 445 325 Q430 335 445 345" fill="none" stroke="#BD00FF" stroke-width="1" opacity="0.3" stroke-dasharray="5,5"/>
+
+  <!-- ===== GROUND ===== -->
+  <line x1="0" y1="270" x2="900" y2="270" stroke="#22c55e" stroke-width="1" opacity="0.35"/>
+
+  <!-- ===== POND ===== -->
+  <ellipse cx="480" cy="310" rx="60" ry="18" fill="none" stroke="#00D4FF" stroke-width="0.8" opacity="0.3"/>
+  <ellipse cx="480" cy="310" rx="40" ry="12" fill="#00D4FF" opacity="0.03" class="wa"/>
+  <line x1="460" y1="308" x2="475" y2="308" stroke="#00D4FF" stroke-width="0.4" opacity="0.2" class="wa" style="animation-delay:-1s"/>
+  <line x1="485" y1="312" x2="500" y2="312" stroke="#00D4FF" stroke-width="0.4" opacity="0.2" class="wa" style="animation-delay:-2s"/>
+
+  <!-- ===== FAIRY LIGHTS ===== -->
+  <path d="M295 175 Q350 165 370 170" fill="none" stroke="#fbbf24" stroke-width="0.3" opacity="0.25"/>
+  <circle cx="310" cy="173" r="1.2" fill="#fbbf24" class="fl" filter="url(#glow-sm)"/>
+  <circle cx="325" cy="170" r="1" fill="#FF2D95" class="fl" style="animation-delay:-.4s" filter="url(#glow-sm)"/>
+  <circle cx="340" cy="168" r="1.2" fill="#fbbf24" class="fl" style="animation-delay:-.8s" filter="url(#glow-sm)"/>
+  <circle cx="355" cy="169" r="1" fill="#00D4FF" class="fl" style="animation-delay:-1.2s" filter="url(#glow-sm)"/>
+
+  <!-- ===== LAMPPOST ===== -->
+  <line x1="350" y1="270" x2="350" y2="240" stroke="#BD00FF" stroke-width="1" opacity="0.4"/>
+  <circle cx="350" cy="237" r="4" fill="#fbbf24" opacity="0.15" class="pu" filter="url(#glow)"/>
+  <circle cx="350" cy="237" r="8" fill="#fbbf24" opacity="0.05" class="pu"/>
+
+  <!-- ===== CAMPFIRE ===== -->
+  <g filter="url(#glow-sm)">
+    <circle cx="180" cy="310" r="12" fill="none" stroke="#FF2D95" stroke-width="0.8" opacity="0.5"/>
+    <circle cx="180" cy="310" r="7" fill="#ff6b35" opacity="0.1" class="fl"/>
+    <circle cx="180" cy="308" r="4" fill="#fbbf24" opacity="0.15" class="fl" style="animation-delay:-.3s"/>
+    <circle cx="178" cy="306" r="2" fill="#ff4500" opacity="0.2" class="fl" style="animation-delay:-.6s"/>
+    <line x1="170" y1="318" x2="190" y2="318" stroke="#444" stroke-width="1.5" opacity="0.3"/>
   </g>
 
-  <!-- ====== MOBILE HOME 5 (bottom-center) — pink ====== -->
-  <g filter="url(#glow)">
-    <rect x="560" y="290" width="85" height="45" rx="2" fill="none" stroke="#FF2D95" stroke-width="2"/>
-    <rect x="595" y="290" width="12" height="14" fill="none" stroke="#FF2D95" stroke-width="1" class="p" style="animation-delay:-.8s"/>
-    <rect x="568" y="310" width="10" height="8" fill="none" stroke="#FF2D95" stroke-width="0.8" class="p" style="animation-delay:-1.3s"/>
-    <rect x="627" y="310" width="10" height="8" fill="none" stroke="#FF2D95" stroke-width="0.8" class="p" style="animation-delay:-2.8s"/>
-    <line x1="560" y1="335" x2="645" y2="335" stroke="#FF2D95" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.5"/>
-    <circle cx="575" cy="338" r="3" fill="none" stroke="#FF2D95" stroke-width="0.8" opacity="0.5"/>
-    <circle cx="630" cy="338" r="3" fill="none" stroke="#FF2D95" stroke-width="0.8" opacity="0.5"/>
-  </g>
+  <!-- ===== TITLE ===== -->
+  <text x="450" y="355" class="txt" font-size="22" font-weight="bold" fill="url(#tg)" text-anchor="middle" filter="url(#glow-lg)">GREEN VILLAGE MOBILE HOMES</text>
+  <text x="450" y="378" class="txt" font-size="11" fill="#888" text-anchor="middle">Premium Living · 48 Countries · Closer to Nature</text>
 
-  <!-- ====== MOBILE HOME 6 (bottom-right) — purple ====== -->
-  <g filter="url(#glow)">
-    <rect x="700" y="275" width="80" height="42" rx="2" fill="none" stroke="#BD00FF" stroke-width="2"/>
-    <rect x="732" y="275" width="12" height="14" fill="none" stroke="#BD00FF" stroke-width="1" class="p" style="animation-delay:-1.5s"/>
-    <rect x="708" y="295" width="10" height="8" fill="none" stroke="#BD00FF" stroke-width="0.8" class="p" style="animation-delay:-.4s"/>
-    <rect x="762" y="295" width="10" height="8" fill="none" stroke="#BD00FF" stroke-width="0.8" class="p" style="animation-delay:-2.4s"/>
-    <line x1="700" y1="317" x2="780" y2="317" stroke="#BD00FF" stroke-width="0.8" stroke-dasharray="3 2" opacity="0.5"/>
-    <circle cx="715" cy="320" r="3" fill="none" stroke="#BD00FF" stroke-width="0.8" opacity="0.5"/>
-    <circle cx="765" cy="320" r="3" fill="none" stroke="#BD00FF" stroke-width="0.8" opacity="0.5"/>
-  </g>
-
-  <!-- ====== TREES ====== -->
-  <g filter="url(#glow-soft)">
-    <circle cx="230" cy="180" r="12" fill="none" stroke="#00ff41" stroke-width="1.5" class="ps"/>
-    <circle cx="250" cy="250" r="9" fill="none" stroke="#00ff41" stroke-width="1.2" class="ps" style="animation-delay:-1s"/>
-    <circle cx="85" cy="210" r="14" fill="none" stroke="#00ff41" stroke-width="1.5" class="ps" style="animation-delay:-2s"/>
-    <circle cx="670" cy="180" r="11" fill="none" stroke="#00ff41" stroke-width="1.3" class="ps" style="animation-delay:-.5s"/>
-    <circle cx="650" cy="260" r="13" fill="none" stroke="#00ff41" stroke-width="1.5" class="ps" style="animation-delay:-1.5s"/>
-    <circle cx="820" cy="210" r="10" fill="none" stroke="#00ff41" stroke-width="1.2" class="ps" style="animation-delay:-2.5s"/>
-    <circle cx="350" cy="260" r="8" fill="none" stroke="#00ff41" stroke-width="1" class="ps" style="animation-delay:-3s"/>
-    <circle cx="520" cy="140" r="10" fill="none" stroke="#00ff41" stroke-width="1.2" class="ps" style="animation-delay:-.8s"/>
-    <circle cx="380" cy="330" r="15" fill="none" stroke="#00ff41" stroke-width="1.5" class="ps" style="animation-delay:-1.8s"/>
-    <circle cx="500" cy="310" r="9" fill="none" stroke="#00ff41" stroke-width="1" class="ps" style="animation-delay:-2.3s"/>
-  </g>
-
-  <!-- ====== INTERSECTION NODES ====== -->
-  <g filter="url(#glow)">
-    <circle cx="450" cy="210" r="4" fill="#00D4FF" class="bl"/>
-    <circle cx="380" cy="190" r="3" fill="#FF2D95" class="bl" style="animation-delay:-.3s"/>
-    <circle cx="520" cy="190" r="3" fill="#BD00FF" class="bl" style="animation-delay:-.7s"/>
-    <circle cx="380" cy="230" r="3" fill="#FF2D95" class="bl" style="animation-delay:-1s"/>
-    <circle cx="520" cy="230" r="3" fill="#BD00FF" class="bl" style="animation-delay:-1.3s"/>
-    <circle cx="300" cy="210" r="2.5" fill="#00D4FF" class="bl" style="animation-delay:-.5s"/>
-    <circle cx="600" cy="210" r="2.5" fill="#00D4FF" class="bl" style="animation-delay:-.9s"/>
-    <circle cx="450" cy="150" r="2.5" fill="#00ff41" class="bl" style="animation-delay:-1.5s"/>
-    <circle cx="450" cy="280" r="2.5" fill="#00ff41" class="bl" style="animation-delay:-1.8s"/>
-  </g>
-
-  <!-- ====== ANIMATED PARTICLES ====== -->
-  <circle r="2.5" fill="#FF2D95" filter="url(#glow)"><animateMotion dur="3.5s" repeatCount="indefinite"><mpath href="#pp1"/></animateMotion></circle>
-  <circle r="2.5" fill="#00D4FF" filter="url(#glow)"><animateMotion dur="4s" repeatCount="indefinite"><mpath href="#pp2"/></animateMotion></circle>
-  <circle r="2" fill="#BD00FF" filter="url(#glow)"><animateMotion dur="4.5s" repeatCount="indefinite"><mpath href="#pp3"/></animateMotion></circle>
-  <circle r="2" fill="#00ff41" filter="url(#glow)"><animateMotion dur="3.8s" repeatCount="indefinite"><mpath href="#pp4"/></animateMotion></circle>
-  <circle r="3" fill="#FF2D95" filter="url(#glow)"><animateMotion dur="5s" repeatCount="indefinite"><mpath href="#pp5"/></animateMotion></circle>
-  <circle r="2" fill="#00D4FF" filter="url(#glow)"><animateMotion dur="6s" repeatCount="indefinite"><mpath href="#pp6"/></animateMotion></circle>
-  <circle r="2.5" fill="#BD00FF" filter="url(#glow)"><animateMotion dur="5.5s" repeatCount="indefinite"><mpath href="#pp7"/></animateMotion></circle>
-  <circle r="2" fill="#00ff41" filter="url(#glow)"><animateMotion dur="4.2s" repeatCount="indefinite"><mpath href="#pp8"/></animateMotion></circle>
-
-  <!-- ====== HUD CORNERS ====== -->
-  <!-- Top-left corner bracket -->
-  <path d="M30,75 L30,70 L55,70" fill="none" stroke="#00D4FF" stroke-width="1" opacity="0.5"/>
-  <path d="M870,75 L870,70 L845,70" fill="none" stroke="#FF2D95" stroke-width="1" opacity="0.5"/>
-  <path d="M30,365 L30,370 L55,370" fill="none" stroke="#BD00FF" stroke-width="1" opacity="0.5"/>
-  <path d="M870,365 L870,370 L845,370" fill="none" stroke="#00ff41" stroke-width="1" opacity="0.5"/>
-
-  <!-- ====== STATS PANEL (bottom-right) ====== -->
-  <rect x="660" y="355" width="230" height="38" rx="3" fill="#0b0c1a" stroke="#1f2050" stroke-width="1"/>
-  <text x="675" y="370" class="txt" font-size="8" fill="#00D4FF" letter-spacing="1">1.93M LEADS</text>
-  <text x="675" y="384" class="txt" font-size="8" fill="#FF2D95" letter-spacing="1">228 MODELS</text>
-  <text x="795" y="370" class="txt" font-size="8" fill="#BD00FF" letter-spacing="1">385/DAY</text>
-  <text x="795" y="384" class="txt" font-size="8" fill="#00ff41" letter-spacing="1">WIS 0.9643</text>
-  <!-- Blinking dot -->
-  <circle cx="880" cy="360" r="2.5" fill="#00ff41" class="bl"/>
-
-  <!-- ====== COORDINATES PANEL (bottom-left) ====== -->
-  <rect x="10" y="355" width="150" height="38" rx="3" fill="#0b0c1a" stroke="#1f2050" stroke-width="1"/>
-  <text x="20" y="370" class="txt" font-size="7" fill="#52527a">LAT: 41.1496° N</text>
-  <text x="20" y="384" class="txt" font-size="7" fill="#52527a">LON: 8.6109° W</text>
-  <text x="105" y="370" class="txt" font-size="7" fill="#00ff41" class="fl">LIVE</text>
-
-  <!-- ====== SCANLINE ====== -->
-  <rect x="0" y="0" width="900" height="3" fill="#00D4FF" opacity="0">
-    <animate attributeName="y" from="-3" to="400" dur="7s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.08;0.08;0" keyTimes="0;0.05;0.95;1" dur="7s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- ====== BOTTOM GRADIENT BAR ====== -->
-  <rect x="0" y="397" width="900" height="3" fill="url(#title-grad)"/>
+  <!-- Top accent -->
+  <line x1="0" y1="0" x2="900" y2="0" stroke="url(#tg)" stroke-width="2" opacity="0.7"/>
+  <!-- Bottom draw line -->
+  <line x1="100" y1="395" x2="800" y2="395" stroke="#00D4FF" stroke-width="1" stroke-dasharray="700" stroke-dashoffset="700" opacity="0.4">
+    <animate attributeName="stroke-dashoffset" from="700" to="0" dur="3s" fill="freeze"/>
+  </line>
 </svg>
