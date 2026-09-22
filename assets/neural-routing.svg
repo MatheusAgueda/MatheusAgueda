@@ -1,0 +1,248 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 320" width="840" height="320">
+  <defs>
+    <style>
+      @keyframes nodeGlow1{0%,100%{filter:drop-shadow(0 0 4px #FF2D95)}50%{filter:drop-shadow(0 0 16px #FF2D95) drop-shadow(0 0 28px #FF2D9540)}}
+      @keyframes nodeGlow2{0%,100%{filter:drop-shadow(0 0 4px #00D4FF)}50%{filter:drop-shadow(0 0 16px #00D4FF) drop-shadow(0 0 28px #00D4FF40)}}
+      @keyframes nodeGlow3{0%,100%{filter:drop-shadow(0 0 4px #BD00FF)}50%{filter:drop-shadow(0 0 16px #BD00FF) drop-shadow(0 0 28px #BD00FF40)}}
+      @keyframes nodeGlow4{0%,100%{filter:drop-shadow(0 0 4px #00ff41)}50%{filter:drop-shadow(0 0 16px #00ff41) drop-shadow(0 0 28px #00ff4140)}}
+      @keyframes flowRight1{0%{offset-distance:0%}100%{offset-distance:100%}}
+      @keyframes orbitSlow{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+      @keyframes breathe{0%,100%{r:20;stroke-opacity:.1}50%{r:28;stroke-opacity:.35}}
+      @keyframes fadeSlide{0%{opacity:0;transform:translateX(-5px)}100%{opacity:1;transform:translateX(0)}}
+      @keyframes dash{0%{stroke-dashoffset:8}100%{stroke-dashoffset:0}}
+      @keyframes pingPong{0%,100%{opacity:0;transform:translate(0,0)}25%{opacity:1}50%{opacity:1;transform:translate(var(--dx),var(--dy))}75%{opacity:0}}
+      @keyframes barLoad{0%{width:0}100%{width:var(--w)}}
+      @keyframes textReveal{0%{opacity:0;letter-spacing:6px}100%{opacity:1;letter-spacing:2px}}
+      @keyframes counterUp{0%{opacity:0}100%{opacity:1}}
+      @keyframes ringExpand{0%{r:22;opacity:.6}100%{r:50;opacity:0}}
+
+      .bg{fill:#06060e}
+      .connection{stroke:#1a1a2e;stroke-width:1;fill:none;stroke-dasharray:4 4;animation:dash 2s linear infinite}
+      .connection-active{stroke-width:1.5;fill:none;stroke-dasharray:6 3}
+      .node-ring{fill:none;stroke-width:1}
+      .label{font-family:'SF Mono','JetBrains Mono',monospace;font-size:8px;fill:#5a5a7a;text-anchor:middle;letter-spacing:1px}
+      .label-bright{font-family:'SF Mono','JetBrains Mono',monospace;font-size:9px;fill:#aaa;text-anchor:middle;font-weight:600}
+      .stat{font-family:'SF Mono','JetBrains Mono',monospace;font-size:18px;fill:#fff;font-weight:700;text-anchor:middle}
+      .stat-sm{font-family:'SF Mono','JetBrains Mono',monospace;font-size:11px;fill:#fff;text-anchor:middle}
+      .title-glow{font-family:'SF Mono','JetBrains Mono',monospace;font-size:10px;fill:#6a6a8a;letter-spacing:3px;animation:textReveal 1.5s ease forwards}
+      .panel{fill:#0a0a14;stroke:#1a1a2e;stroke-width:1;rx:6}
+      .bar-track{fill:#12121e;rx:2}
+      .particle{r:2;opacity:0}
+      .p-pink{fill:#FF2D95}
+      .p-cyan{fill:#00D4FF}
+      .p-purple{fill:#BD00FF}
+      .p-green{fill:#00ff41}
+    </style>
+
+    <linearGradient id="hGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF2D95"/>
+      <stop offset="50%" stop-color="#BD00FF"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF2D95" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#FF2D95" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#BD00FF" stop-opacity=".15"/>
+      <stop offset="100%" stop-color="#BD00FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Particle paths -->
+    <path id="path-input-classify" d="M100,160 C180,160 200,100 280,100" fill="none"/>
+    <path id="path-input-classify2" d="M100,160 C180,160 200,220 280,220" fill="none"/>
+    <path id="path-classify-gate" d="M320,100 C380,100 380,160 420,160" fill="none"/>
+    <path id="path-classify-gate2" d="M320,220 C380,220 380,160 420,160" fill="none"/>
+    <path id="path-gate-free" d="M460,160 C520,130 540,80 600,80" fill="none"/>
+    <path id="path-gate-opus" d="M460,160 C520,160 540,160 600,160" fill="none"/>
+    <path id="path-gate-fable" d="M460,160 C520,190 540,240 600,240" fill="none"/>
+    <path id="path-free-out" d="M640,80 C680,80 700,160 740,160" fill="none"/>
+    <path id="path-opus-out" d="M640,160 C680,160 700,160 740,160" fill="none"/>
+    <path id="path-fable-out" d="M640,240 C680,240 700,160 740,160" fill="none"/>
+
+    <clipPath id="clipAll"><rect width="840" height="320" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clipAll)">
+    <rect width="840" height="320" class="bg" rx="10"/>
+    <rect width="840" height="2" fill="url(#hGrad)"/>
+
+    <!-- Title -->
+    <text x="420" y="24" text-anchor="middle" class="title-glow">FLEET BRAIN — NEURAL ROUTING</text>
+
+    <!-- ═══ CONNECTION LINES ═══ -->
+    <!-- Input → Classifiers -->
+    <path d="M100,160 C180,160 200,100 280,100" class="connection" style="stroke:#FF2D95;animation-delay:0s"/>
+    <path d="M100,160 C180,160 200,220 280,220" class="connection" style="stroke:#FF2D95;animation-delay:.5s"/>
+    <!-- Classifiers → Gate -->
+    <path d="M320,100 C380,100 380,160 420,160" class="connection" style="stroke:#00D4FF;animation-delay:.2s"/>
+    <path d="M320,220 C380,220 380,160 420,160" class="connection" style="stroke:#00D4FF;animation-delay:.7s"/>
+    <!-- Gate → Models -->
+    <path d="M460,160 C520,130 540,80 600,80" class="connection-active" style="stroke:#00ff41;stroke-dasharray:4 4;animation:dash 1.5s linear infinite"/>
+    <path d="M460,160 C520,160 540,160 600,160" class="connection-active" style="stroke:#BD00FF;stroke-dasharray:4 4;animation:dash 1.8s linear infinite .3s"/>
+    <path d="M460,160 C520,190 540,240 600,240" class="connection-active" style="stroke:#FF2D95;stroke-dasharray:4 4;animation:dash 2s linear infinite .6s"/>
+    <!-- Models → Output -->
+    <path d="M640,80 C680,80 700,160 740,160" class="connection" style="stroke:#00ff41;animation-delay:.4s"/>
+    <path d="M640,160 C680,160 700,160 740,160" class="connection" style="stroke:#BD00FF;animation-delay:.9s"/>
+    <path d="M640,240 C680,240 700,160 740,160" class="connection" style="stroke:#FF2D95;animation-delay:1.2s"/>
+
+    <!-- ═══ ANIMATED PARTICLES along paths ═══ -->
+    <!-- Input → Classify -->
+    <circle r="3" class="p-pink" style="opacity:0">
+      <animateMotion dur="2s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-input-classify"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.9;.9;0" keyTimes="0;.1;.85;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.5" class="p-pink" style="opacity:0">
+      <animateMotion dur="2.5s" repeatCount="indefinite" begin=".8s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-input-classify2"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.7;.7;0" keyTimes="0;.1;.85;1" dur="2.5s" repeatCount="indefinite" begin=".8s"/>
+    </circle>
+    <!-- Classify → Gate -->
+    <circle r="2.5" class="p-cyan" style="opacity:0">
+      <animateMotion dur="1.8s" repeatCount="indefinite" begin=".4s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-classify-gate"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.8;.8;0" keyTimes="0;.1;.85;1" dur="1.8s" repeatCount="indefinite" begin=".4s"/>
+    </circle>
+    <circle r="2" class="p-cyan" style="opacity:0">
+      <animateMotion dur="2.2s" repeatCount="indefinite" begin="1.2s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-classify-gate2"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.6;.6;0" keyTimes="0;.1;.85;1" dur="2.2s" repeatCount="indefinite" begin="1.2s"/>
+    </circle>
+    <!-- Gate → Free (BIG flow — 94.2%) -->
+    <circle r="4" class="p-green" style="opacity:0">
+      <animateMotion dur="1.5s" repeatCount="indefinite" begin=".2s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-gate-free"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="1.5s" repeatCount="indefinite" begin=".2s"/>
+    </circle>
+    <circle r="3" class="p-green" style="opacity:0">
+      <animateMotion dur="1.8s" repeatCount="indefinite" begin="1s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-gate-free"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.7;.7;0" keyTimes="0;.1;.85;1" dur="1.8s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <circle r="2" class="p-green" style="opacity:0">
+      <animateMotion dur="2s" repeatCount="indefinite" begin="1.6s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-gate-free"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.5;.5;0" keyTimes="0;.1;.85;1" dur="2s" repeatCount="indefinite" begin="1.6s"/>
+    </circle>
+    <!-- Gate → Opus (small flow) -->
+    <circle r="2" class="p-purple" style="opacity:0">
+      <animateMotion dur="2.5s" repeatCount="indefinite" begin=".6s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-gate-opus"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.7;.7;0" keyTimes="0;.1;.85;1" dur="2.5s" repeatCount="indefinite" begin=".6s"/>
+    </circle>
+    <!-- Gate → Fable (tiny flow) -->
+    <circle r="1.5" class="p-pink" style="opacity:0">
+      <animateMotion dur="3.5s" repeatCount="indefinite" begin="1.5s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-gate-fable"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.5;.5;0" keyTimes="0;.1;.85;1" dur="3.5s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+    <!-- Free → Output -->
+    <circle r="3" class="p-green" style="opacity:0">
+      <animateMotion dur="2s" repeatCount="indefinite" begin="1s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-free-out"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.8;.8;0" keyTimes="0;.1;.85;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <!-- Opus → Output -->
+    <circle r="2" class="p-purple" style="opacity:0">
+      <animateMotion dur="2.5s" repeatCount="indefinite" begin="1.5s" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
+        <mpath href="#path-opus-out"/>
+      </animateMotion>
+      <animate attributeName="opacity" values="0;.6;.6;0" keyTimes="0;.1;.85;1" dur="2.5s" repeatCount="indefinite" begin="1.5s"/>
+    </circle>
+
+    <!-- ═══ NODE: INPUT ═══ -->
+    <g style="animation:nodeGlow1 3s ease-in-out infinite">
+      <circle cx="100" cy="160" r="22" fill="#0a0a14" stroke="#FF2D95" stroke-width="2"/>
+      <circle cx="100" cy="160" r="22" fill="none" stroke="#FF2D95" stroke-width=".5" style="animation:breathe 3s ease-in-out infinite"/>
+      <circle cx="100" cy="160" r="0" fill="none" stroke="#FF2D95" stroke-width=".5">
+        <animate attributeName="r" values="22;50" dur="3s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values=".5;0" dur="3s" repeatCount="indefinite"/>
+      </circle>
+      <text x="100" y="156" class="stat-sm" style="fill:#FF2D95;font-size:10px">TASK</text>
+      <text x="100" y="170" class="label" style="fill:#FF2D95">INPUT</text>
+    </g>
+
+    <!-- ═══ NODES: CLASSIFIERS ═══ -->
+    <g style="animation:nodeGlow2 3s ease-in-out infinite .5s">
+      <circle cx="300" cy="100" r="18" fill="#0a0a14" stroke="#00D4FF" stroke-width="1.5"/>
+      <text x="300" y="96" class="label-bright" style="fill:#00D4FF;font-size:8px">SEMANTIC</text>
+      <text x="300" y="108" class="label" style="fill:#00D4FF">CLASSIFY</text>
+    </g>
+    <g style="animation:nodeGlow2 3s ease-in-out infinite 1s">
+      <circle cx="300" cy="220" r="18" fill="#0a0a14" stroke="#00D4FF" stroke-width="1.5"/>
+      <text x="300" y="216" class="label-bright" style="fill:#00D4FF;font-size:8px">WEIGHT</text>
+      <text x="300" y="228" class="label" style="fill:#00D4FF">SCORE</text>
+    </g>
+
+    <!-- ═══ NODE: GATE (Thompson + UCB1) ═══ -->
+    <g style="animation:nodeGlow3 4s ease-in-out infinite">
+      <rect x="405" y="135" width="50" height="50" rx="8" fill="#0a0a14" stroke="#BD00FF" stroke-width="2"/>
+      <text x="430" y="155" class="stat-sm" style="fill:#BD00FF;font-size:9px;font-weight:700">MAB</text>
+      <text x="430" y="172" class="label" style="fill:#BD00FF;font-size:7px">THOMPSON</text>
+    </g>
+
+    <!-- ═══ NODES: MODEL TIERS ═══ -->
+    <!-- FREE tier (biggest) -->
+    <g style="animation:nodeGlow4 3s ease-in-out infinite">
+      <circle cx="620" cy="80" r="26" fill="#0a0a14" stroke="#00ff41" stroke-width="2"/>
+      <circle cx="620" cy="80" r="26" fill="none" stroke="#00ff41" stroke-width=".3" style="animation:breathe 4s ease-in-out infinite"/>
+      <text x="620" y="74" class="stat-sm" style="fill:#00ff41;font-weight:700">FREE</text>
+      <text x="620" y="88" class="label" style="fill:#00ff41">228 MODELS</text>
+      <text x="620" y="98" class="label" style="fill:#00ff41;font-size:7px">94.2%</text>
+    </g>
+    <!-- OPUS tier -->
+    <g style="animation:nodeGlow3 3.5s ease-in-out infinite .3s">
+      <circle cx="620" cy="160" r="18" fill="#0a0a14" stroke="#BD00FF" stroke-width="1.5"/>
+      <text x="620" y="157" class="stat-sm" style="fill:#BD00FF;font-size:10px">OPUS</text>
+      <text x="620" y="170" class="label" style="fill:#BD00FF;font-size:7px">HARD</text>
+    </g>
+    <!-- FABLE tier -->
+    <g style="animation:nodeGlow1 4s ease-in-out infinite .6s">
+      <circle cx="620" cy="240" r="14" fill="#0a0a14" stroke="#FF2D95" stroke-width="1.5"/>
+      <text x="620" y="237" class="stat-sm" style="fill:#FF2D95;font-size:8px">FABLE</text>
+      <text x="620" y="248" class="label" style="fill:#FF2D95;font-size:6px">1%</text>
+    </g>
+
+    <!-- ═══ NODE: OUTPUT ═══ -->
+    <g style="animation:nodeGlow2 3s ease-in-out infinite 1.5s">
+      <circle cx="740" cy="160" r="20" fill="#0a0a14" stroke="#00D4FF" stroke-width="2"/>
+      <circle cx="740" cy="160" r="0" fill="none" stroke="#00D4FF" stroke-width=".5">
+        <animate attributeName="r" values="20;45" dur="2.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values=".4;0" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="740" y="156" class="stat-sm" style="fill:#00D4FF;font-size:10px">OUT</text>
+      <text x="740" y="170" class="label" style="fill:#00D4FF">RESULT</text>
+    </g>
+
+    <!-- ═══ BOTTOM STATS BAR ═══ -->
+    <rect x="16" y="278" width="808" height="32" class="panel"/>
+    <text x="30" y="298" class="label" style="text-anchor:start;fill:#5a5a7a;font-size:8px;letter-spacing:2px">
+      <tspan fill="#00ff41">WIS 0.9643</tspan>
+      <tspan fill="#2a2a4a"> │ </tspan>
+      <tspan fill="#BD00FF">THOMPSON SAMPLING + UCB1</tspan>
+      <tspan fill="#2a2a4a"> │ </tspan>
+      <tspan fill="#00D4FF">179 ALIVE</tspan>
+      <tspan fill="#2a2a4a"> │ </tspan>
+      <tspan fill="#FF2D95">94.2% FREE</tspan>
+      <tspan fill="#2a2a4a"> │ </tspan>
+      <tspan fill="#00ff41">3,416 DECISIONS</tspan>
+      <tspan fill="#2a2a4a"> │ </tspan>
+      <tspan fill="#00D4FF">CALIBRATED CONFIDENCE</tspan>
+    </text>
+  </g>
+</svg>

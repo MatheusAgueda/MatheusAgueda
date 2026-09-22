@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 380" width="840" height="380">
+  <defs>
+    <style>
+      @keyframes fadeUp{0%{opacity:0;transform:translateY(8px)}100%{opacity:1;transform:translateY(0)}}
+      @keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+      @keyframes gaugeFill{0%{stroke-dashoffset:251}100%{stroke-dashoffset:14.5}}
+      @keyframes gaugeFill2{0%{stroke-dashoffset:251}100%{stroke-dashoffset:65}}
+      @keyframes gaugeFill3{0%{stroke-dashoffset:251}100%{stroke-dashoffset:45}}
+      @keyframes countUp{0%{opacity:0}15%{opacity:1}}
+      @keyframes barGrow1{0%{width:0}100%{width:142px}}
+      @keyframes barGrow2{0%{width:0}100%{width:98px}}
+      @keyframes barGrow3{0%{width:0}100%{width:168px}}
+      @keyframes barGrow4{0%{width:0}100%{width:55px}}
+      @keyframes barGrow5{0%{width:0}100%{width:130px}}
+      @keyframes scanLine{0%{transform:translateY(-380px)}100%{transform:translateY(380px)}}
+      @keyframes sparkle{0%,100%{opacity:0}50%{opacity:.8}}
+      @keyframes dotBlink{0%,45%{fill:#00ff41}55%,100%{fill:#0a0a0a}}
+      @keyframes drawLine{0%{stroke-dashoffset:600}100%{stroke-dashoffset:0}}
+      @keyframes borderPulse{0%,100%{stroke-opacity:.15}50%{stroke-opacity:.5}}
+      @keyframes glowText{0%,100%{fill:#00D4FF}50%{fill:#BD00FF}}
+      @keyframes particleFloat{0%{transform:translate(0,0);opacity:0}10%{opacity:.7}90%{opacity:.7}100%{transform:translate(30px,-20px);opacity:0}}
+      @keyframes ringPulse{0%,100%{r:36;stroke-opacity:.1}50%{r:42;stroke-opacity:.3}}
+
+      .bg{fill:#06060e}
+      .panel{fill:#0a0a14;stroke:#1a1a2e;stroke-width:1;rx:8}
+      .panel-glow{fill:none;stroke:#BD00FF;stroke-width:1;rx:8;animation:borderPulse 4s ease-in-out infinite}
+      .title{font-family:'SF Mono','JetBrains Mono','Fira Code',monospace;font-size:10px;fill:#4a4a6a;letter-spacing:2px;text-transform:uppercase}
+      .val-big{font-family:'SF Mono','JetBrains Mono',monospace;font-size:28px;fill:#ffffff;font-weight:700}
+      .val-med{font-family:'SF Mono','JetBrains Mono',monospace;font-size:18px;fill:#ffffff;font-weight:600}
+      .val-sm{font-family:'SF Mono','JetBrains Mono',monospace;font-size:11px;fill:#8a8aaa}
+      .label{font-family:'SF Mono','JetBrains Mono',monospace;font-size:9px;fill:#5a5a7a;letter-spacing:1px}
+      .accent-pink{fill:#FF2D95}
+      .accent-cyan{fill:#00D4FF}
+      .accent-purple{fill:#BD00FF}
+      .accent-green{fill:#00ff41}
+      .bar-track{fill:#12121e;rx:3}
+      .bar-pink{fill:#FF2D95;rx:3;height:8px}
+      .bar-cyan{fill:#00D4FF;rx:3;height:8px}
+      .bar-purple{fill:#BD00FF;rx:3;height:8px}
+      .bar-green{fill:#00ff41;rx:3;height:8px}
+      .gauge-track{fill:none;stroke:#12121e;stroke-width:6;stroke-linecap:round}
+      .gauge-pink{fill:none;stroke:#FF2D95;stroke-width:6;stroke-linecap:round;stroke-dasharray:251;animation:gaugeFill 2s ease-out forwards}
+      .gauge-cyan{fill:none;stroke:#00D4FF;stroke-width:6;stroke-linecap:round;stroke-dasharray:251;animation:gaugeFill2 2.2s ease-out .3s forwards;stroke-dashoffset:251}
+      .gauge-purple{fill:none;stroke:#BD00FF;stroke-width:6;stroke-linecap:round;stroke-dasharray:251;animation:gaugeFill3 2s ease-out .6s forwards;stroke-dashoffset:251}
+      .sparkline{fill:none;stroke:#00D4FF;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:600;animation:drawLine 3s ease-out forwards}
+      .sparkline-fill{fill:url(#sparkGrad);opacity:.15}
+      .dot-live{animation:dotBlink 2s step-end infinite}
+      .scan{fill:url(#scanGrad);animation:scanLine 6s linear infinite;opacity:.03}
+      .p1{animation:fadeUp .6s ease forwards .2s;opacity:0}
+      .p2{animation:fadeUp .6s ease forwards .5s;opacity:0}
+      .p3{animation:fadeUp .6s ease forwards .8s;opacity:0}
+      .p4{animation:fadeUp .6s ease forwards 1.1s;opacity:0}
+      .p5{animation:fadeUp .6s ease forwards 1.4s;opacity:0}
+      .particle{animation:particleFloat 4s ease-in-out infinite}
+      .ring-pulse{fill:none;stroke:#BD00FF;stroke-width:.5;animation:ringPulse 3s ease-in-out infinite}
+    </style>
+    <linearGradient id="sparkGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00D4FF" stop-opacity=".3"/>
+      <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="transparent"/>
+      <stop offset="45%" stop-color="#00D4FF"/>
+      <stop offset="55%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF2D95"/>
+      <stop offset="50%" stop-color="#BD00FF"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="840" height="380" rx="12"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="840" height="380" class="bg" rx="12"/>
+    <rect width="840" height="380" class="scan"/>
+
+    <!-- HEADER BAR -->
+    <rect x="0" y="0" width="840" height="2" fill="url(#headerGrad)"/>
+    <text x="20" y="22" class="title" style="fill:#6a6a8a;font-size:11px">SYSTEM OVERVIEW</text>
+    <circle cx="808" cy="15" r="4" class="dot-live"/>
+    <text x="786" y="19" class="label" style="fill:#00ff41" text-anchor="end">LIVE</text>
+
+    <!-- ═══ ROW 1: THREE GAUGES ═══ -->
+    <g class="p1">
+      <!-- GAUGE 1: Lead Pipeline -->
+      <rect x="16" y="36" width="260" height="155" class="panel"/>
+      <rect x="16" y="36" width="260" height="155" class="panel-glow" style="animation-delay:0s"/>
+      <text x="146" y="54" text-anchor="middle" class="title">LEAD PIPELINE</text>
+      <circle cx="96" cy="118" r="40" class="gauge-track"/>
+      <circle cx="96" cy="118" r="40" class="gauge-pink" transform="rotate(-90 96 118)"/>
+      <circle cx="96" cy="118" class="ring-pulse"/>
+      <text x="96" y="114" text-anchor="middle" class="val-big" style="font-size:22px">1.93M</text>
+      <text x="96" y="132" text-anchor="middle" class="label">LEADS</text>
+      <text x="200" y="80" class="val-med accent-cyan">752K</text>
+      <text x="200" y="96" class="val-sm">eligible</text>
+      <text x="200" y="118" class="val-med accent-pink">789K</text>
+      <text x="200" y="134" class="val-sm">verified emails</text>
+      <text x="200" y="156" class="val-med accent-green">156K</text>
+      <text x="200" y="172" class="val-sm">sendable</text>
+    </g>
+
+    <!-- GAUGE 2: Email Engine -->
+    <g class="p2">
+      <rect x="290" y="36" width="260" height="155" class="panel"/>
+      <rect x="290" y="36" width="260" height="155" class="panel-glow" style="animation-delay:1s"/>
+      <text x="420" y="54" text-anchor="middle" class="title">EMAIL ENGINE</text>
+      <circle cx="370" cy="118" r="40" class="gauge-track"/>
+      <circle cx="370" cy="118" r="40" class="gauge-cyan" transform="rotate(-90 370 118)"/>
+      <text x="370" y="114" text-anchor="middle" class="val-big" style="font-size:22px">385</text>
+      <text x="370" y="132" text-anchor="middle" class="label">/DAY</text>
+      <!-- Relay bars -->
+      <text x="430" y="80" class="label">RESEND</text>
+      <rect x="430" y="86" width="100" height="6" class="bar-track"/>
+      <rect x="430" y="86" width="33" height="6" class="bar-pink" style="animation:barGrow4 1.5s ease forwards 1s;width:0"/>
+      <text x="535" y="92" class="val-sm" style="font-size:8px">65/d</text>
+      <text x="430" y="110" class="label">SENDGRID</text>
+      <rect x="430" y="116" width="100" height="6" class="bar-track"/>
+      <rect x="430" y="116" width="62" height="6" class="bar-cyan" style="animation:barGrow2 1.5s ease forwards 1.2s;width:0"/>
+      <text x="535" y="122" class="val-sm" style="font-size:8px">120/d</text>
+      <text x="430" y="140" class="label">GOOGLE SMTP</text>
+      <rect x="430" y="146" width="100" height="6" class="bar-track"/>
+      <rect x="430" y="146" width="100" height="6" class="bar-green" style="animation:barGrow3 1.5s ease forwards 1.4s;width:0"/>
+      <text x="535" y="152" class="val-sm" style="font-size:8px">200/d</text>
+      <text x="430" y="170" class="val-sm" style="fill:#00ff41">DKIM &#10003; SPF &#10003; DMARC &#10003;</text>
+    </g>
+
+    <!-- GAUGE 3: Fleet Brain -->
+    <g class="p3">
+      <rect x="564" y="36" width="260" height="155" class="panel"/>
+      <rect x="564" y="36" width="260" height="155" class="panel-glow" style="animation-delay:2s"/>
+      <text x="694" y="54" text-anchor="middle" class="title">FLEET BRAIN</text>
+      <circle cx="644" cy="118" r="40" class="gauge-track"/>
+      <circle cx="644" cy="118" r="40" class="gauge-purple" transform="rotate(-90 644 118)"/>
+      <text x="644" y="110" text-anchor="middle" class="val-big" style="font-size:18px">94.2%</text>
+      <text x="644" y="128" text-anchor="middle" class="label" style="fill:#BD00FF">FREE</text>
+      <text x="720" y="80" class="val-med accent-purple">228</text>
+      <text x="720" y="96" class="val-sm">AI models</text>
+      <text x="720" y="118" class="val-med" style="fill:#00ff41">179</text>
+      <text x="720" y="134" class="val-sm">alive</text>
+      <text x="720" y="156" class="val-med accent-cyan">0.96</text>
+      <text x="720" y="172" class="val-sm">WIS score</text>
+    </g>
+
+    <!-- ═══ ROW 2: SPARKLINE + SYSTEM STATUS ═══ -->
+    <g class="p4">
+      <!-- SPARKLINE PANEL -->
+      <rect x="16" y="200" width="500" height="166" class="panel"/>
+      <text x="30" y="220" class="title">30-DAY DELIVERY TREND</text>
+      <text x="480" y="220" text-anchor="end" class="val-sm" style="fill:#00ff41">+12.3%</text>
+
+      <!-- Sparkline chart -->
+      <polyline points="40,340 60,335 80,328 100,332 120,320 140,310 160,325 180,305 200,295 220,300 240,285 260,278 280,290 300,270 320,260 340,265 360,250 380,240 400,245 420,235 440,225 460,230 480,220 495,215" class="sparkline"/>
+      <polygon points="40,340 60,335 80,328 100,332 120,320 140,310 160,325 180,305 200,295 220,300 240,285 260,278 280,290 300,270 320,260 340,265 360,250 380,240 400,245 420,235 440,225 460,230 480,220 495,215 495,352 40,352" class="sparkline-fill"/>
+
+      <!-- Y-axis labels -->
+      <text x="35" y="228" text-anchor="end" class="val-sm" style="font-size:8px">400</text>
+      <text x="35" y="268" text-anchor="end" class="val-sm" style="font-size:8px">300</text>
+      <text x="35" y="308" text-anchor="end" class="val-sm" style="font-size:8px">200</text>
+      <text x="35" y="348" text-anchor="end" class="val-sm" style="font-size:8px">100</text>
+
+      <!-- Grid lines -->
+      <line x1="40" y1="230" x2="500" y2="230" stroke="#1a1a2e" stroke-width=".5"/>
+      <line x1="40" y1="270" x2="500" y2="270" stroke="#1a1a2e" stroke-width=".5"/>
+      <line x1="40" y1="310" x2="500" y2="310" stroke="#1a1a2e" stroke-width=".5"/>
+      <line x1="40" y1="350" x2="500" y2="350" stroke="#1a1a2e" stroke-width=".5"/>
+    </g>
+
+    <!-- SYSTEM STATUS PANEL -->
+    <g class="p5">
+      <rect x="530" y="200" width="294" height="166" class="panel"/>
+      <text x="544" y="220" class="title">SYSTEMS</text>
+      <text x="808" y="220" text-anchor="end" class="val-sm" style="fill:#00ff41">12/12 ONLINE</text>
+
+      <!-- Status rows -->
+      <circle cx="548" cy="238" r="3" fill="#00ff41" class="dot-live"/>
+      <text x="558" y="241" class="val-sm" style="fill:#ccc">Fleet Brain</text>
+      <text x="808" y="241" text-anchor="end" class="val-sm" style="fill:#BD00FF">228 models</text>
+
+      <circle cx="548" cy="256" r="3" fill="#00ff41" class="dot-live" style="animation-delay:.3s"/>
+      <text x="558" y="259" class="val-sm" style="fill:#ccc">Lead Scraper</text>
+      <text x="808" y="259" text-anchor="end" class="val-sm" style="fill:#FF2D95">1.93M</text>
+
+      <circle cx="548" cy="274" r="3" fill="#00ff41" class="dot-live" style="animation-delay:.5s"/>
+      <text x="558" y="277" class="val-sm" style="fill:#ccc">Email Engine</text>
+      <text x="808" y="277" text-anchor="end" class="val-sm" style="fill:#00D4FF">385/day</text>
+
+      <circle cx="548" cy="292" r="3" fill="#00ff41" class="dot-live" style="animation-delay:.7s"/>
+      <text x="558" y="295" class="val-sm" style="fill:#ccc">Claude Harness</text>
+      <text x="808" y="295" text-anchor="end" class="val-sm" style="fill:#BD00FF">17 agents</text>
+
+      <circle cx="548" cy="310" r="3" fill="#00ff41" class="dot-live" style="animation-delay:.9s"/>
+      <text x="558" y="313" class="val-sm" style="fill:#ccc">Jarvis CU</text>
+      <text x="808" y="313" text-anchor="end" class="val-sm" style="fill:#00D4FF">4 lanes</text>
+
+      <circle cx="548" cy="328" r="3" fill="#00ff41" class="dot-live" style="animation-delay:1.1s"/>
+      <text x="558" y="331" class="val-sm" style="fill:#ccc">MHL Platform</text>
+      <text x="808" y="331" text-anchor="end" class="val-sm" style="fill:#FF2D95">Next.js 15</text>
+
+      <circle cx="548" cy="346" r="3" fill="#00ff41" class="dot-live" style="animation-delay:1.3s"/>
+      <text x="558" y="349" class="val-sm" style="fill:#ccc">Trading</text>
+      <text x="808" y="349" text-anchor="end" class="val-sm" style="fill:#00D4FF">Jessie + Moon</text>
+    </g>
+
+    <!-- Floating particles -->
+    <circle cx="150" cy="30" r="1" fill="#FF2D95" class="particle" style="animation-delay:0s"/>
+    <circle cx="400" cy="25" r="1.5" fill="#00D4FF" class="particle" style="animation-delay:1.5s"/>
+    <circle cx="650" cy="28" r="1" fill="#BD00FF" class="particle" style="animation-delay:3s"/>
+    <circle cx="300" cy="32" r="1" fill="#00ff41" class="particle" style="animation-delay:2s"/>
+    <circle cx="750" cy="30" r="1.5" fill="#FF2D95" class="particle" style="animation-delay:4s"/>
+  </g>
+</svg>

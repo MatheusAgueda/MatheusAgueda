@@ -1,10 +1,6 @@
 <div align="center">
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     HEADER: Capsule-render waving + animated neon SVG + typing
-     ═══════════════════════════════════════════════════════════════════ -->
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2D95,50:BD00FF,100:00D4FF&height=220&section=header&text=&fontSize=1" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2D95,50:BD00FF,100:00D4FF&height=200&section=header&text=&fontSize=1" width="100%"/>
 
 <img src="./assets/neon-banner.svg" width="100%" alt="Neon animated banner"/>
 
@@ -14,12 +10,6 @@
 
 <br/>
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=14&duration=2500&pause=800&color=00D4FF&center=true&vCenter=true&repeat=true&width=780&height=50&lines=%E2%94%8C+12+production+systems+%C2%B7+228+AI+models+%C2%B7+1.93M+leads+%C2%B7+4+countries+%E2%94%90;%E2%94%82+94.2%25+free+AI+routing+%C2%B7+385+emails%2Fday+%C2%B7+17+agents+%C2%B7+85%2B+tools+%E2%94%82;%E2%94%94+Python+%C2%B7+TypeScript+%C2%B7+Rust+%C2%B7+Go+%C2%B7+MQL5+%C2%B7+Bash+%C2%B7+SQL+%E2%94%98" alt="Typing SVG" /></a>
-
-<br/>
-
-<!-- ═══════════════ BADGE WALL ═══════════════ -->
-
 <img src="https://komarev.com/ghpvc/?username=MatheusAgueda&style=for-the-badge&color=FF2D95&label=VISITORS" alt="views"/>
 &nbsp;
 <img src="https://img.shields.io/badge/SYSTEMS-12-00D4FF?style=for-the-badge&labelColor=0a0a0a" alt="systems"/>
@@ -27,14 +17,22 @@
 <img src="https://img.shields.io/badge/AI_MODELS-228-BD00FF?style=for-the-badge&labelColor=0a0a0a" alt="models"/>
 &nbsp;
 <img src="https://img.shields.io/badge/LEADS-1.93M-FF2D95?style=for-the-badge&labelColor=0a0a0a" alt="leads"/>
-&nbsp;
-<img src="https://img.shields.io/badge/COUNTRIES-PT%C2%B7FR%C2%B7NL%C2%B7ES-00D4FF?style=for-the-badge&labelColor=0a0a0a" alt="countries"/>
 
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     TERMINAL ANIMATION — Fleet status dashboard
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     HERO SYSTEM DASHBOARD — animated SVG
+     ═══════════════════════════════════════════════ -->
+
+<div align="center">
+<img src="./assets/hero-system.svg" width="100%" alt="Animated system dashboard with gauges, sparklines, and live metrics"/>
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
+
+<!-- ═══════════════════════════════════════════════
+     TERMINAL — Fleet status
+     ═══════════════════════════════════════════════ -->
 
 <div align="center">
 <img src="./assets/terminal-fleet.svg" width="100%" alt="Terminal showing fleet status"/>
@@ -42,9 +40,9 @@
 
 <img src="./assets/wave-separator.svg" width="100%" alt=""/>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     ABOUT — side-by-side: identity + tech stack
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     IDENTITY + TECH ICONS
+     ═══════════════════════════════════════════════ -->
 
 <table>
 <tr>
@@ -65,12 +63,10 @@ scale:
   leads:     1,930,000 processed
   emails:    385/day × 3 DKIM relays
   agents:    17 self-improving AI agents
-  tools:     85+ MCP tools · 40 skills
 
 hardware:
   local: M4 Pro 14-core · 24GB unified
   db:    PostgreSQL 16 · 6GB shared_buffers
-  cloud: Railway ×3 · Vercel ×2 · CF ×2
 ```
 
 </td>
@@ -92,10 +88,6 @@ hardware:
 
 <img src="https://skillicons.dev/icons?i=postgres,redis,docker,nginx,linux,cloudflare&theme=dark" alt=""/><br/>
 <sub><kbd>INFRASTRUCTURE</kbd></sub>
-<br/><br/>
-
-<img src="https://skillicons.dev/icons?i=git,github,githubactions,vscode,vercel,sentry&theme=dark" alt=""/><br/>
-<sub><kbd>DEVOPS</kbd></sub>
 
 </div>
 
@@ -105,16 +97,28 @@ hardware:
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     FLEET BRAIN — the WTF centerpiece
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     FLEET BRAIN — Neural Routing SVG
+     ═══════════════════════════════════════════════ -->
 
-## <img src="https://img.shields.io/badge/FLEET_BRAIN-FF2D95?style=for-the-badge&labelColor=0a0a0a" alt=""/> The AI Router Nobody Expects in a Profile README
+## <img src="https://img.shields.io/badge/FLEET_BRAIN-FF2D95?style=for-the-badge&labelColor=0a0a0a" alt=""/> Neural AI Router
 
 > [!IMPORTANT]
-> This is not a wrapper. It's a **multi-armed bandit** that routes every AI sub-task to the cheapest model that clears the quality bar --- using **Thompson Sampling + UCB1** with calibrated confidence gates, semantic caching, and a self-correcting feedback loop.
+> A **multi-armed bandit** that routes every AI sub-task to the cheapest model that clears the quality bar — Thompson Sampling + UCB1 with calibrated confidence gates.
 
 <div align="center">
+<img src="./assets/neural-routing.svg" width="100%" alt="Neural routing visualization with animated particles flowing between model tiers"/>
+</div>
+
+<div align="center">
+
+$$P(\theta_i \mid \mathcal{D}) \propto \prod_{t=1}^{n} \text{Bernoulli}(r_t \mid \theta_i) \cdot \text{Beta}(\alpha_i, \beta_i)$$
+
+</div>
+
+<details>
+<summary><b>&nbsp;Routing Architecture (Mermaid)&nbsp;</b></summary>
+<br/>
 
 ```mermaid
 %%{init: {'theme': 'dark', 'themeVariables': {
@@ -158,141 +162,23 @@ flowchart LR
   classDef free fill:#111122,stroke:#00ff41,color:#00ff41
 ```
 
-</div>
-
-The routing math behind the model selection:
-
-$$P(\theta_i \mid \mathcal{D}) \propto \prod_{t=1}^{n} \text{Bernoulli}(r_t \mid \theta_i) \cdot \text{Beta}(\alpha_i, \beta_i)$$
-
-Where $\theta_i$ is the success rate of model $i$, updated after every task via Thompson posterior draws. The **WIS** (Weighted Intelligence Score) sits at **0.9643** --- meaning 96.4% of routed tasks produce correct output on the first try, while spending 94.2% fewer tokens than running everything on Opus.
+</details>
 
 <img src="./assets/wave-separator.svg" width="100%" alt=""/>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     LIVE DASHBOARD SVG
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     TECH BREAKDOWN — animated SVG
+     ═══════════════════════════════════════════════ -->
 
 <div align="center">
-
-## <img src="https://img.shields.io/badge/LIVE-00ff41?style=flat-square&labelColor=0a0a0a" alt=""/> System Dashboard
-
-<img src="./assets/stats-dashboard.svg" width="100%" alt="Animated system dashboard with gauges, bar charts, and real-time metrics"/>
-
+<img src="./assets/tech-breakdown.svg" width="100%" alt="Animated tech stack breakdown with progress bars and metric circles"/>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:BD00FF,100:FF2D95&height=2" width="100%"/>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     12 PRODUCTION SYSTEMS — compact grid
-     ═══════════════════════════════════════════════════════════════════ -->
-
-## Production Systems
-
-> [!NOTE]
-> Each system runs in production daily. This is not a portfolio of demos.
-
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/-FF2D95?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Fleet Brain</kbd><br/>
-<sub>228 models  ·  Thompson + UCB1</sub><br/>
-<sub>94.2% free routing  ·  WIS 0.96</sub><br/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/-BD00FF?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Global Lead Scraper</kbd><br/>
-<sub>1.93M leads  ·  752K eligible</sub><br/>
-<sub>789K verified emails</sub><br/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" alt=""/>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/-00D4FF?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Email Engine</kbd><br/>
-<sub>385/day × 3 DKIM relays</sub><br/>
-<sub>SPF + DMARC + bounce &lt;5%</sub><br/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/-FF2D95?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Claude Harness</kbd><br/>
-<sub>17 agents  ·  85+ MCP tools</sub><br/>
-<sub>40 skills  ·  self-improving</sub><br/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/-BD00FF?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Jarvis</kbd><br/>
-<sub>Computer-Use stack  ·  656 files</sub><br/>
-<sub>4 browser lanes  ·  cursor-less</sub><br/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/Swift-FA7343?style=flat-square&logo=swift&logoColor=white" alt=""/>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/-00D4FF?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Joao Bot</kbd><br/>
-<sub>WhatsApp automation</sub><br/>
-<sub>Baileys  ·  BullMQ  ·  Railway</sub><br/>
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt=""/>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/-FF2D95?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>MHL Platform</kbd><br/>
-<sub>Business website + CMS + API</sub><br/>
-<sub>Next.js 15  ·  NestJS 11  ·  Prisma 6</sub><br/>
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt=""/>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/-BD00FF?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Fleet Proxy</kbd><br/>
-<sub>Unified Intelligence API</sub><br/>
-<sub>49+ systems  ·  port 8787</sub><br/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
-</td>
-</tr>
-<tr>
-<td align="center">
-<img src="https://img.shields.io/badge/-00D4FF?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Empresas</kbd><br/>
-<sub>Company formation automation</sub><br/>
-<sub>PT · FR · NL · ES portals</sub><br/>
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt=""/>
-<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white" alt=""/>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/-FF2D95?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Jessie Trader</kbd><br/>
-<sub>Algorithmic trading</sub><br/>
-<sub>MQL5  ·  MetaTrader 5  ·  Live</sub><br/>
-<img src="https://img.shields.io/badge/MQL5-4169E1?style=flat-square" alt=""/>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/-BD00FF?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>MoonSniper</kbd><br/>
-<sub>Solana memecoin trading</sub><br/>
-<sub>Mempool sniping  ·  sub-ms</sub><br/>
-<img src="https://img.shields.io/badge/Rust-000?style=flat-square&logo=rust&logoColor=white" alt=""/>
-</td>
-<td align="center">
-<img src="https://img.shields.io/badge/-00D4FF?style=for-the-badge" width="100%" alt=""/>
-<br/><kbd>Green Village 72</kbd><br/>
-<sub>3D mobile home configurator</sub><br/>
-<sub>Three.js  ·  interactive  ·  live</sub><br/>
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt=""/>
-</td>
-</tr>
-</table>
-
-<img src="./assets/wave-separator.svg" width="100%" alt=""/>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     SKILLS RADAR + DATA PIPELINE MERMAID
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     DATA PIPELINE + SKILLS RADAR
+     ═══════════════════════════════════════════════ -->
 
 <table>
 <tr>
@@ -325,28 +211,24 @@ flowchart TB
   GATE -->|"score >= 40"| SEND["Email Engine<br/><sub>385/day · 3 DKIM relays</sub>"]:::pink
   GATE -->|"score >= 40"| WA["Joao Bot<br/><sub>WhatsApp outreach</sub>"]:::purple
   GATE -->|"verified"| MHL["MHL Website<br/><sub>public listings</sub>"]:::cyan
-  GATE -->|"< 40"| COLD[("Cold Storage<br/><sub>re-score quarterly</sub>")]:::dim
 
   classDef pink fill:#1a0a14,stroke:#FF2D95,color:#FF2D95
   classDef purple fill:#140a1a,stroke:#BD00FF,color:#BD00FF
   classDef cyan fill:#0a141a,stroke:#00D4FF,color:#00D4FF
   classDef gate fill:#0a0a0a,stroke:#BD00FF,color:#BD00FF
-  classDef dim fill:#0a0a0a,stroke:#333,color:#555
 ```
 
 $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum w_i = 1$$
-
-<sub>Where $f_i$ are feature extractors (email validity, domain authority, geo match, vertical fit, etc.) and $w_i$ are learned weights.</sub>
 
 </td>
 </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
+<img src="./assets/wave-separator.svg" width="100%" alt=""/>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     3D CONTRIBUTION CALENDAR (dark/light responsive) + SNAKE
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     3D CONTRIBUTION + SNAKE
+     ═══════════════════════════════════════════════ -->
 
 <div align="center">
 
@@ -368,15 +250,13 @@ $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum
 
 </div>
 
-<img src="./assets/wave-separator.svg" width="100%" alt=""/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     GITHUB STATS — compact row
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     GITHUB STATS
+     ═══════════════════════════════════════════════ -->
 
 <div align="center">
-
-## GitHub Analytics
 
 <img src="https://github-readme-stats.vercel.app/api?username=MatheusAgueda&show_icons=true&theme=radical&bg_color=0a0a0a&title_color=00D4FF&text_color=cccccc&icon_color=FF2D95&border_color=BD00FF&hide_border=false&include_all_commits=true&count_private=true&custom_title=Stats" width="49%" alt="GitHub Stats"/>
 <img src="https://streak-stats.demolab.com?user=MatheusAgueda&theme=radical&hide_border=false&background=0A0A0A&ring=FF2D95&fire=00D4FF&currStreakLabel=BD00FF&sideLabels=ffffff&dates=888888&border=BD00FF" width="49%" alt="Streak"/>
@@ -385,33 +265,18 @@ $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=MatheusAgueda&theme=react-dark&hide_border=true&bg_color=0a0a0a&color=00D4FF&line=FF2D95&point=BD00FF&area=true&area_color=BD00FF" width="98%" alt="Activity graph"/>
 
-</div>
-
-<div align="center">
-
 <img src="https://github-profile-trophy.vercel.app/?username=MatheusAgueda&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=10" width="98%" alt="Trophies"/>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:BD00FF,100:FF2D95&height=2" width="100%"/>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     LOWLIGHTER METRICS + SUMMARY CARDS
-     ═══════════════════════════════════════════════════════════════════ -->
-
 <details>
-<summary><b>&nbsp;Detailed Metrics &amp; Language Breakdown&nbsp;</b></summary>
+<summary><b>&nbsp;Detailed Metrics&nbsp;</b></summary>
 <br/>
 
 <div align="center">
 
 <img src="./metrics/isocalendar.svg" width="49%" alt="Isocalendar"/>
 <img src="./metrics/languages.svg" width="49%" alt="Languages"/>
-
-<br/>
-
-<img src="./metrics/lines.svg" width="49%" alt="Lines of code"/>
-<img src="./metrics/followup.svg" width="49%" alt="Follow-up"/>
 
 <br/>
 
@@ -433,9 +298,9 @@ $$\text{Score}(l) = \sum_{i=1}^{n} w_i \cdot f_i(l) \quad \text{s.t.} \quad \sum
 
 <img src="./assets/wave-separator.svg" width="100%" alt=""/>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     3D STL MODEL VIEWER — yes, GitHub renders STL in markdown
-     ═══════════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════════════
+     3D CRYSTAL + INTERACTIVE MAP
+     ═══════════════════════════════════════════════ -->
 
 <div align="center">
 
@@ -719,10 +584,6 @@ endsolid logo3d
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     OPERATIONS MAP — interactive GeoJSON
-     ═══════════════════════════════════════════════════════════════════ -->
-
 <div align="center">
 
 ## Operations Map
@@ -730,7 +591,7 @@ endsolid logo3d
 </div>
 
 > [!NOTE]
-> This is an **interactive map**. Scroll to zoom, click markers for details. GitHub renders GeoJSON natively.
+> Interactive map — scroll to zoom, click markers. GitHub renders GeoJSON natively.
 
 ```geojson
 {
@@ -739,54 +600,49 @@ endsolid logo3d
     {
       "type": "Feature",
       "properties": {
-        "name": "Portugal  ---  HQ",
-        "description": "Green Village Mobile Homes  ·  1.93M leads  ·  CEO base",
+        "name": "Portugal — HQ",
+        "description": "Green Village Mobile Homes · CEO base",
         "marker-color": "#FF2D95",
-        "marker-size": "large",
-        "marker-symbol": "commercial"
+        "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [-8.61, 41.15] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "France  ---  Easystart Office",
-        "description": "Company formation  ·  INPI/URSSAF automation",
+        "name": "France — Easystart",
+        "description": "Company formation · INPI/URSSAF",
         "marker-color": "#BD00FF",
-        "marker-size": "large",
-        "marker-symbol": "town-hall"
+        "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [2.35, 48.86] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Netherlands  ---  EU Ops",
-        "description": "Cross-border  ·  KVK  ·  VAT VIES coordination",
+        "name": "Netherlands — EU Ops",
+        "description": "Cross-border · KVK · VAT VIES",
         "marker-color": "#00D4FF",
-        "marker-size": "large",
-        "marker-symbol": "embassy"
+        "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [4.90, 52.37] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Spain  ---  Market Expansion",
-        "description": "Dealer network  ·  Lead generation  ·  CRM",
+        "name": "Spain — Expansion",
+        "description": "Dealer network · Lead gen · CRM",
         "marker-color": "#FF2D95",
-        "marker-size": "large",
-        "marker-symbol": "rocket"
+        "marker-size": "large"
       },
       "geometry": { "type": "Point", "coordinates": [-3.70, 40.42] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Lead Coverage  ---  48 Countries",
+        "name": "Lead Coverage — 48 Countries",
         "stroke": "#BD00FF",
         "stroke-width": 2,
-        "stroke-opacity": 0.5,
         "fill": "#BD00FF",
         "fill-opacity": 0.06
       },
@@ -801,9 +657,9 @@ endsolid logo3d
 
 <img src="./assets/wave-separator.svg" width="100%" alt=""/>
 
-<!-- ═══════════════════════════════════════════════════════════════════
+<!-- ═══════════════════════════════════════════════
      SYSTEM STATUS + CHESS
-     ═══════════════════════════════════════════════════════════════════ -->
+     ═══════════════════════════════════════════════ -->
 
 <table>
 <tr>
@@ -817,7 +673,7 @@ endsolid logo3d
 + Lead Scraper .......... 1.93M leads · 752K eligible
 + Email Engine .......... 385/day · 3 DKIM relays
 + Claude Harness ........ 17 agents · self-improving
-+ Jarvis ................ 4 lanes · 17 cognitive modules
++ Jarvis ................ 4 lanes · cursor-less
 + Joao Bot .............. WhatsApp · Railway
 + MHL Platform .......... Next.js 15 · NestJS 11
 + Fleet Proxy ........... 49+ systems · port 8787
@@ -858,25 +714,9 @@ endsolid logo3d
 </tr>
 </table>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:00D4FF,50:BD00FF,100:FF2D95&height=2" width="100%"/>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     RECENT ACTIVITY (auto-updated by GitHub Action)
-     ═══════════════════════════════════════════════════════════════════ -->
-
-<details>
-<summary><b>&nbsp;Recent Activity&nbsp;</b></summary>
-<br/>
-
-<!--START_SECTION:activity-->
-1. Pushed commits to repositories
-<!--END_SECTION:activity-->
-
-</details>
-
-<!-- ═══════════════════════════════════════════════════════════════════
+<!-- ═══════════════════════════════════════════════
      FOOTER
-     ═══════════════════════════════════════════════════════════════════ -->
+     ═══════════════════════════════════════════════ -->
 
 <br/>
 
@@ -898,12 +738,7 @@ endsolid logo3d
 
 <br/><br/>
 
-<sub>
-
-Built with custom animated SVGs, Thompson Sampling, and too much coffee.
-Every number on this page comes from a live production system.
-
-</sub>
+<sub>Built with hand-crafted animated SVGs, Thompson Sampling, and too much coffee.</sub>
 
 </div>
 
