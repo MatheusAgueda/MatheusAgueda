@@ -25,7 +25,7 @@
      ═══════════════════════════════════════════════ -->
 
 <div align="center">
-<img src="./assets/hero-banner-ai.png" width="100%" alt="AI-generated neural network visualization with neon nodes, holographic HUD, and data streams"/>
+<img src="./assets/hero-neural.svg" width="100%" alt="Animated neural network with travelling particles, rotating hexagonal core, pulsing nodes, and HUD panels"/>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=0:FF2D95,50:BD00FF,100:00D4FF&height=2" width="100%"/>
@@ -107,7 +107,7 @@ hardware:
 > A **multi-armed bandit** that routes every AI sub-task to the cheapest model that clears the quality bar — Thompson Sampling + UCB1 with calibrated confidence gates.
 
 <div align="center">
-<img src="./assets/dashboard-ai.png" width="100%" alt="AI-generated holographic dashboard with brain core, neon gauges, and European map"/>
+<img src="./assets/dashboard-system.svg" width="100%" alt="Animated system dashboard with circular gauges, progress bars, sparkline chart, radar sweep, and status rows"/>
 </div>
 
 <div align="center">
