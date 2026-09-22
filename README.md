@@ -206,13 +206,13 @@ flowchart LR
 }}}%%
 
 flowchart TB
-  SCRAPE["48 Countries<br/><sub>campings · RV parks · glamping</sub>"]:::cyan
-  --> ENRICH["Email Discovery<br/><sub>MX + SMTP verification</sub>"]:::pink
-  --> SCORE["Lead Scoring<br/><sub>40+ signals · ML pipeline</sub>"]:::cyan
-  --> GATE{"Quality<br/>Gate"}:::gate
-  GATE -->|"score >= 40"| SEND["Email Engine<br/><sub>385/day · 3 DKIM relays</sub>"]:::cyan
-  GATE -->|"score >= 40"| WA["Joao Bot<br/><sub>WhatsApp outreach</sub>"]:::pink
-  GATE -->|"verified"| MHL["MHL Website<br/><sub>public listings</sub>"]:::neon
+  SCRAPE["🌍 48 Countries"]:::cyan
+  --> ENRICH["📧 Email Discovery"]:::pink
+  --> SCORE["📊 Lead Scoring"]:::cyan
+  --> GATE{"⚡ Quality Gate"}:::gate
+  GATE -->|"score ≥ 40"| SEND["📬 Email Engine · 385/day"]:::cyan
+  GATE -->|"score ≥ 40"| WA["💬 João Bot · WhatsApp"]:::pink
+  GATE -->|"verified"| MHL["🏠 MHL Website"]:::neon
 
   classDef pink fill:#1a0a14,stroke:#FF2D95,color:#FF2D95
   classDef cyan fill:#0a0a1a,stroke:#00D4FF,color:#00D4FF
