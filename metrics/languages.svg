@@ -16,19 +16,19 @@
             </section>
             <section class="column">
                 <h3 class="field">Most used languages</h3>
-                <small>estimation from 9.46mb of code in 1202 edited files across 476 commits</small>
+                <small>estimation from 9.79mb of code in 1278 edited files across 483 commits</small>
                 <svg class="bar" xmlns="http://www.w3.org/2000/svg" width="920" height="8">
                     <mask id="languages-bar">
                         <rect x="0" y="0" width="920" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="728.0830150127382" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="728.0830150127382" y="0" width="89.60829379090112" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="817.6913088036393" y="0" width="84.31148620646451" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="902.0027950101038" y="0" width="12.660791791023199" height="8" fill="#663399"/>
-                    <rect mask="url(#languages-bar)" x="914.663586801127" y="0" width="4.436124381162275" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="919.0997111822893" y="0" width="0.8636388461427253" height="8" fill="#ededed"/>
-                    <rect mask="url(#languages-bar)" x="919.963350028432" y="0" width="0.036649971568000664" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="707.6421023773474" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="707.6421023773474" y="0" width="107.77342055821468" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="815.4155229355621" y="0" width="87.09254315942376" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="902.5080660949858" y="0" width="12.305340374688964" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="914.8134064696748" y="0" width="4.311580298900613" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="919.1249867685754" y="0" width="0.8393922069016984" height="8" fill="#ededed"/>
+                    <rect mask="url(#languages-bar)" x="919.9643789754771" y="0" width="0.03562102452286468" height="8" fill="#3178c6"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -42,7 +42,7 @@
                             <small>
                                 <div>31k lines</div>
                                 <div>2.46 MB</div>
-                                <div>79.14%</div>
+                                <div>76.92%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -55,7 +55,7 @@
                             <small>
                                 <div>442 lines</div>
                                 <div>15 kB</div>
-                                <div>0.48%</div>
+                                <div>0.47%</div>
                             </small>
                         </div>
                     </section>
@@ -63,14 +63,14 @@
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#f1e05a" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                Roff Manpage
+                                JavaScript
                             </div>
                             <small>
-                                <div>10.4k lines</div>
-                                <div>303 kB</div>
-                                <div>9.74%</div>
+                                <div>4.84k lines</div>
+                                <div>375 kB</div>
+                                <div>11.71%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -91,14 +91,14 @@
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#f1e05a" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#ededed" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
-                                JavaScript
+                                Roff Manpage
                             </div>
                             <small>
-                                <div>3.76k lines</div>
-                                <div>285 kB</div>
-                                <div>9.16%</div>
+                                <div>10.4k lines</div>
+                                <div>303 kB</div>
+                                <div>9.47%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -126,7 +126,7 @@
                             <small>
                                 <div>2.13k lines</div>
                                 <div>42.8 kB</div>
-                                <div>1.38%</div>
+                                <div>1.34%</div>
                             </small>
                         </div>
                     </section>
