@@ -21,14 +21,14 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="197.56279195891267" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="197.56279195891267" y="0" width="129.08123993713252" height="8" fill="#e34c26"/>
-                    <rect mask="url(#languages-bar)" x="326.6440318960452" y="0" width="93.91447549050278" height="8" fill="#f1e05a"/>
-                    <rect mask="url(#languages-bar)" x="420.55850738654794" y="0" width="24.290013295648354" height="8" fill="#3178c6"/>
-                    <rect mask="url(#languages-bar)" x="444.8485206821963" y="0" width="7.040723001365515" height="8" fill="#89e051"/>
-                    <rect mask="url(#languages-bar)" x="451.88924368356186" y="0" width="2.9966332171513783" height="8" fill="#555555"/>
-                    <rect mask="url(#languages-bar)" x="454.88587690071324" y="0" width="2.6546361235223066" height="8" fill="#4A76B8"/>
-                    <rect mask="url(#languages-bar)" x="457.54051302423557" y="0" width="2.4594869757644817" height="8" fill="#F05138"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="197.41177957224528" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="197.41177957224528" y="0" width="128.861026226581" height="8" fill="#e34c26"/>
+                    <rect mask="url(#languages-bar)" x="326.2728057988263" y="0" width="94.35298911488154" height="8" fill="#f1e05a"/>
+                    <rect mask="url(#languages-bar)" x="420.6257949137078" y="0" width="24.248574323108375" height="8" fill="#3178c6"/>
+                    <rect mask="url(#languages-bar)" x="444.8743692368162" y="0" width="7.0287114670956905" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="451.9030807039119" y="0" width="2.991520934993008" height="8" fill="#555555"/>
+                    <rect mask="url(#languages-bar)" x="454.89460163890493" y="0" width="2.6501072913604085" height="8" fill="#4A76B8"/>
+                    <rect mask="url(#languages-bar)" x="457.54470893026536" y="0" width="2.4552910697346815" height="8" fill="#F05138"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -40,8 +40,8 @@
                                 Python
                             </div>
                             <small>
-                                <div>68.7 MB</div>
-                                <div>42.95%</div>
+                                <div>68.8 MB</div>
+                                <div>42.92%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -52,8 +52,8 @@
                                 JavaScript
                             </div>
                             <small>
-                                <div>32.7 MB</div>
-                                <div>20.42%</div>
+                                <div>32.9 MB</div>
+                                <div>20.51%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -91,7 +91,7 @@
                             </div>
                             <small>
                                 <div>44.9 MB</div>
-                                <div>28.06%</div>
+                                <div>28.01%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -103,7 +103,7 @@
                             </div>
                             <small>
                                 <div>8.46 MB</div>
-                                <div>5.28%</div>
+                                <div>5.27%</div>
                             </small>
                         </div>
                         <div class="field language details">
